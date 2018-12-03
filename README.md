@@ -51,14 +51,18 @@ If you like this app, then consider buying swttt a beer :)
 
 #### Testing notes
 
-Currently (in alpha testing), this application will **not** overwrite the stable version of the application. Instead installing as "(alpha) Device Groups"
+Currently (in beta testing), this application will **not** overwrite the stable version of the application. Instead installing as "(beta) Device Groups"
 This is to allow testing with out breaking any existing devices/flows. 
 
 ---
 
 ### Changelog
 
-##### 1.2.0-alpha4
+
+##### 2.0.0-beta1
+- Update icons to use now homey device class icons. 
+
+##### 2.0.0-alpha4
 
 - Change polling to event listener on groupedDevice state change
 - Add placeholder icons
@@ -66,17 +70,17 @@ This is to allow testing with out breaking any existing devices/flows.
 - move method names to locale
 
 
-##### 1.2.0-alpha3
+##### 2.0.0-alpha3
 
 - Store devices in memory to reduce memory pressure.
 - Update catalog, making it consistent name convention/order
 
-##### 1.2.0-alpha2
+##### 2.0.0-alpha2
 
 - Reliability, Stability and Performance
 
 
-##### 1.2.0-alpha1
+##### 2.0.0--alpha1
 - API Update to 2.0.129
 - Feedback on device status
 - Added Ability to group read only capabilities.
