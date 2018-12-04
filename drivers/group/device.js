@@ -14,7 +14,7 @@ const Helper = require('../../lib/helper');
  * @todo bug on first capability until reload
  * @todo bug where devices not showing in 'getDevices' until restart?
  */
-class DeviceGroupDevice extends Homey.Device {
+class GroupDevice extends Homey.Device {
 
   /**
    * Resets our properties,
@@ -431,4 +431,4 @@ class DeviceGroupDevice extends Homey.Device {
   }
 }
 
-module.exports = DeviceGroupDevice;
+module.exports = GroupDevice;

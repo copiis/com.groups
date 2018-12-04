@@ -9,7 +9,7 @@ function guid() {
  		return s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();
  	}
 
-class DeviceGroupDriver extends Homey.Driver {
+class GroupDriver extends Homey.Driver {
 
 
   onPair( socket ) {
@@ -111,4 +111,4 @@ class DeviceGroupDriver extends Homey.Driver {
       }
 }
 
-module.exports = DeviceGroupDriver;
+module.exports = GroupDriver;

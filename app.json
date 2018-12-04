@@ -8,11 +8,9 @@
     "en": "Groups"
   },
   "description": {
-    "en": "Makes it possible to group devices and switch all devices within a group.",
-    "nl": "Maakt het mogelijk om apparaten te groeperen en te schakelen."
+    "en": "Group Devices",
   },
   "category": "tools",
-  "homeyCommunityTopicId": 3168,
   "brandColor": "#000000",
   "tags": {
     "en": ["device", "group", "virtual"],
@@ -21,11 +19,16 @@
   "version": "1.0.0",
   "compatibility": ">=1.5.0",
   "author": {
-    "name": "Bas Jansen",
-    "email": "bas@balotti.com"
+    "name": "Jamie Peake",
+    "email": "jamie.peake@gmail.com"
   },
   "contributors": {
-      "developers": [{
+      "developers": [
+      {
+        "name": "Bas Jansen",
+        "email": "bas@balotti.com"
+      },
+      {
         "name": "Robert Klep",
         "email": "robert@klep.name"
       },
@@ -40,11 +43,11 @@
     "small": "./assets/images/small.png"
   },
   "drivers": [{
-    "id": "devicegroup",
+    "id": "group",
     "class": "other",
     "capabilities": [],
     "name": {
-      "en": "Device group"
+      "en": "Group"
     },
     "images": {
       "large": "./drivers/devicegroup/assets/images/large.png",
