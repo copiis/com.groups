@@ -1,5 +1,5 @@
 {
-  "id": "com.swttt.devicegroups.beta",
+  "id": "com.swttt.devicegroups.alpha",
   "sdk": 2,
   "permissions": [
     "homey:manager:api"
@@ -63,8 +63,15 @@
       {
         "id": "devices",
         "navigation": {
-          "next": "done",
+          "next": "icon",
           "prev": "capabilities"
+        }
+      },
+      {
+        "id": "icon",
+        "navigation": {
+          "next": "done",
+          "prev": "devices"
         }
       },
       {
