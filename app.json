@@ -50,8 +50,8 @@
       "en": "Group"
     },
     "images": {
-      "large": "./drivers/devicegroup/assets/images/large.png",
-      "small": "./drivers/devicegroup/assets/images/small.png"
+      "large": "./drivers/group/assets/images/large.png",
+      "small": "./drivers/group/assets/images/small.png"
     },
     "pair": [{
         "id": "class"
