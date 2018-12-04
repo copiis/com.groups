@@ -70,18 +70,18 @@ class GroupDriver extends Homey.Driver {
           socket.on('devicesChanged', function( data, callback ) {
               let ids = [];
               let svgs = {};
-			  svgs['class'] = '/app/' + Homey.manifest.id + '/drivers/devicegroup/assets/icons/' + pairingDevice.class + '.svg';
-			  svgs['light_a1'] = '/app/' + Homey.manifest.id + '/drivers/devicegroup/assets/icons/light/a1.svg';
-			  svgs['light_a2'] = '/app/' + Homey.manifest.id + '/drivers/devicegroup/assets/icons/light/a2.svg';
-			  svgs['light_b'] = '/app/' + Homey.manifest.id + '/drivers/devicegroup/assets/icons/light/b.svg';
-			  svgs['light_e'] = '/app/' + Homey.manifest.id + '/drivers/devicegroup/assets/icons/light/e.svg';
-			  svgs['light_gu'] = '/app/' + Homey.manifest.id + '/drivers/devicegroup/assets/icons/light/gu.svg';
-			  svgs['light_led'] = '/app/' + Homey.manifest.id + '/drivers/devicegroup/assets/icons/light/led.svg';
-			  svgs['light_par'] = '/app/' + Homey.manifest.id + '/drivers/devicegroup/assets/icons/light/par.svg';
-			  svgs['socket_0'] = '/app/' + Homey.manifest.id + '/drivers/devicegroup/assets/icons/socket/0.svg';
-			  svgs['socket_f'] = '/app/' + Homey.manifest.id + '/drivers/devicegroup/assets/icons/socket/f.svg';
-			  svgs['socket_i'] = '/app/' + Homey.manifest.id + '/drivers/devicegroup/assets/icons/socket/i.svg';
-			  svgs['socket_k'] = '/app/' + Homey.manifest.id + '/drivers/devicegroup/assets/icons/socket/k.svg';
+			  svgs['class'] = '/app/' + Homey.manifest.id + '/drivers/group/assets/icons/' + pairingDevice.class + '.svg';
+			  svgs['light_a1'] = '/app/' + Homey.manifest.id + '/drivers/group/assets/icons/light/a1.svg';
+			  svgs['light_a2'] = '/app/' + Homey.manifest.id + '/drivers/group/assets/icons/light/a2.svg';
+			  svgs['light_b'] = '/app/' + Homey.manifest.id + '/drivers/group/assets/icons/light/b.svg';
+			  svgs['light_e'] = '/app/' + Homey.manifest.id + '/drivers/group/assets/icons/light/e.svg';
+			  svgs['light_gu'] = '/app/' + Homey.manifest.id + '/drivers/group/assets/icons/light/gu.svg';
+			  svgs['light_led'] = '/app/' + Homey.manifest.id + '/drivers/group/assets/icons/light/led.svg';
+			  svgs['light_par'] = '/app/' + Homey.manifest.id + '/drivers/group/assets/icons/light/par.svg';
+			  svgs['socket_0'] = '/app/' + Homey.manifest.id + '/drivers/group/assets/icons/socket/0.svg';
+			  svgs['socket_f'] = '/app/' + Homey.manifest.id + '/drivers/group/assets/icons/socket/f.svg';
+			  svgs['socket_i'] = '/app/' + Homey.manifest.id + '/drivers/group/assets/icons/socket/i.svg';
+			  svgs['socket_k'] = '/app/' + Homey.manifest.id + '/drivers/group/assets/icons/socket/k.svg';
               for (let i in data.devices) {
                 ids.push(data.devices[i].id);
 				svgs[data.devices[i].icon] = data.devices[i].icon;
@@ -93,6 +93,10 @@ class GroupDriver extends Homey.Driver {
           socket.on('startedIcons', function (data, callback) {
             callback(null, icons);
           });
+		  socket.on('selectIcon', function (data, callback) {
+			pairingDevice.icon =  data.icon;
+			callback(null, icons);
+		  });
           // Adds the Unique ID, returns to the view for it to be added.
           socket.on('almostDone', function (data, callback) {
               try {
