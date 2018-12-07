@@ -10,4 +10,4 @@ class SpeakerDriver extends Group.Driver {
 
 }
 
-module.exports = ButtonDriver;
+module.exports = SpeakerDriver;

@@ -69,8 +69,7 @@
                 {
                     "id": "capabilities",
                     "navigation": {
-                        "next": "devices",
-                        "prev": "class"
+                        "next": "devices"
                     }
                 },
                 {
@@ -167,8 +166,7 @@
                 {
                     "id": "capabilities",
                     "navigation": {
-                        "next": "devices",
-                        "prev": "class"
+                        "next": "devices"
                     }
                 },
                 {
@@ -265,8 +263,7 @@
                 {
                     "id": "capabilities",
                     "navigation": {
-                        "next": "devices",
-                        "prev": "class"
+                        "next": "devices"
                     }
                 },
                 {
@@ -363,8 +360,7 @@
                 {
                     "id": "capabilities",
                     "navigation": {
-                        "next": "devices",
-                        "prev": "class"
+                        "next": "devices"
                     }
                 },
                 {
@@ -461,8 +457,7 @@
                 {
                     "id": "capabilities",
                     "navigation": {
-                        "next": "devices",
-                        "prev": "class"
+                        "next": "devices"
                     }
                 },
                 {
@@ -559,8 +554,7 @@
                 {
                     "id": "capabilities",
                     "navigation": {
-                        "next": "devices",
-                        "prev": "class"
+                        "next": "devices"
                     }
                 },
                 {
@@ -657,8 +651,7 @@
                 {
                     "id": "capabilities",
                     "navigation": {
-                        "next": "devices",
-                        "prev": "class"
+                        "next": "devices"
                     }
                 },
                 {
@@ -741,7 +734,7 @@
         },
         {
             "id": "garagedoor",
-            "class": "garagedoor",
+            "class": "other",
             "capabilities": [],
             "name": {
                 "en": "Garage door",
@@ -755,8 +748,7 @@
                 {
                     "id": "capabilities",
                     "navigation": {
-                        "next": "devices",
-                        "prev": "class"
+                        "next": "devices"
                     }
                 },
                 {
@@ -853,8 +845,7 @@
                 {
                     "id": "capabilities",
                     "navigation": {
-                        "next": "devices",
-                        "prev": "class"
+                        "next": "devices"
                     }
                 },
                 {
@@ -951,8 +942,7 @@
                 {
                     "id": "capabilities",
                     "navigation": {
-                        "next": "devices",
-                        "prev": "class"
+                        "next": "devices"
                     }
                 },
                 {
@@ -1049,8 +1039,7 @@
                 {
                     "id": "capabilities",
                     "navigation": {
-                        "next": "devices",
-                        "prev": "class"
+                        "next": "devices"
                     }
                 },
                 {
@@ -1147,8 +1136,7 @@
                 {
                     "id": "capabilities",
                     "navigation": {
-                        "next": "devices",
-                        "prev": "class"
+                        "next": "devices"
                     }
                 },
                 {
@@ -1245,8 +1233,7 @@
                 {
                     "id": "capabilities",
                     "navigation": {
-                        "next": "devices",
-                        "prev": "class"
+                        "next": "devices"
                     }
                 },
                 {
@@ -1343,8 +1330,7 @@
                 {
                     "id": "capabilities",
                     "navigation": {
-                        "next": "devices",
-                        "prev": "class"
+                        "next": "devices"
                     }
                 },
                 {
@@ -1427,7 +1413,7 @@
         },
         {
             "id": "relay",
-            "class": "relay",
+            "class": "other",
             "capabilities": [],
             "name": {
                 "en": "Relay",
@@ -1441,8 +1427,7 @@
                 {
                     "id": "capabilities",
                     "navigation": {
-                        "next": "devices",
-                        "prev": "class"
+                        "next": "devices"
                     }
                 },
                 {
@@ -1539,8 +1524,7 @@
                 {
                     "id": "capabilities",
                     "navigation": {
-                        "next": "devices",
-                        "prev": "class"
+                        "next": "devices"
                     }
                 },
                 {
@@ -1637,8 +1621,7 @@
                 {
                     "id": "capabilities",
                     "navigation": {
-                        "next": "devices",
-                        "prev": "class"
+                        "next": "devices"
                     }
                 },
                 {
@@ -1735,8 +1718,7 @@
                 {
                     "id": "capabilities",
                     "navigation": {
-                        "next": "devices",
-                        "prev": "class"
+                        "next": "devices"
                     }
                 },
                 {
@@ -1833,8 +1815,7 @@
                 {
                     "id": "capabilities",
                     "navigation": {
-                        "next": "devices",
-                        "prev": "class"
+                        "next": "devices"
                     }
                 },
                 {
@@ -1931,8 +1912,7 @@
                 {
                     "id": "capabilities",
                     "navigation": {
-                        "next": "devices",
-                        "prev": "class"
+                        "next": "devices"
                     }
                 },
                 {
@@ -2029,8 +2009,7 @@
                 {
                     "id": "capabilities",
                     "navigation": {
-                        "next": "devices",
-                        "prev": "class"
+                        "next": "devices"
                     }
                 },
                 {
@@ -2127,8 +2106,7 @@
                 {
                     "id": "capabilities",
                     "navigation": {
-                        "next": "devices",
-                        "prev": "class"
+                        "next": "devices"
                     }
                 },
                 {
@@ -2225,8 +2203,7 @@
                 {
                     "id": "capabilities",
                     "navigation": {
-                        "next": "devices",
-                        "prev": "class"
+                        "next": "devices"
                     }
                 },
                 {
@@ -2323,8 +2300,7 @@
                 {
                     "id": "capabilities",
                     "navigation": {
-                        "next": "devices",
-                        "prev": "class"
+                        "next": "devices"
                     }
                 },
                 {

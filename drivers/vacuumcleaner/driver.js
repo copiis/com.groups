@@ -10,4 +10,4 @@ class VacuumCleanerDriver extends Group.Driver {
 
 }
 
-module.exports = ButtonDriver;
+module.exports = VacuumCleanerDriver;

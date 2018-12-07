@@ -2,24 +2,8 @@
 
 const Homey = require('homey');
 // const { HomeyAPI } = require('athom-api');
-const HomeyAPI = require('athom-api');
+const HomeyAPI = require('athom-api').HomeyAPI;
 const Librarian   = require('./lib/librarian');
-
-
-
-async function login() {
-
-  //Authenticate against the current Homey.
-  const homeyAPI = await HomeyAPI.forCurrentHomey();
-
-  //Example: Make the Homey say something to prove we're authenticated
-  await homeyAPI.speechOutput.say({text: 'Hello: '+user.fullname});
-
-  return homeyAPI;
-}
-
-login();
-
 
 
 
@@ -28,8 +12,6 @@ class Groups extends Homey.App {
 
 
   getApi() {
-
-    console.log(HomeyAPI.forCurrentHomey());
 
     if (!this.api) {
       this.api = HomeyAPI.forCurrentHomey();

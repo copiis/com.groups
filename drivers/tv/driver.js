@@ -10,4 +10,4 @@ class TvDriver extends Group.Driver {
 
 }
 
-module.exports = ButtonDriver;
+module.exports = TvDriver;

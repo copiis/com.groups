@@ -10,4 +10,4 @@ class ThermostatDriver extends Group.Driver {
 
 }
 
-module.exports = ButtonDriver;
+module.exports = ThermostatDriver;

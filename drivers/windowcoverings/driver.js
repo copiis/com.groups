@@ -10,4 +10,4 @@ class WindowCoveringsDriver extends Group.Driver {
 
 }
 
-module.exports = ButtonDriver;
+module.exports = WindowCoveringsDriver;

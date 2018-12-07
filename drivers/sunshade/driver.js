@@ -10,4 +10,4 @@ class SunshadeDriver extends Group.Driver {
 
 }
 
-module.exports = ButtonDriver;
+module.exports = SunshadeDriver;

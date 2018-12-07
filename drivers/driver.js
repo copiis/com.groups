@@ -38,13 +38,13 @@ class Driver extends Homey.Driver {
             // Proof of concept
 
             // Disabled as it shouldn't be needed anymore.
-            // pairingDevice.class = data.class;
+            pairingDevice.class = 'light';
 
-            pairingDevice.settings.labelClass = Homey.app.library.getCategory(data.class).title[Homey.app.i18n];
-            pairingDevice.name = pairingDevice.settings.labelClass = ' Group';    // @todo : i18n
+            // pairingDevice.settings.labelClass = Homey.app.library.getCategory(data.class).title[Homey.app.i18n];
+            // pairingDevice.name = pairingDevice.settings.labelClass = ' Group';    // @todo : i18n
 
-
-            let categoryCapabilities = Homey.app.library.getCategory(pairingDevice.class).capabilities;
+            // @todo hardcoded values for current category
+            let categoryCapabilities = Homey.app.library.getCategory('light').capabilities;
 
             let result = {};
             for (let i in categoryCapabilities) {
@@ -86,7 +86,8 @@ class Driver extends Homey.Driver {
 
             for (let i in data.devices) {
                 ids.push(data.devices[i].id);
-                icons[data.devices[i].icon] = data.devices[i].icon;
+
+                icons[data.devices[i].icon] = data.devices[i].iconObj.url;
             }
             pairingDevice.settings.groupedDevices = ids;
             callback(null, pairingDevice);
@@ -107,6 +108,9 @@ class Driver extends Homey.Driver {
         // Adds the Unique ID, returns to the view for it to be added.
         socket.on('almostDone', function (data, callback) {
             try {
+                console.log(pairingDevice);
+
+
                 pairingDevice.data.id = guid();
                 pairingDevice.store = {version: this.version};
                 callback(null, pairingDevice);
@@ -123,4 +127,4 @@ class Driver extends Homey.Driver {
     }
 }
 
-module.exports.Driver = Driver;
+module.exports = Driver;
