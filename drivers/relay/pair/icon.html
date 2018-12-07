@@ -1,0 +1,49 @@
+<style>
+  [v-cloak] {
+    display: none;
+  }
+</style>
+<script>
+
+  Homey.setTitle('Choose your icon');
+
+  Homey.emit('startedIcons', null, function (err, result) {
+
+	var allIcons = result;
+
+	new Vue({
+	  el      : '#all-icons',
+	  data    : {
+		isLoading : false,
+		icons: result,
+		i18n      : Homey.getLanguage(function (err, result) {
+		  return (err) ? 'en' : result;
+		}),
+	  },
+	  methods : {
+		addClass(deviceclass) {
+		  Homey.emit('selectIcon', {'icon': deviceclass}, function (err, result) {
+			if(err){console.log(err); return;}
+			Homey.nextView();
+		  });
+		}
+	  }
+	});
+  });
+
+</script>
+
+<div id="all-icons">
+  <i v-if='isLoading' class="loading fa fa-cog fa-spin"></i>
+  <template v-cloak>
+    <ul id="icons-list" style="display:flex;flex-wrap:wrap;justify-content: center;">
+      <li v-for="(value, key) in icons" v-on:click="addClass(value)" class="device" style="align-items:center;justify-content:center;height: 100%;display: flex; margin: 2.5px;">
+        <div class="content">
+          <div class="icon-wrap">
+            <div class="icon bg " v-bind:style="{WebkitMaskImage: 'url(' + value + ')'}" style="width:5em;height:5em;"></div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </template>
+</div>

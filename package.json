@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hive/com.swttt.devicegroups.git"
+    "url": "git+https://github.com/hive/com.groups.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/hive/com.swttt.devicegroups/issues"
+    "url": "https://github.com/hive/com.groups/issues"
   },
-  "homepage": "https://github.com/hive/com.swttt.devicegroups#readme",
+  "homepage": "https://github.com/hive/com.groups#readme",
   "dependencies": {
-    "athom-api": "^2.0.148"
+    "athom-api": "^2.1.138"
   }
 }

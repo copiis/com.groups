@@ -1,11 +1,31 @@
 'use strict';
 
 const Homey = require('homey');
-// const { HomeyAPI } = require('./lib/athom-api.js');
-const { HomeyAPI } = require('athom-api')
+// const { HomeyAPI } = require('athom-api');
+const HomeyAPI = require('athom-api');
 const Librarian   = require('./lib/librarian');
 
-class DeviceGroups extends Homey.App {
+
+
+async function login() {
+
+  //Authenticate against the current Homey.
+  const homeyAPI = await HomeyAPI.forCurrentHomey();
+
+  //Example: Make the Homey say something to prove we're authenticated
+  await homeyAPI.speechOutput.say({text: 'Hello: '+user.fullname});
+
+  return homeyAPI;
+}
+
+login();
+
+
+
+
+
+class Groups extends Homey.App {
+
 
   getApi() {
 
@@ -44,17 +64,17 @@ class DeviceGroups extends Homey.App {
   }
 
   async getGroups() {
-    return Homey.ManagerDrivers.getDriver('devicegroup').getDevices();
+    return Homey.ManagerDrivers.getDriver('groups').getDevices();
   }
 
   async getGroup(id) {
-    let device = await Homey.ManagerDrivers.getDriver('devicegroup').getDevice({ id });
+    let device = await Homey.ManagerDrivers.getDriver('groups').getDevice({ id });
     if (device instanceof Error) throw device;
     return device;
   }
 
   async setDevicesForGroup(id, devices) {
-    let deviceGroup = await this.getGroup(id);
+    let group = await this.getGroup(id);
 
     // Find all devices that should be grouped.
     let allDevices     = await this.getDevices();
@@ -68,24 +88,24 @@ class DeviceGroups extends Homey.App {
       ids.push(groupedDevices[i].id);
     }
 
-    deviceGroup.settings.groupedDevices = ids;
+    group.settings.groupedDevices = ids;
 
     // Update the group settings.
-    let result = await deviceGroup.setSettings(deviceGroup.settings);
-    await deviceGroup.refresh();
+    let result = await group.setSettings(group.settings);
+    await group.refresh();
 
     return result;
   }
 
   async setMethodForCapabilityOfGroup(id, capabilities) {
 
-    let deviceGroup = await this.getGroup(id);
+    let group = await this.getGroup(id);
 
-    deviceGroup.settings.capabilities = capabilities;
+    group.settings.capabilities = capabilities;
 
     // Update the group settings.
-    let result = await deviceGroup.setSettings( deviceGroup.settings );
-    await deviceGroup.refresh();
+    let result = await group.setSettings( group.settings );
+    await group.refresh();
     return result;
   }
 
@@ -107,4 +127,7 @@ class DeviceGroups extends Homey.App {
   }
 }
 
-module.exports = DeviceGroups;
+module.exports = Groups;
+
+
+
