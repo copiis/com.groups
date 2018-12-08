@@ -199,7 +199,9 @@ class Device extends Homey.Device {
         // Store our events, so we can remove them if needed.
         this.events[this.settings.groupedDevices[x]] = async (state) => { this.onStateChange(state, this.settings.groupedDevices[x]); }
 
-
+        // @todo IMPORTANT : This is the capability state change, which is near instant
+        // When a capability changes here is where we can NOW create the event for it
+        // requires all old code gets removed.
         device.makeCapabilityInstance('onoff', (self) => {
           console.log('what is this ???');
           console.log(self);
