@@ -35,7 +35,7 @@ class Device extends Homey.Device {
     await this.load();
 
     try {
-      // await this.checkForUpdates();                    // @todo Removed pending beta feature/structure lock down.
+      await this.checkForUpdates();
       await this.initListener();
       await this.initEvents();
       await this.initValues();
@@ -106,7 +106,16 @@ class Device extends Homey.Device {
 
         // Set the initial value.
         // @todo : gathers all of the states from the devices so we can calculate the results and update the group on init.
-        this.states[this.settings.groupedDevices[x]] = await device.state;
+        // this.states[this.settings.groupedDevices[x]] = await device.capabilitiesObj;
+
+        this.states[this.settings.groupedDevices[x]] = {};
+
+        let capabilities = await device.capabilitiesObj;
+
+        for (let c in capabilities) {
+          this.states[this.settings.groupedDevices[x]][c] = capabilities[c].value
+        }
+
       }
     }
 
@@ -190,8 +199,15 @@ class Device extends Homey.Device {
         // Store our events, so we can remove them if needed.
         this.events[this.settings.groupedDevices[x]] = async (state) => { this.onStateChange(state, this.settings.groupedDevices[x]); }
 
+
+        device.makeCapabilityInstance('onoff', (self) => {
+          console.log('what is this ???');
+          console.log(self);
+        });
+
         // Set our event listener
         // @todo :: when the device is updated - call the event defined above.
+        device.on('device.update' , this.events[this.settings.groupedDevices[x]]);
         device.on('$update' , this.events[this.settings.groupedDevices[x]]);
       }
     }
@@ -206,13 +222,14 @@ class Device extends Homey.Device {
    */
   async onStateChange(state, device) {
 
+    this.log(state);
     // Set which capabilities to update to empty.
     let updateCapabilities = [];
 
     // Loop through all of the group capabilities and add any items to updateCapabilities which have changed
     // This is how we ignore the state changes made to items not in this group.
     for (let i in this.capabilities) {
-
+      this.log(this.states[device] + ' ::::: ' + state[this.capabilities[i]]);
       // If one of the capabilities with in DG we care about has changed.
       if (this.states[device][this.capabilities[i]] != state[this.capabilities[i]])  {
 
@@ -220,8 +237,10 @@ class Device extends Homey.Device {
       }
     }
 
+
     // Update values to the latest ones we have, prior to using the value to set capability values
     this.states[device] = state;
+
 
     // If we have changed - go forth and update.
     if (updateCapabilities.length) {
@@ -295,6 +314,7 @@ class Device extends Homey.Device {
       // if the method is false - its disabled if it's set to ignore, don't update use the card behaviour.
       if (a.method !== false && a.method !== 'ignore') {
 
+
         // Calculate our value using our function
         a.value = Helper[Homey.app.library.getMethod(a.method).function](a.value);
 
@@ -306,7 +326,8 @@ class Device extends Homey.Device {
 
         try {
           // Set the capability of the group
-          this.log(this.getName() + ': Setting : ' + a.key + ' ' + a.value + ' : ' + values[a.key]); // DEBUG
+          this.log('************************************');
+          this.log(this.getName() + ': Setting : ' + a.key + ' (' + a.method + ') ' + a.value + ' : ' + values[a.key]); // DEBUG
           await this.setCapabilityValue(a.key, a.value);
         } catch (error) {
           this.log('Error on setting capability value : ' + a.key + ' ' + a.value + ' Error:' +  error.message); // DEBUG
@@ -377,12 +398,10 @@ class Device extends Homey.Device {
     return false;
     try {
 
-      // If we do not have a version property at all
-      // This device was added prior to 1.2.0 when the version was instated.
-      // Upgrade the item with all 1.2.0 features disabled.
       if (!this.store.hasOwnProperty('version')) {
 
       }
+
     } catch (error) {
       throw new error;
     }

@@ -87,7 +87,10 @@ class Driver extends Homey.Driver {
             for (let i in data.devices) {
                 ids.push(data.devices[i].id);
 
-                icons[data.devices[i].icon] = data.devices[i].iconObj.url;
+                // Gigo check
+                if (data.devices[i].iconObj.hasOwnProperty('url')) {
+                    icons[data.devices[i].icon] = data.devices[i].iconObj.url;
+                }
             }
             pairingDevice.settings.groupedDevices = ids;
             callback(null, pairingDevice);
@@ -100,7 +103,12 @@ class Driver extends Homey.Driver {
 
 
         socket.on('selectIcon', function (data, callback) {
+
+            console.log('------');
+            console.log(data);
+            console.log('>>>><<<<');
             pairingDevice.icon = data.icon;
+            pairingDevice.icon = 'icon.svg';
             callback(null, icons);
         });
 
