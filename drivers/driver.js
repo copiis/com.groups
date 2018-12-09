@@ -12,39 +12,61 @@ function guid() {
 
 class Driver extends Homey.Driver {
 
+    onInit() {
+        this.appRoot = '../../../';
+        this.events = {};
+    }
+
+    // onStartedCapabilities(data,callback) {
+    //     pairingDevice.settings.labelClass = Homey.app.library.getCategory(pairingDevice.class).title[Homey.app.i18n];
+    //     pairingDevice.name = pairingDevice.settings.labelClass =  pairingDevice.settings.labelClass + ' Group';    // @todo : i18n
+    //
+    //     // @todo hardcoded values for current category
+    //     let categoryCapabilities = Homey.app.library.getCategory(pairingDevice.class).capabilities;
+    //
+    //     let result = {};
+    //     for (let i in categoryCapabilities) {
+    //         result[categoryCapabilities[i]] = Homey.app.library.getCapability(categoryCapabilities[i]);
+    //     }
+    //
+    //     callback(null, result)
+    // }
+
 
     onPair(socket) {
+
+        // TODO UPDATE TO THIS
+        // let test  = async  (data, callback) => { this.onStartedCapabilities(data, callback); }
+        // socket.on('startedCapabilities', test);
+
 
         /*
          * Add for future backwards compatibility checks : will require npm semver
          * Currently being stored with in the devices store object @ onAlmostDone
          */
         const version = '1.0.0';
+        const appRoot = '../../../';
 
         let pairingDevice = {
             name: 'Group',
-            class: false,
+            class: this.class,
             settings:  {capabilities: {}},
             data: {}
         };
 
-        // This default value should be immediately overwritten.
-        let icons = {
-            default : '/app/' + Homey.manifest.id + '/assets/icon.svg'
-        };
+        let icons = this.icons;
+
+        // This default icons.
+        icons['/app/' + Homey.manifest.id + '/assets/icon.svg'] = appRoot +'/assets/icon.svg';
+        icons['/app/' + Homey.manifest.id + '/drivers/' + this.class + '/assets/icon.svg'] =  'icon.svg';
 
         socket.on('startedCapabilities', function (data, callback) {
 
-            // Proof of concept
-
-            // Disabled as it shouldn't be needed anymore.
-            pairingDevice.class = 'light';
-
-            // pairingDevice.settings.labelClass = Homey.app.library.getCategory(data.class).title[Homey.app.i18n];
-            // pairingDevice.name = pairingDevice.settings.labelClass = ' Group';    // @todo : i18n
+            pairingDevice.settings.labelClass = Homey.app.library.getCategory(pairingDevice.class).title[Homey.app.i18n];
+            pairingDevice.name = pairingDevice.settings.labelClass =  pairingDevice.settings.labelClass + ' Group';    // @todo : i18n
 
             // @todo hardcoded values for current category
-            let categoryCapabilities = Homey.app.library.getCategory('light').capabilities;
+            let categoryCapabilities = Homey.app.library.getCategory(pairingDevice.class).capabilities;
 
             let result = {};
             for (let i in categoryCapabilities) {
@@ -86,12 +108,14 @@ class Driver extends Homey.Driver {
 
             for (let i in data.devices) {
                 ids.push(data.devices[i].id);
-
                 // Gigo check
-                if (data.devices[i].iconObj.hasOwnProperty('url')) {
-                    icons[data.devices[i].icon] = data.devices[i].iconObj.url;
+                if (data.devices[i].hasOwnProperty('iconObj') && data.devices[i].iconObj.hasOwnProperty('url')) {
+
+                    // @todo :: Hardcoded overwrite -  I can't figure out the relative path to the docroot /icons folder.
+                    icons[data.devices[i].iconObj.url] = appRoot +'/assets/icon.svg';//data.devices[i].iconObj.url;
                 }
             }
+
             pairingDevice.settings.groupedDevices = ids;
             callback(null, pairingDevice);
         });
@@ -104,11 +128,10 @@ class Driver extends Homey.Driver {
 
         socket.on('selectIcon', function (data, callback) {
 
-            console.log('------');
-            console.log(data);
-            console.log('>>>><<<<');
+            // These work
+            // pairingDevice.icon = 'par.svg'; '../led.svg'; '../../../assets/icons/light/gu.svg'; '../../../temp.svg'; // root dir
             pairingDevice.icon = data.icon;
-            pairingDevice.icon = 'icon.svg';
+
             callback(null, icons);
         });
 
@@ -116,9 +139,6 @@ class Driver extends Homey.Driver {
         // Adds the Unique ID, returns to the view for it to be added.
         socket.on('almostDone', function (data, callback) {
             try {
-                console.log(pairingDevice);
-
-
                 pairingDevice.data.id = guid();
                 pairingDevice.store = {version: this.version};
                 callback(null, pairingDevice);
@@ -129,8 +149,10 @@ class Driver extends Homey.Driver {
 
 
         socket.on('done', function (data, callback) {
+
             pairingDevice = null;
             callback(null, true);
+
         });
     }
 }

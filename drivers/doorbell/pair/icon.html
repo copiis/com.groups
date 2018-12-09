@@ -40,7 +40,7 @@
       <li v-for="(value, key) in icons" v-on:click="addClass(value)" class="device" style="align-items:center;justify-content:center;height: 100%;display: flex; margin: 2.5px;">
         <div class="content">
           <div class="icon-wrap">
-            <div class="icon bg " v-bind:style="{WebkitMaskImage: 'url(' + value + ')'}" style="width:5em;height:5em;"></div>
+            <div class="icon bg " v-bind:style="{WebkitMaskImage: 'url(' + key + ')'}" style="width:5em;height:5em;"></div>
           </div>
         </div>
       </li>

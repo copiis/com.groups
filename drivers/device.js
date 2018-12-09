@@ -42,6 +42,7 @@ class Device extends Homey.Device {
     } catch (error) {
       this.error(error);
     }
+
     this.log('Completed Initialising ' + this.getName());
   }
 
@@ -202,10 +203,10 @@ class Device extends Homey.Device {
         // @todo IMPORTANT : This is the capability state change, which is near instant
         // When a capability changes here is where we can NOW create the event for it
         // requires all old code gets removed.
-        device.makeCapabilityInstance('onoff', (self) => {
-          console.log('what is this ???');
-          console.log(self);
-        });
+        // device.makeCapabilityInstance('onoff', (self) => {
+        //   console.log('what is this ???');
+        //   console.log(self);
+        // });
 
         // Set our event listener
         // @todo :: when the device is updated - call the event defined above.
@@ -328,8 +329,6 @@ class Device extends Homey.Device {
 
         try {
           // Set the capability of the group
-          this.log('************************************');
-          this.log(this.getName() + ': Setting : ' + a.key + ' (' + a.method + ') ' + a.value + ' : ' + values[a.key]); // DEBUG
           await this.setCapabilityValue(a.key, a.value);
         } catch (error) {
           this.log('Error on setting capability value : ' + a.key + ' ' + a.value + ' Error:' +  error.message); // DEBUG

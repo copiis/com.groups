@@ -46,11 +46,11 @@ class Groups extends Homey.App {
   }
 
   async getGroups() {
-    return Homey.ManagerDrivers.getDriver('groups').getDevices();
+    return Homey.ManagerDrivers.getDriver('light').getDevices();
   }
 
   async getGroup(id) {
-    let device = await Homey.ManagerDrivers.getDriver('groups').getDevice({ id });
+    let device = await Homey.ManagerDrivers.getDriver('light').getDevice({ id });
     if (device instanceof Error) throw device;
     return device;
   }
@@ -102,6 +102,10 @@ class Groups extends Homey.App {
 
     // Prime the API into memory
     this.getApi();
+
+    this.getGroups().then((result) => {
+      this.log(result);
+    });
 
     // Initialise the devices objects.
     // Stores all API devices used, as there seems to be a leak when calling the API for the device.
