@@ -7,6 +7,7 @@
     "en": "Use this device class for buttons, and other items which do not have a state.",
     "nl":  "N/A"
   },
+  "icons" : [],
   "capabilities" : [
     "button"
   ]

@@ -12,7 +12,7 @@
       return;
     }
     var allDevices = result.devices;
-    var pairingDevice = result.pairingDevice;
+    var group = result.group;
 
     console.log(allDevices);
     new Vue({
@@ -21,11 +21,11 @@
         isLoading: false,
         selectedDevices: [],
         devices: {},
-        pairingDevice: {}
+        group: {}
       },
       mounted() {
         this.devices = allDevices;
-        this.pairingDevice = pairingDevice;
+        this.group = group;
       },
       methods: {},
       watch: {
@@ -43,7 +43,7 @@
       computed: {
         filteredDevices() {
 
-          var capabilities = this.pairingDevice.capabilities;
+          var capabilities = this.group.capabilities;
 
           var devices = this.devices;
 

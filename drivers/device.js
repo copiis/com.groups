@@ -5,10 +5,13 @@ const Helper = require('../../lib/helper');
 
 
 /**
+ *
+ * For sake of consistency - this device is called the 'group' where as the devices with in this group
+ * are referred to as the 'devices'
+ *
  * i: capability key, x: groupedDevice key
  *
  * @todo bug on first capability until reload
- * @todo bug where devices not showing in 'getDevices' until restart?
  *
  */
 class Device extends Homey.Device {
@@ -20,7 +23,8 @@ class Device extends Homey.Device {
    * @returns {Promise<void>}
    */
   async load() {
-    this.states = {};                                     // State of all groupDevices capabilities
+    this.states = {};                                     // State of all group capabilities
+    this.instances = {};
     this.settings = await this.getSettings();
     this.capabilities = await this.getCapabilities();
   }
@@ -36,9 +40,10 @@ class Device extends Homey.Device {
 
     try {
       await this.checkForUpdates();
-      await this.initListener();
+      await this.initGroupListener();
       await this.initEvents();
       await this.initValues();
+
     } catch (error) {
       this.error(error);
     }
@@ -54,7 +59,7 @@ class Device extends Homey.Device {
    * @returns {Promise<void>}
    */
   async onAdded() {
-    this.log('Adding Device Group ' + this.getName());
+    this.log('Adding Group ' + this.getName());
     await this.load();
     await this.updateDevicesLabels();
     await this.updateCapabilityLabels();
@@ -74,7 +79,7 @@ class Device extends Homey.Device {
    * @returns {Promise<boolean>}
    */
   async refresh() {
-    this.log('Refreshing Device Group ' + this.getName());
+    this.log('Refreshing Group ' + this.getName());
 
     await this.load();
     try {
@@ -99,78 +104,69 @@ class Device extends Homey.Device {
   async initValues() {
 
     // Loop through each of the devices in the group
-    for (let x in this.settings.groupedDevices) {
-      if (this.settings.groupedDevices.hasOwnProperty(x)) {
+    for (let x in this.settings.devices) {
+      if (this.settings.devices.hasOwnProperty(x)) {
 
         // requires the API, stored in memory - see getDevice() for details.
-        let device = await this.getDevice(this.settings.groupedDevices[x]);
+        let device = await this.getDevice(this.settings.devices[x]);
 
         // Set the initial value.
-        // @todo : gathers all of the states from the devices so we can calculate the results and update the group on init.
-        // this.states[this.settings.groupedDevices[x]] = await device.capabilitiesObj;
-
-        this.states[this.settings.groupedDevices[x]] = {};
+        this.states[this.settings.devices[x]] = {};
 
         let capabilities = await device.capabilitiesObj;
 
         for (let c in capabilities) {
-          this.states[this.settings.groupedDevices[x]][c] = capabilities[c].value
+          this.states[this.settings.devices[x]][c] = capabilities[c].value
         }
-
       }
     }
 
-    let values = await this.getDevicesCapabilityValues();
-    await this.setCardCapabilityValues(values);
+    // Loop through each of the capabilities gathering the values and assigning them back to the group.
+    for (let i in this.capabilities) {
+      let values = await this.getDevicesCapabilityValues(this.capabilities[i]);
+      await this.setGroupCapabilityValue(this.capabilities[i], values);
+    }
   }
 
 
   /**
    * Initialises the capability listener.
    *
-   * Basically : Registers every capability this device (MultipleCapabilityListener) has, so
-   * when any of the devices capabilities are changed, the function is called  which sets the
-   * value of all of the 'grouped/real' devices to said value.
+   * Basically : Registers every capability the group (MultipleCapabilityListener) has, so
+   * when any of the group capabilities are changed, the function is called  which sets the
+   * value of all of the devices to said value.
    *
    * As this is only listening for capabilities (which cant be changed in the settings), we never have to reload this.
    *
    * @returns {Promise<void>}
    */
-  async initListener() {
-    this.log('Initialising Listener Device Group ' + this.getName());
+  async initGroupListener() {
+    this.log('Initialising Listener Group ' + this.getName());
 
-    // Register all of the capabilities at once with a (async) call back.
-    return this.registerMultipleCapabilityListener(this.capabilities, async (valueObj, optsObj) => {
-      return this.updateCapability(valueObj, optsObj);
-    }, 500);
+    /**
+     * Register all of the capabilities at once with a (async) call back.
+     *
+     * values : An object with the changed capability values, e.g. { dim: 0.5 }
+     * options : An object with optional properties, per capability, e.g. { dim: { duration: 300 } }
+     *
+     * Increase the time out - as large groups will require more time. Especially via 3rd Party server (alexa/google)
+     */
+    return this.registerMultipleCapabilityListener(this.capabilities, async (values, options) => {
+      return this.updateDevicesCapabilities(values, options);
+    }, 1000);
   }
 
+  async updateDevicesCapabilities(values) {
+    this.log('Update Device Capability ' + this.getName());
 
-  /**
-   * Update the value of all the grouped items
-   *
-   * Note that it's using the API to set the values.
-   *
-   * @param valueObj
-   * @param optsObj
-   * @returns {Promise<*>}
-   */
-  async updateCapability(valueObj, optsObj) {
-    this.log('Update Capability Device Group ' + this.getName());
+    // Loop through each devices in the group
+    for (let x in this.settings.devices) {
 
-    // Loop through each 'real' device in the group
-    for (let x in this.settings.groupedDevices) {
-
-      // Get the WebAPI reference 'real' device ::
-      let device = await this.getDevice(this.settings.groupedDevices[x]);
-
-      // Using the API for the 'real' device, set the capability value, to what ever we just changed.
-      for (let capabilityId in valueObj) {
-        // @todo updates the capability value of the device when a group value is changed
-        await device.setCapabilityValue(capabilityId, valueObj[capabilityId]).catch((error) => {
-          this.log('Error setting capability ' + capabilityId + ' on ' + this.getName() + '(' + error.message + ')');
-        });
+      for (let capability in values) {
+        this.instances[this.settings.devices[x]][capability].setValue(values[capability]);
+        this.log('Setting capability ' + capability + ' on ' + this.getName() + '(' + values[capability] + ')');
       }
+
     }
     return true;
   }
@@ -178,7 +174,7 @@ class Device extends Homey.Device {
 
 
   /**
-   * Will initialise the states by adding an event when ever a groupedDevice state (capability) is changed.
+   * Will initialise the instances by adding an event when ever a capability is changed.
    * This event will gather the values of the Devices capabilities and then update the group card/mobile values.
    *
    * @returns {Promise<void>}
@@ -188,68 +184,44 @@ class Device extends Homey.Device {
 
     // Store our events, so we can remove them if needed.
     this.events = [];
-
     // Loop through each of the devices in the group
-    for (let x in this.settings.groupedDevices) {
+    for (let x in this.settings.devices) {
 
-      if (this.settings.groupedDevices.hasOwnProperty(x)) {
+      if (this.settings.devices.hasOwnProperty(x)) {
 
         // requires the API, stored in memory - see getDevice() for details.
-        let device = await this.getDevice(this.settings.groupedDevices[x]);
+        let device = await this.getDevice(this.settings.devices[x]);
 
-        // Store our events, so we can remove them if needed.
-        this.events[this.settings.groupedDevices[x]] = async (state) => { this.onStateChange(state, this.settings.groupedDevices[x]); }
+        this.instances[this.settings.devices[x]] = {};
 
-        // @todo IMPORTANT : This is the capability state change, which is near instant
-        // When a capability changes here is where we can NOW create the event for it
-        // requires all old code gets removed.
-        // device.makeCapabilityInstance('onoff', (self) => {
-        //   console.log('what is this ???');
-        //   console.log(self);
-        // });
+        for (let i in this.capabilities) {
+          let listener = async (value) => {
+            this.onStateChange(this.capabilities[i], value, this.settings.devices[x]);
+          };
 
-        // Set our event listener
-        // @todo :: when the device is updated - call the event defined above.
-        device.on('device.update' , this.events[this.settings.groupedDevices[x]]);
-        device.on('$update' , this.events[this.settings.groupedDevices[x]]);
+          // Link our event to a state change of the capability.
+          // @todo investigate doing this through the app - to reduce event watchers.
+
+          this.instances[this.settings.devices[x]][this.capabilities[i]] = device.makeCapabilityInstance(this.capabilities[i], listener);
+          console.log('Adding: ' + x  + ' (' + this.capabilities[i] + ')');
+        }
       }
     }
   }
 
 
   /**
-   * Called when ever the state (capability values) of a groupedDevice is changed.
+   * Called when ever the state (capability values) of a device is changed.
    *
    * @param state
    * @returns {Promise<void>}
    */
-  async onStateChange(state, device) {
+  async onStateChange(capability, value, device) {
 
-    this.log(state);
-    // Set which capabilities to update to empty.
-    let updateCapabilities = [];
+    this.log('State Change ' + this.getName() + ' ' + capability + ' ' + value);
 
-    // Loop through all of the group capabilities and add any items to updateCapabilities which have changed
-    // This is how we ignore the state changes made to items not in this group.
-    for (let i in this.capabilities) {
-      this.log(this.states[device] + ' ::::: ' + state[this.capabilities[i]]);
-      // If one of the capabilities with in DG we care about has changed.
-      if (this.states[device][this.capabilities[i]] != state[this.capabilities[i]])  {
-
-        updateCapabilities.push(this.capabilities[i]);
-      }
-    }
-
-
-    // Update values to the latest ones we have, prior to using the value to set capability values
-    this.states[device] = state;
-
-
-    // If we have changed - go forth and update.
-    if (updateCapabilities.length) {
-      let values = await this.getDevicesCapabilityValues(updateCapabilities);
-      await this.setCardCapabilityValues(values,updateCapabilities);
-    }
+    let values = await this.getDevicesCapabilityValues(capability);
+    await this.setGroupCapabilityValue(capability, values);
   }
 
 
@@ -258,29 +230,19 @@ class Device extends Homey.Device {
    *
    * @returns {Promise<void>}
    */
-  async getDevicesCapabilityValues(capabilities) {
+  async getDevicesCapabilityValues(capability) {
 
     let values = [];
 
-    // If no capability is sent set all capabilities.
-    capabilities = (capabilities) ? capabilities : this.capabilities;
-
-    // Initialise the values
-    for (let i in capabilities) {
-      values[capabilities[i]] = [];
-    }
-
     // Loop through each of the devices in the group
-    for (let x in this.settings.groupedDevices) {
+    for (let x in this.settings.devices) {
 
       // There is a bug where this is called while group devices is empty ..
       // Seems to be prevalent when updating the settings using the API, possibly race condition
-      if (this.settings.groupedDevices.hasOwnProperty(x)) {
+      if (this.settings.devices.hasOwnProperty(x)) {
 
         // Loop through each of the capabilities checking each of the devices value.
-        for (let i in capabilities) {
-          values[capabilities[i]].push(this.states[this.settings.groupedDevices[x]][capabilities[i]]);
-        }
+        values.push(this.instances[this.settings.devices[x]][capability].value);
       }
     }
 
@@ -298,43 +260,40 @@ class Device extends Homey.Device {
    * @param capabilities
    * @returns {Promise<boolean>}
    */
-  async setCardCapabilityValues(values, capabilities = false) {
-
-    // If no capability is sent set all capabilities.
-    capabilities = (capabilities) ? capabilities : this.capabilities;
+  async setGroupCapabilityValue(capability, values) {
 
     // DEBUG force block scope variable, sanity check for memory debugging. @todo to be removed.
-    let a = {key: null, value: null, method : null, type: null}
+    let a = {key: null, value: null, method: null, type: null}
+
 
     // loop through each of the capabilities calculating the values.
-    for (let i in capabilities) {
-      // Aliases
-      a.key = capabilities[i];                                // Alias the capability key
-      a.value = values[a.key];                                // Alias the value
-      a.method = this.settings.capabilities[a.key].method;    // Alias the method we are going to use
-      a.capability = Homey.app.library.getCapability(a.key);   // Alias the capability
+    // Aliases
+    a.key = capability;                                     // Alias the capability key
+    a.value = values;                                // Alias the value
+    a.method = this.settings.capabilities[a.key].method;    // Alias the method we are going to use
+    a.capability = Homey.app.library.getCapability(a.key);   // Alias the capability
 
-      // if the method is false - its disabled if it's set to ignore, don't update use the card behaviour.
-      if (a.method !== false && a.method !== 'ignore') {
+    // if the method is false - its disabled if it's set to ignore, don't update use the card behaviour.
+    if (a.method !== false && a.method !== 'ignore') {
 
 
-        // Calculate our value using our function
-        a.value = Helper[Homey.app.library.getMethod(a.method).function](a.value);
+      // Calculate our value using our function
+      a.value = Helper[Homey.app.library.getMethod(a.method).function](a.value);
 
-        // Convert the value in the to capabilities required type
-        a.value = Helper[a.capability.type](a.value);
+      // Convert the value in the to capabilities required type
+      a.value = Helper[a.capability.type](a.value);
 
-        // Validate the value against capability rules (min/max/decimals)
-        // a.value = Helper.validate(a.value, a.capability);
+      // Validate the value against capability rules (min/max/decimals)
+      // a.value = Helper.validate(a.value, a.capability);
 
-        try {
-          // Set the capability of the group
-          await this.setCapabilityValue(a.key, a.value);
-        } catch (error) {
-          this.log('Error on setting capability value : ' + a.key + ' ' + a.value + ' Error:' +  error.message); // DEBUG
+      try {
+        // Set the capability of the group
+        await this.setCapabilityValue(a.key, a.value);
+        this.log('Setting group capability value : ' + a.key + ' to ' + a.value + ' :: [' + values.join(', ') + '](' + a.method + ')'); // DEBUG
+      } catch (error) {
+        this.log('Error on setting capability value : ' + a.key + ' ' + a.value + ' Error:' + error.message); // DEBUG
 
-          throw new error;
-        }
+        throw new error;
       }
     }
 
@@ -348,26 +307,25 @@ class Device extends Homey.Device {
    * @returns {Promise<void>}
    */
   async updateDevicesLabels() {
-    this.log('Update Device Labels Device Group ' + this.getName());
+    this.log('Update Devices Label ' + this.getName());
     let labels = [];
 
-    for (let x in this.settings.groupedDevices) {
-      let device = await this.getDevice(this.settings.groupedDevices[x]);
-      // @todo this should actually work :: test
+    for (let x in this.settings.devices) {
+      let device = await this.getDevice(this.settings.devices[x]);
       labels.push(device.name);
     }
 
-    await this.setSettings({labelDevices : labels.join(', ')});
+    await this.setSettings({labelDevices: labels.join(', ')});
     return true;
   }
 
   /**
-   * Will update the capabilities label setting
+   * Will update the capabilities label setting to the current capabilties.
    *
    * @returns {Promise<boolean>}
    */
   async updateCapabilityLabels() {
-    this.log('Update Capability Labels Device Group ' + this.getName());
+    this.log('Update Capability Label ' + this.getName());
 
     let a = {capability: null, method: null};   // Alias
     let labels = [];
@@ -381,11 +339,11 @@ class Device extends Homey.Device {
 
       // If we have a method assigned, attach it to our description.
       if (a.method) {
-        labels[labels.length -1] += ' (' + Homey.app.library.getMethod(a.method).title[Homey.app.i18n] + ')';
+        labels[labels.length - 1] += ' (' + Homey.app.library.getMethod(a.method).title[Homey.app.i18n] + ')';
       }
     }
-    this.log('Setting Capability Labels for ' + this.getName() + ' to ' + labels.join(', '));
-    this.setSettings({labelCapabilities : labels.join(', ')});
+    this.log('Setting Capability Labels for ' + this.getName() + ' to "' + labels.join(', ') + '"');
+    this.setSettings({labelCapabilities: labels.join(', ')});
     return true;
   }
 
@@ -435,17 +393,14 @@ class Device extends Homey.Device {
    */
   async destroyEvents() {
     this.log('Destroying Poll Device Group ' + this.getName());
-
     // Ensure events have been set prior to attempting to delete
-    if (this.hasOwnProperty('events')) {
-
-      // Loop ALL grouped devices
-      for (let x in this.settings.groupedDevices) {
-        if (this.events.hasOwnProperty(this.settings.groupedDevices[x])) {
-          let device = await this.getDevice(this.settings.groupedDevices[x]);
-          // @todo this should also work, so long as the event is named correctly.
-          await device.removeListener('$update', this.events[this.settings.groupedDevices[x]]);
-          this.events[this.settings.groupedDevices[x]] = null; // @todo GC should handle this
+    if (this.hasOwnProperty('instances')) {
+      // Loop ALL devices
+      for (let x in this.settings.devices) {
+        if (this.instances.hasOwnProperty(this.settings.devices[x])) {
+          for (let i in this.capabilities) {
+            this.instances[this.settings.devices[x]][this.capabilities[i]].destroy();
+          }
         }
       }
     }

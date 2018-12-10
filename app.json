@@ -75,12 +75,12 @@
                 {
                     "id": "devices",
                     "navigation": {
-                        "next": "icon",
+                        "next": "icons",
                         "prev": "capabilities"
                     }
                 },
                 {
-                    "id": "icon",
+                    "id": "icons",
                     "navigation": {
                         "next": "done",
                         "prev": "devices"
@@ -89,7 +89,7 @@
                 {
                     "id": "done",
                     "navigation": {
-                        "prev": "capabilities"
+                        "prev": "icons"
                     }
                 }
             ],
@@ -172,12 +172,12 @@
                 {
                     "id": "devices",
                     "navigation": {
-                        "next": "icon",
+                        "next": "icons",
                         "prev": "capabilities"
                     }
                 },
                 {
-                    "id": "icon",
+                    "id": "icons",
                     "navigation": {
                         "next": "done",
                         "prev": "devices"
@@ -186,7 +186,7 @@
                 {
                     "id": "done",
                     "navigation": {
-                        "prev": "capabilities"
+                        "prev": "icons"
                     }
                 }
             ],
@@ -269,12 +269,12 @@
                 {
                     "id": "devices",
                     "navigation": {
-                        "next": "icon",
+                        "next": "icons",
                         "prev": "capabilities"
                     }
                 },
                 {
-                    "id": "icon",
+                    "id": "icons",
                     "navigation": {
                         "next": "done",
                         "prev": "devices"
@@ -283,7 +283,7 @@
                 {
                     "id": "done",
                     "navigation": {
-                        "prev": "capabilities"
+                        "prev": "icons"
                     }
                 }
             ],
@@ -366,12 +366,12 @@
                 {
                     "id": "devices",
                     "navigation": {
-                        "next": "icon",
+                        "next": "icons",
                         "prev": "capabilities"
                     }
                 },
                 {
-                    "id": "icon",
+                    "id": "icons",
                     "navigation": {
                         "next": "done",
                         "prev": "devices"
@@ -380,7 +380,7 @@
                 {
                     "id": "done",
                     "navigation": {
-                        "prev": "capabilities"
+                        "prev": "icons"
                     }
                 }
             ],
@@ -463,12 +463,12 @@
                 {
                     "id": "devices",
                     "navigation": {
-                        "next": "icon",
+                        "next": "icons",
                         "prev": "capabilities"
                     }
                 },
                 {
-                    "id": "icon",
+                    "id": "icons",
                     "navigation": {
                         "next": "done",
                         "prev": "devices"
@@ -477,7 +477,7 @@
                 {
                     "id": "done",
                     "navigation": {
-                        "prev": "capabilities"
+                        "prev": "icons"
                     }
                 }
             ],
@@ -560,12 +560,12 @@
                 {
                     "id": "devices",
                     "navigation": {
-                        "next": "icon",
+                        "next": "icons",
                         "prev": "capabilities"
                     }
                 },
                 {
-                    "id": "icon",
+                    "id": "icons",
                     "navigation": {
                         "next": "done",
                         "prev": "devices"
@@ -574,7 +574,7 @@
                 {
                     "id": "done",
                     "navigation": {
-                        "prev": "capabilities"
+                        "prev": "icons"
                     }
                 }
             ],
@@ -657,12 +657,12 @@
                 {
                     "id": "devices",
                     "navigation": {
-                        "next": "icon",
+                        "next": "icons",
                         "prev": "capabilities"
                     }
                 },
                 {
-                    "id": "icon",
+                    "id": "icons",
                     "navigation": {
                         "next": "done",
                         "prev": "devices"
@@ -671,7 +671,7 @@
                 {
                     "id": "done",
                     "navigation": {
-                        "prev": "capabilities"
+                        "prev": "icons"
                     }
                 }
             ],
@@ -692,7 +692,7 @@
                         },
                         {
                             "id": "labelCapabilities",
-                            "type": "label",
+                            "type": "text",
                             "label": {
                                 "en": "Capabilities"
                             },
@@ -700,7 +700,7 @@
                         },
                         {
                             "id": "labelDevices",
-                            "type": "label",
+                            "type": "text",
                             "label": {
                                 "en": "Devices"
                             },
@@ -754,12 +754,12 @@
                 {
                     "id": "devices",
                     "navigation": {
-                        "next": "icon",
+                        "next": "icons",
                         "prev": "capabilities"
                     }
                 },
                 {
-                    "id": "icon",
+                    "id": "icons",
                     "navigation": {
                         "next": "done",
                         "prev": "devices"
@@ -768,7 +768,7 @@
                 {
                     "id": "done",
                     "navigation": {
-                        "prev": "capabilities"
+                        "prev": "icons"
                     }
                 }
             ],
@@ -851,12 +851,12 @@
                 {
                     "id": "devices",
                     "navigation": {
-                        "next": "icon",
+                        "next": "icons",
                         "prev": "capabilities"
                     }
                 },
                 {
-                    "id": "icon",
+                    "id": "icons",
                     "navigation": {
                         "next": "done",
                         "prev": "devices"
@@ -865,7 +865,7 @@
                 {
                     "id": "done",
                     "navigation": {
-                        "prev": "capabilities"
+                        "prev": "icons"
                     }
                 }
             ],
@@ -948,12 +948,12 @@
                 {
                     "id": "devices",
                     "navigation": {
-                        "next": "icon",
+                        "next": "icons",
                         "prev": "capabilities"
                     }
                 },
                 {
-                    "id": "icon",
+                    "id": "icons",
                     "navigation": {
                         "next": "done",
                         "prev": "devices"
@@ -962,7 +962,7 @@
                 {
                     "id": "done",
                     "navigation": {
-                        "prev": "capabilities"
+                        "prev": "icons"
                     }
                 }
             ],
@@ -1045,12 +1045,12 @@
                 {
                     "id": "devices",
                     "navigation": {
-                        "next": "icon",
+                        "next": "icons",
                         "prev": "capabilities"
                     }
                 },
                 {
-                    "id": "icon",
+                    "id": "icons",
                     "navigation": {
                         "next": "done",
                         "prev": "devices"
@@ -1059,7 +1059,7 @@
                 {
                     "id": "done",
                     "navigation": {
-                        "prev": "capabilities"
+                        "prev": "icons"
                     }
                 }
             ],
@@ -1142,12 +1142,12 @@
                 {
                     "id": "devices",
                     "navigation": {
-                        "next": "icon",
+                        "next": "icons",
                         "prev": "capabilities"
                     }
                 },
                 {
-                    "id": "icon",
+                    "id": "icons",
                     "navigation": {
                         "next": "done",
                         "prev": "devices"
@@ -1156,7 +1156,7 @@
                 {
                     "id": "done",
                     "navigation": {
-                        "prev": "capabilities"
+                        "prev": "icons"
                     }
                 }
             ],
@@ -1239,12 +1239,12 @@
                 {
                     "id": "devices",
                     "navigation": {
-                        "next": "icon",
+                        "next": "icons",
                         "prev": "capabilities"
                     }
                 },
                 {
-                    "id": "icon",
+                    "id": "icons",
                     "navigation": {
                         "next": "done",
                         "prev": "devices"
@@ -1253,7 +1253,7 @@
                 {
                     "id": "done",
                     "navigation": {
-                        "prev": "capabilities"
+                        "prev": "icons"
                     }
                 }
             ],
@@ -1336,12 +1336,12 @@
                 {
                     "id": "devices",
                     "navigation": {
-                        "next": "icon",
+                        "next": "icons",
                         "prev": "capabilities"
                     }
                 },
                 {
-                    "id": "icon",
+                    "id": "icons",
                     "navigation": {
                         "next": "done",
                         "prev": "devices"
@@ -1350,7 +1350,7 @@
                 {
                     "id": "done",
                     "navigation": {
-                        "prev": "capabilities"
+                        "prev": "icons"
                     }
                 }
             ],
@@ -1433,12 +1433,12 @@
                 {
                     "id": "devices",
                     "navigation": {
-                        "next": "icon",
+                        "next": "icons",
                         "prev": "capabilities"
                     }
                 },
                 {
-                    "id": "icon",
+                    "id": "icons",
                     "navigation": {
                         "next": "done",
                         "prev": "devices"
@@ -1447,7 +1447,7 @@
                 {
                     "id": "done",
                     "navigation": {
-                        "prev": "capabilities"
+                        "prev": "icons"
                     }
                 }
             ],
@@ -1530,12 +1530,12 @@
                 {
                     "id": "devices",
                     "navigation": {
-                        "next": "icon",
+                        "next": "icons",
                         "prev": "capabilities"
                     }
                 },
                 {
-                    "id": "icon",
+                    "id": "icons",
                     "navigation": {
                         "next": "done",
                         "prev": "devices"
@@ -1544,7 +1544,7 @@
                 {
                     "id": "done",
                     "navigation": {
-                        "prev": "capabilities"
+                        "prev": "icons"
                     }
                 }
             ],
@@ -1627,12 +1627,12 @@
                 {
                     "id": "devices",
                     "navigation": {
-                        "next": "icon",
+                        "next": "icons",
                         "prev": "capabilities"
                     }
                 },
                 {
-                    "id": "icon",
+                    "id": "icons",
                     "navigation": {
                         "next": "done",
                         "prev": "devices"
@@ -1641,7 +1641,7 @@
                 {
                     "id": "done",
                     "navigation": {
-                        "prev": "capabilities"
+                        "prev": "icons"
                     }
                 }
             ],
@@ -1724,12 +1724,12 @@
                 {
                     "id": "devices",
                     "navigation": {
-                        "next": "icon",
+                        "next": "icons",
                         "prev": "capabilities"
                     }
                 },
                 {
-                    "id": "icon",
+                    "id": "icons",
                     "navigation": {
                         "next": "done",
                         "prev": "devices"
@@ -1738,7 +1738,7 @@
                 {
                     "id": "done",
                     "navigation": {
-                        "prev": "capabilities"
+                        "prev": "icons"
                     }
                 }
             ],
@@ -1821,12 +1821,12 @@
                 {
                     "id": "devices",
                     "navigation": {
-                        "next": "icon",
+                        "next": "icons",
                         "prev": "capabilities"
                     }
                 },
                 {
-                    "id": "icon",
+                    "id": "icons",
                     "navigation": {
                         "next": "done",
                         "prev": "devices"
@@ -1835,7 +1835,7 @@
                 {
                     "id": "done",
                     "navigation": {
-                        "prev": "capabilities"
+                        "prev": "icons"
                     }
                 }
             ],
@@ -1918,12 +1918,12 @@
                 {
                     "id": "devices",
                     "navigation": {
-                        "next": "icon",
+                        "next": "icons",
                         "prev": "capabilities"
                     }
                 },
                 {
-                    "id": "icon",
+                    "id": "icons",
                     "navigation": {
                         "next": "done",
                         "prev": "devices"
@@ -1932,7 +1932,7 @@
                 {
                     "id": "done",
                     "navigation": {
-                        "prev": "capabilities"
+                        "prev": "icons"
                     }
                 }
             ],
@@ -2015,12 +2015,12 @@
                 {
                     "id": "devices",
                     "navigation": {
-                        "next": "icon",
+                        "next": "icons",
                         "prev": "capabilities"
                     }
                 },
                 {
-                    "id": "icon",
+                    "id": "icons",
                     "navigation": {
                         "next": "done",
                         "prev": "devices"
@@ -2029,7 +2029,7 @@
                 {
                     "id": "done",
                     "navigation": {
-                        "prev": "capabilities"
+                        "prev": "icons"
                     }
                 }
             ],
@@ -2112,12 +2112,12 @@
                 {
                     "id": "devices",
                     "navigation": {
-                        "next": "icon",
+                        "next": "icons",
                         "prev": "capabilities"
                     }
                 },
                 {
-                    "id": "icon",
+                    "id": "icons",
                     "navigation": {
                         "next": "done",
                         "prev": "devices"
@@ -2126,7 +2126,7 @@
                 {
                     "id": "done",
                     "navigation": {
-                        "prev": "capabilities"
+                        "prev": "icons"
                     }
                 }
             ],
@@ -2209,12 +2209,12 @@
                 {
                     "id": "devices",
                     "navigation": {
-                        "next": "icon",
+                        "next": "icons",
                         "prev": "capabilities"
                     }
                 },
                 {
-                    "id": "icon",
+                    "id": "icons",
                     "navigation": {
                         "next": "done",
                         "prev": "devices"
@@ -2223,7 +2223,7 @@
                 {
                     "id": "done",
                     "navigation": {
-                        "prev": "capabilities"
+                        "prev": "icons"
                     }
                 }
             ],
@@ -2306,12 +2306,12 @@
                 {
                     "id": "devices",
                     "navigation": {
-                        "next": "icon",
+                        "next": "icons",
                         "prev": "capabilities"
                     }
                 },
                 {
-                    "id": "icon",
+                    "id": "icons",
                     "navigation": {
                         "next": "done",
                         "prev": "devices"
@@ -2320,7 +2320,7 @@
                 {
                     "id": "done",
                     "navigation": {
-                        "prev": "capabilities"
+                        "prev": "icons"
                     }
                 }
             ],
