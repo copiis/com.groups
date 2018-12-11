@@ -7,6 +7,9 @@
     "en": "Use this device class for curtains.",
     "nl": "N/A"
   },
-  "icons" : [],
+  "icons" : [
+    "curtain",
+    "curtain/resized"
+  ],
   "capabilities" : []
 }

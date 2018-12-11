@@ -8,8 +8,8 @@
     "nl": "N/A"
   },
   "icons" : [
-    "categories/fan/icon.svg",
-    "categories/fan/simple.svg"
+    "fan",
+    "fan/simple"
   ],
   "capabilities" : [
     "onoff",

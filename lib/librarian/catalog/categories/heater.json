@@ -7,7 +7,11 @@
     "en": "Use this device class for heaters, that warm your home.",
     "nl": "N/A"
   },
-  "icons" : [],
+  "icons" : [
+    "heater",
+    "heater/simple",
+    "heater/oil"
+  ],
   "capabilities" : [
     "onoff",
     "dim",

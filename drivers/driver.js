@@ -4,60 +4,18 @@ const Homey = require('homey');
 
 /**
  * @todo refactor onInit to be rest when pairing starts
- * @todo fix onInit to be callable correclt from child.
+ * @todo fix onInit to be callable correct from child.
+ * @todo read default icons from librarian.
  */
 class Driver extends Homey.Driver {
 
 
+    async refresh () {
 
-    onInit() {
-
-        /**
-         * Define the current version
-         *
-         * Add for future backwards compatibility checks : will require npm semver
-         * Currently being stored with in the devices store object.
-         *
-         * @type {string}
-         */
-        this.version = '1.0.0';
-
-        /**
-         * Define the current application root directory by its relative path
-         * from the driver.
-         *
-         * This the ./ path seems to be coded to be the driver folder rather than the app folder
-         * with in the HomeyCore.
-         *
-         * @type {string}
-         */
-        this.appRoot = '../../../';
-
-        /**
-         * Default the device class.
-         *
-         * Sets a default fro the device class.
-         * @type {string}
-         */
-        this.class = 'light';
-
-        this.icons = {};
-
-        /**
-         * Define our group.
-         *
-         * Sets our structure and default values.
-         *
-         * This is the device we are building up to be added to Homey, while it is a a group of device
-         * itself is obviously also a device. For clarity here on this will simply be referred to as  the 'group'.
-         *
-         *
-         * @type {{settings: {capabilities: {}}, data: {}, name: string, class: string}}
-         */
         this.group = {
-            name: 'Group',
-            class: 'light',
-            icon: this.appRoot + '/assets/icon.svg',
+            name: this.name,
+            class: this.class,
+            icon: this.appPath + '/assets/icon.svg',
             settings:  {
                 capabilities: {},
                 devices: {}
@@ -71,16 +29,47 @@ class Driver extends Homey.Driver {
         };
     }
 
+    /**
+     *
+     */
+    async onInit() {
+
+        // Define the current version, Add for future backwards compatibility checks
+        this.version = '1.0.0';
+
+        // Define the current application root directory by its relative path from the driver.
+        this.appPath = '../../../';
+
+        // Set the path to our icons - note in order to be useful its relative.
+        this.iconPath = 'lib/librarian/assets/categories/icons/';
+
+        // Assign the i18n title @todo full i18n integration Homey.__("hello", { "name": "Dave" })
+        this.name = Homey.app.library.getCategory(this.class).title[Homey.app.i18n];
+
+        // Add the default icons.
+        this.icons['/app/' + Homey.manifest.id + '/assets/icon.svg'] = this.appPath + '/assets/icon.svg';
+
+        let icons = await Homey.app.library.getCategory(this.class).icons;
+
+        // If the icons have been assigned use them otherwise default.
+        if (icons.length) {
+
+            // Loop through and add all of the category icons.
+            for (let i in icons) {
+                this.icons['/app/' + Homey.manifest.id + this.iconPath + icons[i] + '.svg'] =  appPath + this.iconPath + icons[i] + '.svg';
+            }
+
+        } else {
+            this.icons['/app/' + Homey.manifest.id + '/drivers/' + this.class + '/assets/icon.svg'] =  'icon.svg';
+        }
+    }
+
     onCapabilitiesInitialised (data, callback) {
 
         console.log('onCapabilitiesInitialised');
 
-        // get the i18n title
-        let title = Homey.app.library.getCategory(this.class).title[Homey.app.i18n];
-
-        // Assign the i18n title @todo full i18n integration Homey.__("hello", { "name": "Dave" })
-        this.group.name = title;// + ' ' + Homey.__('_.group');
-        this.group.settings.labelClass = title;
+        this.group.name = this.name;
+        this.group.settings.labelClass = this.name;
 
         let categoryCapabilities = Homey.app.library.getCategory(this.class).capabilities;
 
@@ -204,11 +193,8 @@ class Driver extends Homey.Driver {
 
     onPair(socket) {
 
-        this.onInit();
-
-        // Add the default icons.
-        this.icons['/app/' + Homey.manifest.id + '/assets/icon.svg'] = this.appRoot + '/assets/icon.svg';
-        this.icons['/app/' + Homey.manifest.id + '/drivers/' + this.class + '/assets/icon.svg'] =  'icon.svg';
+        // Set our default values.
+        this.refresh();
 
         let capabilitiesInitialised  = async (data, callback) => { this.onCapabilitiesInitialised(data, callback); };
         let capabilitiesChanged  = async (data, callback) => { this.onCapabilitiesChanged(data, callback); };

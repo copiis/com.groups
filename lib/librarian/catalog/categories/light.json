@@ -18,6 +18,7 @@
     "meter_power"
   ],
   "icons" : [
+    "light",
     "light/a",
     "light/b",
     "light/e",

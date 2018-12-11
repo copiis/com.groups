@@ -7,7 +7,10 @@
     "en": "Use this device class for lock devices.",
     "nl": "N/A"
   },
-  "icons" : [],
+  "icons" : [
+    "lock",
+    "lock/handle"
+  ],
   "capabilities" : [
     "locked",
     "lock_mode",

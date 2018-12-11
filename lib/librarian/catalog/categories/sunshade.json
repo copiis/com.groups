@@ -7,5 +7,9 @@
     "en": "Use this device class for sunshades (window coverings against the sun).",
     "nl": "N/A"
   },
+  "icons" : [
+    "sunshade",
+    "sunshade/resize"
+  ],
   "capabilities" : []
 }

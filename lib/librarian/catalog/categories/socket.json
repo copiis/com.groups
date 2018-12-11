@@ -19,6 +19,21 @@
     "kettle",
     "tv"
   ],
+  "icons" : [
+    "socket",
+    "socket/f",
+    "socket/i",
+    "socket/k",
+    "socket/f_button",
+    "socket/i_button",
+    "socket/k_button",
+    "light",
+    "fan",
+    "heater",
+    "coffeemachine",
+    "kettle",
+    "tv"
+  ],
   "capabilities" : [
     "onoff",
     "dim",

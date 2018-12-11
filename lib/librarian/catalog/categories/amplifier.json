@@ -7,6 +7,9 @@
     "en": "Use this device class for audio amplifier devices.",
     "nl":  "N/A"
   },
+  "icons" : [
+    "amplifier"
+  ],
   "capabilities" : [
     "onoff",
     "volume_set",
