@@ -1,6 +1,6 @@
 'use strict';
 
-const Group = require('../group');
+const Group = require('/lib/group');
 
 class VacuumCleanerDriver extends Group.Driver {
 

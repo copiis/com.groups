@@ -1,0 +1,12 @@
+{
+    "id": "button",
+    "class": "button",
+    "capabilities": [],
+    "name": {
+        "en": "Button",
+        "nl": "Knop"
+    },
+    "$extends": [
+        "default"
+    ]
+}

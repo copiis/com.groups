@@ -1,0 +1,12 @@
+{
+    "id": "doorbell",
+    "class": "doorbell",
+    "capabilities": [],
+    "name": {
+        "en": "Doorbell",
+        "nl": "Deurbel"
+    },
+    "$extends": [
+        "default"
+    ]
+}

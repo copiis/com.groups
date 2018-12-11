@@ -1,2387 +1,2417 @@
 {
-    "id": "com.groups",
-    "sdk": 2,
-    "permissions": [
-        "homey:manager:api"
+  "id": "com.groups",
+  "sdk": 2,
+  "permissions": [
+    "homey:manager:api"
+  ],
+  "name": {
+    "en": "Groups",
+    "nl": "Groepen"
+  },
+  "description": {
+    "en": "Group",
+    "nl": "@todo"
+  },
+  "category": "tools",
+  "brandColor": "#000000",
+  "tags": {
+    "en": [
+      "device",
+      "group",
+      "virtual"
     ],
-    "name": {
-        "en": "Groups",
-        "nl": "Groepen"
-    },
-    "description": {
-        "en": "Group",
-        "nl": "@todo"
-    },
-    "category": "tools",
-    "brandColor": "#000000",
-    "tags": {
-        "en": [
-            "device",
-            "group",
-            "virtual"
-        ],
-        "nl": [
-            "apparaat",
-            "groep",
-            "virtueel"
-        ]
-    },
-    "version": "1.0.6",
-    "compatibility": ">=2.0",
-    "author": {
+    "nl": [
+      "apparaat",
+      "groep",
+      "virtueel"
+    ]
+  },
+  "version": "1.0.6",
+  "compatibility": ">=2.0",
+  "author": {
+    "name": "Jamie Peake",
+    "email": "jamie.peake@gmail.com"
+  },
+  "contributors": {
+    "developers": [
+      {
+        "name": "Bas Jansen",
+        "email": "bas@balotti.com"
+      },
+      {
+        "name": "Robert Klep",
+        "email": "robert@klep.name"
+      },
+      {
         "name": "Jamie Peake",
         "email": "jamie.peake@gmail.com"
-    },
-    "contributors": {
-        "developers": [
-            {
-                "name": "Bas Jansen",
-                "email": "bas@balotti.com"
-            },
-            {
-                "name": "Robert Klep",
-                "email": "robert@klep.name"
-            },
-            {
-                "name": "Jamie Peake",
-                "email": "jamie.peake@gmail.com"
-            }
-        ]
-    },
-    "images": {
-        "large": "./assets/images/large.png",
-        "small": "./assets/images/small.png"
-    },
-    "drivers": [
-        {
-            "id": "amplifier",
-            "class": "amplifier",
-            "capabilities": [],
-            "name": {
-                "en": "Amplifier",
-                "nl" : "Versterker"
-            },
-            "images": {
-                "large": "./drivers/amplifier/assets/images/large.png",
-                "small": "./drivers/amplifier/assets/images/small.png"
-            },
-            "pair": [
-                {
-                    "id": "capabilities",
-                    "navigation": {
-                        "next": "devices"
-                    }
-                },
-                {
-                    "id": "devices",
-                    "navigation": {
-                        "next": "icons",
-                        "prev": "capabilities"
-                    }
-                },
-                {
-                    "id": "icons",
-                    "navigation": {
-                        "next": "done",
-                        "prev": "devices"
-                    }
-                },
-                {
-                    "id": "done",
-                    "navigation": {
-                        "prev": "icons"
-                    }
-                }
-            ],
-            "settings": [
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "About"
-                    },
-                    "children": [
-                        {
-                            "id": "labelClass",
-                            "type": "label",
-                            "label": {
-                                "en": "Category"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelCapabilities",
-                            "type": "label",
-                            "label": {
-                                "en": "Capabilities"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelDevices",
-                            "type": "label",
-                            "label": {
-                                "en": "Devices"
-                            },
-                            "value": "Unknown",
-                            "hint": {
-                                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "Other"
-                    },
-                    "children": [
-                        {
-                            "id": "notes",
-                            "type": "textarea",
-                            "label": {
-                                "en": "Your Notes"
-                            },
-                            "value": "",
-                            "hint": {
-                                "en": "Enter any thoughts or notes you may have regarding this device group."
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "blinds",
-            "class": "blinds",
-            "capabilities": [],
-            "name": {
-                "en": "Blinds",
-                "nl" :  "Jaloezieën & Lamellen"
-            },
-            "images": {
-                "large": "./drivers/blinds/assets/images/large.png",
-                "small": "./drivers/blinds/assets/images/small.png"
-            },
-            "pair": [
-                {
-                    "id": "capabilities",
-                    "navigation": {
-                        "next": "devices"
-                    }
-                },
-                {
-                    "id": "devices",
-                    "navigation": {
-                        "next": "icons",
-                        "prev": "capabilities"
-                    }
-                },
-                {
-                    "id": "icons",
-                    "navigation": {
-                        "next": "done",
-                        "prev": "devices"
-                    }
-                },
-                {
-                    "id": "done",
-                    "navigation": {
-                        "prev": "icons"
-                    }
-                }
-            ],
-            "settings": [
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "About"
-                    },
-                    "children": [
-                        {
-                            "id": "labelClass",
-                            "type": "label",
-                            "label": {
-                                "en": "Category"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelCapabilities",
-                            "type": "label",
-                            "label": {
-                                "en": "Capabilities"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelDevices",
-                            "type": "label",
-                            "label": {
-                                "en": "Devices"
-                            },
-                            "value": "Unknown",
-                            "hint": {
-                                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "Other"
-                    },
-                    "children": [
-                        {
-                            "id": "notes",
-                            "type": "textarea",
-                            "label": {
-                                "en": "Your Notes"
-                            },
-                            "value": "",
-                            "hint": {
-                                "en": "Enter any thoughts or notes you may have regarding this device group."
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "button",
-            "class": "button",
-            "capabilities": [],
-            "name": {
-                "en": "Button",
-                "nl": "Knop"
-            },
-            "images": {
-                "large": "./drivers/button/assets/images/large.png",
-                "small": "./drivers/button/assets/images/small.png"
-            },
-            "pair": [
-                {
-                    "id": "capabilities",
-                    "navigation": {
-                        "next": "devices"
-                    }
-                },
-                {
-                    "id": "devices",
-                    "navigation": {
-                        "next": "icons",
-                        "prev": "capabilities"
-                    }
-                },
-                {
-                    "id": "icons",
-                    "navigation": {
-                        "next": "done",
-                        "prev": "devices"
-                    }
-                },
-                {
-                    "id": "done",
-                    "navigation": {
-                        "prev": "icons"
-                    }
-                }
-            ],
-            "settings": [
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "About"
-                    },
-                    "children": [
-                        {
-                            "id": "labelClass",
-                            "type": "label",
-                            "label": {
-                                "en": "Category"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelCapabilities",
-                            "type": "label",
-                            "label": {
-                                "en": "Capabilities"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelDevices",
-                            "type": "label",
-                            "label": {
-                                "en": "Devices"
-                            },
-                            "value": "Unknown",
-                            "hint": {
-                                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "Other"
-                    },
-                    "children": [
-                        {
-                            "id": "notes",
-                            "type": "textarea",
-                            "label": {
-                                "en": "Your Notes"
-                            },
-                            "value": "",
-                            "hint": {
-                                "en": "Enter any thoughts or notes you may have regarding this device group."
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "coffeemachine",
-            "class": "coffeemachine",
-            "capabilities": [],
-            "name": {
-                "en": "Coffee machine",
-                "nl": "Koffiemachine"
-            },
-            "images": {
-                "large": "./drivers/coffeemachine/assets/images/large.png",
-                "small": "./drivers/coffeemachine/assets/images/small.png"
-            },
-            "pair": [
-                {
-                    "id": "capabilities",
-                    "navigation": {
-                        "next": "devices"
-                    }
-                },
-                {
-                    "id": "devices",
-                    "navigation": {
-                        "next": "icons",
-                        "prev": "capabilities"
-                    }
-                },
-                {
-                    "id": "icons",
-                    "navigation": {
-                        "next": "done",
-                        "prev": "devices"
-                    }
-                },
-                {
-                    "id": "done",
-                    "navigation": {
-                        "prev": "icons"
-                    }
-                }
-            ],
-            "settings": [
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "About"
-                    },
-                    "children": [
-                        {
-                            "id": "labelClass",
-                            "type": "label",
-                            "label": {
-                                "en": "Category"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelCapabilities",
-                            "type": "label",
-                            "label": {
-                                "en": "Capabilities"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelDevices",
-                            "type": "label",
-                            "label": {
-                                "en": "Devices"
-                            },
-                            "value": "Unknown",
-                            "hint": {
-                                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "Other"
-                    },
-                    "children": [
-                        {
-                            "id": "notes",
-                            "type": "textarea",
-                            "label": {
-                                "en": "Your Notes"
-                            },
-                            "value": "",
-                            "hint": {
-                                "en": "Enter any thoughts or notes you may have regarding this device group."
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "curtain",
-            "class": "curtain",
-            "capabilities": [],
-            "name": {
-                "en": "Curtains",
-                "nl": "Gordijnen"
-            },
-            "images": {
-                "large": "./drivers/curtain/assets/images/large.png",
-                "small": "./drivers/curtain/assets/images/small.png"
-            },
-            "pair": [
-                {
-                    "id": "capabilities",
-                    "navigation": {
-                        "next": "devices"
-                    }
-                },
-                {
-                    "id": "devices",
-                    "navigation": {
-                        "next": "icons",
-                        "prev": "capabilities"
-                    }
-                },
-                {
-                    "id": "icons",
-                    "navigation": {
-                        "next": "done",
-                        "prev": "devices"
-                    }
-                },
-                {
-                    "id": "done",
-                    "navigation": {
-                        "prev": "icons"
-                    }
-                }
-            ],
-            "settings": [
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "About"
-                    },
-                    "children": [
-                        {
-                            "id": "labelClass",
-                            "type": "label",
-                            "label": {
-                                "en": "Category"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelCapabilities",
-                            "type": "label",
-                            "label": {
-                                "en": "Capabilities"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelDevices",
-                            "type": "label",
-                            "label": {
-                                "en": "Devices"
-                            },
-                            "value": "Unknown",
-                            "hint": {
-                                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "Other"
-                    },
-                    "children": [
-                        {
-                            "id": "notes",
-                            "type": "textarea",
-                            "label": {
-                                "en": "Your Notes"
-                            },
-                            "value": "",
-                            "hint": {
-                                "en": "Enter any thoughts or notes you may have regarding this device group."
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "doorbell",
-            "class": "doorbell",
-            "capabilities": [],
-            "name": {
-                "en": "Doorbell",
-                "nl": "Deurbel"
-            },
-            "images": {
-                "large": "./drivers/doorbell/assets/images/large.png",
-                "small": "./drivers/doorbell/assets/images/small.png"
-            },
-            "pair": [
-                {
-                    "id": "capabilities",
-                    "navigation": {
-                        "next": "devices"
-                    }
-                },
-                {
-                    "id": "devices",
-                    "navigation": {
-                        "next": "icons",
-                        "prev": "capabilities"
-                    }
-                },
-                {
-                    "id": "icons",
-                    "navigation": {
-                        "next": "done",
-                        "prev": "devices"
-                    }
-                },
-                {
-                    "id": "done",
-                    "navigation": {
-                        "prev": "icons"
-                    }
-                }
-            ],
-            "settings": [
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "About"
-                    },
-                    "children": [
-                        {
-                            "id": "labelClass",
-                            "type": "label",
-                            "label": {
-                                "en": "Category"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelCapabilities",
-                            "type": "label",
-                            "label": {
-                                "en": "Capabilities"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelDevices",
-                            "type": "label",
-                            "label": {
-                                "en": "Devices"
-                            },
-                            "value": "Unknown",
-                            "hint": {
-                                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "Other"
-                    },
-                    "children": [
-                        {
-                            "id": "notes",
-                            "type": "textarea",
-                            "label": {
-                                "en": "Your Notes"
-                            },
-                            "value": "",
-                            "hint": {
-                                "en": "Enter any thoughts or notes you may have regarding this device group."
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "fan",
-            "class": "fan",
-            "capabilities": [],
-            "name": {
-                "en": "Fan",
-                "nl": "Ventilator"
-            },
-            "images": {
-                "large": "./drivers/fan/assets/images/large.png",
-                "small": "./drivers/fan/assets/images/small.png"
-            },
-            "pair": [
-                {
-                    "id": "capabilities",
-                    "navigation": {
-                        "next": "devices"
-                    }
-                },
-                {
-                    "id": "devices",
-                    "navigation": {
-                        "next": "icons",
-                        "prev": "capabilities"
-                    }
-                },
-                {
-                    "id": "icons",
-                    "navigation": {
-                        "next": "done",
-                        "prev": "devices"
-                    }
-                },
-                {
-                    "id": "done",
-                    "navigation": {
-                        "prev": "icons"
-                    }
-                }
-            ],
-            "settings": [
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "About"
-                    },
-                    "children": [
-                        {
-                            "id": "labelClass",
-                            "type": "label",
-                            "label": {
-                                "en": "Category"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelCapabilities",
-                            "type": "text",
-                            "label": {
-                                "en": "Capabilities"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelDevices",
-                            "type": "text",
-                            "label": {
-                                "en": "Devices"
-                            },
-                            "value": "Unknown",
-                            "hint": {
-                                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "Other"
-                    },
-                    "children": [
-                        {
-                            "id": "notes",
-                            "type": "textarea",
-                            "label": {
-                                "en": "Your Notes"
-                            },
-                            "value": "",
-                            "hint": {
-                                "en": "Enter any thoughts or notes you may have regarding this device group."
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "garagedoor",
-            "class": "other",
-            "capabilities": [],
-            "name": {
-                "en": "Garage door",
-                "nl": "Garagedeur"
-            },
-            "images": {
-                "large": "./drivers/garagedoor/assets/images/large.png",
-                "small": "./drivers/garagedoor/assets/images/small.png"
-            },
-            "pair": [
-                {
-                    "id": "capabilities",
-                    "navigation": {
-                        "next": "devices"
-                    }
-                },
-                {
-                    "id": "devices",
-                    "navigation": {
-                        "next": "icons",
-                        "prev": "capabilities"
-                    }
-                },
-                {
-                    "id": "icons",
-                    "navigation": {
-                        "next": "done",
-                        "prev": "devices"
-                    }
-                },
-                {
-                    "id": "done",
-                    "navigation": {
-                        "prev": "icons"
-                    }
-                }
-            ],
-            "settings": [
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "About"
-                    },
-                    "children": [
-                        {
-                            "id": "labelClass",
-                            "type": "label",
-                            "label": {
-                                "en": "Category"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelCapabilities",
-                            "type": "label",
-                            "label": {
-                                "en": "Capabilities"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelDevices",
-                            "type": "label",
-                            "label": {
-                                "en": "Devices"
-                            },
-                            "value": "Unknown",
-                            "hint": {
-                                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "Other"
-                    },
-                    "children": [
-                        {
-                            "id": "notes",
-                            "type": "textarea",
-                            "label": {
-                                "en": "Your Notes"
-                            },
-                            "value": "",
-                            "hint": {
-                                "en": "Enter any thoughts or notes you may have regarding this device group."
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "heater",
-            "class": "heater",
-            "capabilities": [],
-            "name": {
-                "en": "Heater",
-                "nl": "Heater"
-            },
-            "images": {
-                "large": "./drivers/heater/assets/images/large.png",
-                "small": "./drivers/heater/assets/images/small.png"
-            },
-            "pair": [
-                {
-                    "id": "capabilities",
-                    "navigation": {
-                        "next": "devices"
-                    }
-                },
-                {
-                    "id": "devices",
-                    "navigation": {
-                        "next": "icons",
-                        "prev": "capabilities"
-                    }
-                },
-                {
-                    "id": "icons",
-                    "navigation": {
-                        "next": "done",
-                        "prev": "devices"
-                    }
-                },
-                {
-                    "id": "done",
-                    "navigation": {
-                        "prev": "icons"
-                    }
-                }
-            ],
-            "settings": [
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "About"
-                    },
-                    "children": [
-                        {
-                            "id": "labelClass",
-                            "type": "label",
-                            "label": {
-                                "en": "Category"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelCapabilities",
-                            "type": "label",
-                            "label": {
-                                "en": "Capabilities"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelDevices",
-                            "type": "label",
-                            "label": {
-                                "en": "Devices"
-                            },
-                            "value": "Unknown",
-                            "hint": {
-                                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "Other"
-                    },
-                    "children": [
-                        {
-                            "id": "notes",
-                            "type": "textarea",
-                            "label": {
-                                "en": "Your Notes"
-                            },
-                            "value": "",
-                            "hint": {
-                                "en": "Enter any thoughts or notes you may have regarding this device group."
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "homealarm",
-            "class": "homealarm",
-            "capabilities": [],
-            "name": {
-                "en": "Home Security",
-                "nl": "Huisbeveiliging"
-            },
-            "images": {
-                "large": "./drivers/homealarm/assets/images/large.png",
-                "small": "./drivers/homealarm/assets/images/small.png"
-            },
-            "pair": [
-                {
-                    "id": "capabilities",
-                    "navigation": {
-                        "next": "devices"
-                    }
-                },
-                {
-                    "id": "devices",
-                    "navigation": {
-                        "next": "icons",
-                        "prev": "capabilities"
-                    }
-                },
-                {
-                    "id": "icons",
-                    "navigation": {
-                        "next": "done",
-                        "prev": "devices"
-                    }
-                },
-                {
-                    "id": "done",
-                    "navigation": {
-                        "prev": "icons"
-                    }
-                }
-            ],
-            "settings": [
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "About"
-                    },
-                    "children": [
-                        {
-                            "id": "labelClass",
-                            "type": "label",
-                            "label": {
-                                "en": "Category"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelCapabilities",
-                            "type": "label",
-                            "label": {
-                                "en": "Capabilities"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelDevices",
-                            "type": "label",
-                            "label": {
-                                "en": "Devices"
-                            },
-                            "value": "Unknown",
-                            "hint": {
-                                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "Other"
-                    },
-                    "children": [
-                        {
-                            "id": "notes",
-                            "type": "textarea",
-                            "label": {
-                                "en": "Your Notes"
-                            },
-                            "value": "",
-                            "hint": {
-                                "en": "Enter any thoughts or notes you may have regarding this device group."
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "kettle",
-            "class": "kettle",
-            "capabilities": [],
-            "name": {
-                "en": "Kettle",
-                "nl": "Waterkoker"
-            },
-            "images": {
-                "large": "./drivers/kettle/assets/images/large.png",
-                "small": "./drivers/kettle/assets/images/small.png"
-            },
-            "pair": [
-                {
-                    "id": "capabilities",
-                    "navigation": {
-                        "next": "devices"
-                    }
-                },
-                {
-                    "id": "devices",
-                    "navigation": {
-                        "next": "icons",
-                        "prev": "capabilities"
-                    }
-                },
-                {
-                    "id": "icons",
-                    "navigation": {
-                        "next": "done",
-                        "prev": "devices"
-                    }
-                },
-                {
-                    "id": "done",
-                    "navigation": {
-                        "prev": "icons"
-                    }
-                }
-            ],
-            "settings": [
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "About"
-                    },
-                    "children": [
-                        {
-                            "id": "labelClass",
-                            "type": "label",
-                            "label": {
-                                "en": "Category"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelCapabilities",
-                            "type": "label",
-                            "label": {
-                                "en": "Capabilities"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelDevices",
-                            "type": "label",
-                            "label": {
-                                "en": "Devices"
-                            },
-                            "value": "Unknown",
-                            "hint": {
-                                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "Other"
-                    },
-                    "children": [
-                        {
-                            "id": "notes",
-                            "type": "textarea",
-                            "label": {
-                                "en": "Your Notes"
-                            },
-                            "value": "",
-                            "hint": {
-                                "en": "Enter any thoughts or notes you may have regarding this device group."
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "light",
-            "class": "light",
-            "capabilities": [],
-            "name": {
-                "en": "Light",
-                "nl": "Lamp"
-            },
-            "images": {
-                "large": "./drivers/light/assets/images/large.png",
-                "small": "./drivers/light/assets/images/small.png"
-            },
-            "pair": [
-                {
-                    "id": "capabilities",
-                    "navigation": {
-                        "next": "devices"
-                    }
-                },
-                {
-                    "id": "devices",
-                    "navigation": {
-                        "next": "icons",
-                        "prev": "capabilities"
-                    }
-                },
-                {
-                    "id": "icons",
-                    "navigation": {
-                        "next": "done",
-                        "prev": "devices"
-                    }
-                },
-                {
-                    "id": "done",
-                    "navigation": {
-                        "prev": "icons"
-                    }
-                }
-            ],
-            "settings": [
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "About"
-                    },
-                    "children": [
-                        {
-                            "id": "labelClass",
-                            "type": "label",
-                            "label": {
-                                "en": "Category"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelCapabilities",
-                            "type": "label",
-                            "label": {
-                                "en": "Capabilities"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelDevices",
-                            "type": "label",
-                            "label": {
-                                "en": "Devices"
-                            },
-                            "value": "Unknown",
-                            "hint": {
-                                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "Other"
-                    },
-                    "children": [
-                        {
-                            "id": "notes",
-                            "type": "textarea",
-                            "label": {
-                                "en": "Your Notes"
-                            },
-                            "value": "",
-                            "hint": {
-                                "en": "Enter any thoughts or notes you may have regarding this device group."
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "lock",
-            "class": "lock",
-            "capabilities": [],
-            "name": {
-                "en": "Lock",
-                "nl": "Slot"
-            },
-            "images": {
-                "large": "./drivers/lock/assets/images/large.png",
-                "small": "./drivers/lock/assets/images/small.png"
-            },
-            "pair": [
-                {
-                    "id": "capabilities",
-                    "navigation": {
-                        "next": "devices"
-                    }
-                },
-                {
-                    "id": "devices",
-                    "navigation": {
-                        "next": "icons",
-                        "prev": "capabilities"
-                    }
-                },
-                {
-                    "id": "icons",
-                    "navigation": {
-                        "next": "done",
-                        "prev": "devices"
-                    }
-                },
-                {
-                    "id": "done",
-                    "navigation": {
-                        "prev": "icons"
-                    }
-                }
-            ],
-            "settings": [
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "About"
-                    },
-                    "children": [
-                        {
-                            "id": "labelClass",
-                            "type": "label",
-                            "label": {
-                                "en": "Category"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelCapabilities",
-                            "type": "label",
-                            "label": {
-                                "en": "Capabilities"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelDevices",
-                            "type": "label",
-                            "label": {
-                                "en": "Devices"
-                            },
-                            "value": "Unknown",
-                            "hint": {
-                                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "Other"
-                    },
-                    "children": [
-                        {
-                            "id": "notes",
-                            "type": "textarea",
-                            "label": {
-                                "en": "Your Notes"
-                            },
-                            "value": "",
-                            "hint": {
-                                "en": "Enter any thoughts or notes you may have regarding this device group."
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "other",
-            "class": "other",
-            "capabilities": [],
-            "name": {
-                "en": "Other",
-                "nl": "Overig"
-            },
-            "images": {
-                "large": "./drivers/other/assets/images/large.png",
-                "small": "./drivers/other/assets/images/small.png"
-            },
-            "pair": [
-                {
-                    "id": "capabilities",
-                    "navigation": {
-                        "next": "devices"
-                    }
-                },
-                {
-                    "id": "devices",
-                    "navigation": {
-                        "next": "icons",
-                        "prev": "capabilities"
-                    }
-                },
-                {
-                    "id": "icons",
-                    "navigation": {
-                        "next": "done",
-                        "prev": "devices"
-                    }
-                },
-                {
-                    "id": "done",
-                    "navigation": {
-                        "prev": "icons"
-                    }
-                }
-            ],
-            "settings": [
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "About"
-                    },
-                    "children": [
-                        {
-                            "id": "labelClass",
-                            "type": "label",
-                            "label": {
-                                "en": "Category"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelCapabilities",
-                            "type": "label",
-                            "label": {
-                                "en": "Capabilities"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelDevices",
-                            "type": "label",
-                            "label": {
-                                "en": "Devices"
-                            },
-                            "value": "Unknown",
-                            "hint": {
-                                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "Other"
-                    },
-                    "children": [
-                        {
-                            "id": "notes",
-                            "type": "textarea",
-                            "label": {
-                                "en": "Your Notes"
-                            },
-                            "value": "",
-                            "hint": {
-                                "en": "Enter any thoughts or notes you may have regarding this device group."
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "relay",
-            "class": "other",
-            "capabilities": [],
-            "name": {
-                "en": "Relay",
-                "nl": "Relais"
-            },
-            "images": {
-                "large": "./drivers/relay/assets/images/large.png",
-                "small": "./drivers/relay/assets/images/small.png"
-            },
-            "pair": [
-                {
-                    "id": "capabilities",
-                    "navigation": {
-                        "next": "devices"
-                    }
-                },
-                {
-                    "id": "devices",
-                    "navigation": {
-                        "next": "icons",
-                        "prev": "capabilities"
-                    }
-                },
-                {
-                    "id": "icons",
-                    "navigation": {
-                        "next": "done",
-                        "prev": "devices"
-                    }
-                },
-                {
-                    "id": "done",
-                    "navigation": {
-                        "prev": "icons"
-                    }
-                }
-            ],
-            "settings": [
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "About"
-                    },
-                    "children": [
-                        {
-                            "id": "labelClass",
-                            "type": "label",
-                            "label": {
-                                "en": "Category"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelCapabilities",
-                            "type": "label",
-                            "label": {
-                                "en": "Capabilities"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelDevices",
-                            "type": "label",
-                            "label": {
-                                "en": "Devices"
-                            },
-                            "value": "Unknown",
-                            "hint": {
-                                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "Other"
-                    },
-                    "children": [
-                        {
-                            "id": "notes",
-                            "type": "textarea",
-                            "label": {
-                                "en": "Your Notes"
-                            },
-                            "value": "",
-                            "hint": {
-                                "en": "Enter any thoughts or notes you may have regarding this device group."
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "remote",
-            "class": "remote",
-            "capabilities": [],
-            "name": {
-                "en": "Remote",
-                "nl": "Afstandsbediening"
-            },
-            "images": {
-                "large": "./drivers/remote/assets/images/large.png",
-                "small": "./drivers/remote/assets/images/small.png"
-            },
-            "pair": [
-                {
-                    "id": "capabilities",
-                    "navigation": {
-                        "next": "devices"
-                    }
-                },
-                {
-                    "id": "devices",
-                    "navigation": {
-                        "next": "icons",
-                        "prev": "capabilities"
-                    }
-                },
-                {
-                    "id": "icons",
-                    "navigation": {
-                        "next": "done",
-                        "prev": "devices"
-                    }
-                },
-                {
-                    "id": "done",
-                    "navigation": {
-                        "prev": "icons"
-                    }
-                }
-            ],
-            "settings": [
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "About"
-                    },
-                    "children": [
-                        {
-                            "id": "labelClass",
-                            "type": "label",
-                            "label": {
-                                "en": "Category"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelCapabilities",
-                            "type": "label",
-                            "label": {
-                                "en": "Capabilities"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelDevices",
-                            "type": "label",
-                            "label": {
-                                "en": "Devices"
-                            },
-                            "value": "Unknown",
-                            "hint": {
-                                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "Other"
-                    },
-                    "children": [
-                        {
-                            "id": "notes",
-                            "type": "textarea",
-                            "label": {
-                                "en": "Your Notes"
-                            },
-                            "value": "",
-                            "hint": {
-                                "en": "Enter any thoughts or notes you may have regarding this device group."
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "sensor",
-            "class": "sensor",
-            "capabilities": [],
-            "name": {
-                "en": "Sensor",
-                "nl": "Sensor"
-            },
-            "images": {
-                "large": "./drivers/sensor/assets/images/large.png",
-                "small": "./drivers/sensor/assets/images/small.png"
-            },
-            "pair": [
-                {
-                    "id": "capabilities",
-                    "navigation": {
-                        "next": "devices"
-                    }
-                },
-                {
-                    "id": "devices",
-                    "navigation": {
-                        "next": "icons",
-                        "prev": "capabilities"
-                    }
-                },
-                {
-                    "id": "icons",
-                    "navigation": {
-                        "next": "done",
-                        "prev": "devices"
-                    }
-                },
-                {
-                    "id": "done",
-                    "navigation": {
-                        "prev": "icons"
-                    }
-                }
-            ],
-            "settings": [
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "About"
-                    },
-                    "children": [
-                        {
-                            "id": "labelClass",
-                            "type": "label",
-                            "label": {
-                                "en": "Category"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelCapabilities",
-                            "type": "label",
-                            "label": {
-                                "en": "Capabilities"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelDevices",
-                            "type": "label",
-                            "label": {
-                                "en": "Devices"
-                            },
-                            "value": "Unknown",
-                            "hint": {
-                                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "Other"
-                    },
-                    "children": [
-                        {
-                            "id": "notes",
-                            "type": "textarea",
-                            "label": {
-                                "en": "Your Notes"
-                            },
-                            "value": "",
-                            "hint": {
-                                "en": "Enter any thoughts or notes you may have regarding this device group."
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "socket",
-            "class": "socket",
-            "capabilities": [],
-            "name": {
-                "en": "Wall Plug",
-                "nl": "Schakeldoos"
-            },
-            "images": {
-                "large": "./drivers/socket/assets/images/large.png",
-                "small": "./drivers/socket/assets/images/small.png"
-            },
-            "pair": [
-                {
-                    "id": "capabilities",
-                    "navigation": {
-                        "next": "devices"
-                    }
-                },
-                {
-                    "id": "devices",
-                    "navigation": {
-                        "next": "icons",
-                        "prev": "capabilities"
-                    }
-                },
-                {
-                    "id": "icons",
-                    "navigation": {
-                        "next": "done",
-                        "prev": "devices"
-                    }
-                },
-                {
-                    "id": "done",
-                    "navigation": {
-                        "prev": "icons"
-                    }
-                }
-            ],
-            "settings": [
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "About"
-                    },
-                    "children": [
-                        {
-                            "id": "labelClass",
-                            "type": "label",
-                            "label": {
-                                "en": "Category"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelCapabilities",
-                            "type": "label",
-                            "label": {
-                                "en": "Capabilities"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelDevices",
-                            "type": "label",
-                            "label": {
-                                "en": "Devices"
-                            },
-                            "value": "Unknown",
-                            "hint": {
-                                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "Other"
-                    },
-                    "children": [
-                        {
-                            "id": "notes",
-                            "type": "textarea",
-                            "label": {
-                                "en": "Your Notes"
-                            },
-                            "value": "",
-                            "hint": {
-                                "en": "Enter any thoughts or notes you may have regarding this device group."
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "speaker",
-            "class": "speaker",
-            "capabilities": [],
-            "name": {
-                "en": "Speaker",
-                "nl": "Speaker"
-            },
-            "images": {
-                "large": "./drivers/speaker/assets/images/large.png",
-                "small": "./drivers/speaker/assets/images/small.png"
-            },
-            "pair": [
-                {
-                    "id": "capabilities",
-                    "navigation": {
-                        "next": "devices"
-                    }
-                },
-                {
-                    "id": "devices",
-                    "navigation": {
-                        "next": "icons",
-                        "prev": "capabilities"
-                    }
-                },
-                {
-                    "id": "icons",
-                    "navigation": {
-                        "next": "done",
-                        "prev": "devices"
-                    }
-                },
-                {
-                    "id": "done",
-                    "navigation": {
-                        "prev": "icons"
-                    }
-                }
-            ],
-            "settings": [
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "About"
-                    },
-                    "children": [
-                        {
-                            "id": "labelClass",
-                            "type": "label",
-                            "label": {
-                                "en": "Category"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelCapabilities",
-                            "type": "label",
-                            "label": {
-                                "en": "Capabilities"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelDevices",
-                            "type": "label",
-                            "label": {
-                                "en": "Devices"
-                            },
-                            "value": "Unknown",
-                            "hint": {
-                                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "Other"
-                    },
-                    "children": [
-                        {
-                            "id": "notes",
-                            "type": "textarea",
-                            "label": {
-                                "en": "Your Notes"
-                            },
-                            "value": "",
-                            "hint": {
-                                "en": "Enter any thoughts or notes you may have regarding this device group."
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "sunshade",
-            "class": "sunshade",
-            "capabilities": [],
-            "name": {
-                "en": "Sunshade",
-                "nl": "Zonnescherm"
-            },
-            "images": {
-                "large": "./drivers/sunshade/assets/images/large.png",
-                "small": "./drivers/sunshade/assets/images/small.png"
-            },
-            "pair": [
-                {
-                    "id": "capabilities",
-                    "navigation": {
-                        "next": "devices"
-                    }
-                },
-                {
-                    "id": "devices",
-                    "navigation": {
-                        "next": "icons",
-                        "prev": "capabilities"
-                    }
-                },
-                {
-                    "id": "icons",
-                    "navigation": {
-                        "next": "done",
-                        "prev": "devices"
-                    }
-                },
-                {
-                    "id": "done",
-                    "navigation": {
-                        "prev": "icons"
-                    }
-                }
-            ],
-            "settings": [
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "About"
-                    },
-                    "children": [
-                        {
-                            "id": "labelClass",
-                            "type": "label",
-                            "label": {
-                                "en": "Category"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelCapabilities",
-                            "type": "label",
-                            "label": {
-                                "en": "Capabilities"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelDevices",
-                            "type": "label",
-                            "label": {
-                                "en": "Devices"
-                            },
-                            "value": "Unknown",
-                            "hint": {
-                                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "Other"
-                    },
-                    "children": [
-                        {
-                            "id": "notes",
-                            "type": "textarea",
-                            "label": {
-                                "en": "Your Notes"
-                            },
-                            "value": "",
-                            "hint": {
-                                "en": "Enter any thoughts or notes you may have regarding this device group."
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "thermostat",
-            "class": "thermostat",
-            "capabilities": [],
-            "name": {
-                "en": "Thermostat",
-                "nl": "Thermostaat"
-            },
-            "images": {
-                "large": "./drivers/thermostat/assets/images/large.png",
-                "small": "./drivers/thermostat/assets/images/small.png"
-            },
-            "pair": [
-                {
-                    "id": "capabilities",
-                    "navigation": {
-                        "next": "devices"
-                    }
-                },
-                {
-                    "id": "devices",
-                    "navigation": {
-                        "next": "icons",
-                        "prev": "capabilities"
-                    }
-                },
-                {
-                    "id": "icons",
-                    "navigation": {
-                        "next": "done",
-                        "prev": "devices"
-                    }
-                },
-                {
-                    "id": "done",
-                    "navigation": {
-                        "prev": "icons"
-                    }
-                }
-            ],
-            "settings": [
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "About"
-                    },
-                    "children": [
-                        {
-                            "id": "labelClass",
-                            "type": "label",
-                            "label": {
-                                "en": "Category"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelCapabilities",
-                            "type": "label",
-                            "label": {
-                                "en": "Capabilities"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelDevices",
-                            "type": "label",
-                            "label": {
-                                "en": "Devices"
-                            },
-                            "value": "Unknown",
-                            "hint": {
-                                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "Other"
-                    },
-                    "children": [
-                        {
-                            "id": "notes",
-                            "type": "textarea",
-                            "label": {
-                                "en": "Your Notes"
-                            },
-                            "value": "",
-                            "hint": {
-                                "en": "Enter any thoughts or notes you may have regarding this device group."
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "tv",
-            "class": "tv",
-            "capabilities": [],
-            "name": {
-                "en": "TV",
-                "nl": "TV"
-            },
-            "images": {
-                "large": "./drivers/tv/assets/images/large.png",
-                "small": "./drivers/tv/assets/images/small.png"
-            },
-            "pair": [
-                {
-                    "id": "capabilities",
-                    "navigation": {
-                        "next": "devices"
-                    }
-                },
-                {
-                    "id": "devices",
-                    "navigation": {
-                        "next": "icons",
-                        "prev": "capabilities"
-                    }
-                },
-                {
-                    "id": "icons",
-                    "navigation": {
-                        "next": "done",
-                        "prev": "devices"
-                    }
-                },
-                {
-                    "id": "done",
-                    "navigation": {
-                        "prev": "icons"
-                    }
-                }
-            ],
-            "settings": [
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "About"
-                    },
-                    "children": [
-                        {
-                            "id": "labelClass",
-                            "type": "label",
-                            "label": {
-                                "en": "Category"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelCapabilities",
-                            "type": "label",
-                            "label": {
-                                "en": "Capabilities"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelDevices",
-                            "type": "label",
-                            "label": {
-                                "en": "Devices"
-                            },
-                            "value": "Unknown",
-                            "hint": {
-                                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "Other"
-                    },
-                    "children": [
-                        {
-                            "id": "notes",
-                            "type": "textarea",
-                            "label": {
-                                "en": "Your Notes"
-                            },
-                            "value": "",
-                            "hint": {
-                                "en": "Enter any thoughts or notes you may have regarding this device group."
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "vacuumcleaner",
-            "class": "vacuumcleaner",
-            "capabilities": [],
-            "name": {
-                "en": "Vacuum Cleaner",
-                "nl": "Stofzuiger"
-            },
-            "images": {
-                "large": "./drivers/vacuumcleaner/assets/images/large.png",
-                "small": "./drivers/vacuumcleaner/assets/images/small.png"
-            },
-            "pair": [
-                {
-                    "id": "capabilities",
-                    "navigation": {
-                        "next": "devices"
-                    }
-                },
-                {
-                    "id": "devices",
-                    "navigation": {
-                        "next": "icons",
-                        "prev": "capabilities"
-                    }
-                },
-                {
-                    "id": "icons",
-                    "navigation": {
-                        "next": "done",
-                        "prev": "devices"
-                    }
-                },
-                {
-                    "id": "done",
-                    "navigation": {
-                        "prev": "icons"
-                    }
-                }
-            ],
-            "settings": [
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "About"
-                    },
-                    "children": [
-                        {
-                            "id": "labelClass",
-                            "type": "label",
-                            "label": {
-                                "en": "Category"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelCapabilities",
-                            "type": "label",
-                            "label": {
-                                "en": "Capabilities"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelDevices",
-                            "type": "label",
-                            "label": {
-                                "en": "Devices"
-                            },
-                            "value": "Unknown",
-                            "hint": {
-                                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "Other"
-                    },
-                    "children": [
-                        {
-                            "id": "notes",
-                            "type": "textarea",
-                            "label": {
-                                "en": "Your Notes"
-                            },
-                            "value": "",
-                            "hint": {
-                                "en": "Enter any thoughts or notes you may have regarding this device group."
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "windowcoverings",
-            "class": "windowcoverings",
-            "capabilities": [],
-            "name": {
-                "en": "Window Coverings",
-                "nl": "Raambekleding"
-            },
-            "images": {
-                "large": "./drivers/windowcoverings/assets/images/large.png",
-                "small": "./drivers/windowcoverings/assets/images/small.png"
-            },
-            "pair": [
-                {
-                    "id": "capabilities",
-                    "navigation": {
-                        "next": "devices"
-                    }
-                },
-                {
-                    "id": "devices",
-                    "navigation": {
-                        "next": "icons",
-                        "prev": "capabilities"
-                    }
-                },
-                {
-                    "id": "icons",
-                    "navigation": {
-                        "next": "done",
-                        "prev": "devices"
-                    }
-                },
-                {
-                    "id": "done",
-                    "navigation": {
-                        "prev": "icons"
-                    }
-                }
-            ],
-            "settings": [
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "About"
-                    },
-                    "children": [
-                        {
-                            "id": "labelClass",
-                            "type": "label",
-                            "label": {
-                                "en": "Category"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelCapabilities",
-                            "type": "label",
-                            "label": {
-                                "en": "Capabilities"
-                            },
-                            "value": "Unknown"
-                        },
-                        {
-                            "id": "labelDevices",
-                            "type": "label",
-                            "label": {
-                                "en": "Devices"
-                            },
-                            "value": "Unknown",
-                            "hint": {
-                                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "group",
-                    "label": {
-                        "en": "Other"
-                    },
-                    "children": [
-                        {
-                            "id": "notes",
-                            "type": "textarea",
-                            "label": {
-                                "en": "Your Notes"
-                            },
-                            "value": "",
-                            "hint": {
-                                "en": "Enter any thoughts or notes you may have regarding this device group."
-                            }
-                        }
-                    ]
-                }
-            ]
-        }
+      }
     ]
+  },
+  "images": {
+    "large": "./assets/images/large.png",
+    "small": "./assets/images/small.png"
+  },
+  "drivers": [
+    {
+      "capabilities": [],
+      "icon": "/drivers/amplifier/assets/icon.svg",
+      "images": {
+        "large": "/drivers/amplifier/assets/images/large.png",
+        "small": "/drivers/amplifier/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "capabilities",
+          "navigation": {
+            "next": "devices"
+          }
+        },
+        {
+          "id": "devices",
+          "navigation": {
+            "next": "icons",
+            "prev": "capabilities"
+          }
+        },
+        {
+          "id": "icons",
+          "navigation": {
+            "next": "group",
+            "prev": "devices"
+          }
+        },
+        {
+          "id": "group",
+          "navigation": {
+            "prev": "icons"
+          }
+        }
+      ],
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "About"
+          },
+          "children": [
+            {
+              "id": "labelClass",
+              "type": "label",
+              "label": {
+                "en": "Category"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelCapabilities",
+              "type": "label",
+              "label": {
+                "en": "Capabilities"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelDevices",
+              "type": "label",
+              "label": {
+                "en": "Devices"
+              },
+              "value": "Unknown",
+              "hint": {
+                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Other"
+          },
+          "children": [
+            {
+              "id": "notes",
+              "type": "textarea",
+              "label": {
+                "en": "Your Notes"
+              },
+              "value": "",
+              "hint": {
+                "en": "Enter any thoughts or notes you may have regarding this device group."
+              }
+            }
+          ]
+        }
+      ],
+      "id": "amplifier",
+      "class": "amplifier",
+      "name": {
+        "en": "Amplifier",
+        "nl": "Versterker"
+      }
+    },
+    {
+      "capabilities": [],
+      "icon": "/drivers/blinds/assets/icon.svg",
+      "images": {
+        "large": "/drivers/blinds/assets/images/large.png",
+        "small": "/drivers/blinds/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "capabilities",
+          "navigation": {
+            "next": "devices"
+          }
+        },
+        {
+          "id": "devices",
+          "navigation": {
+            "next": "icons",
+            "prev": "capabilities"
+          }
+        },
+        {
+          "id": "icons",
+          "navigation": {
+            "next": "group",
+            "prev": "devices"
+          }
+        },
+        {
+          "id": "group",
+          "navigation": {
+            "prev": "icons"
+          }
+        }
+      ],
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "About"
+          },
+          "children": [
+            {
+              "id": "labelClass",
+              "type": "label",
+              "label": {
+                "en": "Category"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelCapabilities",
+              "type": "label",
+              "label": {
+                "en": "Capabilities"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelDevices",
+              "type": "label",
+              "label": {
+                "en": "Devices"
+              },
+              "value": "Unknown",
+              "hint": {
+                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Other"
+          },
+          "children": [
+            {
+              "id": "notes",
+              "type": "textarea",
+              "label": {
+                "en": "Your Notes"
+              },
+              "value": "",
+              "hint": {
+                "en": "Enter any thoughts or notes you may have regarding this device group."
+              }
+            }
+          ]
+        }
+      ],
+      "id": "blinds",
+      "class": "blinds",
+      "name": {
+        "en": "Blinds",
+        "nl": "Jaloezieën & Lamellen"
+      }
+    },
+    {
+      "capabilities": [],
+      "icon": "/drivers/button/assets/icon.svg",
+      "images": {
+        "large": "/drivers/button/assets/images/large.png",
+        "small": "/drivers/button/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "capabilities",
+          "navigation": {
+            "next": "devices"
+          }
+        },
+        {
+          "id": "devices",
+          "navigation": {
+            "next": "icons",
+            "prev": "capabilities"
+          }
+        },
+        {
+          "id": "icons",
+          "navigation": {
+            "next": "group",
+            "prev": "devices"
+          }
+        },
+        {
+          "id": "group",
+          "navigation": {
+            "prev": "icons"
+          }
+        }
+      ],
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "About"
+          },
+          "children": [
+            {
+              "id": "labelClass",
+              "type": "label",
+              "label": {
+                "en": "Category"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelCapabilities",
+              "type": "label",
+              "label": {
+                "en": "Capabilities"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelDevices",
+              "type": "label",
+              "label": {
+                "en": "Devices"
+              },
+              "value": "Unknown",
+              "hint": {
+                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Other"
+          },
+          "children": [
+            {
+              "id": "notes",
+              "type": "textarea",
+              "label": {
+                "en": "Your Notes"
+              },
+              "value": "",
+              "hint": {
+                "en": "Enter any thoughts or notes you may have regarding this device group."
+              }
+            }
+          ]
+        }
+      ],
+      "id": "button",
+      "class": "button",
+      "name": {
+        "en": "Button",
+        "nl": "Knop"
+      }
+    },
+    {
+      "capabilities": [],
+      "icon": "/drivers/coffeemachine/assets/icon.svg",
+      "images": {
+        "large": "/drivers/coffeemachine/assets/images/large.png",
+        "small": "/drivers/coffeemachine/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "capabilities",
+          "navigation": {
+            "next": "devices"
+          }
+        },
+        {
+          "id": "devices",
+          "navigation": {
+            "next": "icons",
+            "prev": "capabilities"
+          }
+        },
+        {
+          "id": "icons",
+          "navigation": {
+            "next": "group",
+            "prev": "devices"
+          }
+        },
+        {
+          "id": "group",
+          "navigation": {
+            "prev": "icons"
+          }
+        }
+      ],
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "About"
+          },
+          "children": [
+            {
+              "id": "labelClass",
+              "type": "label",
+              "label": {
+                "en": "Category"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelCapabilities",
+              "type": "label",
+              "label": {
+                "en": "Capabilities"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelDevices",
+              "type": "label",
+              "label": {
+                "en": "Devices"
+              },
+              "value": "Unknown",
+              "hint": {
+                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Other"
+          },
+          "children": [
+            {
+              "id": "notes",
+              "type": "textarea",
+              "label": {
+                "en": "Your Notes"
+              },
+              "value": "",
+              "hint": {
+                "en": "Enter any thoughts or notes you may have regarding this device group."
+              }
+            }
+          ]
+        }
+      ],
+      "id": "coffeemachine",
+      "class": "coffeemachine",
+      "name": {
+        "en": "Coffee machine",
+        "nl": "Koffiemachine"
+      }
+    },
+    {
+      "capabilities": [],
+      "icon": "/drivers/curtain/assets/icon.svg",
+      "images": {
+        "large": "/drivers/curtain/assets/images/large.png",
+        "small": "/drivers/curtain/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "capabilities",
+          "navigation": {
+            "next": "devices"
+          }
+        },
+        {
+          "id": "devices",
+          "navigation": {
+            "next": "icons",
+            "prev": "capabilities"
+          }
+        },
+        {
+          "id": "icons",
+          "navigation": {
+            "next": "group",
+            "prev": "devices"
+          }
+        },
+        {
+          "id": "group",
+          "navigation": {
+            "prev": "icons"
+          }
+        }
+      ],
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "About"
+          },
+          "children": [
+            {
+              "id": "labelClass",
+              "type": "label",
+              "label": {
+                "en": "Category"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelCapabilities",
+              "type": "label",
+              "label": {
+                "en": "Capabilities"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelDevices",
+              "type": "label",
+              "label": {
+                "en": "Devices"
+              },
+              "value": "Unknown",
+              "hint": {
+                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Other"
+          },
+          "children": [
+            {
+              "id": "notes",
+              "type": "textarea",
+              "label": {
+                "en": "Your Notes"
+              },
+              "value": "",
+              "hint": {
+                "en": "Enter any thoughts or notes you may have regarding this device group."
+              }
+            }
+          ]
+        }
+      ],
+      "id": "curtain",
+      "class": "curtain",
+      "name": {
+        "en": "Curtains",
+        "nl": "Gordijnen"
+      }
+    },
+    {
+      "capabilities": [],
+      "icon": "/drivers/doorbell/assets/icon.svg",
+      "images": {
+        "large": "/drivers/doorbell/assets/images/large.png",
+        "small": "/drivers/doorbell/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "capabilities",
+          "navigation": {
+            "next": "devices"
+          }
+        },
+        {
+          "id": "devices",
+          "navigation": {
+            "next": "icons",
+            "prev": "capabilities"
+          }
+        },
+        {
+          "id": "icons",
+          "navigation": {
+            "next": "group",
+            "prev": "devices"
+          }
+        },
+        {
+          "id": "group",
+          "navigation": {
+            "prev": "icons"
+          }
+        }
+      ],
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "About"
+          },
+          "children": [
+            {
+              "id": "labelClass",
+              "type": "label",
+              "label": {
+                "en": "Category"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelCapabilities",
+              "type": "label",
+              "label": {
+                "en": "Capabilities"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelDevices",
+              "type": "label",
+              "label": {
+                "en": "Devices"
+              },
+              "value": "Unknown",
+              "hint": {
+                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Other"
+          },
+          "children": [
+            {
+              "id": "notes",
+              "type": "textarea",
+              "label": {
+                "en": "Your Notes"
+              },
+              "value": "",
+              "hint": {
+                "en": "Enter any thoughts or notes you may have regarding this device group."
+              }
+            }
+          ]
+        }
+      ],
+      "id": "doorbell",
+      "class": "doorbell",
+      "name": {
+        "en": "Doorbell",
+        "nl": "Deurbel"
+      }
+    },
+    {
+      "capabilities": [],
+      "icon": "/drivers/fan/assets/icon.svg",
+      "images": {
+        "large": "/drivers/fan/assets/images/large.png",
+        "small": "/drivers/fan/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "capabilities",
+          "navigation": {
+            "next": "devices"
+          }
+        },
+        {
+          "id": "devices",
+          "navigation": {
+            "next": "icons",
+            "prev": "capabilities"
+          }
+        },
+        {
+          "id": "icons",
+          "navigation": {
+            "next": "group",
+            "prev": "devices"
+          }
+        },
+        {
+          "id": "group",
+          "navigation": {
+            "prev": "icons"
+          }
+        }
+      ],
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "About"
+          },
+          "children": [
+            {
+              "id": "labelClass",
+              "type": "label",
+              "label": {
+                "en": "Category"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelCapabilities",
+              "type": "label",
+              "label": {
+                "en": "Capabilities"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelDevices",
+              "type": "label",
+              "label": {
+                "en": "Devices"
+              },
+              "value": "Unknown",
+              "hint": {
+                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Other"
+          },
+          "children": [
+            {
+              "id": "notes",
+              "type": "textarea",
+              "label": {
+                "en": "Your Notes"
+              },
+              "value": "",
+              "hint": {
+                "en": "Enter any thoughts or notes you may have regarding this device group."
+              }
+            }
+          ]
+        }
+      ],
+      "id": "fan",
+      "class": "fan",
+      "name": {
+        "en": "Fan",
+        "nl": "Ventilator"
+      }
+    },
+    {
+      "capabilities": [],
+      "icon": "/drivers/garagedoor/assets/icon.svg",
+      "images": {
+        "large": "/drivers/garagedoor/assets/images/large.png",
+        "small": "/drivers/garagedoor/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "capabilities",
+          "navigation": {
+            "next": "devices"
+          }
+        },
+        {
+          "id": "devices",
+          "navigation": {
+            "next": "icons",
+            "prev": "capabilities"
+          }
+        },
+        {
+          "id": "icons",
+          "navigation": {
+            "next": "group",
+            "prev": "devices"
+          }
+        },
+        {
+          "id": "group",
+          "navigation": {
+            "prev": "icons"
+          }
+        }
+      ],
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "About"
+          },
+          "children": [
+            {
+              "id": "labelClass",
+              "type": "label",
+              "label": {
+                "en": "Category"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelCapabilities",
+              "type": "label",
+              "label": {
+                "en": "Capabilities"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelDevices",
+              "type": "label",
+              "label": {
+                "en": "Devices"
+              },
+              "value": "Unknown",
+              "hint": {
+                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Other"
+          },
+          "children": [
+            {
+              "id": "notes",
+              "type": "textarea",
+              "label": {
+                "en": "Your Notes"
+              },
+              "value": "",
+              "hint": {
+                "en": "Enter any thoughts or notes you may have regarding this device group."
+              }
+            }
+          ]
+        }
+      ],
+      "id": "garagedoor",
+      "class": "other",
+      "name": {
+        "en": "Garage door",
+        "nl": "Garagedeur"
+      }
+    },
+    {
+      "capabilities": [],
+      "icon": "/drivers/heater/assets/icon.svg",
+      "images": {
+        "large": "/drivers/heater/assets/images/large.png",
+        "small": "/drivers/heater/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "capabilities",
+          "navigation": {
+            "next": "devices"
+          }
+        },
+        {
+          "id": "devices",
+          "navigation": {
+            "next": "icons",
+            "prev": "capabilities"
+          }
+        },
+        {
+          "id": "icons",
+          "navigation": {
+            "next": "group",
+            "prev": "devices"
+          }
+        },
+        {
+          "id": "group",
+          "navigation": {
+            "prev": "icons"
+          }
+        }
+      ],
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "About"
+          },
+          "children": [
+            {
+              "id": "labelClass",
+              "type": "label",
+              "label": {
+                "en": "Category"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelCapabilities",
+              "type": "label",
+              "label": {
+                "en": "Capabilities"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelDevices",
+              "type": "label",
+              "label": {
+                "en": "Devices"
+              },
+              "value": "Unknown",
+              "hint": {
+                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Other"
+          },
+          "children": [
+            {
+              "id": "notes",
+              "type": "textarea",
+              "label": {
+                "en": "Your Notes"
+              },
+              "value": "",
+              "hint": {
+                "en": "Enter any thoughts or notes you may have regarding this device group."
+              }
+            }
+          ]
+        }
+      ],
+      "id": "heater",
+      "class": "heater",
+      "name": {
+        "en": "Heater",
+        "nl": "Heater"
+      }
+    },
+    {
+      "capabilities": [],
+      "icon": "/drivers/homealarm/assets/icon.svg",
+      "images": {
+        "large": "/drivers/homealarm/assets/images/large.png",
+        "small": "/drivers/homealarm/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "capabilities",
+          "navigation": {
+            "next": "devices"
+          }
+        },
+        {
+          "id": "devices",
+          "navigation": {
+            "next": "icons",
+            "prev": "capabilities"
+          }
+        },
+        {
+          "id": "icons",
+          "navigation": {
+            "next": "group",
+            "prev": "devices"
+          }
+        },
+        {
+          "id": "group",
+          "navigation": {
+            "prev": "icons"
+          }
+        }
+      ],
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "About"
+          },
+          "children": [
+            {
+              "id": "labelClass",
+              "type": "label",
+              "label": {
+                "en": "Category"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelCapabilities",
+              "type": "label",
+              "label": {
+                "en": "Capabilities"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelDevices",
+              "type": "label",
+              "label": {
+                "en": "Devices"
+              },
+              "value": "Unknown",
+              "hint": {
+                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Other"
+          },
+          "children": [
+            {
+              "id": "notes",
+              "type": "textarea",
+              "label": {
+                "en": "Your Notes"
+              },
+              "value": "",
+              "hint": {
+                "en": "Enter any thoughts or notes you may have regarding this device group."
+              }
+            }
+          ]
+        }
+      ],
+      "id": "homealarm",
+      "class": "homealarm",
+      "name": {
+        "en": "Home Security",
+        "nl": "Huisbeveiliging"
+      }
+    },
+    {
+      "id": "homeenerymonitor",
+      "class": "other",
+      "capabilities": [],
+      "name": {
+        "en": "Home Energy Monitor"
+      }
+    },
+    {
+      "capabilities": [],
+      "icon": "/drivers/kettle/assets/icon.svg",
+      "images": {
+        "large": "/drivers/kettle/assets/images/large.png",
+        "small": "/drivers/kettle/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "capabilities",
+          "navigation": {
+            "next": "devices"
+          }
+        },
+        {
+          "id": "devices",
+          "navigation": {
+            "next": "icons",
+            "prev": "capabilities"
+          }
+        },
+        {
+          "id": "icons",
+          "navigation": {
+            "next": "group",
+            "prev": "devices"
+          }
+        },
+        {
+          "id": "group",
+          "navigation": {
+            "prev": "icons"
+          }
+        }
+      ],
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "About"
+          },
+          "children": [
+            {
+              "id": "labelClass",
+              "type": "label",
+              "label": {
+                "en": "Category"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelCapabilities",
+              "type": "label",
+              "label": {
+                "en": "Capabilities"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelDevices",
+              "type": "label",
+              "label": {
+                "en": "Devices"
+              },
+              "value": "Unknown",
+              "hint": {
+                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Other"
+          },
+          "children": [
+            {
+              "id": "notes",
+              "type": "textarea",
+              "label": {
+                "en": "Your Notes"
+              },
+              "value": "",
+              "hint": {
+                "en": "Enter any thoughts or notes you may have regarding this device group."
+              }
+            }
+          ]
+        }
+      ],
+      "id": "kettle",
+      "class": "kettle",
+      "name": {
+        "en": "Kettle",
+        "nl": "Waterkoker"
+      }
+    },
+    {
+      "capabilities": [],
+      "icon": "/drivers/light/assets/icon.svg",
+      "images": {
+        "large": "/drivers/light/assets/images/large.png",
+        "small": "/drivers/light/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "capabilities",
+          "navigation": {
+            "next": "devices"
+          }
+        },
+        {
+          "id": "devices",
+          "navigation": {
+            "next": "icons",
+            "prev": "capabilities"
+          }
+        },
+        {
+          "id": "icons",
+          "navigation": {
+            "next": "group",
+            "prev": "devices"
+          }
+        },
+        {
+          "id": "group",
+          "navigation": {
+            "prev": "icons"
+          }
+        }
+      ],
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "About"
+          },
+          "children": [
+            {
+              "id": "labelClass",
+              "type": "label",
+              "label": {
+                "en": "Category"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelCapabilities",
+              "type": "label",
+              "label": {
+                "en": "Capabilities"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelDevices",
+              "type": "label",
+              "label": {
+                "en": "Devices"
+              },
+              "value": "Unknown",
+              "hint": {
+                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Other"
+          },
+          "children": [
+            {
+              "id": "notes",
+              "type": "textarea",
+              "label": {
+                "en": "Your Notes"
+              },
+              "value": "",
+              "hint": {
+                "en": "Enter any thoughts or notes you may have regarding this device group."
+              }
+            }
+          ]
+        }
+      ],
+      "id": "light",
+      "class": "light",
+      "name": {
+        "en": "Light",
+        "nl": "Lamp"
+      }
+    },
+    {
+      "capabilities": [],
+      "icon": "/drivers/lock/assets/icon.svg",
+      "images": {
+        "large": "/drivers/lock/assets/images/large.png",
+        "small": "/drivers/lock/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "capabilities",
+          "navigation": {
+            "next": "devices"
+          }
+        },
+        {
+          "id": "devices",
+          "navigation": {
+            "next": "icons",
+            "prev": "capabilities"
+          }
+        },
+        {
+          "id": "icons",
+          "navigation": {
+            "next": "group",
+            "prev": "devices"
+          }
+        },
+        {
+          "id": "group",
+          "navigation": {
+            "prev": "icons"
+          }
+        }
+      ],
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "About"
+          },
+          "children": [
+            {
+              "id": "labelClass",
+              "type": "label",
+              "label": {
+                "en": "Category"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelCapabilities",
+              "type": "label",
+              "label": {
+                "en": "Capabilities"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelDevices",
+              "type": "label",
+              "label": {
+                "en": "Devices"
+              },
+              "value": "Unknown",
+              "hint": {
+                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Other"
+          },
+          "children": [
+            {
+              "id": "notes",
+              "type": "textarea",
+              "label": {
+                "en": "Your Notes"
+              },
+              "value": "",
+              "hint": {
+                "en": "Enter any thoughts or notes you may have regarding this device group."
+              }
+            }
+          ]
+        }
+      ],
+      "id": "lock",
+      "class": "lock",
+      "name": {
+        "en": "Lock",
+        "nl": "Slot"
+      }
+    },
+    {
+      "capabilities": [],
+      "icon": "/drivers/other/assets/icon.svg",
+      "images": {
+        "large": "/drivers/other/assets/images/large.png",
+        "small": "/drivers/other/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "capabilities",
+          "navigation": {
+            "next": "devices"
+          }
+        },
+        {
+          "id": "devices",
+          "navigation": {
+            "next": "icons",
+            "prev": "capabilities"
+          }
+        },
+        {
+          "id": "icons",
+          "navigation": {
+            "next": "group",
+            "prev": "devices"
+          }
+        },
+        {
+          "id": "group",
+          "navigation": {
+            "prev": "icons"
+          }
+        }
+      ],
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "About"
+          },
+          "children": [
+            {
+              "id": "labelClass",
+              "type": "label",
+              "label": {
+                "en": "Category"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelCapabilities",
+              "type": "label",
+              "label": {
+                "en": "Capabilities"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelDevices",
+              "type": "label",
+              "label": {
+                "en": "Devices"
+              },
+              "value": "Unknown",
+              "hint": {
+                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Other"
+          },
+          "children": [
+            {
+              "id": "notes",
+              "type": "textarea",
+              "label": {
+                "en": "Your Notes"
+              },
+              "value": "",
+              "hint": {
+                "en": "Enter any thoughts or notes you may have regarding this device group."
+              }
+            }
+          ]
+        }
+      ],
+      "id": "other",
+      "class": "other",
+      "name": {
+        "en": "Other",
+        "nl": "Overig"
+      }
+    },
+    {
+      "capabilities": [],
+      "icon": "/drivers/relay/assets/icon.svg",
+      "images": {
+        "large": "/drivers/relay/assets/images/large.png",
+        "small": "/drivers/relay/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "capabilities",
+          "navigation": {
+            "next": "devices"
+          }
+        },
+        {
+          "id": "devices",
+          "navigation": {
+            "next": "icons",
+            "prev": "capabilities"
+          }
+        },
+        {
+          "id": "icons",
+          "navigation": {
+            "next": "group",
+            "prev": "devices"
+          }
+        },
+        {
+          "id": "group",
+          "navigation": {
+            "prev": "icons"
+          }
+        }
+      ],
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "About"
+          },
+          "children": [
+            {
+              "id": "labelClass",
+              "type": "label",
+              "label": {
+                "en": "Category"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelCapabilities",
+              "type": "label",
+              "label": {
+                "en": "Capabilities"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelDevices",
+              "type": "label",
+              "label": {
+                "en": "Devices"
+              },
+              "value": "Unknown",
+              "hint": {
+                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Other"
+          },
+          "children": [
+            {
+              "id": "notes",
+              "type": "textarea",
+              "label": {
+                "en": "Your Notes"
+              },
+              "value": "",
+              "hint": {
+                "en": "Enter any thoughts or notes you may have regarding this device group."
+              }
+            }
+          ]
+        }
+      ],
+      "id": "relay",
+      "class": "other",
+      "name": {
+        "en": "Relay",
+        "nl": "Relais"
+      }
+    },
+    {
+      "capabilities": [],
+      "icon": "/drivers/remote/assets/icon.svg",
+      "images": {
+        "large": "/drivers/remote/assets/images/large.png",
+        "small": "/drivers/remote/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "capabilities",
+          "navigation": {
+            "next": "devices"
+          }
+        },
+        {
+          "id": "devices",
+          "navigation": {
+            "next": "icons",
+            "prev": "capabilities"
+          }
+        },
+        {
+          "id": "icons",
+          "navigation": {
+            "next": "group",
+            "prev": "devices"
+          }
+        },
+        {
+          "id": "group",
+          "navigation": {
+            "prev": "icons"
+          }
+        }
+      ],
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "About"
+          },
+          "children": [
+            {
+              "id": "labelClass",
+              "type": "label",
+              "label": {
+                "en": "Category"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelCapabilities",
+              "type": "label",
+              "label": {
+                "en": "Capabilities"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelDevices",
+              "type": "label",
+              "label": {
+                "en": "Devices"
+              },
+              "value": "Unknown",
+              "hint": {
+                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Other"
+          },
+          "children": [
+            {
+              "id": "notes",
+              "type": "textarea",
+              "label": {
+                "en": "Your Notes"
+              },
+              "value": "",
+              "hint": {
+                "en": "Enter any thoughts or notes you may have regarding this device group."
+              }
+            }
+          ]
+        }
+      ],
+      "id": "remote",
+      "class": "remote",
+      "name": {
+        "en": "Remote",
+        "nl": "Afstandsbediening"
+      }
+    },
+    {
+      "capabilities": [],
+      "icon": "/drivers/sensor/assets/icon.svg",
+      "images": {
+        "large": "/drivers/sensor/assets/images/large.png",
+        "small": "/drivers/sensor/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "capabilities",
+          "navigation": {
+            "next": "devices"
+          }
+        },
+        {
+          "id": "devices",
+          "navigation": {
+            "next": "icons",
+            "prev": "capabilities"
+          }
+        },
+        {
+          "id": "icons",
+          "navigation": {
+            "next": "group",
+            "prev": "devices"
+          }
+        },
+        {
+          "id": "group",
+          "navigation": {
+            "prev": "icons"
+          }
+        }
+      ],
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "About"
+          },
+          "children": [
+            {
+              "id": "labelClass",
+              "type": "label",
+              "label": {
+                "en": "Category"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelCapabilities",
+              "type": "label",
+              "label": {
+                "en": "Capabilities"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelDevices",
+              "type": "label",
+              "label": {
+                "en": "Devices"
+              },
+              "value": "Unknown",
+              "hint": {
+                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Other"
+          },
+          "children": [
+            {
+              "id": "notes",
+              "type": "textarea",
+              "label": {
+                "en": "Your Notes"
+              },
+              "value": "",
+              "hint": {
+                "en": "Enter any thoughts or notes you may have regarding this device group."
+              }
+            }
+          ]
+        }
+      ],
+      "id": "sensor",
+      "class": "sensor",
+      "name": {
+        "en": "Sensor",
+        "nl": "Sensor"
+      }
+    },
+    {
+      "capabilities": [],
+      "icon": "/drivers/socket/assets/icon.svg",
+      "images": {
+        "large": "/drivers/socket/assets/images/large.png",
+        "small": "/drivers/socket/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "capabilities",
+          "navigation": {
+            "next": "devices"
+          }
+        },
+        {
+          "id": "devices",
+          "navigation": {
+            "next": "icons",
+            "prev": "capabilities"
+          }
+        },
+        {
+          "id": "icons",
+          "navigation": {
+            "next": "group",
+            "prev": "devices"
+          }
+        },
+        {
+          "id": "group",
+          "navigation": {
+            "prev": "icons"
+          }
+        }
+      ],
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "About"
+          },
+          "children": [
+            {
+              "id": "labelClass",
+              "type": "label",
+              "label": {
+                "en": "Category"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelCapabilities",
+              "type": "label",
+              "label": {
+                "en": "Capabilities"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelDevices",
+              "type": "label",
+              "label": {
+                "en": "Devices"
+              },
+              "value": "Unknown",
+              "hint": {
+                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Other"
+          },
+          "children": [
+            {
+              "id": "notes",
+              "type": "textarea",
+              "label": {
+                "en": "Your Notes"
+              },
+              "value": "",
+              "hint": {
+                "en": "Enter any thoughts or notes you may have regarding this device group."
+              }
+            }
+          ]
+        }
+      ],
+      "id": "socket",
+      "class": "socket",
+      "name": {
+        "en": "Wall Plug",
+        "nl": "Schakeldoos"
+      }
+    },
+    {
+      "capabilities": [],
+      "icon": "/drivers/speaker/assets/icon.svg",
+      "images": {
+        "large": "/drivers/speaker/assets/images/large.png",
+        "small": "/drivers/speaker/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "capabilities",
+          "navigation": {
+            "next": "devices"
+          }
+        },
+        {
+          "id": "devices",
+          "navigation": {
+            "next": "icons",
+            "prev": "capabilities"
+          }
+        },
+        {
+          "id": "icons",
+          "navigation": {
+            "next": "group",
+            "prev": "devices"
+          }
+        },
+        {
+          "id": "group",
+          "navigation": {
+            "prev": "icons"
+          }
+        }
+      ],
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "About"
+          },
+          "children": [
+            {
+              "id": "labelClass",
+              "type": "label",
+              "label": {
+                "en": "Category"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelCapabilities",
+              "type": "label",
+              "label": {
+                "en": "Capabilities"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelDevices",
+              "type": "label",
+              "label": {
+                "en": "Devices"
+              },
+              "value": "Unknown",
+              "hint": {
+                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Other"
+          },
+          "children": [
+            {
+              "id": "notes",
+              "type": "textarea",
+              "label": {
+                "en": "Your Notes"
+              },
+              "value": "",
+              "hint": {
+                "en": "Enter any thoughts or notes you may have regarding this device group."
+              }
+            }
+          ]
+        }
+      ],
+      "id": "speaker",
+      "class": "speaker",
+      "name": {
+        "en": "Speaker",
+        "nl": "Speaker"
+      }
+    },
+    {
+      "capabilities": [],
+      "icon": "/drivers/sunshade/assets/icon.svg",
+      "images": {
+        "large": "/drivers/sunshade/assets/images/large.png",
+        "small": "/drivers/sunshade/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "capabilities",
+          "navigation": {
+            "next": "devices"
+          }
+        },
+        {
+          "id": "devices",
+          "navigation": {
+            "next": "icons",
+            "prev": "capabilities"
+          }
+        },
+        {
+          "id": "icons",
+          "navigation": {
+            "next": "group",
+            "prev": "devices"
+          }
+        },
+        {
+          "id": "group",
+          "navigation": {
+            "prev": "icons"
+          }
+        }
+      ],
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "About"
+          },
+          "children": [
+            {
+              "id": "labelClass",
+              "type": "label",
+              "label": {
+                "en": "Category"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelCapabilities",
+              "type": "label",
+              "label": {
+                "en": "Capabilities"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelDevices",
+              "type": "label",
+              "label": {
+                "en": "Devices"
+              },
+              "value": "Unknown",
+              "hint": {
+                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Other"
+          },
+          "children": [
+            {
+              "id": "notes",
+              "type": "textarea",
+              "label": {
+                "en": "Your Notes"
+              },
+              "value": "",
+              "hint": {
+                "en": "Enter any thoughts or notes you may have regarding this device group."
+              }
+            }
+          ]
+        }
+      ],
+      "id": "sunshade",
+      "class": "sunshade",
+      "name": {
+        "en": "Sunshade",
+        "nl": "Zonnescherm"
+      }
+    },
+    {
+      "capabilities": [],
+      "icon": "/drivers/thermostat/assets/icon.svg",
+      "images": {
+        "large": "/drivers/thermostat/assets/images/large.png",
+        "small": "/drivers/thermostat/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "capabilities",
+          "navigation": {
+            "next": "devices"
+          }
+        },
+        {
+          "id": "devices",
+          "navigation": {
+            "next": "icons",
+            "prev": "capabilities"
+          }
+        },
+        {
+          "id": "icons",
+          "navigation": {
+            "next": "group",
+            "prev": "devices"
+          }
+        },
+        {
+          "id": "group",
+          "navigation": {
+            "prev": "icons"
+          }
+        }
+      ],
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "About"
+          },
+          "children": [
+            {
+              "id": "labelClass",
+              "type": "label",
+              "label": {
+                "en": "Category"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelCapabilities",
+              "type": "label",
+              "label": {
+                "en": "Capabilities"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelDevices",
+              "type": "label",
+              "label": {
+                "en": "Devices"
+              },
+              "value": "Unknown",
+              "hint": {
+                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Other"
+          },
+          "children": [
+            {
+              "id": "notes",
+              "type": "textarea",
+              "label": {
+                "en": "Your Notes"
+              },
+              "value": "",
+              "hint": {
+                "en": "Enter any thoughts or notes you may have regarding this device group."
+              }
+            }
+          ]
+        }
+      ],
+      "id": "thermostat",
+      "class": "thermostat",
+      "name": {
+        "en": "Thermostat",
+        "nl": "Thermostaat"
+      }
+    },
+    {
+      "capabilities": [],
+      "icon": "/drivers/tv/assets/icon.svg",
+      "images": {
+        "large": "/drivers/tv/assets/images/large.png",
+        "small": "/drivers/tv/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "capabilities",
+          "navigation": {
+            "next": "devices"
+          }
+        },
+        {
+          "id": "devices",
+          "navigation": {
+            "next": "icons",
+            "prev": "capabilities"
+          }
+        },
+        {
+          "id": "icons",
+          "navigation": {
+            "next": "group",
+            "prev": "devices"
+          }
+        },
+        {
+          "id": "group",
+          "navigation": {
+            "prev": "icons"
+          }
+        }
+      ],
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "About"
+          },
+          "children": [
+            {
+              "id": "labelClass",
+              "type": "label",
+              "label": {
+                "en": "Category"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelCapabilities",
+              "type": "label",
+              "label": {
+                "en": "Capabilities"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelDevices",
+              "type": "label",
+              "label": {
+                "en": "Devices"
+              },
+              "value": "Unknown",
+              "hint": {
+                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Other"
+          },
+          "children": [
+            {
+              "id": "notes",
+              "type": "textarea",
+              "label": {
+                "en": "Your Notes"
+              },
+              "value": "",
+              "hint": {
+                "en": "Enter any thoughts or notes you may have regarding this device group."
+              }
+            }
+          ]
+        }
+      ],
+      "id": "tv",
+      "class": "tv",
+      "name": {
+        "en": "TV",
+        "nl": "TV"
+      }
+    },
+    {
+      "capabilities": [],
+      "icon": "/drivers/vacuumcleaner/assets/icon.svg",
+      "images": {
+        "large": "/drivers/vacuumcleaner/assets/images/large.png",
+        "small": "/drivers/vacuumcleaner/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "capabilities",
+          "navigation": {
+            "next": "devices"
+          }
+        },
+        {
+          "id": "devices",
+          "navigation": {
+            "next": "icons",
+            "prev": "capabilities"
+          }
+        },
+        {
+          "id": "icons",
+          "navigation": {
+            "next": "group",
+            "prev": "devices"
+          }
+        },
+        {
+          "id": "group",
+          "navigation": {
+            "prev": "icons"
+          }
+        }
+      ],
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "About"
+          },
+          "children": [
+            {
+              "id": "labelClass",
+              "type": "label",
+              "label": {
+                "en": "Category"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelCapabilities",
+              "type": "label",
+              "label": {
+                "en": "Capabilities"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelDevices",
+              "type": "label",
+              "label": {
+                "en": "Devices"
+              },
+              "value": "Unknown",
+              "hint": {
+                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Other"
+          },
+          "children": [
+            {
+              "id": "notes",
+              "type": "textarea",
+              "label": {
+                "en": "Your Notes"
+              },
+              "value": "",
+              "hint": {
+                "en": "Enter any thoughts or notes you may have regarding this device group."
+              }
+            }
+          ]
+        }
+      ],
+      "id": "vacuumcleaner",
+      "class": "vacuumcleaner",
+      "name": {
+        "en": "Vacuum Cleaner",
+        "nl": "Stofzuiger"
+      }
+    },
+    {
+      "capabilities": [],
+      "icon": "/drivers/windowcoverings/assets/icon.svg",
+      "images": {
+        "large": "/drivers/windowcoverings/assets/images/large.png",
+        "small": "/drivers/windowcoverings/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "capabilities",
+          "navigation": {
+            "next": "devices"
+          }
+        },
+        {
+          "id": "devices",
+          "navigation": {
+            "next": "icons",
+            "prev": "capabilities"
+          }
+        },
+        {
+          "id": "icons",
+          "navigation": {
+            "next": "group",
+            "prev": "devices"
+          }
+        },
+        {
+          "id": "group",
+          "navigation": {
+            "prev": "icons"
+          }
+        }
+      ],
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "About"
+          },
+          "children": [
+            {
+              "id": "labelClass",
+              "type": "label",
+              "label": {
+                "en": "Category"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelCapabilities",
+              "type": "label",
+              "label": {
+                "en": "Capabilities"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelDevices",
+              "type": "label",
+              "label": {
+                "en": "Devices"
+              },
+              "value": "Unknown",
+              "hint": {
+                "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Other"
+          },
+          "children": [
+            {
+              "id": "notes",
+              "type": "textarea",
+              "label": {
+                "en": "Your Notes"
+              },
+              "value": "",
+              "hint": {
+                "en": "Enter any thoughts or notes you may have regarding this device group."
+              }
+            }
+          ]
+        }
+      ],
+      "id": "windowcoverings",
+      "class": "windowcoverings",
+      "name": {
+        "en": "Window Coverings",
+        "nl": "Raambekleding"
+      }
+    }
+  ]
 }
-
-

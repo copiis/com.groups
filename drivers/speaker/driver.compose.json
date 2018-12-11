@@ -1,0 +1,12 @@
+{
+    "id": "speaker",
+    "class": "speaker",
+    "capabilities": [],
+    "name": {
+        "en": "Speaker",
+        "nl": "Speaker"
+    },
+    "$extends": [
+        "default"
+    ]
+}

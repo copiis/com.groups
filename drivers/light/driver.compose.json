@@ -1,0 +1,12 @@
+{
+    "id": "light",
+    "class": "light",
+    "capabilities": [],
+    "name": {
+        "en": "Light",
+        "nl": "Lamp"
+    },
+    "$extends": [
+        "default"
+    ]
+}

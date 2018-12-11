@@ -1,6 +1,6 @@
 'use strict';
 
-const Group = require('../group');
+const Group = require('/lib/group');
 
 class HomeEnergyMonitorDriver extends Group.Driver {
 

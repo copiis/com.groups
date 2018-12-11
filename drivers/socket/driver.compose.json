@@ -1,0 +1,12 @@
+{
+    "id": "socket",
+    "class": "socket",
+    "capabilities": [],
+    "name": {
+        "en": "Wall Plug",
+        "nl": "Schakeldoos"
+    },
+    "$extends": [
+        "default"
+    ]
+}

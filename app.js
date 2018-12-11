@@ -18,10 +18,6 @@ class Groups extends Homey.App {
         // Prime the API into memory, set its events.
         this.cache();
 
-        this.getGroups().then((result) => {
-            this.log(result);
-        });
-
         // Initialise the devices objects.
         this.devices = {};
     }
@@ -70,7 +66,7 @@ class Groups extends Homey.App {
     }
 
     async getGroups() {
-        return Homey.ManagerDrivers.getDriver('light').getDevices();
+        //return Homey.ManagerDrivers.getDriver('light').getDevices();
     }
 
     async getGroup(id) {

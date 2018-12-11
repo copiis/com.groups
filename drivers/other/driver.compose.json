@@ -1,0 +1,12 @@
+{
+    "id": "other",
+    "class": "other",
+    "capabilities": [],
+    "name": {
+        "en": "Other",
+        "nl": "Overig"
+    },
+    "$extends": [
+        "default"
+    ]
+}

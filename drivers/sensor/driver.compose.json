@@ -1,0 +1,12 @@
+{
+    "id": "sensor",
+    "class": "sensor",
+    "capabilities": [],
+    "name": {
+        "en": "Sensor",
+        "nl": "Sensor"
+    },
+    "$extends": [
+        "default"
+    ]
+}

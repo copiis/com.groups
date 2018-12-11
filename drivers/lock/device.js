@@ -1,5 +1,5 @@
 'use strict';
 
-const Group = require('../group');
+const Group = require('/lib/group');
 
 module.exports = class LockDevice extends Group.Device {};

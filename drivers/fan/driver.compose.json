@@ -1,0 +1,12 @@
+{
+    "id": "fan",
+    "class": "fan",
+    "capabilities": [],
+    "name": {
+        "en": "Fan",
+        "nl": "Ventilator"
+    },
+    "$extends": [
+        "default"
+    ]
+}
