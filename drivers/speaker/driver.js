@@ -4,11 +4,15 @@ const Group = require('../group');
 
 class SpeakerDriver extends Group.Driver {
 
+    onInit() {
+        this.class = 'socket';
+        super.onInit();
+    }
+
     onPair( socket ) {
-        this.icons = {};
-        this.class = 'speaker';
         super.onPair(socket);
     }
+
 
 }
 

@@ -170,8 +170,17 @@ class Device extends Homey.Device {
 
             for (let capability in values) {
 
-                this.instances[this.settings.devices[x]][capability].setValue(values[capability]);
-                this.log('Setting capability ' + capability + ' on ' + this.getName() + '(' + values[capability] + ')');
+                let a = {
+                    instance: this.instances[this.settings.devices[x]][capability]
+                };
+
+                // Sanity
+                if ( a.instance.value !==  values[capability]) {
+                    a.instance.setValue(values[capability]);
+                    this.log('Setting capability ' + a.instance.title + ' on ' + this.getName() + ':' + a.instance.device.name + '(' + values[capability] + ')');
+                } else {
+                    this.log('Ignore Setting capability ' + a.instance.title  + ' on ' + this.getName() + ':' + a.instance.device.name + '(' + a.instance.title.value  + ' is ' + values[capability] + ')');
+                }
             }
 
         }

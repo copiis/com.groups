@@ -11,5 +11,11 @@
     "curtain",
     "curtain/resized"
   ],
-  "capabilities" : []
+  "capabilities" : [
+    "onoff",
+    "dim",
+    "windowcoverings_state",
+    "windowcoverings_closed",
+    "windowcoverings_set"
+  ]
 }

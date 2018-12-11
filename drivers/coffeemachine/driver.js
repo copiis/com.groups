@@ -4,12 +4,16 @@ const Group = require('../group');
 
 class CoffeeMachineDriver extends Group.Driver {
 
-    onPair( socket ) {
-        this.icons = {};
+    onInit( ) {
+
         this.class = 'coffeemachine';
-        super.onPair(socket);
+
+        super.onInit();
     }
 
+    onPair( socket ) {
+        super.onPair(socket);
+    }
 }
 
 module.exports = CoffeeMachineDriver;

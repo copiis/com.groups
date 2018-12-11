@@ -10,6 +10,9 @@ class FanDriver extends Group.Driver {
 
         super.onInit();
     }
+    onPair( socket ) {
+        super.onPair(socket);
+    }
 }
 
 module.exports = FanDriver;

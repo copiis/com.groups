@@ -4,12 +4,14 @@ const Group = require('../group');
 
 class ThermostatDriver extends Group.Driver {
 
-    onPair( socket ) {
-        this.icons = {};
+    onInit() {
         this.class = 'thermostat';
-        super.onPair(socket);
+        super.onInit();
     }
 
+    onPair( socket ) {
+        super.onPair(socket);
+    }
 }
 
 module.exports = ThermostatDriver;

@@ -6,15 +6,15 @@
 <script>
 
   Homey.setTitle('Select devices to group');
-  Homey.emit('startedDevices', null, function (err, result) {
+  Homey.emit('devices.initialised', null, function (err, result) {
+    console.log(result);
     if (err) {
       console.log(err);
       return;
     }
     var allDevices = result.devices;
-    var pairingDevice = result.pairingDevice;
+    var pairingDevice = result.group;
 
-    console.log(allDevices);
     new Vue({
       el: '#all-devices',
       data: {
@@ -30,7 +30,7 @@
       methods: {},
       watch: {
         'selectedDevices': function (val) {
-          Homey.emit('devicesChanged', {
+          Homey.emit('devices.changed', {
             'devices': val
           }, function (err, result) {
             if (err) {

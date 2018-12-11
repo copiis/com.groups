@@ -4,9 +4,12 @@ const Group = require('../group');
 
 class TvDriver extends Group.Driver {
 
-    onPair( socket ) {
-        this.icons = {};
+    onInit() {
         this.class = 'tv';
+        super.onInit();
+    }
+
+    onPair( socket ) {
         super.onPair(socket);
     }
 

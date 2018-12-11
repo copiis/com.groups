@@ -4,9 +4,12 @@ const Group = require('../group');
 
 class VacuumCleanerDriver extends Group.Driver {
 
-    onPair( socket ) {
-        this.icons = {};
+    onInit() {
         this.class = 'vacuumcleaner';
+        super.onInit();
+    }
+
+    onPair( socket ) {
         super.onPair(socket);
     }
 

@@ -9,7 +9,7 @@
 <script>
 
 Homey.setTitle('Select the capabilities');
-Homey.emit('startedCapabilities', null, function (err, result) {
+Homey.emit('capabilities.initialised', null, function (err, result) {
   if (err) {
     console.log(err);
     return;
@@ -36,7 +36,7 @@ Homey.emit('startedCapabilities', null, function (err, result) {
     },
     watch   : {
       'selectedCapabilities' : function (val) {
-        Homey.emit('capabilitiesChanged', {'capabilities' : val}, function (err, result) {
+        Homey.emit('capabilities.changed', {'capabilities' : val}, function (err, result) {
           if(err){console.log(err); return;}
         });
       }

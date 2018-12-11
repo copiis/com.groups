@@ -4,12 +4,17 @@ const Group = require('../group');
 
 class ButtonDriver extends Group.Driver {
 
-    onPair( socket ) {
-        this.icons = {};
+
+    onInit( ) {
+
         this.class = 'button';
-        super.onPair(socket);
+
+        super.onInit();
     }
 
+    onPair( socket ) {
+        super.onPair(socket);
+    }
 }
 
 module.exports = ButtonDriver;

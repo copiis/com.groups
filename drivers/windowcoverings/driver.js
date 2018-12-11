@@ -4,9 +4,12 @@ const Group = require('../group');
 
 class WindowCoveringsDriver extends Group.Driver {
 
-    onPair( socket ) {
-        this.icons = {};
+    onInit() {
         this.class = 'windowcoverings';
+        super.onInit();
+    }
+
+    onPair( socket ) {
         super.onPair(socket);
     }
 

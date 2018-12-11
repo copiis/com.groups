@@ -1,20 +1,23 @@
 <script>
 
-  Homey.setTitle('Adding device to Homey...');
-  Homey.emit('almostDone', null, function (err, result) {
-    if (err) {
-      console.log(err);
-      return;
-    }
-    Homey.addDevice(result, (err, res) => {
-      if (err) {
-        console.log(err);
-        return;
-      }
-      Homey.emit('done', null, function (err, result) {
-        Homey.done();
-      });
-    })
-  });
+    Homey.setTitle('Adding device to Homey...');
+
+    Homey.emit('group.initialised', null, function (error, group) {
+        if (error) {
+            Homey.alert( error )
+            console.log( error );
+            return;
+        }
+        Homey.addDevice(group, (error, result) => {
+            if (error) {
+                Homey.alert( error )
+                console.log( error );
+                return;
+            }
+            Homey.emit('group.finalised', null, function (error, result) {
+                Homey.done();
+            });
+        })
+    });
 </script>
 <i class="loading fa fa-cog fa-spin"></i>

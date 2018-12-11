@@ -11,7 +11,7 @@ class Driver extends Homey.Driver {
 
 
     async refresh () {
-
+        console.log('Driver refresh');
         this.group = {
             name: this.name,
             class: this.class,
@@ -27,6 +27,7 @@ class Driver extends Homey.Driver {
                 version: this.version
             }
         };
+
     }
 
     /**
@@ -41,10 +42,12 @@ class Driver extends Homey.Driver {
         this.appPath = '../../../';
 
         // Set the path to our icons - note in order to be useful its relative.
-        this.iconPath = 'lib/librarian/assets/categories/icons/';
+        this.iconPath = '/assets/categories/icons/';
 
         // Assign the i18n title @todo full i18n integration Homey.__("hello", { "name": "Dave" })
         this.name = Homey.app.library.getCategory(this.class).title[Homey.app.i18n];
+
+        this.icons =  {};
 
         // Add the default icons.
         this.icons['/app/' + Homey.manifest.id + '/assets/icon.svg'] = this.appPath + '/assets/icon.svg';
@@ -56,7 +59,7 @@ class Driver extends Homey.Driver {
 
             // Loop through and add all of the category icons.
             for (let i in icons) {
-                this.icons['/app/' + Homey.manifest.id + this.iconPath + icons[i] + '.svg'] =  appPath + this.iconPath + icons[i] + '.svg';
+                this.icons['/app/' + Homey.manifest.id + this.iconPath + icons[i] + '.svg'] =  this.appPath + this.iconPath + icons[i] + '.svg';
             }
 
         } else {
@@ -193,6 +196,7 @@ class Driver extends Homey.Driver {
 
     onPair(socket) {
 
+        console.log('Driver onPair');
         // Set our default values.
         this.refresh();
 

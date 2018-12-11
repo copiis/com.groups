@@ -12,7 +12,8 @@
     "button/circle",
     "button/power",
     "button/rounded",
-    "button/toggle"
+    "button/toggle",
+    "button/test"
   ],
   "capabilities" : [
     "button"

@@ -7,6 +7,7 @@
     "en": "Use this device class for devices that can play audio, such as music.",
     "nl": "N/A"
   },
+  "icons" : [],
   "capabilities" : [
     "speaker_playing",
     "speaker_next",

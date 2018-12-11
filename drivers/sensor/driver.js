@@ -4,9 +4,12 @@ const Group = require('../group');
 
 class SensorDriver extends Group.Driver {
 
-    onPair( socket ) {
-        this.icons = {};
+    onInit() {
         this.class = 'sensor';
+        super.onInit();
+    }
+
+    onPair( socket ) {
         super.onPair(socket);
     }
 

@@ -4,12 +4,16 @@ const Group = require('../group');
 
 class BlindsDriver extends Group.Driver {
 
-    onPair( socket ) {
-        this.icons = {};
+    onInit( ) {
+
         this.class = 'blinds';
-        super.onPair(socket);
+
+        super.onInit();
     }
 
+    onPair( socket ) {
+        super.onPair(socket);
+    }
 }
 
 module.exports = BlindsDriver;

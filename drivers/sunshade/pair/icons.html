@@ -7,7 +7,7 @@
 
   Homey.setTitle('Choose your icon');
 
-  Homey.emit('startedIcons', null, function (err, result) {
+  Homey.emit('icons.initialised', null, function (err, result) {
 
 	var allIcons = result;
 
@@ -22,7 +22,7 @@
 	  },
 	  methods : {
 		addClass(deviceclass) {
-		  Homey.emit('selectIcon', {'icon': deviceclass}, function (err, result) {
+		  Homey.emit('icons.changed', {'icon': deviceclass}, function (err, result) {
 			if(err){console.log(err); return;}
 			Homey.nextView();
 		  });

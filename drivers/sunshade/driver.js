@@ -4,9 +4,12 @@ const Group = require('../group');
 
 class SunshadeDriver extends Group.Driver {
 
-    onPair( socket ) {
-        this.icons = {};
+    onInit() {
         this.class = 'sunshade';
+        super.onInit();
+    }
+
+    onPair( socket ) {
         super.onPair(socket);
     }
 

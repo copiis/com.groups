@@ -18,10 +18,10 @@
   ],
   "icons" : [
     "windowcoverings",
-    "windowcoverings/resize",
-    "blinds/resize",
-    "curtains/resize",
-    "sunshade/resize"
+    "windowcoverings/resized",
+    "blinds/resized",
+    "curtains/resized",
+    "sunshade/resized"
   ],
   "capabilities" : [
     "onoff",

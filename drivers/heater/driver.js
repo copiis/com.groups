@@ -5,18 +5,11 @@ const Group = require('../group');
 class HeaterDriver extends Group.Driver {
 
 
-    onInit( ) {
-
-        super.onInit();
-
-        this.icons = {
-            '/app/com.groups/assets/icons/heater/oil.svg' : this.appRoot + 'icons/oil.svg'
-        };
+    onInit() {
 
         this.class = 'heater';
 
-
-
+        super.onInit();
     }
 
     onPair( socket ) {

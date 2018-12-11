@@ -4,9 +4,14 @@ const Group = require('../group');
 
 class LockDriver extends Group.Driver {
 
-    onPair( socket ) {
-        this.icons = {};
+    onInit() {
+
         this.class = 'lock';
+
+        super.onInit();
+    }
+
+    onPair( socket ) {
         super.onPair(socket);
     }
 
