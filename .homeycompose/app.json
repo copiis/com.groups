@@ -1,5 +1,5 @@
 {
-    "id": "com.group",
+    "id": "com.swttt.devicegroup",
     "sdk": 2,
     "permissions": [
         "homey:manager:api"
