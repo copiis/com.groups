@@ -1,5 +1,5 @@
 {
-    "id": "com.groups",
+    "id": "com.group",
     "sdk": 2,
     "permissions": [
         "homey:manager:api"
