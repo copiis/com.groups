@@ -151,7 +151,7 @@
         <label :for="device.id" class="name">
           <div class="overlay"></div>
           <div class="icon"  v-if="device.iconObj !== null"  v-bind:style="{maskImage: 'url(' + device.iconObj.url + ')'}" style="height: 100%;"></div>
-          <span class="name" tabindex="-1" style="height:24px;">{{device.name}} - {{device.iconObj.url}}</span>
+          <span class="name" tabindex="-1" style="height:24px;">{{device.name}}</span>
         </label>
         <label :for="device.id" class="checkbox" class="checkbox">
           <input :id="device.id" :value="device" name="device" type="checkbox" tabindex="2" v-model="selectedDevices">
