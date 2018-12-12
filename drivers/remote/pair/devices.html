@@ -65,7 +65,15 @@
             });
 
             if (includeIt){
-              result.push(device)
+              if (!!device.iconObj && device.hasOwnProperty('iconObj') && device.iconObj.hasOwnProperty('url')) {
+
+              } else {
+                console.log(device.name + 'has no icon');
+                device.iconObj = {
+                  url: ''
+                }
+              }
+                result.push(device)
             }
             return result
           }, []);
@@ -102,9 +110,8 @@
 
   .device label.name {
     display: flex;
-    height: 100%;
     justify-content: flex-start;
-    align-items: end;
+    align-items: center;
   }
 
   .device .overlay {
@@ -125,6 +132,11 @@
 
   }
 
+  .device .checkbox {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
 </style>
 
 <div id="all-devices">
@@ -138,10 +150,10 @@
       <li v-if="filteredDevices.length > 0" class="device" v-for="device in filteredDevices">
         <label :for="device.id" class="name">
           <div class="overlay"></div>
-          <div class="icon" style="mask-image: url('https://5a5473002d37656f41d63f33.connect.athom.com/icon/ffe70de3c150c98a5a64334d69e50369/icon.svg'); "></div>
-          <span class="name" tabindex="-1">{{device.name}}</span>
+          <div class="icon"  v-if="device.iconObj !== null"  v-bind:style="{maskImage: 'url(' + device.iconObj.url + ')'}" style="height: 100%;"></div>
+          <span class="name" tabindex="-1" style="height:24px;">{{device.name}} - {{device.iconObj.url}}</span>
         </label>
-        <label :for="device.id" class="checkbox" style="display:flex;align-items:center;justify-content:center;">
+        <label :for="device.id" class="checkbox" class="checkbox">
           <input :id="device.id" :value="device" name="device" type="checkbox" tabindex="2" v-model="selectedDevices">
         </label>
       </li>

@@ -31,15 +31,16 @@ This app is based off of the original 'Device Groups' app by Swttt for Homey v1.
 - 2.0.0 : Device Classes (Categories) & Capabilities will now display correct name rather than tag.
 - 2.0.0 : Device Classes (Categories) & Capabilities now support en/nl languages.
 - 2.0.0 : Addition of all new categories
-- 2.0.0 : Addition of all new capabilities
-- 2.0.0 : Groups will now refresh and update their devices immediately when changed in the settings, rather then waiting for  restart.
-- 2.0.0 : Added class and capabilities to the device settings page, with in devices, Read Only.
-- 2.0.0 : Change calculated method from the settings
-- 2.0.0 : Added the ability to store your notes against a device group.
-- 2.0.0 : Added i18n support to the device settings page labels, currently support en only.
+- 2.0.0.0 : Addition of all new capabilities
+- 2.0.0.0 : Groups will now refresh and update their devices immediately when changed in the settings, rather then waiting for  restart.
+- 2.0.0.0 : Added class and capabilities to the device settings page, with in devices, Read Only.
+- 2.0.0.0 : Change calculated method from the settings
+- 2.0.0.0 : Added the ability to store your notes against a device group.
+- 2.0.0.0 : Added i18n support to the device settings page labels, currently support en only.
 - 2.0.0.1 : Reliability, Stability and Performance
 - 2.0.0.1 : Update app to require Homey v2
 - 2.0.0.1 : Updated code base to Homey v2 Spec.
+- 2.0.0.2 : Keeps track created/deleted devices refreshes device cache
 - 2.0.0.3 : Updated code to use the new makeCapabilityInstance
 - 2.0.0.4 : Standardised the classes and inheritance.
 - 2.0.0.5 : Added support for choosing an icon.
