@@ -7,5 +7,18 @@
     "en": "Use this device class for sunshades (window coverings against the sun).",
     "nl": "N/A"
   },
-  "capabilities" : []
+  "icons" : [
+    "sunshade",
+    "sunshade/resized"
+  ],
+  "capabilities" : [
+    "onoff",
+    "dim",
+    "windowcoverings_state",
+    "windowcoverings_tilt_up",
+    "windowcoverings_tilt_down",
+    "windowcoverings_tilt_set",
+    "windowcoverings_closed",
+    "windowcoverings_set"
+  ]
 }

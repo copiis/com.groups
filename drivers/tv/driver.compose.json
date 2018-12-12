@@ -1,0 +1,12 @@
+{
+    "id": "tv",
+    "class": "tv",
+    "capabilities": [],
+    "name": {
+        "en": "TV",
+        "nl": "TV"
+    },
+    "$extends": [
+        "default"
+    ]
+}

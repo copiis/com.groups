@@ -7,6 +7,7 @@
     "en": "Use this device class for sensors, e.g. a contact or motion sensor. As well as alarms!",
     "nl": "N/A"
   },
+  "icons" : [],
   "capabilities": [
     "measure_temperature",
     "measure_co",

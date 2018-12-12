@@ -1,0 +1,12 @@
+{
+    "id": "thermostat",
+    "class": "thermostat",
+    "capabilities": [],
+    "name": {
+        "en": "Thermostat",
+        "nl": "Thermostaat"
+    },
+    "$extends": [
+        "default"
+    ]
+}

@@ -16,12 +16,21 @@
     "blinds",
     "curtain"
   ],
+  "icons" : [
+    "windowcoverings",
+    "windowcoverings/resized",
+    "blinds/resized",
+    "curtains/resized",
+    "sunshade/resized"
+  ],
   "capabilities" : [
     "onoff",
     "dim",
     "windowcoverings_state",
     "windowcoverings_tilt_up",
     "windowcoverings_tilt_down",
-    "windowcoverings_tilt_set"
+    "windowcoverings_tilt_set",
+    "windowcoverings_closed",
+    "windowcoverings_set"
   ]
 }

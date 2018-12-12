@@ -6,9 +6,14 @@
     "Device Class" : "Device Class",
     "Capabilities" : "Capabilities",
     "Devices in group" : "Devices in group",
-    "Select device group" : "Select device group"
+    "Select device group" : "Select device group",
+    "Group" : "Group"
   },
   "category" : {
+    "amplifier" : {
+      "title" : "Amplifier",
+      "description" : "Use this device class for audio amplifier devices."
+    },
     "lights" : {
       "title" : "wip",
       "description" : "wip"
@@ -17,6 +22,11 @@
   "capability" : {
     "onoff" : {
       "title" : "wip"
+    }
+  },
+  "pair" : {
+    "capabilities" : {
+      "title" : ""
     }
   },
   "method" : {

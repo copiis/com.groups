@@ -1,0 +1,12 @@
+{
+    "id": "windowcoverings",
+    "class": "windowcoverings",
+    "capabilities": [],
+    "name": {
+        "en": "Window Coverings",
+        "nl": "Raambekleding"
+    },
+    "$extends": [
+        "default"
+    ]
+}

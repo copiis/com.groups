@@ -1,0 +1,11 @@
+{
+    "id": "amplifier",
+    "class": "amplifier",
+    "name": {
+        "en": "Amplifier",
+        "nl" : "Versterker"
+    },
+    "$extends": [
+        "default"
+    ]
+}

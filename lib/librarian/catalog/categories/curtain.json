@@ -7,5 +7,15 @@
     "en": "Use this device class for curtains.",
     "nl": "N/A"
   },
-  "capabilities" : []
+  "icons" : [
+    "curtain",
+    "curtain/resized"
+  ],
+  "capabilities" : [
+    "onoff",
+    "dim",
+    "windowcoverings_state",
+    "windowcoverings_closed",
+    "windowcoverings_set"
+  ]
 }

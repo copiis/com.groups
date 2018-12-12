@@ -1,0 +1,12 @@
+{
+    "id": "coffeemachine",
+    "class": "coffeemachine",
+    "capabilities": [],
+    "name": {
+        "en": "Coffee machine",
+        "nl": "Koffiemachine"
+    },
+    "$extends": [
+        "default"
+    ]
+}

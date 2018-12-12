@@ -1,113 +1,57 @@
 
-
-# Device Groups
+# Group
 
 With this app you can group devices with the same capabilities as one device.
 
-1) After installing, to add a new Device Group, select "Device Groups" from the add new device modal popup.
-
+1) After installing, to add a new Group, click  + (add) upon the devices tab select "Group".
 2) Now select the group device's class. (e.g. Light).
-On the next page you will see all the capabilities supported by this class.
- 
-3) Now chose the ones you need. (e.g. onoff and dim, temperature sensor).
+3) You will now see all the capabilities supported by this class. Now chose the ones you need. (e.g. Turned on" and "Dim level", "Temperature" ).
+4) On this page you will find all devices that have the capabilties you selected, simply select the devices you want to group.
+5) On this final page you change change the icon of the device if you would like, or select next to use the default.
+6) Now you have one device to control all the grouped devices.
 
-4) Now on the last page you will find all devices that match these capabilities, select the devices you want to group and finish the pairing process.
+### Group Settings
 
-5) Now you have one device to control all the grouped devices.
+There are two sets of settings associated with device groups, first the settings are available from the group, which offers overview information only.
+The second more important method is currently unavailable due to a bug in the Homey v2 core.
 
+### Contributions
 
----
-
-### Device Groups Settings
-
-There are two sets of settings associated with device groups, first the settings available from the device group card. Which offers overview information 
- only.
-
-More importantly there is the application settings, which can be accessed by clicking on your Homeys settings then the "Device Groups" link. 
-It is from here, 
-
-- You can change which devices are in a group. eg. *Add or remove a new light to a group*
-- Set the feedback information for a specific group eg. *The On off button should only be on if all lights are on.*
-- How grouped information is calculated for a specific capability on a specific group. - *Grouped temperature sensors upstairs should display the average of the entire group.*
-
-
----
-
-### Issues & Feature requests
-
-If you found any bugs you can create an issue on [github](https://github.com/swttt/com.swttt.devicegroups) .
-
-Any other feature request can be added there as well.
-
----
-
-### Donate
-
-If you like this app, then consider buying swttt a beer :)
-
-[![Donate](https://www.paypalobjects.com/webstatic/en_US/i/btn/png/btn_donate_92x26.png)](https://paypal.me/BasJansen)
-
----
-
-#### Testing notes
-
-Currently (in beta testing), this application will **not** overwrite the stable version of the application. Instead installing as "(beta) Device Groups"
-This is to allow testing with out breaking any existing devices/flows. 
-
----
+This app is based off of the original 'Device Groups' app by Swttt for Homey v1.
 
 ### Changelog
 
+##### 1.0
 
-##### 2.0.0-beta1
-- Update icons to use now homey device class icons. 
+- 0.0.0 : 'Device Groups' app by Swttt
+- 1.0.0 : Feedback on device status
+- 1.0.0 : Added Ability to group read only capabilities.
+- 1.0.0 : Allow device status to be calculated from grouped devices
+- 1.0.0 : Device Classes (Categories) & Capabilities will now display correct name rather than tag.
+- 1.0.0 : Device Classes (Categories) & Capabilities now support en/nl languages.
+- 1.0.0 : Addition of all new categories
+- 1.0.0 : Addition of all new capabilities
+- 1.0.0 : Groups will now refresh and update their devices immediately when changed in the settings, rather then waiting for  restart.
+- 1.0.0 : Added class and capabilities to the device settings page, with in devices, Read Only.
+- 1.0.0 : Change calculated method from the settings
+- 1.0.0 : Added the ability to store your notes against a device group.
+- 1.0.0 : Added i18n support to the device settings page labels, currently support en only.
+- 1.0.1 : Reliability, Stability and Performance
+- 1.0.1 : Update app to require Homey v2
+- 1.0.1 : Updated code base to Homey v2 Spec.
+- 1.0.3 : Updated code to use the new makeCapabilityInstance
+- 1.0.4 : Standardised the classes and inheritance.
+- 1.0.5 : Added support for choosing an icon.
+- 1.0.5 : Pushed additional devices for testing.
+- 1.0.6 : Reliability, Stability and Performance
+- 1.0.6 : Removed support for using am existing devices icon.
+- 1.0.7 : Disabled changing a devices settings.
+- 1.0.7 : Changed code base to use .homeycomposer
+- 1.0.7 : Updated APPSTORE and added temp app image.
 
-##### 2.0.0-alpha4
-
-- Change polling to event listener on groupedDevice state change
-- Add placeholder icons
-- Add validation code for use in future
-- move method names to locale
-
-
-##### 2.0.0-alpha3
-
-- Store devices in memory to reduce memory pressure.
-- Update catalog, making it consistent name convention/order
-
-##### 2.0.0-alpha2
-
-- Reliability, Stability and Performance
-
-
-##### 2.0.0--alpha1
-- API Update to 2.0.129
-- Feedback on device status
-- Added Ability to group read only capabilities.
-- Allow device status to be calculated from grouped devices
-- Device Classes (Categories) & Capabilities will now display correct name rather than tag.
-- Device Classes (Categories) & Capabilities now support en/nl languages. 
-- Addition of all new categories
-- Addition of all new capabilities
-- Groups will now refresh and update their devices immediately when changed in the settings, rather then waiting for  restart.
-- Added class and capabilities to the device settings page, with in devices, Read Only.
-- Change calculated method from the settings
-- Added the ability to store your notes against a device group.
-- Added Sensors (temp/power/lux)
-- Added Power to Light & Socket category (TBC)
-- Added i18n support to the device settings page labels, currently support en only. 
-- Device pair screens show loading status.
-
-##### 1.1.0
-- Device Group editor
-
-##### 1.0.0
-- Initial release
 
 ---
 
-### 1.2.0 Road Map
+For all questions, suggestions and support please visit :
 
-- Allow All to be selected in setup, to show all capabilities, if performance is not an issue.
-- Update categories to be tiles & addition of icons for all categories. 
-
+https://community.athom.com/t/groups-v1-0/3168/27

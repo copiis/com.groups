@@ -7,6 +7,7 @@
     "en": "Use this device class for thermostats, either for the entire home or radiator-mounted.",
     "nl": "N/A"
   },
+  "icons" : [],
   "capabilities" : [
     "thermostat_mode",
     "target_temperature",

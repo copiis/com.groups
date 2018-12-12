@@ -1,0 +1,12 @@
+{
+    "id": "remote",
+    "class": "remote",
+    "capabilities": [],
+    "name": {
+        "en": "Remote",
+        "nl": "Afstandsbediening"
+    },
+    "$extends": [
+        "default"
+    ]
+}

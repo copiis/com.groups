@@ -1,0 +1,12 @@
+{
+    "id": "vacuumcleaner",
+    "class": "vacuumcleaner",
+    "capabilities": [],
+    "name": {
+        "en": "Vacuum Cleaner",
+        "nl": "Stofzuiger"
+    },
+    "$extends": [
+        "default"
+    ]
+}

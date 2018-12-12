@@ -16,5 +16,14 @@
     "light_mode",
     "measure_power",
     "meter_power"
+  ],
+  "icons" : [
+    "light",
+    "light/a",
+    "light/b",
+    "light/e",
+    "light/gu",
+    "light/led",
+    "light/par"
   ]
 }

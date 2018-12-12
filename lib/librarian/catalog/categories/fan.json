@@ -7,6 +7,10 @@
     "en": "Use this device class for fans that cool your home.",
     "nl": "N/A"
   },
+  "icons" : [
+    "fan",
+    "fan/simple"
+  ],
   "capabilities" : [
     "onoff",
     "dim",

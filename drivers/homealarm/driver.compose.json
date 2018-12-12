@@ -1,0 +1,11 @@
+{
+    "id": "homealarm",
+    "class": "homealarm",
+    "name": {
+        "en": "Home Security",
+        "nl": "Huisbeveiliging"
+    },
+    "$extends": [
+        "default"
+    ]
+}

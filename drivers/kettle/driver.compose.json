@@ -1,0 +1,12 @@
+{
+    "id": "kettle",
+    "class": "kettle",
+    "capabilities": [],
+    "name": {
+        "en": "Kettle",
+        "nl": "Waterkoker"
+    },
+    "$extends": [
+        "default"
+    ]
+}
