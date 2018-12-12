@@ -2,6 +2,8 @@
   [v-cloak] {
     display: none;
   }
+
+
 </style>
 <script>
 
@@ -63,7 +65,15 @@
             });
 
             if (includeIt){
-              result.push(device)
+              if (!!device.iconObj && device.hasOwnProperty('iconObj') && device.iconObj.hasOwnProperty('url')) {
+
+              } else {
+                console.log(device.name + 'has no icon');
+                device.iconObj = {
+                  url: ''
+                }
+              }
+                result.push(device)
             }
             return result
           }, []);
@@ -76,21 +86,75 @@
   });
 </script>
 
+<style>
+
+
+  .device .icon {
+    -webkit-mask-position: center center;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    background: #333;
+    width: 32px;
+    height: 32px;
+  }
+
+  .device {
+    position: relative;
+    padding: 5px;
+    height: 42px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    line-height: 30px;
+    cursor: pointer;
+  }
+
+
+  .device label.name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .device .overlay {
+
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+
+  }
+
+  .device span.name {
+
+    padding-left: 1em;
+
+  }
+
+  .device .checkbox {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+</style>
+
 <div id="all-devices">
   <i v-if='isLoading' class="loading fa fa-cog fa-spin"></i>
   <template v-cloak>
     <div v-if="filteredDevices.length > 0" style="text-align:right;font-size:0.9em">
       <small>{{ filteredDevices.length }} Devices</small>
     </div>
+    <div v-else>No Devices Found</div>
     <ul id="devices-list">
       <li v-if="filteredDevices.length > 0" class="device" v-for="device in filteredDevices">
         <label :for="device.id" class="name">
           <div class="overlay"></div>
-          <span class="name" tabindex="-1">{{device.name}}</span>
+          <div class="icon"  v-if="device.iconObj !== null"  v-bind:style="{maskImage: 'url(' + device.iconObj.url + ')'}" style="height: 100%;"></div>
+          <span class="name" tabindex="-1" style="height:24px;">{{device.name}}</span>
         </label>
-        <label :for="device.id" class="checkbox">
-          <input :id="device.id" :value="device" name="device" type="checkbox" tabindex="2"
-                 v-model="selectedDevices">
+        <label :for="device.id" class="checkbox" class="checkbox">
+          <input :id="device.id" :value="device" name="device" type="checkbox" tabindex="2" v-model="selectedDevices">
         </label>
       </li>
     </ul>
