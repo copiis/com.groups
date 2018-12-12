@@ -48,10 +48,15 @@ This app is based off of the original 'Device Groups' app by Swttt for Homey v1.
 - 1.0.7 : Disabled changing a devices settings.
 - 1.0.7 : Changed code base to use .homeycomposer
 - 1.0.7 : Updated APPSTORE and added temp app image.
-
+- 1.0.8 : Updated APPSTORE
+- 1.0.8 : Re-Add Icons
+- 1.0.8 : Add remote icon, set default home energy icon
+- 1.0.8 : Update Large Image
 
 ---
 
 For all questions, suggestions and support please visit :
 
 https://community.athom.com/t/groups-v1-0/3168/27
+
+---
