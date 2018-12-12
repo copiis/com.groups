@@ -1,0 +1,55 @@
+{
+    "id": "com.groups",
+    "sdk": 2,
+    "permissions": [
+        "homey:manager:api"
+    ],
+    "name": {
+        "en": "Group",
+        "nl": "Groepen"
+    },
+    "description": {
+        "en": "Group",
+        "nl": "@todo"
+    },
+    "category": "tools",
+    "brandColor": "#000000",
+    "tags": {
+        "en": [
+            "device",
+            "group",
+            "virtual"
+        ],
+        "nl": [
+            "apparaat",
+            "groep",
+            "virtueel"
+        ]
+    },
+    "version": "1.0.7",
+    "compatibility": ">=2.0",
+    "author": {
+        "name": "Jamie Peake",
+        "email": "jamie.peake@gmail.com"
+    },
+    "contributors": {
+        "developers": [
+            {
+                "name": "Jamie Peake",
+                "email": "jamie.peake@gmail.com"
+            },
+            {
+                "name": "Robert Klep",
+                "email": "robert@klep.name"
+            },
+            {
+                "name": "Bas Jansen",
+                "email": "bas@balotti.com"
+            }
+        ]
+    },
+    "images": {
+        "large": "./assets/images/large.png",
+        "small": "./assets/images/small.png"
+    }
+}
