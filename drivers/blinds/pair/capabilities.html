@@ -2,6 +2,15 @@
     [v-cloak] {
         display: none;
     }
+
+    /*#hy-overlay-loading {*/
+        /*visibility: visible;*/
+        /*opacity:1;*/
+    /*}*/
+    /*#hy-overlay-loading.hide {*/
+        /*opacity:0;*/
+    /*}*/
+
 </style>
 
 <script src='../../../assets/vue.min.js'></script>
@@ -33,6 +42,11 @@
                         return value.title.en;
                     }
                 }
+            },
+            mounted() {
+                this. $nextTick(function () {
+                    $('#hy-overlay-loading').addClass('hide');
+                })
             },
             watch   : {
                 'selectedCapabilities' : function (val) {

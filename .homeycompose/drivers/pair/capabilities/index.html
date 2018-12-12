@@ -3,12 +3,10 @@
         display: none;
     }
 
-    #hy-overlay-loading {
-        visibility: visible;
-        opacity:1;
-    }
-    #hy-overlay-loading.hide {
-        opacity:0;
+    .device {
+        display:flex;
+        align-items:center;
+        justify-content:center;
     }
 
 </style>
@@ -70,8 +68,7 @@
                     <span class="name" tabindex="-1">{{getTitle(value, i18n)}}</span>
                 </label>
                 <label :for="key" class="checkbox">
-                    <input :id="key" :value="key" name="device" type="checkbox" tabindex="2"
-                           v-model="selectedCapabilities">
+                    <input :id="key" :value="key" name="device" type="checkbox" tabindex="2" v-model="selectedCapabilities">
                 </label>
             </li>
         </ul>
