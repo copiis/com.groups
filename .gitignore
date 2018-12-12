@@ -1,0 +1,14 @@
+# Ignore internal project files
+*.
+
+# Ignore system/application files git
+.*
+
+# Ignore installed nodes, while in development.
+debug.js
+
+# Do not ignore me!
+!.gitignore
+!.gitattributes
+!.homeyplugins.json
+!.homeycompose
