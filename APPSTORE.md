@@ -21,37 +21,45 @@ This app is based off of the original 'Device Groups' app by Swttt for Homey v1.
 
 ### Changelog
 
+##### 2.0
+
+- 2.0.108 : Add devices icons.
+- 2.0.108 : Update remote & home energy icons
+- 2.0.107 : Updated APPSTORE and added temp app image.
+- 2.0.107 : Disabled changing a devices settings.
+- 2.0.107 : Changed code base to use .homeycomposer
+- 2.0.106 : Reliability, Stability and Performance
+- 2.0.106 : Removed support for using am existing devices icon.
+- 2.0.105 : Added support for choosing an icon.
+- 2.0.105 : Pushed additional devices for testing.
+- 2.0.104 : Standardised the classes and inheritance.
+- 2.0.103 : Updated code to use the new makeCapabilityInstance
+- 2.0.102 : Keeps track created/deleted devices refreshes device cache
+- 2.0.101 : Reliability, Stability and Performance
+- 2.0.101 : Update app to require Homey v2
+- 2.0.101 : Updated code base to Homey v2 Spec
+- 2.0.000 : Feedback on device status
+- 2.0.000 : Added Ability to group read only capabilities.
+- 2.0.000 : Allow device status to be calculated from grouped devices
+- 2.0.000 : Device Classes (Categories) & Capabilities will now display correct name rather than tag.
+- 2.0.000 : Device Classes (Categories) & Capabilities now support en/nl languages.
+- 2.0.000 : Addition of all new categories
+- 2.0.000 : Addition of all new capabilities
+- 2.0.000 : Groups will now refresh and update their devices immediately when changed in the settings, rather then waiting for  restart.
+- 2.0.000 : Added class and capabilities to the device settings page, with in devices, Read Only.
+- 2.0.000 : Change calculated method from the settings
+- 2.0.000 : Added the ability to store your notes against a device group.
+- 2.0.000 : Added i18n support to the device settings page labels, currently support en only.
+
+##### 1.1
+
+- 1.1.0 : Change grouped devices via settings
+
 ##### 1.0
 
 - 1.0.0 : Ability to group settable devices
-- 1.1.0 : Change grouped devices via settings
-- 2.0.0 : Feedback on device status
-- 2.0.0 : Added Ability to group read only capabilities.
-- 2.0.0 : Allow device status to be calculated from grouped devices
-- 2.0.0 : Device Classes (Categories) & Capabilities will now display correct name rather than tag.
-- 2.0.0 : Device Classes (Categories) & Capabilities now support en/nl languages.
-- 2.0.0 : Addition of all new categories
-- 2.0.0 : Addition of all new capabilities
-- 2.0.0 : Groups will now refresh and update their devices immediately when changed in the settings, rather then waiting for  restart.
-- 2.0.0 : Added class and capabilities to the device settings page, with in devices, Read Only.
-- 2.0.0 : Change calculated method from the settings
-- 2.0.0 : Added the ability to store your notes against a device group.
-- 2.0.0 : Added i18n support to the device settings page labels, currently support en only.
-- 2.0.101 : Reliability, Stability and Performance
-- 2.0.101 : Update app to require Homey v2
-- 2.0.101 : Updated code base to Homey v2 Spec.
-- 2.0.102 : Keeps track created/deleted devices refreshes device cache
-- 2.0.103 : Updated code to use the new makeCapabilityInstance
-- 2.0.104 : Standardised the classes and inheritance.
-- 2.0.105 : Added support for choosing an icon.
-- 2.0.105 : Pushed additional devices for testing.
-- 2.0.106 : Reliability, Stability and Performance
-- 2.0.106 : Removed support for using am existing devices icon.
-- 2.0.107 : Disabled changing a devices settings.
-- 2.0.107 : Changed code base to use .homeycomposer
-- 2.0.107 : Updated APPSTORE and added temp app image.
-- 2.0.108 : Update remote & home energy icons
-- 2.0.108 : Add devices icons.
+
+
 
 ---
 
