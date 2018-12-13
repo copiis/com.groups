@@ -8,9 +8,7 @@
     "nl": "N/A"
   },
   "icons" : [
-    "icon",
-    "icons/home",
-    "icons/door"
+    "garagedoor/standard"
   ],
   "capabilities" : []
 }

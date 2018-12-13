@@ -7,7 +7,9 @@
     "en": "Use this device class for vacuum cleaners.",
     "nl": "N/A"
   },
-  "icons" : [],
+  "icons" : [
+    "vacuumcleaner/standard"
+  ],
   "capabilities" : [
     "vacuumcleaner_state"
   ]

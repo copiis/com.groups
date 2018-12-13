@@ -8,8 +8,7 @@
     "nl": "N/A"
   },
   "icons" : [
-    "sunshade",
-    "sunshade/resized"
+    "sunshade/standard"
   ],
   "capabilities" : [
     "onoff",

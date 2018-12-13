@@ -7,6 +7,8 @@
     "en": "Use this device class for (TV/Sunblind/Keyfob etc.) remotes.",
     "nl": "N/A"
   },
-  "icons" : [],
+  "icons" : [
+    "remote/standard"
+  ],
   "capabilities" : []
 }
