@@ -8,12 +8,11 @@
     "nl":  "N/A"
   },
   "icons" : [
-    "button",
-    "button/circle",
-    "button/power",
-    "button/rounded",
-    "button/toggle",
-    "button/test"
+    "icon",
+    "icons/circle",
+    "icons/rounded",
+    "icons/square",
+    "icons/toggle"
   ],
   "capabilities" : [
     "button"

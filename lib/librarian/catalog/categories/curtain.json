@@ -8,8 +8,8 @@
     "nl": "N/A"
   },
   "icons" : [
-    "curtain",
-    "curtain/resized"
+    "icon",
+    "icons/standard"
   ],
   "capabilities" : [
     "onoff",

@@ -1,12 +1,12 @@
 {
-  "id": "com.swttt.devicegroups",
+  "id": "com.groups",
   "sdk": 2,
   "permissions": [
     "homey:manager:api"
   ],
   "name": {
-    "en": "Group",
-    "nl": "Groepen"
+    "en": "(test) Group",
+    "nl": "(Test) Groepen"
   },
   "description": {
     "en": "Group",
@@ -27,7 +27,7 @@
       "virtueel"
     ]
   },
-  "version": "2.0.108",
+  "version": "2.0.109",
   "compatibility": ">=2.0",
   "author": {
     "name": "Jamie Peake",

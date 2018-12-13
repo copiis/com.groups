@@ -7,7 +7,12 @@
     "en": "Use this device class for home alarm systems.",
     "nl": "N/A"
   },
-  "icons" : [],
+  "icons" : [
+    "icon",
+    "icons/complex",
+    "icons/simple",
+    "icons/abstract"
+  ],
   "capabilities" : [
     "homealarm_state",
     "alarm_tamper"
