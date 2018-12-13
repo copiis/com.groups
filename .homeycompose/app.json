@@ -5,8 +5,8 @@
         "homey:manager:api"
     ],
     "name": {
-        "en": "{ Group }",
-        "nl": "(Omega) Groepen"
+        "en": "( Group )",
+        "nl": "( Groepen )"
     },
     "description": {
         "en": "Group",
@@ -27,7 +27,7 @@
             "virtueel"
         ]
     },
-    "version": "2.0.109",
+    "version": "2.0.110",
     "compatibility": ">=2.0",
     "author": {
         "name": "Jamie Peake",
