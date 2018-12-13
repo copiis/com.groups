@@ -1,5 +1,5 @@
 {
-    "id": "com.swttt.devicegroups",
+    "id": "com.groups",
     "sdk": 2,
     "permissions": [
         "homey:manager:api"
@@ -26,7 +26,7 @@
             "virtueel"
         ]
     },
-    "version": "2.0.108",
+    "version": "2.0.109",
     "compatibility": ">=2.0",
     "author": {
         "name": "Jamie Peake",
