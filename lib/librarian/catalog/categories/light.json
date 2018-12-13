@@ -18,6 +18,7 @@
     "meter_power"
   ],
   "icons" : [
+<<<<<<< HEAD
     "light",
     "light/a",
     "light/b",
@@ -34,5 +35,34 @@
     "light/classic_white_base",
     "light/gu_resized",
     "light/par_resized"
+=======
+    "icon",
+    "icons/a_classic_standard",
+    "icons/a_sultan_standard",
+    "icons/b_standard",
+    "icons/e_standard",
+    "icons/gu_standard",
+    "icons/par_standard",
+    "icons/1500/a_classic_standard",
+    "icons/1500/a_sultan_standard",
+    "icons/1500/b_standard",
+    "icons/1500/e_standard",
+    "icons/1500/gu_standard",
+    "icons/1500/par_standard",
+    "icons/test/a_classic_resized",
+    "icons/test/a_sultan_resized",
+    "icons/test/classic_tb",
+    "icons/test/classic_transparent",
+    "icons/test/classic_white_base",
+    "icons/test/classic_white",
+    "icons/old/a",
+    "icons/old/b",
+    "icons/old/e",
+    "icons/old/gu",
+    "icons/old/led",
+    "icons/old/light",
+    "icons/old/old",
+    "icons/old/par"
+>>>>>>> master
   ]
 }

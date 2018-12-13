@@ -8,7 +8,9 @@
     "nl":  "N/A"
   },
   "icons" : [
-    "amplifier"
+    "icon",
+    "icons/left",
+    "icons/right"
   ],
   "capabilities" : [
     "onoff",

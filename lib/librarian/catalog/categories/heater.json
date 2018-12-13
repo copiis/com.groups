@@ -8,9 +8,12 @@
     "nl": "N/A"
   },
   "icons" : [
-    "heater",
-    "heater/simple",
-    "heater/oil"
+    "icon",
+    "icons/standard",
+    "icons/wall",
+    "icons/oil",
+    "icons/abstract"
+
   ],
   "capabilities" : [
     "onoff",

@@ -8,8 +8,9 @@
     "nl": "N/A"
   },
   "icons" : [
-    "fan",
-    "fan/simple"
+    "icon",
+    "icons/pedestal",
+    "icons/simple"
   ],
   "capabilities" : [
     "onoff",
