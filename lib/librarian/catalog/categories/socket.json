@@ -20,19 +20,18 @@
     "tv"
   ],
   "icons" : [
-    "socket",
-    "socket/f",
-    "socket/i",
-    "socket/k",
-    "socket/f_button",
-    "socket/i_button",
-    "socket/k_button",
-    "light",
-    "fan",
-    "heater",
-    "coffeemachine",
-    "kettle",
-    "tv"
+    "socket/max//f",
+    "socket/max//i",
+    "socket/max//k",
+    "socket/max//f_button",
+    "socket/max//i_button",
+    "socket/max//k_button",
+    "light/standard",
+    "fan/standard/pedestal",
+    "heater/standard",
+    "coffeemachine/standard",
+    "kettle/standard",
+    "tv/standard"
   ],
   "capabilities" : [
     "onoff",

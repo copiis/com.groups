@@ -17,11 +17,7 @@
     "curtain"
   ],
   "icons" : [
-    "windowcoverings",
-    "windowcoverings/resized",
-    "blinds/resized",
-    "curtains/resized",
-    "sunshade/resized"
+    "windowcovering/standard"
   ],
   "capabilities" : [
     "onoff",

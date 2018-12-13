@@ -8,10 +8,9 @@
     "nl": "N/A"
   },
   "icons" : [
-    "icon",
-    "icons/complex",
-    "icons/simple",
-    "icons/abstract"
+    "homealarm/standard",
+    "homealarm/standard/simple",
+    "homealarm/standard/pad"
   ],
   "capabilities" : [
     "homealarm_state",

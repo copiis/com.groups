@@ -8,9 +8,9 @@
     "nl": "N/A"
   },
   "icons" : [
-    "icon",
-    "icons/pedestal",
-    "icons/simple"
+    "fan/standard",
+    "fan/standard/exhaust",
+    "fan/standard/simple"
   ],
   "capabilities" : [
     "onoff",

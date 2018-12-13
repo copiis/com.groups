@@ -8,11 +8,10 @@
     "nl":  "N/A"
   },
   "icons" : [
-    "icon",
-    "icons/circle",
-    "icons/rounded",
-    "icons/square",
-    "icons/toggle"
+    "button/standard",
+    "button/standard/rounded",
+    "button/standard/square",
+    "button/standard/toggle"
   ],
   "capabilities" : [
     "button"

@@ -8,9 +8,9 @@
     "nl": "N/A"
   },
   "icons" : [
-    "incon",
     "lock/standard",
-    "lock/handle"
+    "lock/standard/handle",
+    "lock/standard/hole"
   ],
   "capabilities" : [
     "locked",

@@ -18,11 +18,12 @@
     "curtain"
   ],
   "icons" : [
-    "categories/relay/icon.svg",
-    "categories/garagedoor/icon",
-    "categories/sunshade/icon.svg",
-    "categories/blinds/icon.svg",
-    "categories/curtain/icon.svg"
+    "relay/standard",
+    "garagedoor/standard",
+    "sunshade/standard",
+    "blinds/standard",
+    "curtain/standard",
+    "windowcoverings/standard"
   ],
   "capabilities" : []
 }

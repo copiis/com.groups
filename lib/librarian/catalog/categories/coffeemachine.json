@@ -8,8 +8,7 @@
     "nl": "N/A"
   },
   "icons" : [
-    "icon",
-    "icons/standard"
+    "coffeemachine/standard"
   ],
   "capabilities" : [
     "onoff",

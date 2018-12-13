@@ -8,8 +8,7 @@
     "nl":  "N/A"
   },
   "icons" : [
-    "icon",
-    "icons/standard"
+    "blinds/standard"
   ],
   "capabilities" : [
     "onoff",
