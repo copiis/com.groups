@@ -1,4 +1,5 @@
-# Groups [v2.0.108]
+# Groups
+_Formally Device Groups_
 
 With this app you can group devices with the same capabilities as one device. This means you an control multiple devices from the one place.
 
@@ -6,14 +7,24 @@ With this app you can group devices with the same capabilities as one device. Th
 
 Please note that this app now only supports v2, while legacy code should continue to work, new installations are not possible nor supported.
 
+## Versions
+
+
+## Status
+
+| Branch | Version | Status | Notes|
+|---|---|---|---|
+|**Stable** |1.1.0|:white_check_mark:|Not compatible with v2|
+|**Beta** |1.1.0|:white_check_mark:|Update coming soon|
+|**Alpha** |2.0.104|:ballot_box_with_check:|Working, changing.|
+|**Omega** |2.0.109|:grey_question:|Currently updated daily.|
+|**Master** |n/a|:heavy_multiplication_x:|Here there be dragons.|
+
+
 ## Notes
 
 When upgrading from Homey v1 to Homey v2, you will have to re-create your groups.
 
-Stable - Currently set to v1.1.
-Beta - Currently set to v1.1. Generally stable, final testing prior to roll out to stable.
-Alpha - Generally stable, with latest changes stage for beta, items may change.
-Omega - The highly appreciated testers, get features and bug fixes as they happen.
 
 ## Using
 
@@ -72,7 +83,7 @@ You can now click on a group's settings to see which devices, which capabilities
 
 <ins>Currently disabled while awaiting Athom to an issue with the Gen2 App - [https://support.athom.com/hc/en-us/requests/new](http://click here) and ask for Athom to fix this issue.</ins>
 
-### :negative_squared_cross_mark: hoose your language.
+### :negative_squared_cross_mark: Choose your language.
 Added (technical) support for NL, please note - I don't speak Dutch, and adding translations is a work in progress.
 
 
@@ -84,6 +95,8 @@ Otherwise everything else is as advertised in the post, hit me up on Slack (@jam
 
 Finally if you could let me know what does work, as well as what doesn’t, it would be really helpful as I am unable to test some devices myself.
 
+
+
 ## Bugs
 
 Please report all issues, bugs, enhancements and features here :
@@ -94,8 +107,7 @@ See the complete change logs here :
 
 https://github.com/hive/com.groups/
 
-
-#### Images
+## Images
 
 ![image|281x499](upload://4L9fRI7M73Q3Na1lCXq9okP7bPd.png)
 ![image1(3)|281x499](upload://rtE0RAmbDzgnTeQOQQG7xD0zI68.jpeg)

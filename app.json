@@ -5,8 +5,8 @@
     "homey:manager:api"
   ],
   "name": {
-    "en": "Group",
-    "nl": "Groepen"
+    "en": "(test) Group",
+    "nl": "(Test) Groepen"
   },
   "description": {
     "en": "Group",
