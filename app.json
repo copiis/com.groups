@@ -50,8 +50,8 @@
     ]
   },
   "images": {
-    "large": "./assets/images/omega-large.png",
-    "small": "./assets/images/omega-small.png"
+    "large": "./assets/images/logo-large.png",
+    "small": "./assets/images/logo-small.png"
   },
   "homeyCommunityTopicId": 3168,
   "bugs": {
