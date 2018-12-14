@@ -9,8 +9,8 @@
         "nl": "(Omega) Groepen"
     },
     "description": {
-        "en": "Group",
-        "nl": "@todo"
+        "en": "Makes it possible to group devices allowing control and reporting of all devices within a group.",
+        "nl": "Maakt het mogelijk om apparaten te groeperen en te schakelen."
     },
     "category": "tools",
     "brandColor": "#000000",
@@ -19,6 +19,7 @@
         "en": [
             "device",
             "group",
+            "groups",
             "virtual"
         ],
         "nl": [
@@ -27,7 +28,7 @@
             "virtueel"
         ]
     },
-    "version": "2.0.110",
+    "version": "$OMEGA",
     "compatibility": ">=2.0",
     "author": {
         "name": "Jamie Peake",

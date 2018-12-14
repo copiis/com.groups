@@ -1,12 +1,17 @@
 {
-  "id": "com.groups",
+  "id": "com.swttt.devicegroups",
   "sdk": 2,
   "permissions": [
     "homey:manager:api"
   ],
   "name": {
+<<<<<<< HEAD
     "en": " (Omega) Group",
     "nl": "(Omega) Groepen"
+=======
+    "en": "( Group )",
+    "nl": "( Groepen )"
+>>>>>>> master
   },
   "description": {
     "en": "Group",
