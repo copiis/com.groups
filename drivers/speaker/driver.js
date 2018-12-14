@@ -5,7 +5,7 @@ const Group = require('/lib/group');
 class SpeakerDriver extends Group.Driver {
 
     onInit() {
-        this.class = 'sepaker';
+        this.class = 'speaker';
         super.onInit();
     }
 
