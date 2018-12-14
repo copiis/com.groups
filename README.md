@@ -23,6 +23,10 @@ This app is based off of the original 'Device Groups' app by Swttt for Homey v1.
 
 ##### 2.0
 
+- 2.0.204 : Fix #6 - wrong average formula
+- 2.0.203 : Increase button icon size.
+- 2.0.202 : Fix wrong logo used in beta branch
+- 2.0.201 : Fix driver icon
 - 2.0.200 : Beta - Release
 - 2.0.111 : Prep for beta
 - 2.0.110 : Update app ID to device groups.
