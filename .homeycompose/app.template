@@ -1,12 +1,12 @@
 {
-    "id": "com.groups",
+    "id": "com.swttt.devicegroups",
     "sdk": 2,
     "permissions": [
         "homey:manager:api"
     ],
     "name": {
-        "en": " (Omega) Group",
-        "nl": "(Omega) Groepen"
+        "en": " < Group >",
+        "nl": "< Groepen >"
     },
     "description": {
         "en": "Makes it possible to group devices allowing control and reporting of all devices within a group.",
@@ -28,7 +28,7 @@
             "virtueel"
         ]
     },
-    "version": "$OMEGA",
+    "version": "2.x.xxxx",
     "compatibility": ">=2.0",
     "author": {
         "name": "Jamie Peake",
@@ -51,7 +51,7 @@
         ]
     },
     "images": {
-        "large": "./assets/images/large.png",
-        "small": "./assets/images/small.png"
+        "large": "./assets/images/logo-large.png",
+        "small": "./assets/images/logo-small.png"
     }
 }
