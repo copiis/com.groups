@@ -17,7 +17,7 @@
     "curtain"
   ],
   "icons" : [
-    "windowcovering/standard"
+    "windowcoverings/standard"
   ],
   "capabilities" : [
     "onoff",
