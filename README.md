@@ -23,6 +23,9 @@ This app is based off of the original 'Device Groups' app by Swttt for Homey v1.
 
 ##### 2.0
 
+
+- 2.0.110 : Update app ID to device groups.
+- 2.0.109 : Testing and fixes.
 - 2.0.108 : Add devices icons.
 - 2.0.108 : Update remote & home energy icons
 - 2.0.107 : Updated APPSTORE and added temp app image.
