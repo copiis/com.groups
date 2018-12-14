@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Amplifier",
+    "nl": "Versterker"
+  },
+  "description": {
+    "en": "Use this device class for audio amplifier devices.",
+    "nl":  "N/A"
+  },
+  "icons" : [
+    "amplifier/standard",
+    "amplifier/standard/right"
+  ],
+  "capabilities" : [
+    "onoff",
+    "volume_set",
+    "volume_mute",
+    "volume_up",
+    "volume_down"
+  ]
+}

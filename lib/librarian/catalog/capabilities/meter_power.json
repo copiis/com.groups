@@ -1,0 +1,21 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Power Meter",
+    "nl": "Energiemeter"
+  },
+  "description": {
+    "en": "Power usage in KiloWattHour (kWh)",
+    "nl": "Stroomverbuik in KiloWattUur (kWh)"
+  },
+  "decimals": 2,
+  "units": {
+    "en": "KWh"
+  },
+  "getable": true,
+  "setable": false,
+  "method" : "sum",
+  "available" : [
+    "sum"
+  ]
+}

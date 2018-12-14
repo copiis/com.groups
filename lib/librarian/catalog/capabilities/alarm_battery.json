@@ -1,0 +1,18 @@
+{
+  "type": "boolean",
+  "title": {
+    "en": "Battery Alarm",
+    "nl": "Batterij alarm"
+  },
+  "description": {
+    "en": "True when there is a battery warning",
+    "nl": "Geeft een batterijwaarschuwing"
+  },
+  "getable": true,
+  "setable": false,
+  "method" : "any",
+  "available" : [
+    "any",
+    "all"
+  ]
+}

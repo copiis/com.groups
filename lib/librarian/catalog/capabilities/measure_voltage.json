@@ -1,0 +1,24 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Voltage",
+    "nl": "Voltage"
+  },
+  "description": {
+    "en": "Voltage (V)",
+    "nl": "Voltage (V)"
+  },
+  "units": {
+    "en": "V"
+  },
+  "decimals": 2,
+  "getable": true,
+  "setable": false,
+  "method" : "mean",
+  "available" : [
+    "mean",
+    "median",
+    "lowest",
+    "highest"
+  ]
+}

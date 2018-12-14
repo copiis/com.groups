@@ -31,11 +31,19 @@ module.exports = [
     }
   },
   {
-    // Update the grouped devices for a group.
+    // Update the devices in a  group.
     method : 'PUT',
     path   : '/group/:id',
     fn     : async (args) => {
       await Homey.app.setDevicesForGroup(args.params.id, args.body);
+    }
+  },
+  {
+    // Update the group capability methods.
+    method : 'PUT',
+    path   : '/group/:id/capabilities',
+    fn     : async (args) => {
+      await Homey.app.setMethodForCapabilityOfGroup(args.params.id, args.body);
     }
   },
   {
@@ -45,6 +53,13 @@ module.exports = [
     fn     : async (args) => {
       let devices = await Homey.app.getDevices();
       return Object.values(devices);
+    }
+  },
+  {
+    method : 'GET',
+    path   : '/library',
+    fn     : async (args) => {
+      return await Homey.app.library.getJSON();
     }
   },
 ]

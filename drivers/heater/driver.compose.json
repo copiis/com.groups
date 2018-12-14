@@ -1,0 +1,11 @@
+{
+    "id": "heater",
+    "class": "heater",
+    "name": {
+        "en": "Heater",
+        "nl": "Heater"
+    },
+    "$extends": [
+        "default"
+    ]
+}

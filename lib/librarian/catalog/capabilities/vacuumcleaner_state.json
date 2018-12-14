@@ -1,0 +1,55 @@
+{
+  "type": "enum",
+  "title": {
+    "en": "Vacuum cleaner state",
+    "nl": "Vacuum cleaner state"
+  },
+  "description": {
+    "en": "The state of a a vacuum cleaner, either it is cleaning, spot cleaning, docked, charging or stopped",
+    "nl": "N/A"
+  },
+  "values": [
+    {
+      "id": "cleaning",
+      "title": {
+        "en": "Cleaning",
+        "nl": "Stofzuigen"
+      }
+    },
+    {
+      "id": "spot_cleaning",
+      "title": {
+        "en": "Spot cleaning",
+        "nl": "Vlek schoonmaken"
+      }
+    },
+    {
+      "id": "docked",
+      "title": {
+        "en": "Docked",
+        "nl": "Op laadstation"
+      }
+    },
+    {
+      "id": "charging",
+      "title": {
+        "en": "Charging",
+        "nl": "Aan het opladen"
+      }
+    },
+    {
+      "id": "stopped",
+      "title": {
+        "en": "Stopped",
+        "nl": "Gestopt"
+      }
+    }
+  ],
+  "getable": true,
+  "setable": true,
+  "method" : "ignore",
+  "available" : [
+    "ignore",
+    "mode"
+  ]
+}

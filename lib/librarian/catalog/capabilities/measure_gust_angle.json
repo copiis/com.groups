@@ -1,0 +1,22 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Gust Angle",
+    "nl": "Windstoot richting"
+  },
+  "description": {
+    "en": "Gust Angle in Degrees (°)",
+    "nl": "Windstoot richting in Graden (°)"
+  },
+  "units": {
+    "en": "°"
+  },
+  "decimals": 2,
+  "getable": true,
+  "setable": false,
+  "method" : "mean",
+  "available" : [
+    "mean",
+    "median"
+  ]
+}

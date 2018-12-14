@@ -1,0 +1,21 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Rain Meter",
+    "nl": "Regenmeter"
+  },
+  "description": {
+    "en": "Rain in Cubic Meter (m³)",
+    "nl": "Regen in Kubieke Meter (m³)"
+  },
+  "units": {
+    "en": "m³"
+  },
+  "decimals": 2,
+  "getable": true,
+  "setable": false,
+  "method" : "sum",
+  "available" : [
+    "sum"
+  ]
+}

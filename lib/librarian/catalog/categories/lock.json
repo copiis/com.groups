@@ -1,0 +1,20 @@
+{
+  "title": {
+    "en": "Lock",
+    "nl": "Slot"
+  },
+  "description": {
+    "en": "Use this device class for lock devices.",
+    "nl": "N/A"
+  },
+  "icons" : [
+    "lock/standard",
+    "lock/standard/handle",
+    "lock/standard/hole"
+  ],
+  "capabilities" : [
+    "locked",
+    "lock_mode",
+    "measure_battery"
+  ]
+}

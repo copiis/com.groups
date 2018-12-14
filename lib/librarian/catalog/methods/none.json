@@ -1,0 +1,11 @@
+{
+  "title": {
+      "en": "On if None",
+      "nl": "On if None"
+  },
+  "description": {
+    "en": "Off if all devices on. otherwise on",
+    "nl": "N/A"
+  },
+  "function": "nand"
+}

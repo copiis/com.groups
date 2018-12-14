@@ -1,0 +1,29 @@
+{
+  "title": {
+    "en": "Light",
+    "nl": "Lamp"
+  },
+  "description": {
+    "en": "Use this device class for lights",
+    "nl": "N/A"
+  },
+  "capabilities" : [
+    "onoff",
+    "dim",
+    "light_hue",
+    "light_saturation",
+    "light_temperature",
+    "light_mode",
+    "measure_power",
+    "meter_power"
+  ],
+  "icons" : [
+    "light/standard/a_classic",
+    "light/standard/a_sultan",
+    "light/standard/b",
+    "light/standard/e",
+    "light/standard/gu",
+    "light/standard/par",
+    "button/standard/toggle"
+  ]
+}

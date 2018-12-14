@@ -1,0 +1,40 @@
+{
+  "type": "enum",
+  "title": {
+    "en": "Window Coverings state"
+  },
+  "description": {
+    "en": "Whether a window cover is up, down or idle",
+    "nl": "Description Translation Required"
+  },
+  "values": [
+    {
+      "id": "up",
+      "title": {
+        "en": "Up",
+        "nl": "Omhoog"
+      }
+    },
+    {
+      "id": "idle",
+      "title": {
+        "en": "Idle",
+        "nl": "Stil"
+      }
+    },
+    {
+      "id": "down",
+      "title": {
+        "en": "Down",
+        "nl": "Omlaag"
+      }
+    }
+  ],
+  "getable": true,
+  "setable": true,
+  "method" : "ignore",
+  "available" : [
+    "ignore",
+    "mode"
+  ]
+}

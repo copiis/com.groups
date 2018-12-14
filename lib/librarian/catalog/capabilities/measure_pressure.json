@@ -1,0 +1,24 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Pressure",
+    "nl": "Druk"
+  },
+  "description": {
+    "en": "Pressure in millibar (mbar)",
+    "nl": "Druk in millibar (mbar)"
+  },
+  "units": {
+    "en": "mbar"
+  },
+  "decimals": 2,
+  "getable": true,
+  "setable": false,
+  "method" : "mean",
+  "available" : [
+    "mean",
+    "median",
+    "lowest",
+    "highest"
+  ]
+}

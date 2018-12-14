@@ -1,0 +1,25 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Power",
+    "nl": "Energie"
+  },
+  "description": {
+    "en": "Power in Watt (W)",
+    "nl": "Vermogen in Watt (W)"
+  },
+  "units": {
+    "en": "W"
+  },
+  "decimals": 2,
+  "getable": true,
+  "setable": false,
+  "method" : "sum",
+  "available" : [
+    "sum",
+    "mean",
+    "median",
+    "lowest",
+    "highest"
+  ]
+}

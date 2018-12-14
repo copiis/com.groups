@@ -1,0 +1,41 @@
+{
+  "type": "enum",
+  "title": {
+    "en": "Home Alarm state",
+    "nl": "Thuisalarm status"
+  },
+  "description": {
+    "en": "Switch between armed, disarmed and partially armed",
+    "nl": "N/A"
+  },
+  "values": [
+    {
+      "id": "armed",
+      "title": {
+        "en": "Armed",
+        "nl": "Geactiveerd"
+      }
+    },
+    {
+      "id": "disarmed",
+      "title": {
+        "en": "Disarmed",
+        "nl": "Gedeactiveerd"
+      }
+    },
+    {
+      "id": "partially_armed",
+      "title": {
+        "en": "Partially armed",
+        "nl": "Deels geactiveerd"
+      }
+    }
+  ],
+  "getable": true,
+  "setable": true,
+  "method" : "ignore",
+  "available" : [
+    "ignore",
+    "mode"
+  ]
+}

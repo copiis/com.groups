@@ -1,0 +1,23 @@
+{
+  "title": {
+    "en": "Sunshade",
+    "nl": "Zonnescherm"
+  },
+  "description": {
+    "en": "Use this device class for sunshades (window coverings against the sun).",
+    "nl": "N/A"
+  },
+  "icons" : [
+    "sunshade/standard"
+  ],
+  "capabilities" : [
+    "onoff",
+    "dim",
+    "windowcoverings_state",
+    "windowcoverings_tilt_up",
+    "windowcoverings_tilt_down",
+    "windowcoverings_tilt_set",
+    "windowcoverings_closed",
+    "windowcoverings_set"
+  ]
+}

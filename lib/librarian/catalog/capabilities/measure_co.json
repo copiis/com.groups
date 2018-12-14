@@ -1,0 +1,24 @@
+{
+  "type": "number",
+  "title": {
+    "en": "CO",
+    "nl": "CO"
+  },
+  "description": {
+    "en": "CO in Parts-per-million (ppm)",
+    "nl": "CO deeltjes per miljoen (ppm)"
+  },
+  "units": {
+    "en": "ppm"
+  },
+  "decimals": 2,
+  "getable": true,
+  "setable": false,
+  "method" : "mean",
+  "available" : [
+    "mean",
+    "median",
+    "lowest",
+    "highest"
+  ]
+}

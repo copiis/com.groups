@@ -1,0 +1,22 @@
+{
+  "type": "boolean",
+  "title": {
+    "en": "Closed",
+    "nl": "Gesloten"
+  },
+  "description": {
+    "en": "Closed",
+    "nl": "Gesloten"
+  },
+  "getable": true,
+  "setable": true,
+  "method" : "ignore",
+  "available" : [
+    "ignore",
+    "any",
+    "all",
+    "most",
+    "always",
+    "never"
+  ]
+}

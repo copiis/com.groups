@@ -1,0 +1,12 @@
+{
+  "title": {
+    "en": "Maximum value",
+    "nl": "Maximale waarde"
+  },
+  "description": {
+    "en": "The value of the device with the largest value",
+    "nl": "N/A"
+  },
+  "value": "max",
+  "function": "max"
+}

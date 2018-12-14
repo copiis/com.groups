@@ -1,0 +1,21 @@
+[
+  "socket",
+  "light",
+  "vacuumcleaner",
+  "fan",
+  "heater",
+  "thermostat",
+  "sensor",
+  "kettle",
+  "coffeemachine",
+  "homealarm",
+  "speaker",
+  "button",
+  "doorbell",
+  "lock",
+  "garagedoor",
+  "relay",
+  "windowcoverings",
+  "tv",
+  "amplifier"
+]

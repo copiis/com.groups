@@ -1,0 +1,20 @@
+{
+  "type": "boolean",
+  "title": {
+    "en": "Volume muted",
+    "nl": "Gedempt volume"
+  },
+  "description": {
+    "en": "Volume muted",
+    "nl": "Gedempt volume"
+  },
+  "getable": true,
+  "setable": true,
+  "method" : "ignore",
+  "available" : [
+    "ignore",
+    "any",
+    "all",
+    "most"
+  ]
+}

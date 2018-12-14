@@ -1,0 +1,24 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Temperature",
+    "nl": "Temperatuur"
+  },
+  "description": {
+    "en": "Temperature in celsius",
+    "nl": "Description Translate Required"
+  },
+  "units": {
+    "en": "°C"
+  },
+  "decimals": 2,
+  "getable": true,
+  "setable": false,
+  "method" : "mean",
+  "available" : [
+    "mean",
+    "median",
+    "lowest",
+    "highest"
+  ]
+}

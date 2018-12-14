@@ -1,0 +1,24 @@
+{
+  "type": "number",
+  "title": {
+    "en": "CO2",
+    "nl": "CO2"
+  },
+  "description": {
+    "en": "CO2 in Parts-per-million (ppm)",
+    "nl": "CO2 deeltjes per miljoen (ppm)"
+  },
+  "units": {
+    "en": "ppm"
+  },
+  "decimals": 2,
+  "getable": true,
+  "setable": false,
+  "method" : "mean",
+  "available" : [
+    "mean",
+    "median",
+    "lowest",
+    "highest"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Rain",
+    "nl": "Regen"
+  },
+  "description": {
+    "en": "Rain in millimeter (mm)",
+    "nl": "Regen in millimeter (mm)"
+  },
+  "units": {
+    "en": "mm"
+  },
+  "decimals": 2,
+  "getable": true,
+  "setable": false,
+  "method" : "mean",
+  "available" : [
+    "mean",
+    "median",
+    "lowest",
+    "highest"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Wind Strenth",
+    "nl": "Windsnelheid"
+  },
+  "description": {
+    "en": "Wind Strength in Kilometer per hour (km/h)",
+    "nl": "Windsnelheid in Kilometer per uur (km/u)"
+  },
+  "units": {
+    "en": "km/h"
+  },
+  "decimals": 2,
+  "getable": true,
+  "setable": false,
+  "method" : "mean",
+  "available" : [
+    "mean",
+    "median",
+    "lowest",
+    "highest"
+  ]
+}

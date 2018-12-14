@@ -1,0 +1,21 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Position",
+    "nl": "Positie"
+  },
+  "description": {
+	"en": "Set the position of window coverings. 0% is closed, 100% is open",
+    "nl": "Positie"
+  },
+  "min": 0,
+  "max": 1,
+  "decimals": 2,
+  "units": {
+        "en": "%"
+      },
+  "getable": true,
+  "setable": true,
+  "method" : false,
+  "available" : []
+}

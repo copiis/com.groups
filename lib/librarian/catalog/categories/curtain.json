@@ -1,0 +1,20 @@
+{
+  "title": {
+    "en": "Curtains",
+    "nl": "Gordijnen"
+  },
+  "description": {
+    "en": "Use this device class for curtains.",
+    "nl": "N/A"
+  },
+  "icons" : [
+    "curtain/standard"
+  ],
+  "capabilities" : [
+    "onoff",
+    "dim",
+    "windowcoverings_state",
+    "windowcoverings_closed",
+    "windowcoverings_set"
+  ]
+}

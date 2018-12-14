@@ -1,0 +1,12 @@
+{
+    "id": "blinds",
+    "class": "blinds",
+    "capabilities": [],
+    "name": {
+        "en": "Blinds",
+        "nl" :  "Jaloezieën & Lamellen"
+    },
+    "$extends": [
+        "default"
+    ]
+}

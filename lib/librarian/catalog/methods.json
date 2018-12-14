@@ -1,0 +1,17 @@
+[
+    "mean",
+    "median",
+    "mode",
+    "min",
+    "max",
+    "sum",
+    "all",
+    "any",
+    "most",
+    "none",
+    "highest",
+    "lowest",
+    "always",
+    "never",
+    "ignore"
+]

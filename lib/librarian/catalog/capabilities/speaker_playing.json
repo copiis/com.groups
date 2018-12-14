@@ -1,0 +1,22 @@
+{
+  "type": "boolean",
+  "title": {
+    "en": "Playing",
+    "nl": "Afspelen"
+  },
+  "description": {
+    "en": "Currently playing.",
+    "nl": "N/A"
+  },
+  "getable": true,
+  "setable": true,
+  "method" : "ignore",
+  "available" : [
+    "ignore",
+    "any",
+    "all",
+    "most",
+    "always",
+    "never"
+  ]
+}

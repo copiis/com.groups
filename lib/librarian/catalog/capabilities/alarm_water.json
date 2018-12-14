@@ -1,0 +1,18 @@
+{
+  "type": "boolean",
+  "title": {
+    "en": "Water Alarm",
+    "nl": "Wateralarm"
+  },
+  "description": {
+    "en": "True when water has been detected",
+    "nl": "Gaat af als er water gedetecteerd wordt"
+  },
+  "getable": true,
+  "setable": false,
+  "method" : "any",
+  "available" : [
+    "any",
+    "all"
+  ]
+}

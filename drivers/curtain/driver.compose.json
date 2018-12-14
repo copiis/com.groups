@@ -1,0 +1,12 @@
+{
+    "id": "curtain",
+    "class": "curtain",
+    "capabilities": [],
+    "name": {
+        "en": "Curtains",
+        "nl": "Gordijnen"
+    },
+    "$extends": [
+        "default"
+    ]
+}

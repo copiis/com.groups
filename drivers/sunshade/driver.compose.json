@@ -1,0 +1,12 @@
+{
+    "id": "sunshade",
+    "class": "sunshade",
+    "capabilities": [],
+    "name": {
+        "en": "Sunshade",
+        "nl": "Zonnescherm"
+    },
+    "$extends": [
+        "default"
+    ]
+}

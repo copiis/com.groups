@@ -1,0 +1,15 @@
+{
+  "type": "boolean",
+  "title": {
+    "en": "Previous",
+    "nl": "Vorige"
+  },
+  "description": {
+    "en": "Go to previous item.",
+    "nl": "N/A"
+  },
+  "getable": false,
+  "setable": true,
+  "method" : false,
+  "available" : []
+}

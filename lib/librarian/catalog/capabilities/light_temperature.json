@@ -1,0 +1,24 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Color Temperature",
+    "nl": "Kleurtemperatuur"
+  },
+  "description": {
+    "en": "The white light temperature warm to cold as a decimal",
+    "nl": "N/A"
+  },
+  "min": 0,
+  "max": 1,
+  "decimals": 2,
+  "getable": true,
+  "setable": true,
+  "method" : "mean",
+  "available" : [
+    "ignore",
+    "mean",
+    "median",
+    "lowest",
+    "highest"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "type": "boolean",
+  "title": {
+    "en": "Window Coverings Tilt Down",
+    "nl": "Window Coverings Tilt Down"
+  },
+  "description": {
+    "en": "Tilt Window Coverings Down",
+    "nl":  "N/A"
+  },
+  "getable": false,
+  "setable": true,
+  "method" : false,
+  "available" : []
+}

@@ -1,0 +1,22 @@
+{
+  "title": {
+    "en": "Heater",
+    "nl": "Heater"
+  },
+  "description": {
+    "en": "Use this device class for heaters, that warm your home.",
+    "nl": "N/A"
+  },
+  "icons" : [
+    "heater/standard",
+    "heater/standard/wall",
+    "heater/standard/oil",
+    "heater/standard/abstract"
+  ],
+  "capabilities" : [
+    "onoff",
+    "dim",
+    "measure_power",
+    "meter_power"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+    "id": "relay",
+    "class": "other",
+    "capabilities": [],
+    "name": {
+        "en": "Relay",
+        "nl": "Relais"
+    },
+    "$extends": [
+        "default"
+    ]
+}

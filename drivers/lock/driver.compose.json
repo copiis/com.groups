@@ -1,0 +1,12 @@
+{
+    "id": "lock",
+    "class": "lock",
+    "capabilities": [],
+    "name": {
+        "en": "Lock",
+        "nl": "Slot"
+    },
+    "$extends": [
+        "default"
+    ]
+}

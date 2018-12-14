@@ -1,0 +1,12 @@
+{
+  "title": {
+    "en": "Mode Average",
+    "nl": "Modus Gemiddeld?"
+  },
+  "description": {
+    "en": "The value which the most devices has",
+    "nl": "N/A"
+  },
+  "value": "mode",
+  "function": "mode"
+}

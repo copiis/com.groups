@@ -1,0 +1,20 @@
+{
+  "title": {
+    "en": "Kettle",
+    "nl": "Waterkoker"
+  },
+  "description": {
+    "en": "Use this device class for kettle devices, that can heat water.",
+    "nl": "N/A"
+  },
+  "icons" : [
+    "kettle/standard"
+  ],
+  "capabilities" : [
+    "onoff",
+    "target_temperature",
+    "measure_temperature",
+    "measure_power",
+    "meter_power"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "title": {
+    "en": "Set volume",
+    "nl": "Set volume"
+  },
+  "type": "number",
+  "description": {
+    "en": "Volume",
+    "nl": "Volume"
+  },
+  "min": 0,
+  "max": 1,
+  "decimals": 2,
+  "setable": true,
+  "getable": true,
+  "method" : "mean",
+  "available" : [
+    "ignore",
+    "mean",
+    "median",
+    "lowest",
+    "highest"
+  ]
+}

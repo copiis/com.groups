@@ -1,0 +1,15 @@
+{
+  "type": "boolean",
+  "title": {
+    "en": "Next",
+    "nl": "Volgende"
+  },
+  "description": {
+    "en": "Go to next item.",
+    "nl": "N/A"
+  },
+  "getable": false,
+  "setable": true,
+  "method" : false,
+  "available" : []
+}
