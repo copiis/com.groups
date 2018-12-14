@@ -5,8 +5,8 @@
     "homey:manager:api"
   ],
   "name": {
-    "en": " <Omega> Group",
-    "nl": "<Omega> Groepen"
+    "en": " < Group > ",
+    "nl": "<  Groepen >"
   },
   "description": {
     "en": "Makes it possible to group devices allowing control and reporting of all devices within a group.",
@@ -51,8 +51,8 @@
     ]
   },
   "images": {
-    "large": "./assets/images/large.png",
-    "small": "./assets/images/small.png"
+    "large": "./assets/images/omega-large.png",
+    "small": "./assets/images/omega-small.png"
   },
   "drivers": [
     {
