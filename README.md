@@ -23,7 +23,8 @@ This app is based off of the original 'Device Groups' app by Swttt for Homey v1.
 
 ##### 2.0
 
-
+- 2.0.200 : Beta - Release
+- 2.0.111 : Prep for beta
 - 2.0.110 : Update app ID to device groups.
 - 2.0.109 : Testing and fixes.
 - 2.0.108 : Add devices icons.
