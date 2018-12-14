@@ -6,7 +6,7 @@
 
 # Ignore installed nodes, while in development.
 debug.js
-.homeycompose/app.json
+#.homeycompose/app.json
 # Do not ignore me!
 !.gitignore
 !.gitattributes
