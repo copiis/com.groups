@@ -1,21 +1,16 @@
 {
-  "id": "com.swttt.devicegroups",
+  "id": "com.groups",
   "sdk": 2,
   "permissions": [
     "homey:manager:api"
   ],
   "name": {
-<<<<<<< HEAD
     "en": " (Omega) Group",
     "nl": "(Omega) Groepen"
-=======
-    "en": "( Group )",
-    "nl": "( Groepen )"
->>>>>>> master
   },
   "description": {
-    "en": "Group",
-    "nl": "@todo"
+    "en": "Makes it possible to group devices allowing control and reporting of all devices within a group.",
+    "nl": "Maakt het mogelijk om apparaten te groeperen en te schakelen."
   },
   "category": "tools",
   "brandColor": "#000000",
@@ -24,6 +19,7 @@
     "en": [
       "device",
       "group",
+      "groups",
       "virtual"
     ],
     "nl": [
@@ -32,7 +28,7 @@
       "virtueel"
     ]
   },
-  "version": "2.0.110",
+  "version": "2.0.111",
   "compatibility": ">=2.0",
   "author": {
     "name": "Jamie Peake",
