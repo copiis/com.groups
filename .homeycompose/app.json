@@ -6,7 +6,7 @@
     ],
     "name": {
         "en": "< MASTER >",
-        "nl": " < MASTERg >"
+        "nl": " < MASTER >"
     },
     "description": {
         "en": "Makes it possible to group devices allowing control and reporting of all devices within a group.",
