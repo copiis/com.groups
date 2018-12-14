@@ -21,7 +21,18 @@ This app is based off of the original 'Device Groups' app by Swttt for Homey v1.
 
 ### Changelog
 
+
+##### 2.1
+
+- Settings
+- New UI
+- Bug Fixes
+
+
+
 ##### 2.0
+
+- 2.0.2 : Beta Release
 
 - 2.0.1 : Disabled changing a devices settings.
 - 2.0.1 : Added support for choosing an icon.
@@ -51,8 +62,6 @@ This app is based off of the original 'Device Groups' app by Swttt for Homey v1.
 ##### 1.0
 
 - 1.0.0 : Ability to group settable devices
-
-
 
 ---
 

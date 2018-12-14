@@ -7,6 +7,6 @@
     "en": "The average your are used to (sum/count)",
     "nl": "N/A"
   },
-  "value": "median",
-  "function": "median"
+  "value": "mean",
+  "function": "mean"
 }

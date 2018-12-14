@@ -15,9 +15,9 @@ Please note that this app now only supports v2, while legacy code should continu
 | Branch | Version | Status | Notes|
 |---|---|---|---|
 |**Stable** |1.1.0|:white_check_mark:|Not compatible with v2|
-|**Beta** |1.1.0|:white_check_mark:|Update coming soon|
-|**Alpha** |2.0.104|:ballot_box_with_check:|Working, changing.|
-|**Omega** |2.0.109|:grey_question:|Currently updated daily.|
+|**Beta** |1.1.0|:white_check_mark:|v2.0 Pending Athom Approval|
+|**Alpha** |2.0.201|:ballot_box_with_check:|Working, changing.|
+|**Omega** |2.0.203|:grey_question:|Currently updated daily.|
 |**Master** |n/a|:heavy_multiplication_x:|Here there be dragons.|
 
 

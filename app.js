@@ -4,13 +4,6 @@ const Homey = require('homey');
 const HomeyAPI = require('athom-api').HomeyAPI;
 const Librarian = require('./lib/librarian');
 
-//
-// Nicklas Anderson [2:17 PM]
-// Yeah, pressing the device I created for the lights doesn’t consistently work. Most of the time, yes. But now always it seems
-//
-// I noticed that when adding a card for the device to a flow the location of the device was listed as “home” which is not correct
-// When I look at it in the devices view I shows up in the right location
-
 /**
  *
  */
