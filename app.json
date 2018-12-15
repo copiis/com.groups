@@ -1,12 +1,12 @@
 {
-  "id": "com.swttt.devicegroups",
+  "id": "com.groups",
   "sdk": 2,
   "permissions": [
     "homey:manager:api"
   ],
   "name": {
-    "en": "< Group >",
-    "nl": " < Group >"
+    "en": "< Omega >",
+    "nl": " < Omega >"
   },
   "description": {
     "en": "Makes it possible to group devices allowing control and reporting of all devices within a group.",
@@ -50,8 +50,8 @@
     ]
   },
   "images": {
-    "large": "./assets/images/logo-large.png",
-    "small": "./assets/images/logo-small.png"
+    "large": "./assets/images/omega-large.png",
+    "small": "./assets/images/omega-small.png"
   },
   "homeyCommunityTopicId": 3168,
   "bugs": {
