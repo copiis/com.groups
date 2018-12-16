@@ -23,7 +23,7 @@ This app is based off of the original 'Device Groups' app by Swttt for Homey v1.
 
 ##### 2.0
 
-- 2.0.207 : Re-supply logo
+- 2.0.208 : Re-supply logo
 - 2.0.207 : Fix .gitattribute issue
 - 2.0.206 : Update logo image.
 - 2.0.205 : Fix type on 'speaker'
