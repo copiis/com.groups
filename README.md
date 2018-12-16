@@ -23,6 +23,7 @@ This app is based off of the original 'Device Groups' app by Swttt for Homey v1.
 
 ##### 2.0
 
+- 2.0.209 : Publish Alpha
 - 2.0.208 : Re-supply logo
 - 2.0.207 : Fix .gitattribute issue
 - 2.0.206 : Update logo image.
