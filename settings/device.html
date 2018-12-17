@@ -15,12 +15,14 @@
             text-decoration: none;
         }
     </style>
+
+
 </head>
 <body>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Group</a></li>
-            <li class="breadcrumb-item"><a href="#">Lights</a></li>
+            <li class="breadcrumb-item text-dark"><a class="text-dark" href="index.html">Group</a></li>
+            <li class="breadcrumb-item"><a class="text-dark"href="category.html">Lights</a></li>
             <li class="breadcrumb-item active" aria-current="page">All</li>
         </ol>
     </nav>
@@ -31,17 +33,115 @@
                     <div class="col-3">
                         <object type="image/svg+xml" data="../assets/icons/categories/light/standard/a_sultan.svg" class="img-fluid">Light</object>
                     </div>
-                    <div class="col-6">
+                    <div class="col-9">
                         <p>My Hello World Light.</p>
-                        <p class="small text-muted">There are 15 devices with in this group.</p>
+                        <p class="small text-muted">Lorem ipsum dolat sed sit.</p>
                     </div>
                 </div>
+                <hr>
+
+                <div class="form-group row">
+                    <label for="onoff" class="col-4 col-form-label">Group is on</label>
+                    <div class="col-8">
+                        <select class="custom-select mr-sm-2" id="onoff">
+                            <option value="1">based on app (Ignored)</option>
+                            <option value="3">if any devices are on</option>
+                            <option value="2">if all devices are on</option>
+                            <option value="3">if most devices are on</option>
+                            <option value="3">always</option>
+                            <option value="3">never</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="dim" class="col-4 col-form-label">Dim level is</label>
+                    <div class="col-8">
+                        <select class="custom-select mr-sm-2" id="dim">
+                            <option>last value set in the app (Ignored)</option>
+                            <option value="1" selected>the average value (Mean)</option>
+                            <option value="2">the middle value (Median)</option>
+                            <option value="3">the lowest value</option>
+                            <option value="3">the highest value</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="meter_power" class="col-4 col-form-label">Power meter is</label>
+                    <div class="col-8">
+                        <select class="custom-select mr-sm-2" id="meter_power">
+                            <option selected>the sum of all devices</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="measure_power" class="col-4 col-form-label">Power Measure is</label>
+                    <div class="col-8">
+                        <select class="custom-select mr-sm-2" id="measure_power">
+                            <option selected>the sum of all devices</option>
+                            <option value="1">the average value (Mean)</option>
+                            <option value="2">the middle value (Median)</option>
+                            <option value="3">the lowest value</option>
+                            <option value="3">the highest value</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="light_mode" class="col-4 col-form-label">Light mode is</label>
+                    <div class="col-8">
+                        <select class="custom-select mr-sm-2" id="light_mode">
+                            <option>based upon the app (Ignored)</option>
+                            <option value="1">the most common value (Mode)</option>
+                        </select>
+                    </div>
+                </div>
+
             </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Cras justo odio</li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Vestibulum at eros</li>
-            </ul>
+
+            <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action  rounded-0 list-group-item-dark">All Kitchen Lights</button>
+                <button type="button" class="list-group-item list-group-item-action list-group-item-dark">All living room Lights</button>
+                <button type="button" class="list-group-item list-group-item-action">Porch Light</button>
+                <button type="button" class="list-group-item list-group-item-action">Kitchen Light</button>
+                <button type="button" class="list-group-item list-group-item-action">Kitchen Bench Light</button>
+                <button type="button" class="list-group-item list-group-item-action">Bathroom Light</button>
+                <button type="button" class="list-group-item list-group-item-action">Bathroom Mirror Lights</button>
+                <button type="button" class="list-group-item list-group-item-action">Porch Light</button>
+                <button type="button" class="list-group-item list-group-item-action">Kitchen Light</button>
+                <button type="button" class="list-group-item list-group-item-action">Kitchen Bench Light</button>
+                <button type="button" class="list-group-item list-group-item-action">Bathroom Light</button>
+                <button type="button" class="list-group-item list-group-item-action">Bathroom Mirror Lights</button>
+                <button type="button" class="list-group-item list-group-item-action">Porch Light</button>
+                <button type="button" class="list-group-item list-group-item-action">Kitchen Light</button>
+                <button type="button" class="list-group-item list-group-item-action">Kitchen Bench Light</button>
+                <button type="button" class="list-group-item list-group-item-action">Bathroom Light</button>
+                <button type="button" class="list-group-item list-group-item-action">Bathroom Mirror Lights</button>
+                <button type="button" class="list-group-item list-group-item-action">Porch Light</button>
+                <button type="button" class="list-group-item list-group-item-action">Kitchen Light</button>
+                <button type="button" class="list-group-item list-group-item-action">Kitchen Bench Light</button>
+                <button type="button" class="list-group-item list-group-item-action">Bathroom Light</button>
+                <button type="button" class="list-group-item list-group-item-action">Bathroom Mirror Lights</button>
+                <button type="button" class="list-group-item list-group-item-action">Porch Light</button>
+                <button type="button" class="list-group-item list-group-item-action">Kitchen Light</button>
+                <button type="button" class="list-group-item list-group-item-action">Kitchen Bench Light</button>
+                <button type="button" class="list-group-item list-group-item-action">Bathroom Light</button>
+                <button type="button" class="list-group-item list-group-item-action">Bathroom Mirror Lights</button>
+                <button type="button" class="list-group-item list-group-item-action">Porch Light</button>
+                <button type="button" class="list-group-item list-group-item-action">Kitchen Light</button>
+                <button type="button" class="list-group-item list-group-item-action">Kitchen Bench Light</button>
+                <button type="button" class="list-group-item list-group-item-action">Bathroom Light</button>
+                <button type="button" class="list-group-item list-group-item-action">Bathroom Mirror Lights</button>
+                <button type="button" class="list-group-item list-group-item-action">Porch Light</button>
+                <button type="button" class="list-group-item list-group-item-action">Kitchen Light</button>
+                <button type="button" class="list-group-item list-group-item-action">Kitchen Bench Light</button>
+                <button type="button" class="list-group-item list-group-item-action">Bathroom Light</button>
+                <button type="button" class="list-group-item list-group-item-action">Bathroom Mirror Lights</button>
+                <button type="button" class="list-group-item list-group-item-action" disabled>All Upstairs Lights</button>
+            </div>
+
         </div>
     </main>
 
@@ -50,5 +150,22 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.6.1/js/solid.js" integrity="sha384-8Lgyylu0vfTGCXDKe435hJgX8s96c19R+dvpH0NHKdX47GA7TmMj+BDiZZ76qqhT" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.6.1/js/regular.js" integrity="sha384-+e+pqX41PD6VrFw9HZ3YKJHFT+SZoEMBmnMpLUpHrdd5BE46xHCrzap9c6kfTi9H" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.6.1/js/fontawesome.js" integrity="sha384-T6YzYwAGZAItTIkYlBzfwqa07o9R1AND3Lgt6Or6c5IdukY7tqShoryqwpKrpeIB" crossorigin="anonymous"></script>
+
+
+    <script>
+
+        $(function() {
+            $('.list-group-item').click(function() {
+                $(this).toggleClass('list-group-item-success');
+            })
+        });
+
+        // list-group-item-success
+    </script>
+
 </body>
 </html>
