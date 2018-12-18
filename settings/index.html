@@ -16,25 +16,7 @@
     <script type="text/javascript" src="/homey.js" data-origin="settings"></script>
 
 
-    <script>
-        function onHomeyReady(Homey) {
-            console.log('Ready....');
-            Homey.ready();
-            console.log('Really....');
 
-            const app = new Vue({
-                el: '#categories',
-                data: {
-                    categories: []
-                },
-                created() {
-                    this.categories = library.categories
-                }
-
-            });
-        }
-
-    </script>
     <style>
         a:hover {
             text-decoration: none;
@@ -60,10 +42,10 @@
                     </div>
                     <div class="col-6">
                         <ol>
-                            <li><p data-i18n="'category.' + category.id + '.title'">FAIL</p></li>
                             <li><p data-i18n="category.curtain.title">FAIL</p></li>
-                            <li><p data-i18n="settings.category.curtain.title">FAIL</p></li>
                             <li><p data-i18n="_.Select device group">FAIL</p></li>
+                            <li><p>{{ __('category.curtain.title') }}</p></li>
+                            <li><p>{{ __('category.' + category.id + '.title') }}</p></li>
                         </ol>
 
                         <p class="small text-muted">{{ category.description.en }}</p>
@@ -230,6 +212,59 @@
             }
         };
 
+    </script>
+
+    <script>
+        function onHomeyReady(Homey) {
+            console.log('Ready....');
+            Homey.ready();
+            console.log('Really....');
+
+            const app = new Vue({
+                el: '#categories',
+                data: {
+                    categories: []
+                },
+                methods: {
+                    __(key) {
+                        return Homey.__(key)
+                    }
+                },
+                created() {
+                    this.categories = library.categories
+                },
+
+
+
+            });
+        }
+        if (1 == 2 && typeof Homey === 'undefined') {
+            Homey = {
+                ready: () => {},
+                api  : (method, endpoint, callback) => {
+                    setTimeout(() => {
+                        return callback(null, [
+                            { id : 'foo',  name : 'Foo Device' },
+                            { id : 'bar',  name : 'Bar Device' },
+                            { id : 'blah', name : 'Blah Device' },
+                        ]);
+                    }, 1000);
+                },
+                __ : (path) => {
+
+                    var parts = path.split("."), part;
+                     let obj = i18n;
+                     while(part = parts.shift()) {
+                         if( typeof obj[part] != "object") {
+                             return obj[part]
+                         }
+                         obj = obj[part]; // update "pointer"
+                     }
+                     return obj;
+                }
+            };
+            onHomeyReady(Homey);
+        }
     </script>
 
 </body>
