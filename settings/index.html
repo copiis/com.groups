@@ -37,7 +37,16 @@
                         <object type="image/svg+xml" :data="'../assets/icons/categories/' + category.id + '/standard.svg'" class="img-fluid">{{ category.id }} </object>
                     </div>
                     <div class="col-6">
-                        <p>{{ __('category.' + category.id + '.title') }}</p>
+                        <ol>
+                            <li><p>{{ __('category.' + category.id + '.title') }}</p></li>
+                            <li><p>{{ __('category.button.title') }}</p></li>
+                            <li><p>{{ Homey.__('category.button.title') }}</p></li>
+                            <li><p data-i18n="'category.' + category.id + '.title'"> not</p></li>
+                            <li><p :data-i18n="'category.' + category.id + '.title'"> not</p></li>
+                            <li><p data-i18n="settings.category.curtain.title"></p></li>
+                            <li><p data-i18n="_.Select device group"></p></li>
+                        </ol>
+
                         <p class="small text-muted">{{ category.description.en }}</p>
                     </div>
 
@@ -99,17 +108,17 @@
     }
 
     // Hacky override homey i18n for testing.
-    //  function __ (path) {
-    //      var parts = path.split("."), part;
-    //      let obj = i18n;
-    //      while(part = parts.shift()) {
-    //          if( typeof obj[part] != "object") {
-    //              return obj[part]
-    //          }
-    //          obj = obj[part]; // update "pointer"
-    //      }
-    //      return obj;
-    //  }
+     function __ (path) {
+         var parts = path.split("."), part;
+         let obj = i18n;
+         while(part = parts.shift()) {
+             if( typeof obj[part] != "object") {
+                 return obj[part]
+             }
+             obj = obj[part]; // update "pointer"
+         }
+         return obj;
+     }
 
     // Hacky override of the librarian during testing.
      let library = {
