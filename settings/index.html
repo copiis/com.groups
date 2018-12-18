@@ -211,6 +211,9 @@
             }
         };
 
+    function onHomeyReady(Homey) {
+        Homey.ready();
+
         const app = new Vue({
             el: '#categories',
             data: {
@@ -220,7 +223,9 @@
                 this.categories = library.categories
             }
 
-        });
+        })
+    }
+    onHomeyReady(Homey);
     </script>
 
 </body>
