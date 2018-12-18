@@ -11,8 +11,30 @@
 
     <title>Group Lights</title>
 
-    <script type="text/javascript" src="//cdn.athom.com/athom-api/2.1.140/athom-api.min.js"></script>
+    <!--<script type="text/javascript" src="//cdn.athom.com/athom-api/2.1.140/athom-api.min.js"></script>-->
 
+    <script type="text/javascript" src="/homey.js" data-origin="settings"></script>
+
+
+    <script>
+        function onHomeyReady(Homey) {
+            console.log('Ready....');
+            Homey.ready();
+            console.log('Really....');
+
+            const app = new Vue({
+                el: '#categories',
+                data: {
+                    categories: []
+                },
+                created() {
+                    this.categories = library.categories
+                }
+
+            });
+        }
+
+    </script>
     <style>
         a:hover {
             text-decoration: none;
@@ -38,13 +60,10 @@
                     </div>
                     <div class="col-6">
                         <ol>
-                            <li><p>{{ __('category.' + category.id + '.title') }}</p></li>
-                            <li><p>{{ __('category.button.title') }}</p></li>
-                            <li><p>{{ Homey.__('category.button.title') }}</p></li>
-                            <li><p data-i18n="'category.' + category.id + '.title'"> not</p></li>
-                            <li><p :data-i18n="'category.' + category.id + '.title'"> not</p></li>
-                            <li><p data-i18n="settings.category.curtain.title"></p></li>
-                            <li><p data-i18n="_.Select device group"></p></li>
+                            <li><p data-i18n="'category.' + category.id + '.title'">FAIL</p></li>
+                            <li><p data-i18n="category.curtain.title">FAIL</p></li>
+                            <li><p data-i18n="settings.category.curtain.title">FAIL</p></li>
+                            <li><p data-i18n="_.Select device group">FAIL</p></li>
                         </ol>
 
                         <p class="small text-muted">{{ category.description.en }}</p>
@@ -108,17 +127,17 @@
     }
 
     // Hacky override homey i18n for testing.
-     function __ (path) {
-         var parts = path.split("."), part;
-         let obj = i18n;
-         while(part = parts.shift()) {
-             if( typeof obj[part] != "object") {
-                 return obj[part]
-             }
-             obj = obj[part]; // update "pointer"
-         }
-         return obj;
-     }
+    //  function __ (path) {
+    //      var parts = path.split("."), part;
+    //      let obj = i18n;
+    //      while(part = parts.shift()) {
+    //          if( typeof obj[part] != "object") {
+    //              return obj[part]
+    //          }
+    //          obj = obj[part]; // update "pointer"
+    //      }
+    //      return obj;
+    //  }
 
     // Hacky override of the librarian during testing.
      let library = {
@@ -211,21 +230,6 @@
             }
         };
 
-    function onHomeyReady(Homey) {
-        Homey.ready();
-
-        const app = new Vue({
-            el: '#categories',
-            data: {
-                categories: []
-            },
-            created() {
-                this.categories = library.categories
-            }
-
-        })
-    }
-    onHomeyReady(Homey);
     </script>
 
 </body>
