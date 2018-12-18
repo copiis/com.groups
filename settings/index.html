@@ -24,26 +24,22 @@
             <li class="breadcrumb-item active" aria-current="page">Settings</li>
         </ol>
     </nav>
+
     <main id="categories">
 
         <a v-for="category in categories" href="category.html" class="card d-flex text-white bg-dark my-2 rounded-0 shadow">
             <div class="card-body align-items-center">
                 <div class="row align-items-center">
                     <div class="col-3">
-                        <object type="image/svg+xml" :data="'../assets/icons/categories/' + category.title.en + '/standard.svg'" class="img-fluid">Amplifier</object>
+                        <object type="image/svg+xml" :data="'../assets/icons/categories/' + category.id + '/standard.svg'" class="img-fluid">{{ category.id }} </object>
                     </div>
                     <div class="col-6">
-                        <p :data-i18n="'category.' + category.id + '.title'"></p>
-                        <p class="small text-muted">{{ category.title.en }}</p>
+                        <p>{{ __('category.' + category.id + '.title') }}</p>
+                        <p class="small text-muted">{{ category.description.en }}</p>
                     </div>
 
                     <div class="col-3 text-right h3">
                         <i class="fas fa-chevron-right"></i>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        {{ category }}
                     </div>
                 </div>
             </div>
@@ -65,7 +61,55 @@
 
     <script>
 
-        let library = {
+    let i18n = {
+        "category" : {
+            "amplifier" : {
+                "title" : "Amplifier",
+                "description" : "Use this device class for audio amplifier devices."
+            },
+            "blinds" : {
+                "title" : "Blinds",
+                "description" : "Use this device class for blinds, both horizontal and vertical."
+            },
+            "button" : {
+                "title" : "button",
+                "description" : "Use this device class for buttons, and other items which do not have a state."
+            },
+            "coffeemachine" : {
+                "title" : "Coffee machine",
+                "description" : "Use this device class for coffee machines."
+            },
+            "curtain" : {
+                "title" : "Curtains",
+                "description" : "Use this device class for curtains."
+            },
+            "doorbell" : {
+                "title" : "Doorbell",
+                "description" : "Use this device class for doorbells, usually together with the `button` capability."
+            },
+            "fan" : {
+                "title" : "Fan",
+                "description" : "Use this device class for fans that cool your home."
+            }
+        }
+
+    }
+
+    // Hacky override homey i18n for testing.
+    //  function __ (path) {
+    //      var parts = path.split("."), part;
+    //      let obj = i18n;
+    //      while(part = parts.shift()) {
+    //          if( typeof obj[part] != "object") {
+    //              return obj[part]
+    //          }
+    //          obj = obj[part]; // update "pointer"
+    //      }
+    //      return obj;
+    //  }
+
+    // Hacky override of the librarian during testing.
+     let library = {
             categories: {
                 amplifier : {
                     "id" : "amplifier",

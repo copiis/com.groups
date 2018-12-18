@@ -15,20 +15,28 @@
       "description" : "Use this device class for audio amplifier devices."
     },
     "blinds" : {
-      "title" : "Amplifier",
-      "description" : "Use this device class for audio amplifier devices."
+      "title" : "Blinds",
+      "description" : "Use this device class for blinds, both horizontal and vertical."
     },
     "button" : {
-      "title" : "Amplifier",
-      "description" : "Use this device class for audio amplifier devices."
+      "title" : "button",
+      "description" : "Use this device class for buttons, and other items which do not have a state."
     },
     "coffeemachine" : {
-      "title" : "Amplifier",
-      "description" : "Use this device class for audio amplifier devices."
+      "title" : "Coffee machine",
+      "description" : "Use this device class for coffee machines."
     },
-    "lights" : {
-      "title" : "wip",
-      "description" : "wip"
+    "curtain" : {
+      "title" : "Curtains",
+      "description" : "Use this device class for curtains."
+    },
+    "doorbell" : {
+      "title" : "Doorbell",
+      "description" : "Use this device class for doorbells, usually together with the `button` capability."
+    },
+    "fan" : {
+      "title" : "Fan",
+      "description" : "Use this device class for fans that cool your home."
     }
   },
   "capability" : {
