@@ -15,6 +15,8 @@
             text-decoration: none;
         }
     </style>
+
+
 </head>
 <body>
     <nav aria-label="breadcrumb">
@@ -22,127 +24,31 @@
             <li class="breadcrumb-item active" aria-current="page">Settings</li>
         </ol>
     </nav>
-    <main>
-        <a href="category.html" class="card d-flex text-white bg-dark my-2 rounded-0 shadow">
+    <main id="categories">
+
+        <a v-for="category in categories" href="category.html" class="card d-flex text-white bg-dark my-2 rounded-0 shadow">
             <div class="card-body align-items-center">
                 <div class="row align-items-center">
                     <div class="col-3">
-                        <object type="image/svg+xml" data="../assets/icons/categories/amplifier/standard.svg" class="img-fluid">Amplifier</object>
+                        <object type="image/svg+xml" :data="'../assets/icons/categories/' + category.title.en + '/standard.svg'" class="img-fluid">Amplifier</object>
                     </div>
                     <div class="col-6">
-                        <p>Amplifiers.</p>
-                        <p class="small text-muted">You have 99 grouped amplifiers.</p>
+                        <p :data-i18n="'category.' + category.id + '.title'"></p>
+                        <p class="small text-muted">{{ category.title.en }}</p>
                     </div>
+
                     <div class="col-3 text-right h3">
                         <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        {{ category }}
                     </div>
                 </div>
             </div>
         </a>
 
-        <a href="category.html" class="card d-flex text-white bg-dark my-2 rounded-0 shadow">
-            <div class="card-body align-items-center">
-                <div class="row align-items-center">
-                    <div class="col-3">
-                        <object type="image/svg+xml" data="../assets/icons/categories/blinds/standard.svg" class="img-fluid">blinds</object>
-                    </div>
-                    <div class="col-6">
-                        <p>Blinds.</p>
-                        <p class="small text-muted">You have 99 grouped blinds.</p>
-                    </div>
-                    <div class="col-3 text-right h3">
-                        <i class="fas fa-chevron-right"></i>
-                    </div>
-                </div>
-            </div>
-        </a>
-
-        <a href="category.html" class="card d-flex text-white bg-dark my-2 rounded-0 shadow">
-            <div class="card-body align-items-center">
-                <div class="row align-items-center">
-                    <div class="col-3">
-                        <object  type="image/svg+xml" data="../assets/icons/categories/button/standard.svg" class="img-fluid">Button</object>
-                    </div>
-                    <div class="col-6">
-                        <p>Buttons.</p>
-                        <p class="small text-muted">You have 99 grouped buttons.</p>
-                    </div>
-                    <div class="col-3 text-right h3">
-                        <i class="fas fa-chevron-right"></i>
-                    </div>
-                </div>
-            </div>
-        </a>
-
-
-        <a href="category.html" class="card d-flex text-white bg-dark my-2 rounded-0 shadow">
-            <div class="card-body align-items-center">
-                <div class="row align-items-center">
-                    <div class="col-3">
-                        <object type="image/svg+xml" data="../assets/icons/categories/coffeemachine/standard.svg" class="img-fluid">Coffee Machine</object>
-                    </div>
-                    <div class="col-6">
-                        <p>Coffee Machines.</p>
-                        <p class="small text-muted">You have 99 grouped coffee machines.</p>
-                    </div>
-                    <div class="col-3 text-right h3">
-                        <i class="fas fa-chevron-right"></i>
-                    </div>
-                </div>
-            </div>
-        </a>
-
-
-        <a href="category.html" class="card d-flex text-white bg-dark my-2 rounded-0 shadow">
-            <div class="card-body align-items-center">
-                <div class="row align-items-center">
-                    <div class="col-3">
-                        <object type="image/svg+xml" data="../assets/icons/categories/curtain/standard.svg" class="img-fluid">Curtain</object>
-                    </div>
-                    <div class="col-6">
-                        <p>Curtains.</p>
-                        <p class="small text-muted">You have 99 grouped curtains.</p>
-                    </div>
-                    <div class="col-3 text-right h3">
-                        <i class="fas fa-chevron-right"></i>
-                    </div>
-                </div>
-            </div>
-        </a>
-
-        <a href="category.html" class="card d-flex text-white bg-dark my-2 rounded-0 shadow">
-            <div class="card-body align-items-center">
-                <div class="row align-items-center">
-                    <div class="col-3">
-                        <object type="image/svg+xml" data="../assets/icons/categories/doorbell/standard.svg" class="img-fluid">Doorbell</object>
-                    </div>
-                    <div class="col-6">
-                        <p>Doorbells.</p>
-                        <p class="small text-muted">You have 99 grouped doorbells.</p>
-                    </div>
-                    <div class="col-3 text-right h3">
-                        <i class="fas fa-chevron-right"></i>
-                    </div>
-                </div>
-            </div>
-        </a>
-
-        <a href="category.html" class="card d-flex text-white bg-dark my-2 rounded-0 shadow">
-            <div class="card-body align-items-center">
-                <div class="row align-items-center">
-                    <div class="col-3">
-                        <object type="image/svg+xml" data="../assets/icons/categories/fan/standard.svg" class="img-fluid">Fan</object>
-                    </div>
-                    <div class="col-6">
-                        <p>Fans.</p>
-                        <p class="small text-muted">You have 99 grouped fans.</p>
-                    </div>
-                    <div class="col-3 text-right h3">
-                        <i class="fas fa-chevron-right"></i>
-                    </div>
-                </div>
-            </div>
-        </a>
     </main>
 
     <!-- Optional JavaScript -->
@@ -154,7 +60,112 @@
     <script defer src="https://use.fontawesome.com/releases/v5.6.1/js/solid.js" integrity="sha384-8Lgyylu0vfTGCXDKe435hJgX8s96c19R+dvpH0NHKdX47GA7TmMj+BDiZZ76qqhT" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.6.1/js/regular.js" integrity="sha384-+e+pqX41PD6VrFw9HZ3YKJHFT+SZoEMBmnMpLUpHrdd5BE46xHCrzap9c6kfTi9H" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.6.1/js/fontawesome.js" integrity="sha384-T6YzYwAGZAItTIkYlBzfwqa07o9R1AND3Lgt6Or6c5IdukY7tqShoryqwpKrpeIB" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/vue"></script>
 
+
+    <script>
+
+        let library = {
+            categories: {
+                amplifier : {
+                    "id" : "amplifier",
+                    "title": {
+                        "en": "Amplifier",
+                        "nl": "Versterker"
+                    },
+                    "description": {
+                        "en": "Use this device class for audio amplifier devices.",
+                        "nl":  "N/A"
+                    },
+                    "icons" : [
+                        "amplifier/standard",
+                        "amplifier/standard/right"
+                    ],
+                    "capabilities" : [
+                        "onoff",
+                        "volume_set",
+                        "volume_mute",
+                        "volume_up",
+                        "volume_down"
+                    ]
+                },
+                blinds: {
+                    "id" : "blinds",
+                    "title": {
+                        "en": "Blinds",
+                        "nl": "Jaloezieën & Lamellen"
+                    },
+                    "description": {
+                        "en": "Use this device class for blinds, both horizontal and vertical.",
+                        "nl":  "N/A"
+                    },
+                    "icons" : [
+                        "blinds/standard"
+                    ],
+                    "capabilities" : [
+                        "onoff",
+                        "dim",
+                        "windowcoverings_state",
+                        "windowcoverings_tilt_up",
+                        "windowcoverings_tilt_down",
+                        "windowcoverings_tilt_set",
+                        "windowcoverings_closed",
+                        "windowcoverings_set"
+                    ]
+                },
+                button: {
+                    "id" : "button",
+                    "title": {
+                        "en": "Button",
+                        "nl": "Knop"
+                    },
+                    "description": {
+                        "en": "Use this device class for buttons, and other items which do not have a state.",
+                        "nl":  "N/A"
+                    },
+                    "icons" : [
+                        "button/standard",
+                        "button/standard/rounded",
+                        "button/standard/square",
+                        "button/standard/toggle"
+                    ],
+                    "capabilities" : [
+                        "button"
+                    ]
+                },
+                coffeemachine: {
+                    "id" : "coffeemachine",
+                    "title": {
+                        "en": "Coffee machine",
+                        "nl": "Koffiemachine"
+                    },
+                    "description": {
+                        "en": "Use this device class for coffee machines.",
+                        "nl": "N/A"
+                    },
+                    "icons" : [
+                        "coffeemachine/standard"
+                    ],
+                    "capabilities" : [
+                        "onoff",
+                        "target_temperature",
+                        "measure_temperature"
+                    ]
+                }
+            }
+        };
+
+        const app = new Vue({
+            el: '#categories',
+            data: {
+                categories: []
+            },
+            created() {
+                this.categories = library.categories
+            }
+
+        });
+    </script>
 
 </body>
 </html>

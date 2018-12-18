@@ -14,6 +14,18 @@
       "title" : "Amplifier",
       "description" : "Use this device class for audio amplifier devices."
     },
+    "blinds" : {
+      "title" : "Amplifier",
+      "description" : "Use this device class for audio amplifier devices."
+    },
+    "button" : {
+      "title" : "Amplifier",
+      "description" : "Use this device class for audio amplifier devices."
+    },
+    "coffeemachine" : {
+      "title" : "Amplifier",
+      "description" : "Use this device class for audio amplifier devices."
+    },
     "lights" : {
       "title" : "wip",
       "description" : "wip"
