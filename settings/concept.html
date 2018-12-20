@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+    <title>Group Lights</title>
+
+    <!--<script type="text/javascript" src="//cdn.athom.com/athom-api/2.1.140/athom-api.min.js"></script>-->
+
+    <script type="text/javascript" src="/homey.js" data-origin="settings"></script>
+
+
+
+    <style>
+        [v-cloak] {
+            display: none;
+        }
+
+        /* Fixes default bootstrap a link */
+        a:hover {
+            text-decoration: none;
+        }
+
+        /* Fixes default homey list style */
+        .breadcrumb {
+            margin:0;
+        }
+
+        .busy-indicator > div {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .list-span + .list-span:before {
+            content: ", ";
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">Settings</li>
+    </ol>
+</nav>
+
+<div id="initialiser" class="busy-indicator">
+    <div  class="text-center">
+        <i  class="fas fa-circle-notch fa-spin"></i>
+        <p>&nbsp;</p>
+    </div>
+</div>
+
+
+
+<main id="main">
+
+    <div  class="busy-indicator" v-if='loading.library || loading.devices'>
+        <div  class="text-center">
+            <i class="fas fa-circle-notch fa-spin"></i>
+            <p>{{ state }}</p>
+        </div>
+    </div>
+
+
+    <div>
+        <span class="text-center">{{ status }} {{ loading }}</span>
+    </div>
+
+    <section id="categories" v-cloak v-if="active.categories">
+        <a v-for="category in categories" @click="show('groups', category.id)" class="card d-flex text-white bg-dark my-2 rounded-0 shadow" v-if="category.status > 0" >
+            <div class="card-body align-items-center">
+                <div class="row align-items-center">
+                    <div class="col-3">
+                        <object type="image/svg+xml" :data="'../assets/icons/categories/' + category.id + '/standard.svg'" class="img-fluid">{{ category.id }}</object>
+                        <p v-if="category.status > 0" style="color:#000;" class="text-center text-muted">{{ category.status }}</p>
+                    </div>
+
+                    <div class="col-6">
+                        <p>{{ __('category.' + category.id + '.title') }}</p>
+                        <p class="small text-muted">{{ __('category.' + category.id + '.description') }}</p>
+                    </div>
+
+                    <div class="col-3 text-right h3">
+                        <i class="fas fa-circle-notch fa-spin" v-if="category.status == 'loading'"></i>
+                        <i class="fas fa-chevron-right"  v-else-if="category.status > 0"></i>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </section>
+
+    <section id="groups" v-cloak v-if="active.groups">
+
+        <a v-for="group in groups" @click="show('devices', group.id)" class="card d-flex text-dark m-2 my-4 rounded-0 shadow">
+            <div class="card-body align-items-center">
+                <div class="row align-items-center">
+                    <div class="col-3">
+                        <object type="image/svg+xml" :data="group.iconObj.url"  class="img-fluid">{{ group.name }}</object>
+                    </div>
+
+                    <div class="col-6">
+                        <p>{{ group.name }}</p>
+                        <span v-for="capability in group.capabilities" class="list-span"><span class="small text-muted">{{ __('capability.' + capability + '.title') }}</span></span>
+                    </div>
+                    <div class="col-3 text-right h3">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col">
+                        <span v-for="device in group.settings.devices" class="list-span"><span>{{ device }}{{ (get(device)) }}</span></span>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </section>
+
+</main>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+<script src="https://unpkg.com/vue"></script>
+
+
+
+<script>
+
+    // @todo - Allow categories to be sorted by Homey.__(title);
+    // @todo - Check each of the drivers and remove any items which dont exist.
+    function onHomeyReady(Homey) {
+        Homey.ready();
+
+        const app = new Vue({
+            el: '#main',
+            data: {
+                active: {
+                    categories: true,
+                    groups: false,
+                    devices: false
+                },
+                loading: {
+                    library: true,
+                    devices: true
+                },
+                library: {},
+                devices: {},
+                groups: {},
+                categories: {},
+                status: 'initialising'
+            },
+            computed: {
+
+            },
+            methods: {
+                // Add i18n support as a vue method.
+                __(key) {
+                    return Homey.__(key)
+                },
+                // the function used to determine which sections to show and define the data object with in.
+                show: function (type, id) {
+
+                    this.active = {
+                        categories: false,
+                        groups: false,
+                        devices: false
+                    }
+
+                    this.active[type] = true;
+
+                    if (type == 'categories') {
+
+
+                    } if (type == 'groups') {
+                        if (this.categories[id].groups.length) {
+                            this.groups = this.categories[id].groups;
+                        }
+                    } else if (type == 'devices') {
+                        if (this.groups[id]) {
+
+                        }
+                    }
+
+                },
+                filter: function filter(object, criteria) {
+                    // Generic function for filtering an object by its keys - useful for dealing with our devices.
+                    return Object.values(object).filter(function(obj) {
+                        return Object.keys(criteria).every(function(c) {
+                            return obj[c] == criteria[c];
+                        });
+                    });
+                }
+            },
+            beforeCreate() {
+
+                this.state = 'creating';
+
+                Homey.api('GET', '/library', (err, library) => {
+                    this.status = 'Accessing Library';
+
+                    if (err) return Homey.alert(err);
+                    this.library  =  library;
+                    for (let i in this.library.categories){
+                        this.categories[this.library.categories[i].id] = this.library.categories[i];
+                        this.categories[this.library.categories[i].id].status = 'pending';
+                    }
+                    this.loading.library = false;
+                });
+
+                Homey.api('GET', '/devices', (err, devices) => {
+                    this.status = 'Getting all the devices';
+
+                    if (err) return Homey.alert(err);
+                    this.devices  =  devices;
+
+                    this.loading.devices = false;
+                });
+
+            },
+            mounted() {
+                console.log('tst')
+            },
+        });
+    }
+
+
+
+
+
+</script>
+<script src="mock.js"></script>
+</body>
+</html>
+
