@@ -20,9 +20,16 @@
 </head>
 <body style="font-size: 80%;">
 
+<div id="initialiser" class="busy-indicator" v-if="false">
+    <div class="text-center">
+        <i  class="fas fa-circle-notch fa-spin"></i>
+        <p>&nbsp;</p>
+    </div>
+</div>
+
 <main>
 
-    <div  class="busy-indicator" v-if='loading.status'>
+    <div class="busy-indicator" v-if='loading.status'>
         <div  class="text-center">
             <i class="fas fa-circle-notch fa-spin"></i>
             <p>{{ loading.status }}</p>
@@ -57,8 +64,8 @@
             <div class="card-body align-items-center">
                 <div class="row align-items-center">
 
-                    <div class="col-3"><!-- //group.iconObj.url -->
-                        <object type="image/svg+xml" :data="'../assets/icons/categories/' + group.class + '/standard.svg'"  class="img-fluid">{{ group.name }}</object>
+                    <div class="col-3">
+                        <object type="image/svg+xml" :data="group.iconObj.url"  class="img-fluid">{{ group.name }}</object>
                     </div>
 
                     <div class="col-6">
@@ -91,7 +98,7 @@
             <div class="card-body align-items-center">
                 <div class="row align-items-center">
                     <div class="col-3">
-                        <object type="image/svg+xml" :data="'../assets/icons/categories/' + device.class + '/standard.svg'" class="img-fluid">Light</object>
+                        <object type="image/svg+xml" :data="group.iconObj.url" class="img-fluid">Light</object>
                     </div>
                     <div class="col-9">
                         <p class="lead mb-2">{{ device.name }}</p>
@@ -180,11 +187,11 @@
                     </div>
                 </label>
             </label>
-
+        </div>
     </section>
 
 
-
+    <div>{{ devices }}</div>
 </main>
 
 </body>
@@ -294,6 +301,8 @@
             created() {},
             beforeMount() {},
             mounted() {
+
+                $('#initialiser').hide();
                 Homey.api('GET', '/library', (err, library) => {
                     if (err) return Homey.alert(err);
                     this.library  =  library;
