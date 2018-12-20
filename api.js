@@ -47,6 +47,37 @@ module.exports = [
     }
   },
   {
+    // Get a specific group.
+    method : 'GET',
+    path   : '/category/:id',
+    fn     : async (args) => {
+      let groups = await Homey.app.getCategory(args.params.id);
+      if (groups) {
+        // return groups;
+        // groups = Object.values(groups);
+
+        for (let g in groups) {
+          groups[g].name = groups[g].getName();
+          groups[g].class = args.params.id;
+          groups[g].capabilities = groups[g].getCapabilities();
+          groups[g].data         = groups[g].getData();
+          groups[g].settings     = groups[g].getSettings();
+        }
+       return groups;
+      }
+      return false;
+    }
+  },
+  {
+    // Get a specific group.
+    method : 'GET',
+    path   : '/newGroups',
+    fn     : async (args) => {
+      return await Homey.app.getNewGroups();
+
+    }
+  },
+  {
     // Get a list of all devices.
     method : 'GET',
     path   : '/devices',
