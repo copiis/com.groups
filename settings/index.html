@@ -191,7 +191,6 @@
     </section>
 
 
-    <div>{{ devices }}</div>
 </main>
 
 </body>
@@ -312,7 +311,12 @@
 
                 Homey.api('GET', '/devices', (err, devices) => {
                     if (err) return Homey.alert(err);
-                    this.devices  =  devices;
+
+                    // Give a Unique identifier
+                    for(d in devices) {
+                        this.devices[d.id] = d;
+                    }
+
                     this.groups = this.find(this.devices, {driverUri: 'homey:app:com.groups'});
                     this.loading.devices = false;
                     this.load();
