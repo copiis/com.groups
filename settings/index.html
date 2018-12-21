@@ -169,12 +169,10 @@
 
             </div>
 
-
-
             <div class="list-group rounded-0">
                 <label v-for="d in devices"  class="list-group-item list-group-item-action rounded-0" style="">
                     <div class="row align-items-center">
-                        <div class="col-2"><object v-if="d.iconObj && d.iconObj" type="image/svg+xml" :data="d.iconObj.url" class="img-fluid"></object></div>
+                        <div class="col-2" style="align-self: normal;"><object v-if="d.iconObj && d.iconObj" type="image/svg+xml" :data="d.iconObj.url" class="img-fluid" style="max-height: 24px;max-width: 24px"></object></div>
                         <div class="col-6">{{ d.name }}</div>
                         <div class="col-4">
                             <div class="custom-control custom-checkbox float-right">
@@ -185,9 +183,6 @@
                     </div>
                 </label>
             </div>
-
-
-
 
         </div>
     </section>
@@ -245,7 +240,7 @@
                     devices: false
                 },
                 loading : {
-                    status: 'pending',
+                    status: 'loading',
                     library: true,
                     devices: true,
                     categories: true
