@@ -42,7 +42,7 @@
             <div class="card-body align-items-center">
                 <div class="row align-items-center">
                     <div class="col-3">
-                        <object type="image/svg+xml" :data="'../assets/icons/categories/' + category.id + '/standard.svg'" class="img-fluid">{{ category.id }}</object>
+                        <img :src="'../assets/icons/categories/' + category.id + '/standard.svg'" class="img-fluid">
                         <p style="color:#000;" class="text-center text-muted">{{ size(category.groups) }}</p>
                     </div>
 
@@ -66,7 +66,7 @@
                 <div class="row align-items-center">
 
                     <div class="col-3">
-                        <object type="image/svg+xml" :data="group.iconObj.url"  class="img-fluid">{{ group.name }}</object>
+                        <img :src="group.iconObj.url" class="img-fluid">
                     </div>
 
                     <div class="col-6">
@@ -172,7 +172,8 @@
             <div class="list-group rounded-0">
                 <label v-for="d in devices"  class="list-group-item list-group-item-action rounded-0" style="">
                     <div class="row align-items-center">
-                        <div class="col-2" style="align-self: normal;"><object v-if="d.iconObj && d.iconObj" type="image/svg+xml" :data="d.iconObj.url" class="img-fluid" style="max-height: 24px;max-width: 24px"></object></div>
+                        <div class="col-2" style="align-self: normal;">
+                            <img v-if="d.iconObj && d.iconObj" :src="d.iconObj.url" class="img-fluid" style="max-height: 24px;max-width: 24px">
                         <div class="col-6">{{ d.name }}</div>
                         <div class="col-4">
                             <div class="custom-control custom-checkbox float-right">
