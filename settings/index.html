@@ -286,10 +286,13 @@
                             this.current.categories[i].groups =   this.find(this.groups, {class: i});;
                         }
                         this.loading.categories = false;
+
+                        console.log(this.devices["f62ff2b4-f649-4de0-a75f-644327cd9877"]);
+                        console.log(this.devices["f62ff2b4-f649-4de0-a75f-644327cd9877"].name);
+
                     }
 
-                    console.log(this.devices["f62ff2b4-f649-4de0-a75f-644327cd9877"]);
-                    console.log(this.devices["f62ff2b4-f649-4de0-a75f-644327cd9877"].name);
+
                     this.loading.status = this.loading.categories && this.loading.devices && this.loading.library;
                 }
             },
@@ -311,7 +314,9 @@
 
                 Homey.api('GET', '/devices', (err, devices) => {
                     if (err) return Homey.alert(err);
-                    this.devices  =  devices;
+                    for (let d in devices) {
+                        this.devices[devices[d].id] = devices[d];
+                    }
                     this.groups = this.find(this.devices, {driverUri: 'homey:app:com.groups'});
                     this.loading.devices = false;
                     this.load();
