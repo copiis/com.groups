@@ -98,7 +98,7 @@
             <div class="card-body align-items-center">
                 <div class="row align-items-center">
                     <div class="col-3">
-                        <object type="image/svg+xml" :data="group.iconObj.url" class="img-fluid">Light</object>
+                        <object type="image/svg+xml" :data="device.iconObj.url" class="img-fluid">Light</object>
                     </div>
                     <div class="col-9">
                         <p class="lead mb-2">{{ device.name }}</p>
@@ -189,8 +189,6 @@
             </label>
         </div>
     </section>
-
-
 </main>
 
 </body>
@@ -284,10 +282,9 @@
                     if (!this.loading.devices &&  !this.loading.library) {
 
                         for (let i in this.library.categories) {
-                            app.current.categories[i] = this.library.categories[i];
-                            app.current.categories[i].groups =   this.find(this.groups, {class: i});;
+                            this.current.categories[i] = this.library.categories[i];
+                            this.current.categories[i].groups =   this.find(this.groups, {class: i});;
                         }
-
                         this.loading.categories = false;
                     }
                     this.loading.status = this.loading.categories && this.loading.devices && this.loading.library;
@@ -311,12 +308,7 @@
 
                 Homey.api('GET', '/devices', (err, devices) => {
                     if (err) return Homey.alert(err);
-
-                    // Give a Unique identifier
-                    for(d in devices) {
-                        this.devices[d.id] = d;
-                    }
-
+                    this.devices  =  devices;
                     this.groups = this.find(this.devices, {driverUri: 'homey:app:com.groups'});
                     this.loading.devices = false;
                     this.load();
@@ -332,11 +324,11 @@
 
 
 </script>
-<!--<script src="data.js"></script>-->
-<!--<script src="mock.js"></script>-->
+<script src="data.js"></script>
+<script src="mock.js"></script>
 <script>
-    // if (typeof Homey === 'undefined') {
-    //     onHomeyReady(MockHomey);
-    // }
+    if (typeof Homey === 'undefined') {
+        onHomeyReady(MockHomey);
+    }
 </script>
 </html>

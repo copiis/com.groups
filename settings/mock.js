@@ -24,12 +24,18 @@
 
     /**
      * Mock: Homey.App,
-     * Homey.FlowCardTrigger,
-     * Homey.FlowCardCondition,
-     * Homey.FlowCardAction,
      * Homey.__()
      * Homey.alert()
      * Homey.Log()
+     *
+     * To use : Where data.js contains your locale and api.
+     * <script src="data.js"></script>
+     * <script src="mock.js"></script>
+     * <script>
+     * if (typeof Homey === 'undefined') {
+     *   onHomeyReady(MockHomey);
+     * }
+     * </script>
      * @type {{App: App, FlowCardAction: (function(): {registerRunListener: (function(): exports), register: (function(): exports)}), FlowCardTrigger: (function(): {registerRunListener: (function(): exports), register: (function(): exports)}), FlowCardCondition: (function(): {registerRunListener: (function(): exports), register: (function(): exports)})}}
      */
     const MockHomey = {
