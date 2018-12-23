@@ -36,6 +36,11 @@
             <p>{{ loading.status }}</p>
         </div>
     </div>
+
+    <section v-if="!size(groups) && !active.categories">
+        <p v-cloak class="text-center">Sorry you have not created any groups yet, please create a group and come back to edit it.</p>
+    </section>
+
     <section id="categories" v-cloak v-if="active.categories">
 
         <a v-for="category in current.categories" v-if="size(category.groups)" @click="show('groups', {class: category.id})" class="card d-flex text-white bg-dark my-2 rounded-0 shadow" >
@@ -174,6 +179,7 @@
                     <div class="row align-items-center">
                         <div class="col-2" style="align-self: normal;">
                             <img v-if="d.iconObj && d.iconObj" :src="d.iconObj.url" class="img-fluid" style="max-height: 24px;max-width: 24px">
+                        </div>
                         <div class="col-6">{{ d.name }}</div>
                         <div class="col-4">
                             <div class="custom-control custom-checkbox float-right">
@@ -306,7 +312,7 @@
                     this.load();
                 });
 
-                Homey.api('GET', '/devices', (err, devices) => {
+                Homey.api('GET', '/devices', async (err, devices) => {
                     if (err) return Homey.alert(err);
 
                     let temp = {};
@@ -314,7 +320,13 @@
                         temp[devices[d].id] = devices[d];
                     }
                     this.devices = temp;
-                    this.groups = this.find(this.devices, {driverUri: 'homey:app:com.groups'});
+
+                    this.groups = await this.find(this.devices, {driverUri: 'homey:app:com.groups'});
+
+                    if (Object.keys(this.groups).length == 0) {
+                        this.active.categories = false;
+                    }
+
                     this.loading.devices = false;
                     this.load();
                 });
