@@ -33,6 +33,9 @@ This app is based off of the original 'Device Groups' app by Swttt for Homey v1.
 
 ##### 2.0
 
+- 2.1.2 : Convert settings to full webAPI implementation.
+- 2.1.1 : Settings concept
+- 2.1.0 : Settings UX
 - 2.0.2 : Beta Release
 - 2.0.1 : Disabled changing a devices settings.
 - 2.0.1 : Added support for choosing an icon.
