@@ -21,8 +21,14 @@ This app is based off of the original 'Device Groups' app by Swttt for Homey v1.
 
 ### Changelog
 
-##### 2.0
+##### 2.1
 
+- 2.1.100 :
+
+    - Support for settings page
+    -
+
+##### 2.0
 
 - 2.0.210 : Add calculation method for alarm_generic
 - 2.0.209 : Publish Alpha

@@ -10,7 +10,7 @@ const Librarian = require('./lib/librarian');
 class Groups extends Homey.App {
 
     onInit() {
-        this.log('Device groups is running...');
+        this.log('<onInit>');
 
         // Set our library reference
         this.library = new Librarian();
@@ -21,8 +21,11 @@ class Groups extends Homey.App {
         // Prime the API into memory, set its events.
         this.cache();
 
+        this.getCategory('light');
+
         // Initialise the devices objects.
         this.devices = {};
+        this.log('</onInit>');
     }
 
     /**
@@ -71,10 +74,28 @@ class Groups extends Homey.App {
     async getGroups() {
         //return Homey.ManagerDrivers.getDriver('light').getDevices();
     }
+    async getNewGroups() {
+
+        let devices = await this.getDevices();
+        this.groups = {};
+        for (let d in devices) {
+            if (devices[d].driverUri == 'homey:app:com.groups') {
+                this.groups[devices[d].id] = devices[d];
+            }
+        }
+
+        return this.groups;
+    }
+
+    async getCategory(id) {
+        let groups = await Homey.ManagerDrivers.getDriver(id).getDevices();
+        if (groups instanceof Error) {this.log(Error); throw groups;}
+        return groups;
+    }
 
     async getGroup(id) {
-        let device = await Homey.ManagerDrivers.getDriver('light').getDevice({id});
-        if (device instanceof Error) throw device;
+        let device = await Homey.ManagerDrivers.getDriver(id).getDevice({id});
+        if (device instanceof Error) {this.log(Error); throw device;}
         return device;
     }
 

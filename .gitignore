@@ -6,8 +6,12 @@
 
 # Ignore installed nodes, while in development.
 debug.js
+data.js
+debug
+
 # Do not ignore me!
 !.gitignore
 !.gitattributes
 !.homeyplugins.json
 !.homeycompose
+settings/data.js

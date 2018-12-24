@@ -24,7 +24,8 @@ This app is based off of the original 'Device Groups' app by Swttt for Homey v1.
 
 ##### 2.1
 
-- Settings
+- 2.1.0 : Update settings to use new i18n subsystem.
+- 2.1.1 : Settings Update
 - New UI
 - Bug Fixes
 
@@ -32,8 +33,10 @@ This app is based off of the original 'Device Groups' app by Swttt for Homey v1.
 
 ##### 2.0
 
+- 2.1.2 : Convert settings to full webAPI implementation.
+- 2.1.1 : Settings concept
+- 2.1.0 : Settings UX
 - 2.0.2 : Beta Release
-
 - 2.0.1 : Disabled changing a devices settings.
 - 2.0.1 : Added support for choosing an icon.
 - 2.0.1 : Standardised the classes and inheritance.
@@ -41,7 +44,6 @@ This app is based off of the original 'Device Groups' app by Swttt for Homey v1.
 - 2.0.1 : Keeps track created/deleted devices refreshes device cache
 - 2.0.1 : Updated code base to Homey v2 Spec
 - 2.0.1 : Reliability, Stability and Performance
-
 - 2.0.0 : Feedback on device status
 - 2.0.0 : Added Ability to group read only capabilities.
 - 2.0.0 : Allow device status to be calculated from grouped devices

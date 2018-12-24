@@ -1,0 +1,286 @@
+{
+    "onoff": {
+        "title" : "Turned on",
+        "description" : "Whether a device is on or off."
+    },
+    "dim": {
+        "title" : "Dim level",
+        "description" : "Dims level of a device as a percentage of its full value"
+    },
+    "light_hue": {
+        "title" : "Hue",
+        "description" : "The colour of the light"
+    },
+    "light_saturation": {
+        "title" : "Color Saturation",
+        "description" : "The colour intensity"
+    },
+    "light_temperature": {
+        "title" : "Color Temperature",
+        "description" : "The white light temperature warm to cold as a decimal"
+    },
+    "light_mode": {
+        "title" : "Light mode",
+        "description" : "Switch between Color or Temperature mode"
+    },
+    "vacuumcleaner_state": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "thermostat_mode": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "target_temperature": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "measure_temperature": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "measure_co": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "measure_co2": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "measure_pm25": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "measure_humidity": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "measure_pressure": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "measure_noise": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "measure_rain": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "measure_wind_strength": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "measure_wind_angle": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "measure_gust_strength": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "measure_gust_angle": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "measure_battery": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "measure_power": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "measure_voltage": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "measure_current": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "measure_luminance": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "measure_ultraviolet": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "measure_water": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "alarm_generic": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "alarm_motion": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "alarm_contact": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "alarm_co": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "alarm_co2": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "alarm_pm25": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "alarm_tamper": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "alarm_smoke": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "alarm_fire": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "alarm_heat": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "alarm_water": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "alarm_battery": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "alarm_night": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "meter_power": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "meter_water": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "meter_gas": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "meter_rain": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "homealarm_state": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "volume_set": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "volume_up": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "volume_down": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "volume_mute": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "channel_up": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "channel_down": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "locked": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "lock_mode": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "windowcoverings_state": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "windowcoverings_tilt_up": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "windowcoverings_tilt_down": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "windowcoverings_tilt_set": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "windowcoverings_closed": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "windowcoverings_set": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "button": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "speaker_playing": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "speaker_next": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "speaker_prev": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "speaker_shuffle": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "speaker_repeat": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "speaker_artist": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "speaker_album": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "speaker_track": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "speaker_duration": {
+        "title" : "NONE",
+        "description" : "NONE"
+    },
+    "speaker_position": {
+        "title" : "NONE",
+        "description" : "NONE"
+    }
+}

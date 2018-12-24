@@ -1,102 +1,475 @@
 {
-  "_" : {
-    "Device Groups Editor" : "Device Groups Editor",
-    "Edit your device groups" : "Edit your device groups",
-    "Device Group Name" : "Device Group Name",
-    "Device Class" : "Device Class",
-    "Capabilities" : "Capabilities",
-    "Devices in group" : "Devices in group",
-    "Select device group" : "Select device group",
-    "Group" : "Group"
+  "_": {
+    "Device Groups Editor": "Device Groups Editor",
+    "Edit your device groups": "Edit your device groups",
+    "Device Group Name": "Device Group Name",
+    "Device Class": "Device Class",
+    "Capabilities": "Capabilities",
+    "Devices in group": "Devices in group",
+    "Select device group": "Select device group",
+    "Group": "Group"
   },
-  "category" : {
-    "amplifier" : {
-      "title" : "Amplifier",
-      "description" : "Use this device class for audio amplifier devices."
+  "category": {
+    "amplifier": {
+      "title": "Amplifier",
+      "description": "Use this device class for audio amplifier devices."
     },
-    "lights" : {
-      "title" : "wip",
-      "description" : "wip"
+    "blinds": {
+      "title": "Blinds",
+      "description": "Use this device class for blinds, both horizontal and vertical."
+    },
+    "button": {
+      "title": "Button",
+      "description": "Use this device class for buttons, and other items which do not have a state."
+    },
+    "coffeemachine": {
+      "title": "Coffee machine",
+      "description": "Use this device class for coffee machines."
+    },
+    "curtain": {
+      "title": "Curtains",
+      "description": "Use this device class for curtains."
+    },
+    "doorbell": {
+      "title": "Doorbell",
+      "description": "Use this device class for doorbells, usually together with the `button` capability."
+    },
+    "fan": {
+      "title": "Fan",
+      "description": "Use this device class for fans that cool your home."
+    },
+    "garagedoor": {
+      "title": "Garage door",
+      "description": "Use this device class for garage doors as well as other automatic doors and gates."
+    },
+    "heater": {
+      "title": "Heater",
+      "description": "Use this device class for heaters, that warm your home."
+    },
+    "homealarm": {
+      "title": "Home Security",
+      "description": "Use this device class for home alarm systems."
+    },
+    "homeenergymonitor": {
+      "title": "Home Energy Monitor",
+      "description": "Use this device class for devices that monitor a house's energy usage."
+    },
+    "kettle": {
+      "title": "Kettle",
+      "description": "Use this device class for kettle devices, that can heat water."
+    },
+    "light": {
+      "title": "Light",
+      "description": "Use this device class for lights"
+    },
+    "lock": {
+      "title": "Lock",
+      "description": "Use this device class for lock devices."
+    },
+    "other": {
+      "title": "Other",
+      "description": "Use this device class for devices that do not fit any other device class."
+    },
+    "relay": {
+      "title": "Relay",
+      "description": "Use this device class for relays, which are connected to another device."
+    },
+    "remote": {
+      "title": "Remote",
+      "description": "Use this device class for (TV/Sunblind/Keyfob etc.) remotes."
+    },
+    "sensor": {
+      "title": "Sensor",
+      "description": "Use this device class for sensors, e.g. a contact or motion sensor. As well as alarms!"
+    },
+    "socket": {
+      "title": "Wall Plug",
+      "description": "Use this device class for wall plugs and sockets."
+    },
+    "speaker": {
+      "title": "Speaker",
+      "description": "Use this device class for devices that can play audio, such as music."
+    },
+    "sunshade": {
+      "title": "Sunshade",
+      "description": "Use this device class for sunshades (window coverings against the sun)."
+    },
+    "thermostat": {
+      "title": "Thermostat",
+      "description": "Use this device class for thermostats, either for the entire home or radiator-mounted."
+    },
+    "tv": {
+      "title": "TV",
+      "description": "Use this device class for TVs."
+    },
+    "vacuumcleaner": {
+      "title": "Vacuum Cleaner",
+      "description": "Use this device class for vacuum cleaners."
+    },
+    "windowcoverings": {
+      "title": "Window Coverings",
+      "description": "Use this device class for window coverings, when the `curtains`, `blinds` or `sunshade` device class doesn't apply."
     }
   },
-  "capability" : {
-    "onoff" : {
-      "title" : "wip"
+  "capability": {
+    "onoff": {
+      "title": "Turned on",
+      "description": "Whether a device is on or off."
+    },
+    "dim": {
+      "title": "Dim level",
+      "description": "Dims level of a device as a percentage of its full value"
+    },
+    "light_hue": {
+      "title": "Hue",
+      "description": "The colour of the light"
+    },
+    "light_saturation": {
+      "title": "Color Saturation",
+      "description": "The colour intensity"
+    },
+    "light_temperature": {
+      "title": "Color Temperature",
+      "description": "The white light temperature warm to cold as a decimal"
+    },
+    "light_mode": {
+      "title": "Light mode",
+      "description": "Switch between Color or Temperature mode"
+    },
+    "vacuumcleaner_state": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "thermostat_mode": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "target_temperature": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "measure_temperature": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "measure_co": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "measure_co2": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "measure_pm25": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "measure_humidity": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "measure_pressure": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "measure_noise": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "measure_rain": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "measure_wind_strength": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "measure_wind_angle": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "measure_gust_strength": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "measure_gust_angle": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "measure_battery": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "measure_power": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "measure_voltage": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "measure_current": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "measure_luminance": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "measure_ultraviolet": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "measure_water": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "alarm_generic": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "alarm_motion": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "alarm_contact": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "alarm_co": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "alarm_co2": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "alarm_pm25": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "alarm_tamper": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "alarm_smoke": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "alarm_fire": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "alarm_heat": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "alarm_water": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "alarm_battery": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "alarm_night": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "meter_power": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "meter_water": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "meter_gas": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "meter_rain": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "homealarm_state": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "volume_set": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "volume_up": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "volume_down": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "volume_mute": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "channel_up": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "channel_down": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "locked": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "lock_mode": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "windowcoverings_state": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "windowcoverings_tilt_up": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "windowcoverings_tilt_down": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "windowcoverings_tilt_set": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "windowcoverings_closed": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "windowcoverings_set": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "button": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "speaker_playing": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "speaker_next": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "speaker_prev": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "speaker_shuffle": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "speaker_repeat": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "speaker_artist": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "speaker_album": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "speaker_track": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "speaker_duration": {
+      "title": "NONE",
+      "description": "NONE"
+    },
+    "speaker_position": {
+      "title": "NONE",
+      "description": "NONE"
     }
   },
-  "pair" : {
-    "capabilities" : {
-      "title" : ""
+  "pair": {
+    "capabilities": {
+      "title": ""
     }
   },
-  "method" : {
-    "all" : {
-      "title" : "On if all on",
-      "description" : "On if all devices are on. otherwise off"
+  "method": {
+    "all": {
+      "title": "On if all on",
+      "description": "On if all devices are on. otherwise off"
     },
-    "always" : {
-      "title" : "Always On",
-      "description" : "Always returns to on"
+    "always": {
+      "title": "Always On",
+      "description": "Always returns to on"
     },
-    "any" : {
-      "title" : "On if any on",
-      "description" : "On if any devices are on"
+    "any": {
+      "title": "On if any on",
+      "description": "On if any devices are on"
     },
-    "highest" : {
-      "title" : "Highest Value",
-      "description" : "The highest value of the all the grouped device"
+    "highest": {
+      "title": "Highest Value",
+      "description": "The highest value of the all the grouped device"
     },
-    "ignore" : {
-      "title" : "Ignore Devices",
-      "description" : "Don't update, only use values set by the card"
+    "ignore": {
+      "title": "Ignore Devices",
+      "description": "Don't update, only use values set by the card"
     },
-    "lowest" : {
-      "title" : "Lowest Value",
-      "description" : "The lowest value of the all the grouped device"
+    "lowest": {
+      "title": "Lowest Value",
+      "description": "The lowest value of the all the grouped device"
     },
-    "max" : {
-      "title" : "Maximum value",
-      "description" : "The value of the device with the largest value"
+    "max": {
+      "title": "Maximum value",
+      "description": "The value of the device with the largest value"
     },
-    "mean" : {
-      "title" : "Mean Average",
-      "description" : "The average your are used to (sum/count)"
+    "mean": {
+      "title": "Mean Average",
+      "description": "The average your are used to (sum/count)"
     },
-    "median" : {
-      "title" : "Median Average",
-      "description" : "The value of the device in the middle"
+    "median": {
+      "title": "Median Average",
+      "description": "The value of the device in the middle"
     },
-    "min" : {
-      "title" : "Minimum Value",
-      "description" : "The value of the device with the smallest value"
+    "min": {
+      "title": "Minimum Value",
+      "description": "The value of the device with the smallest value"
     },
-    "mode" : {
-      "title" : "Mode Average",
-      "description" : "The value which the most devices has"
+    "mode": {
+      "title": "Mode Average",
+      "description": "The value which the most devices has"
     },
-    "most" : {
-      "title" : "Most Devices",
-      "description" : "On if at least half devices are on"
+    "most": {
+      "title": "Most Devices",
+      "description": "On if at least half devices are on"
     },
-    "never" : {
-      "title" : "Never On",
-      "description" : "Never on, always returns to off"
+    "never": {
+      "title": "Never On",
+      "description": "Never on, always returns to off"
     },
-    "none" : {
-      "title" : "On unless all on",
-      "description" : "Off if all devices are on, otherwise on"
+    "none": {
+      "title": "On unless all on",
+      "description": "Off if all devices are on, otherwise on"
     },
-    "sum" : {
-      "title" : "Total Value",
-      "description" : "The sum of all the grouped device values"
+    "sum": {
+      "title": "Total Value",
+      "description": "The sum of all the grouped device values"
     },
-    "nor" : {
-      "title" : "On if None on",
-      "description" : "On if all devices are off, otherwise off"
+    "nor": {
+      "title": "On if None on",
+      "description": "On if all devices are off, otherwise off"
     },
-    "xor" : {
-      "title" : "On unless all on or off",
-      "description" : "Off when all devices are off or all devices are on"
+    "xor": {
+      "title": "On unless all on or off",
+      "description": "Off when all devices are off or all devices are on"
     }
   }
 }
