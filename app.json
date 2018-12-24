@@ -1,12 +1,12 @@
 {
-  "id": "com.groups",
+  "id": "com.swttt.devicegroups",
   "sdk": 2,
   "permissions": [
     "homey:manager:api"
   ],
   "name": {
-    "en": "< Omega >",
-    "nl": " < Omega >"
+    "en": "< Group >",
+    "nl": " < Group >"
   },
   "description": {
     "en": "Makes it possible to group devices allowing control and reporting of all devices within a group.",
