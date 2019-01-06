@@ -30,6 +30,15 @@
 </div>
 
 <main v-cloak>
+
+
+    <nav aria-label="breadcrumb" v-if="crumbs.categories || crumbs.groups || crumbs.devices">
+        <ol class="breadcrumb">
+            <li v-if="crumbs.categories.show" class="breadcrumb-item text-dark"  @click="show('categories')"><a class="text-dark" href="#">Categories</a></li>
+            <li v-if="crumbs.groups.show" class="breadcrumb-item" @click="show('groups')"><a class="text-dark "href="#">{{ __('category.' + crumbs.groups.title + '.title') }}</a></li>
+        </ol>
+    </nav>
+
     <div class="busy-indicator" v-if='loading.status'>
         <div  class="text-center">
             <i class="fas fa-circle-notch fa-spin"></i>
@@ -44,6 +53,7 @@
     <section id="categories" v-cloak v-if="active.categories">
 
         <a v-for="category in current.categories" v-if="size(category.groups)" @click="show('groups', {class: category.id})" class="card d-flex text-white bg-dark my-2 rounded-0 shadow" >
+
             <div class="card-body align-items-center">
                 <div class="row align-items-center">
                     <div class="col-3">
@@ -98,10 +108,12 @@
         </a>
     </section>
 
-    <section id="devices" v-cloak v-if="active.devices">
+    <section id="f" v-cloak v-if="active.devices">
 
         <div v-for="device in current.devices" class="card d-flex text-dark rounded-0">
+
             <div class="card-body align-items-center">
+
                 <div class="row align-items-center">
                     <div class="col-3">
                         <object type="image/svg+xml" :data="device.iconObj.url" class="img-fluid">Light</object>
@@ -111,63 +123,14 @@
                         <p class="small text-muted" v-if="device.settings.notes.length">{{ device.settings.notes }}.</p>
                     </div>
                 </div>
+
                 <hr>
 
                 <div v-for="capability in device.capabilities" class="form-group row" >
-                    <label for="onoff" class="col-4 col-form-label">{{ __('capability.' + capability + '.title') }}</label>
+                    <label :for="capability" class="col-4 col-form-label">{{ __('capability.' + capability + '.title') }} is</label>
                     <div class="col-8">
-                        <select class="custom-select mr-sm-2" id="onoff">
-                            <option value="1">based on app (Ignored)</option>
-                            <option value="3">if any devices are on</option>
-                            <option value="2">if all devices are on</option>
-                            <option value="3">if most devices are on</option>
-                            <option value="3">always</option>
-                            <option value="3">never</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <label for="dim" class="col-4 col-form-label">Dim level is</label>
-                    <div class="col-8">
-                        <select class="custom-select mr-sm-2" id="dim">
-                            <option>last value set in the app (Ignored)</option>
-                            <option value="1" selected>the average value (Mean)</option>
-                            <option value="2">the middle value (Median)</option>
-                            <option value="3">the lowest value</option>
-                            <option value="3">the highest value</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <label for="meter_power" class="col-4 col-form-label">Power meter is</label>
-                    <div class="col-8">
-                        <select class="custom-select mr-sm-2" id="meter_power">
-                            <option selected>the sum of all devices</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <label for="measure_power" class="col-4 col-form-label">Power Measure is</label>
-                    <div class="col-8">
-                        <select class="custom-select mr-sm-2" id="measure_power">
-                            <option selected>the sum of all devices</option>
-                            <option value="1">the average value (Mean)</option>
-                            <option value="2">the middle value (Median)</option>
-                            <option value="3">the lowest value</option>
-                            <option value="3">the highest value</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <label for="light_mode" class="col-4 col-form-label">Light mode is</label>
-                    <div class="col-8">
-                        <select class="custom-select mr-sm-2" id="light_mode">
-                            <option>based upon the app (Ignored)</option>
-                            <option value="1">the most common value (Mode)</option>
+                        <select v-model="device.settings.capabilities[capability].method" class="custom-select mr-sm-2" :id="capability" @change="change(device)">
+                            <option v-for="method in library.capabilities[capability].available" :value="method" :title="__('method.' + method + '.description')">{{ __('method.' + method + '.brief') }}</option>
                         </select>
                     </div>
                 </div>
@@ -175,7 +138,8 @@
             </div>
 
             <div class="list-group rounded-0">
-                <label v-for="d in devices"  class="list-group-item list-group-item-action rounded-0" style="">
+
+                <label v-for="d in devices" :key="d.id" class="list-group-item list-group-item-action rounded-0"  v-if="!disabled(d)">
                     <div class="row align-items-center">
                         <div class="col-2" style="align-self: normal;">
                             <img v-if="d.iconObj && d.iconObj" :src="d.iconObj.url" class="img-fluid" style="max-height: 24px;max-width: 24px">
@@ -183,12 +147,13 @@
                         <div class="col-6">{{ d.name }}</div>
                         <div class="col-4">
                             <div class="custom-control custom-checkbox float-right">
-                                <input type="checkbox" :id="d.id" class="custom-control-input">
+                                <input type="checkbox" :id="d.id"  :value="d.id" class="custom-control-input" v-model="device.settings.devices" :disabled="disabled(d)"  @change="change(device)">
                                 <span class="custom-control-label" :for="d.id"></span>
                             </div>
                         </div>
                     </div>
                 </label>
+
             </div>
 
         </div>
@@ -236,10 +201,9 @@
         const app = new Vue({
             el: 'main',
             components: {},
-            computed: {},
             data: {
                 constant: {
-                    driverUri : 'homey:app:com.groups'
+                    driverUri : 'homey:app:com.swttt.devicegroups'
                 },
                 active : {                              // Which section is active
                     categories: true,
@@ -250,48 +214,74 @@
                     status: 'loading',
                     library: true,
                     devices: true,
-                    categories: true
+                    categories: true,
                 },
                 devices: [],                            // List of all devices
                 groups: [],                             // List of all devices which are groups
                 library: false,                         // Access to the library object
+                api: false,
                 current: {
                     categories: {},
                     groups: false,
                     devices: false
+                },
+                crumbs: {
+                    categories: {
+                        show: true,
+                        title: false
+                    },
+                    groups: {
+                        show: false,
+                        title: false
+                    },
+                    devices: false
                 }
             },
             methods: {
-                change: function (id) {
-                    this.current.groups[id].name = 'asd';
-
-                    Vue.delete(this.groups, id);
-
+                // On a setting input has changed
+                change: async function (device) {
+                    Homey.api('PUT', '/settings/' + device.driverId, device, async (err, result) => {
+                        if (err) return Homey.alert(err);
+                        console.log(result);
+                    });
                 },
+                // On chaning which section is showing.
                 show: function (type, filter) {
                     this.active = {
                         categories: false,
-                        groups: false,
-                        devices: false
-                    }
+                        groups: false
+                    };
 
                     this.active[type] = true;
+                    this.crumbs[type].show = true;
+                    if (filter.hasOwnProperty('class')) {
+                        this.crumbs[type].title = filter.class;
+                    }
                     this.current[type] = this.find(this[type], filter);
-
                 },
+                // is the device enabled for this group
+                // This is th code you will want to change in order to allow groups with different device capability.
+                disabled: function (device) {
+
+                    // Return the value of the FIRST item, which should be the ONLY item.
+                    for (let d in this.current.devices) {
+                        return !this.current.devices[d].capabilities.every( (x) => { return  device.capabilities.indexOf(x) >= 0 } )
+                    }
+                },
+                // On load
                 load: function () {
 
                     this.loading.status = 'Loading categories';
+
                     // if we are ready (I wonder what the correct way to do this is?)
                     if (!this.loading.devices &&  !this.loading.library) {
 
                         for (let i in this.library.categories) {
                             this.current.categories[i] = this.library.categories[i];
-                            this.current.categories[i].groups =   this.find(this.groups, {class: i});;
+                            this.current.categories[i].groups =   this.find(this.groups, {class: i});
                         }
                         this.loading.categories = false;
                     }
-
 
                     this.loading.status = this.loading.categories && this.loading.devices && this.loading.library;
                 }
@@ -315,13 +305,13 @@
                 Homey.api('GET', '/devices', async (err, devices) => {
                     if (err) return Homey.alert(err);
 
-                    let temp = {};
+                    let structure = {};
                     for (let d in devices) {
-                        temp[devices[d].id] = devices[d];
+                        structure[devices[d].id] = devices[d];
                     }
-                    this.devices = temp;
+                    this.devices = structure;
 
-                    this.groups = await this.find(this.devices, {driverUri: 'homey:app:com.groups'});
+                    this.groups = await this.find(this.devices, {driverUri: this.constant.driverUri});
 
                     if (Object.keys(this.groups).length == 0) {
                         this.active.categories = false;
@@ -341,8 +331,6 @@
 
 
 </script>
-<script src="data.js"></script>
-<script src="mock.js"></script>
 <script>
     if (typeof Homey === 'undefined') {
         onHomeyReady(MockHomey);

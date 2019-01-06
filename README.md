@@ -23,10 +23,12 @@ This app is based off of the original 'Device Groups' app by Swttt for Homey v1.
 
 ##### 2.1
 
-- 2.1.100 :
-
-    - Support for settings page
-    -
+- 2.1.5 : Add settings Breadcrumbs
+- 2.1.4 : Save Settings back to devices
+- 2.1.3 : Set methods and pull values up.
+- 2.1.2 : Convert settings to full webAPI implementation.
+- 2.1.1 : Settings UX and concept
+- 2.1.0 : Update settings to use new i18n subsystem.
 
 ##### 2.0
 
