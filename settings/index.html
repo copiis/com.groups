@@ -30,8 +30,6 @@
 </div>
 
 <main v-cloak>
-<<<<<<< HEAD
-=======
 
 
     <nav aria-label="breadcrumb" v-if="crumbs.categories || crumbs.groups || crumbs.devices">
@@ -41,7 +39,6 @@
         </ol>
     </nav>
 
->>>>>>> alpha
     <div class="busy-indicator" v-if='loading.status'>
         <div  class="text-center">
             <i class="fas fa-circle-notch fa-spin"></i>
@@ -56,10 +53,7 @@
     <section id="categories" v-cloak v-if="active.categories">
 
         <a v-for="category in current.categories" v-if="size(category.groups)" @click="show('groups', {class: category.id})" class="card d-flex text-white bg-dark my-2 rounded-0 shadow" >
-<<<<<<< HEAD
-=======
 
->>>>>>> alpha
             <div class="card-body align-items-center">
                 <div class="row align-items-center">
                     <div class="col-3">
@@ -114,19 +108,12 @@
         </a>
     </section>
 
-<<<<<<< HEAD
-    <section id="devices" v-cloak v-if="active.devices">
-
-        <div v-for="device in current.devices" class="card d-flex text-dark rounded-0">
-            <div class="card-body align-items-center">
-=======
     <section id="f" v-cloak v-if="active.devices">
 
         <div v-for="device in current.devices" class="card d-flex text-dark rounded-0">
 
             <div class="card-body align-items-center">
 
->>>>>>> alpha
                 <div class="row align-items-center">
                     <div class="col-3">
                         <object type="image/svg+xml" :data="device.iconObj.url" class="img-fluid">Light</object>
@@ -136,65 +123,6 @@
                         <p class="small text-muted" v-if="device.settings.notes.length">{{ device.settings.notes }}.</p>
                     </div>
                 </div>
-<<<<<<< HEAD
-                <hr>
-
-                <div v-for="capability in device.capabilities" class="form-group row" >
-                    <label for="onoff" class="col-4 col-form-label">{{ __('capability.' + capability + '.title') }}</label>
-                    <div class="col-8">
-                        <select class="custom-select mr-sm-2" id="onoff">
-                            <option value="1">based on app (Ignored)</option>
-                            <option value="3">if any devices are on</option>
-                            <option value="2">if all devices are on</option>
-                            <option value="3">if most devices are on</option>
-                            <option value="3">always</option>
-                            <option value="3">never</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <label for="dim" class="col-4 col-form-label">Dim level is</label>
-                    <div class="col-8">
-                        <select class="custom-select mr-sm-2" id="dim">
-                            <option>last value set in the app (Ignored)</option>
-                            <option value="1" selected>the average value (Mean)</option>
-                            <option value="2">the middle value (Median)</option>
-                            <option value="3">the lowest value</option>
-                            <option value="3">the highest value</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <label for="meter_power" class="col-4 col-form-label">Power meter is</label>
-                    <div class="col-8">
-                        <select class="custom-select mr-sm-2" id="meter_power">
-                            <option selected>the sum of all devices</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <label for="measure_power" class="col-4 col-form-label">Power Measure is</label>
-                    <div class="col-8">
-                        <select class="custom-select mr-sm-2" id="measure_power">
-                            <option selected>the sum of all devices</option>
-                            <option value="1">the average value (Mean)</option>
-                            <option value="2">the middle value (Median)</option>
-                            <option value="3">the lowest value</option>
-                            <option value="3">the highest value</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <label for="light_mode" class="col-4 col-form-label">Light mode is</label>
-                    <div class="col-8">
-                        <select class="custom-select mr-sm-2" id="light_mode">
-                            <option>based upon the app (Ignored)</option>
-                            <option value="1">the most common value (Mode)</option>
-=======
 
                 <hr>
 
@@ -203,7 +131,6 @@
                     <div class="col-8">
                         <select v-model="device.settings.capabilities[capability].method" class="custom-select mr-sm-2" :id="capability" @change="change(device)">
                             <option v-for="method in library.capabilities[capability].available" :value="method" :title="__('method.' + method + '.description')">{{ __('method.' + method + '.brief') }}</option>
->>>>>>> alpha
                         </select>
                     </div>
                 </div>
@@ -211,12 +138,8 @@
             </div>
 
             <div class="list-group rounded-0">
-<<<<<<< HEAD
-                <label v-for="d in devices"  class="list-group-item list-group-item-action rounded-0" style="">
-=======
 
                 <label v-for="d in devices" :key="d.id" class="list-group-item list-group-item-action rounded-0"  v-if="!disabled(d)">
->>>>>>> alpha
                     <div class="row align-items-center">
                         <div class="col-2" style="align-self: normal;">
                             <img v-if="d.iconObj && d.iconObj" :src="d.iconObj.url" class="img-fluid" style="max-height: 24px;max-width: 24px">
@@ -224,20 +147,13 @@
                         <div class="col-6">{{ d.name }}</div>
                         <div class="col-4">
                             <div class="custom-control custom-checkbox float-right">
-<<<<<<< HEAD
-                                <input type="checkbox" :id="d.id" class="custom-control-input">
-=======
                                 <input type="checkbox" :id="d.id"  :value="d.id" class="custom-control-input" v-model="device.settings.devices" :disabled="disabled(d)"  @change="change(device)">
->>>>>>> alpha
                                 <span class="custom-control-label" :for="d.id"></span>
                             </div>
                         </div>
                     </div>
                 </label>
-<<<<<<< HEAD
-=======
 
->>>>>>> alpha
             </div>
 
         </div>
@@ -285,16 +201,9 @@
         const app = new Vue({
             el: 'main',
             components: {},
-<<<<<<< HEAD
-            computed: {},
             data: {
                 constant: {
                     driverUri : 'homey:app:com.groups'
-=======
-            data: {
-                constant: {
-                    driverUri : 'homey:app:com.swttt.devicegroups'
->>>>>>> alpha
                 },
                 active : {                              // Which section is active
                     categories: true,
@@ -305,48 +214,16 @@
                     status: 'loading',
                     library: true,
                     devices: true,
-<<<<<<< HEAD
-                    categories: true
-=======
                     categories: true,
->>>>>>> alpha
                 },
                 devices: [],                            // List of all devices
                 groups: [],                             // List of all devices which are groups
                 library: false,                         // Access to the library object
-<<<<<<< HEAD
-=======
                 api: false,
->>>>>>> alpha
                 current: {
                     categories: {},
                     groups: false,
                     devices: false
-<<<<<<< HEAD
-                }
-            },
-            methods: {
-                change: function (id) {
-                    this.current.groups[id].name = 'asd';
-
-                    Vue.delete(this.groups, id);
-
-                },
-                show: function (type, filter) {
-                    this.active = {
-                        categories: false,
-                        groups: false,
-                        devices: false
-                    }
-
-                    this.active[type] = true;
-                    this.current[type] = this.find(this[type], filter);
-
-                },
-                load: function () {
-
-                    this.loading.status = 'Loading categories';
-=======
                 },
                 crumbs: {
                     categories: {
@@ -396,25 +273,16 @@
 
                     this.loading.status = 'Loading categories';
 
->>>>>>> alpha
                     // if we are ready (I wonder what the correct way to do this is?)
                     if (!this.loading.devices &&  !this.loading.library) {
 
                         for (let i in this.library.categories) {
                             this.current.categories[i] = this.library.categories[i];
-<<<<<<< HEAD
-                            this.current.categories[i].groups =   this.find(this.groups, {class: i});;
-=======
                             this.current.categories[i].groups =   this.find(this.groups, {class: i});
->>>>>>> alpha
                         }
                         this.loading.categories = false;
                     }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> alpha
                     this.loading.status = this.loading.categories && this.loading.devices && this.loading.library;
                 }
             },
@@ -437,15 +305,6 @@
                 Homey.api('GET', '/devices', async (err, devices) => {
                     if (err) return Homey.alert(err);
 
-<<<<<<< HEAD
-                    let temp = {};
-                    for (let d in devices) {
-                        temp[devices[d].id] = devices[d];
-                    }
-                    this.devices = temp;
-
-                    this.groups = await this.find(this.devices, {driverUri: 'homey:app:com.groups'});
-=======
                     let structure = {};
                     for (let d in devices) {
                         structure[devices[d].id] = devices[d];
@@ -453,7 +312,6 @@
                     this.devices = structure;
 
                     this.groups = await this.find(this.devices, {driverUri: this.constant.driverUri});
->>>>>>> alpha
 
                     if (Object.keys(this.groups).length == 0) {
                         this.active.categories = false;
@@ -473,11 +331,6 @@
 
 
 </script>
-<<<<<<< HEAD
-<script src="data.js"></script>
-<script src="mock.js"></script>
-=======
->>>>>>> alpha
 <script>
     if (typeof Homey === 'undefined') {
         onHomeyReady(MockHomey);
