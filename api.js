@@ -93,4 +93,24 @@ module.exports = [
       return await Homey.app.library.getJSON();
     }
   },
+  {
+    // We cant save the settings using  await api.devices.setDeviceSettings({id: args.params.id, settings: args.body});
+    // As the SDK doesnt have this scope to the webAPI.
+
+    // We cant save the setting using await Homey.ManagerDrivers.getDriver(driver).getDevice({id});
+    // Because Athom have now made the getDevice to require the 'data' as a paramater rather then the Id.
+    // and the data is always undefined.
+
+    // So we have to get all the devices, then find the one we want, and then
+    method : 'PUT',
+    path   : '/settings/:driver',
+    fn     : async (args) => {
+      let group = await Homey.ManagerDrivers.getDriver(args.params.driver).getDevice(args.body.settings.data);
+      let result = await group.setSettings(args.body.settings);
+      await group.refresh();
+      return result;
+      // let api =  await Homey.app.getApi();
+      // return await api.devices.setDeviceSettings({id: args.params.id, settings: args.body});
+    }
+  }
 ]

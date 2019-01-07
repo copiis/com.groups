@@ -134,12 +134,13 @@ class Groups extends Homey.App {
         await group.refresh();
         return result;
     }
+    
 
     /**
      * Primes the cache - then set watchers of when to clear it.
      *
      * When ever a device is added/deleted from Home, ensure that the cache is cleared
-     * so we can then add thw new devices to a group, or stop old device from being added.
+     * so we can then add the new devices to a group, or stop old device from being added.
      *
      * Will also reset the cache when we add a new group (as it is a device).
      */

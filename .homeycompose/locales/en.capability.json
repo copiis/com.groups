@@ -24,263 +24,263 @@
         "description" : "Switch between Color or Temperature mode"
     },
     "vacuumcleaner_state": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Vacuum cleaner state",
+        "description" : "The state of a a vacuum cleaner, either it is cleaning, spot cleaning, docked, charging or stopped"
     },
     "thermostat_mode": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Thermostat mode",
+        "description" : "Mode of the thermostat, either it is set to auto, heat, cool or off."
     },
     "target_temperature": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Target temperature",
+        "description" : "Set the temperature which a device should target"
     },
     "measure_temperature": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Temperature",
+        "description" : "Temperature in celsius (°c)"
     },
     "measure_co": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Carbon monoxide",
+        "description" : "CO in Parts-per-million (ppm)"
     },
     "measure_co2": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Carbon dioxide",
+        "description" : "CO₂ in Parts-per-million (ppm)"
     },
     "measure_pm25": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "PM2.5",
+        "description" : "Atmospheric Particulate Matter (μg/m3)"
     },
     "measure_humidity": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Humidity",
+        "description" : "Humidity in percentage (%)"
     },
     "measure_pressure": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Pressure",
+        "description" : "Pressure in millibar (mbar)"
     },
     "measure_noise": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Noise",
+        "description" : "Noise in Decibel (db)"
     },
     "measure_rain": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Rain",
+        "description" : "Rain in millimeter (mm)"
     },
     "measure_wind_strength": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Wind Strength",
+        "description" : "Wind Strength in Kilometer per hour (km/h)"
     },
     "measure_wind_angle": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Wind Angle",
+        "description" : "Wind Angle in Degrees (°)"
     },
     "measure_gust_strength": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Gust Strength",
+        "description" : "Gust Strength n Kilometer per hour (km/h)"
     },
     "measure_gust_angle": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Gust Angle",
+        "description" : "Gust Angle in Degrees (°)"
     },
     "measure_battery": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Battery",
+        "description" : "Battery charge in percentage (%)"
     },
     "measure_power": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Power",
+        "description" : "Power in Watt (W)"
     },
     "measure_voltage": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Voltage",
+        "description" : "Electric voltage in Volts (V)"
     },
     "measure_current": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Current",
+        "description" : "Electric current in Amps (A)"
     },
     "measure_luminance": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Luminance",
+        "description" : "Luminance in Lux (lx)"
     },
     "measure_ultraviolet": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Ultraviolet",
+        "description" : "Ultraviolet in UV index (UVI)"
     },
     "measure_water": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Water",
+        "description" : "Water flow in Liters per minute (L/min)"
     },
     "alarm_generic": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Generic Alarm",
+        "description" : "Generic Alarm"
     },
     "alarm_motion": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Motion Alarm",
+        "description" : "Alarms when motion is detected"
     },
     "alarm_contact": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Contact Alarm",
+        "description" : "Alarms when a Contact sensor is severed, e.g. when window or door is opened"
     },
     "alarm_co": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "CO Alarm",
+        "description" :  "Alarms when dangerous CO values have been detected"
     },
     "alarm_co2": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "CO₂ Alarm",
+        "description" :  "Alarms when dangerous CO₂ values have been detected"
     },
     "alarm_pm25": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "PM2.5 Alarm",
+        "description" : "Alarms when PM2.5 values exceeds threshold"
     },
     "alarm_tamper": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Tamper Alarm",
+        "description" : "Alarms when tampering has been detected"
     },
     "alarm_smoke": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Smoke Alarm",
+        "description" : "Alarms when smoke has been detected"
     },
     "alarm_fire": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Fire Alarm",
+        "description" : "Alarms when fire has been detected"
     },
     "alarm_heat": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Heat Alarm",
+        "description" : "Alarms when extreme heat has been detected"
     },
     "alarm_water": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Water Alarm",
+        "description" : "Alarms when water has been detected"
     },
     "alarm_battery": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Battery Alarm",
+        "description" : "Alarms when there is a battery warning, generally low battery"
     },
     "alarm_night": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Night Alarm",
+        "description" : "Alarms when it is night time"
     },
     "meter_power": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title": "Power Meter",
+        "description":"Power usage in kilowatt hour (kWh)"
     },
     "meter_water": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title": "Water Meter",
+        "description": "Water usage in Cubic Meter (m³)"
     },
     "meter_gas": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title": "Gas Meter",
+        "description": "Gas usage in Cubic Meter (m³)"
     },
     "meter_rain": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title": "Rain Meter",
+        "description": "Rain in Cubic Meter (m³)"
     },
     "homealarm_state": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title": "Home Alarm state",
+        "description": "Switch between armed, disarmed and partially armed"
     },
     "volume_set": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title": "Set Volume",
+        "description": "Set volume to"
     },
     "volume_up": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title": "Volume up",
+        "description": "Turn the volume up"
     },
     "volume_down": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title": "Volume down",
+        "description": "Turn the volume down"
     },
     "volume_mute": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title": "Volume muted",
+        "description": "Mute the volume"
     },
     "channel_up": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title": "Channel up",
+        "description": "Change the channel up one"
     },
     "channel_down": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title": "Channel down",
+        "description": "Change the channel down one"
     },
     "locked": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Locked",
+        "description" : "True when the lock is locked"
     },
     "lock_mode": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Lock mode",
+        "description" : "Switch between Always locked, always unlocked and locked until unlocked modes"
     },
     "windowcoverings_state": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Window Coverings State",
+        "description" :"Whether a window cover is up, down or idle"
     },
     "windowcoverings_tilt_up": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Window Coverings Tilt Up",
+        "description" : "Tilt Window Coverings Up"
     },
     "windowcoverings_tilt_down": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Window Coverings Tilt Down",
+        "description" : "Tilt Window Coverings Down"
     },
     "windowcoverings_tilt_set": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Window Coverings Tilt Set",
+        "description" : "Set the tilt value of the window covering"
     },
     "windowcoverings_closed": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Window Coverings Closed",
+        "description" : "Close the window coverings"
     },
     "windowcoverings_set": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Window Coverings Set",
+        "description" : "Set the position of window coverings. 0% is closed, 100% is open"
     },
     "button": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Button",
+        "description" : "A push button"
     },
     "speaker_playing": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Speaker Playing",
+        "description" : "What the speaker is currently playing."
     },
     "speaker_next": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Speaker Next",
+        "description" :  "Go to next item."
     },
     "speaker_prev": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Speaker Previous",
+        "description" : "Go to previous item."
     },
     "speaker_shuffle": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Speaker Shuffle",
+        "description" : "Shuffle speaker playback."
     },
     "speaker_repeat": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Speaker Repeat",
+        "description" : "Set the repeat type, none, track or playlist."
     },
     "speaker_artist": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Speaker Artist",
+        "description" : "Which artist the speaker is currently playing."
     },
     "speaker_album": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Speaker Album",
+        "description" : "Which album the speaker is currently playing."
     },
     "speaker_track": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Speaker Track",
+        "description" : "Which track the speaker is currently playing."
     },
     "speaker_duration": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Speaker Duration",
+        "description" : "Which duration of the current item."
     },
     "speaker_position": {
-        "title" : "NONE",
-        "description" : "NONE"
+        "title" : "Speaker Position",
+        "description" : "The speaker's current position"
     }
 }

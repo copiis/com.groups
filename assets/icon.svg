@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="3002px" height="3002px" viewBox="0 0 3002 3002" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
-    <title>Group</title>
+<svg width="3000px" height="3001px" viewBox="0 0 3000 3001" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>icon</title>
     <desc>Created with Sketch.</desc>
-    <defs></defs>
+    <defs>
+        <polygon id="path-1" points="691 1382 1191 1763.96601 1000.01699 2382 381.983006 2382 191 1763.96601"></polygon>
+    </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group" transform="translate(1.000000, 1.000000)" fill-rule="nonzero" stroke="#000000">
-            <polygon id="Polygon" fill="#000000" points="1500 2000 2000 2381.96601 1809.01699 3000 1190.98301 3000 1000 2381.96601"></polygon>
-            <polygon id="Polygon" points="1500 0 2000 381.966011 1809.01699 1000 1190.98301 1000 1000 381.966011"></polygon>
-            <polygon id="Polygon" fill="#000000" points="1000 382 1500 763.966011 1309.01699 1382 690.983006 1382 500 763.966011"></polygon>
-            <polygon id="Polygon" points="500 764 1000 1145.96601 809.016994 1764 190.983006 1764 3.55271368e-15 1145.96601"></polygon>
-            <polygon id="Polygon" points="882 2000.001 1382 2381.96701 1191.01699 3000.001 572.983006 3000.001 382 2381.96701"></polygon>
-            <polygon id="Polygon" points="2118 2000 2618 2381.96601 2427.01699 3000 1808.98301 3000 1618 2381.96601"></polygon>
-            <polygon id="Polygon" fill="#000000" points="2000 382 2500 763.966011 2309.01699 1382 1690.98301 1382 1500 763.966011"></polygon>
-            <polygon id="Polygon" points="2500 764 3000 1145.96601 2809.01699 1764 2190.98301 1764 2000 1145.96601"></polygon>
-            <polygon id="Polygon" points="1500 0 3000 1145.89803 2427.05098 3000 572.949017 3000 0 1145.89803"></polygon>
-            <polygon id="Polygon" fill="#000000" points="691 1382 1191 1763.96601 1000.01699 2382 381.983006 2382 191 1763.96601"></polygon>
-            <polygon id="Polygon" fill="#000000" points="2309 1382 2809 1763.96601 2618.01699 2382 1999.98301 2382 1809 1763.96601"></polygon>
+        <g id="icon">
+            <polygon id="Polygon" fill="#000000" points="1500 0 3000 1145.89803 2427.05098 3000 572.949017 3000 0 1145.89803"></polygon>
+            <polygon id="Polygon" stroke="#000000" fill="#FFFFFF" fill-rule="nonzero" points="1500 2000 2000 2381.96601 1809.01699 3000 1190.98301 3000 1000 2381.96601"></polygon>
+            <polygon id="Polygon" stroke="#000000" fill="#FFFFFF" fill-rule="nonzero" points="1000 382 1500 763.966011 1309.01699 1382 690.983006 1382 500 763.966011"></polygon>
+            <polygon id="Polygon" stroke="#000000" fill="#FFFFFF" fill-rule="nonzero" points="2000 382 2500 763.966011 2309.01699 1382 1690.98301 1382 1500 763.966011"></polygon>
+            <g id="Polygon" fill-rule="nonzero">
+                <use fill="#FFFFFF" style="mix-blend-mode: difference;" xlink:href="#path-1"></use>
+                <use stroke="#000000" stroke-width="1" xlink:href="#path-1"></use>
+            </g>
+            <polygon id="Polygon" stroke="#000000" fill="#FFFFFF" fill-rule="nonzero" points="2309 1382 2809 1763.96601 2618.01699 2382 1999.98301 2382 1809 1763.96601"></polygon>
         </g>
     </g>
 </svg>

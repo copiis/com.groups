@@ -30,6 +30,18 @@
 </div>
 
 <main v-cloak>
+<<<<<<< HEAD
+=======
+
+
+    <nav aria-label="breadcrumb" v-if="crumbs.categories || crumbs.groups || crumbs.devices">
+        <ol class="breadcrumb">
+            <li v-if="crumbs.categories.show" class="breadcrumb-item text-dark"  @click="show('categories')"><a class="text-dark" href="#">Categories</a></li>
+            <li v-if="crumbs.groups.show" class="breadcrumb-item" @click="show('groups')"><a class="text-dark "href="#">{{ __('category.' + crumbs.groups.title + '.title') }}</a></li>
+        </ol>
+    </nav>
+
+>>>>>>> alpha
     <div class="busy-indicator" v-if='loading.status'>
         <div  class="text-center">
             <i class="fas fa-circle-notch fa-spin"></i>
@@ -44,6 +56,10 @@
     <section id="categories" v-cloak v-if="active.categories">
 
         <a v-for="category in current.categories" v-if="size(category.groups)" @click="show('groups', {class: category.id})" class="card d-flex text-white bg-dark my-2 rounded-0 shadow" >
+<<<<<<< HEAD
+=======
+
+>>>>>>> alpha
             <div class="card-body align-items-center">
                 <div class="row align-items-center">
                     <div class="col-3">
@@ -98,10 +114,19 @@
         </a>
     </section>
 
+<<<<<<< HEAD
     <section id="devices" v-cloak v-if="active.devices">
 
         <div v-for="device in current.devices" class="card d-flex text-dark rounded-0">
             <div class="card-body align-items-center">
+=======
+    <section id="f" v-cloak v-if="active.devices">
+
+        <div v-for="device in current.devices" class="card d-flex text-dark rounded-0">
+
+            <div class="card-body align-items-center">
+
+>>>>>>> alpha
                 <div class="row align-items-center">
                     <div class="col-3">
                         <object type="image/svg+xml" :data="device.iconObj.url" class="img-fluid">Light</object>
@@ -111,6 +136,7 @@
                         <p class="small text-muted" v-if="device.settings.notes.length">{{ device.settings.notes }}.</p>
                     </div>
                 </div>
+<<<<<<< HEAD
                 <hr>
 
                 <div v-for="capability in device.capabilities" class="form-group row" >
@@ -168,6 +194,16 @@
                         <select class="custom-select mr-sm-2" id="light_mode">
                             <option>based upon the app (Ignored)</option>
                             <option value="1">the most common value (Mode)</option>
+=======
+
+                <hr>
+
+                <div v-for="capability in device.capabilities" class="form-group row" >
+                    <label :for="capability" class="col-4 col-form-label">{{ __('capability.' + capability + '.title') }} is</label>
+                    <div class="col-8">
+                        <select v-model="device.settings.capabilities[capability].method" class="custom-select mr-sm-2" :id="capability" @change="change(device)">
+                            <option v-for="method in library.capabilities[capability].available" :value="method" :title="__('method.' + method + '.description')">{{ __('method.' + method + '.brief') }}</option>
+>>>>>>> alpha
                         </select>
                     </div>
                 </div>
@@ -175,7 +211,12 @@
             </div>
 
             <div class="list-group rounded-0">
+<<<<<<< HEAD
                 <label v-for="d in devices"  class="list-group-item list-group-item-action rounded-0" style="">
+=======
+
+                <label v-for="d in devices" :key="d.id" class="list-group-item list-group-item-action rounded-0"  v-if="!disabled(d)">
+>>>>>>> alpha
                     <div class="row align-items-center">
                         <div class="col-2" style="align-self: normal;">
                             <img v-if="d.iconObj && d.iconObj" :src="d.iconObj.url" class="img-fluid" style="max-height: 24px;max-width: 24px">
@@ -183,12 +224,20 @@
                         <div class="col-6">{{ d.name }}</div>
                         <div class="col-4">
                             <div class="custom-control custom-checkbox float-right">
+<<<<<<< HEAD
                                 <input type="checkbox" :id="d.id" class="custom-control-input">
+=======
+                                <input type="checkbox" :id="d.id"  :value="d.id" class="custom-control-input" v-model="device.settings.devices" :disabled="disabled(d)"  @change="change(device)">
+>>>>>>> alpha
                                 <span class="custom-control-label" :for="d.id"></span>
                             </div>
                         </div>
                     </div>
                 </label>
+<<<<<<< HEAD
+=======
+
+>>>>>>> alpha
             </div>
 
         </div>
@@ -236,10 +285,16 @@
         const app = new Vue({
             el: 'main',
             components: {},
+<<<<<<< HEAD
             computed: {},
             data: {
                 constant: {
                     driverUri : 'homey:app:com.groups'
+=======
+            data: {
+                constant: {
+                    driverUri : 'homey:app:com.swttt.devicegroups'
+>>>>>>> alpha
                 },
                 active : {                              // Which section is active
                     categories: true,
@@ -250,15 +305,24 @@
                     status: 'loading',
                     library: true,
                     devices: true,
+<<<<<<< HEAD
                     categories: true
+=======
+                    categories: true,
+>>>>>>> alpha
                 },
                 devices: [],                            // List of all devices
                 groups: [],                             // List of all devices which are groups
                 library: false,                         // Access to the library object
+<<<<<<< HEAD
+=======
+                api: false,
+>>>>>>> alpha
                 current: {
                     categories: {},
                     groups: false,
                     devices: false
+<<<<<<< HEAD
                 }
             },
             methods: {
@@ -282,17 +346,75 @@
                 load: function () {
 
                     this.loading.status = 'Loading categories';
+=======
+                },
+                crumbs: {
+                    categories: {
+                        show: true,
+                        title: false
+                    },
+                    groups: {
+                        show: false,
+                        title: false
+                    },
+                    devices: false
+                }
+            },
+            methods: {
+                // On a setting input has changed
+                change: async function (device) {
+                    Homey.api('PUT', '/settings/' + device.driverId, device, async (err, result) => {
+                        if (err) return Homey.alert(err);
+                        console.log(result);
+                    });
+                },
+                // On chaning which section is showing.
+                show: function (type, filter) {
+                    this.active = {
+                        categories: false,
+                        groups: false
+                    };
+
+                    this.active[type] = true;
+                    this.crumbs[type].show = true;
+                    if (filter.hasOwnProperty('class')) {
+                        this.crumbs[type].title = filter.class;
+                    }
+                    this.current[type] = this.find(this[type], filter);
+                },
+                // is the device enabled for this group
+                // This is th code you will want to change in order to allow groups with different device capability.
+                disabled: function (device) {
+
+                    // Return the value of the FIRST item, which should be the ONLY item.
+                    for (let d in this.current.devices) {
+                        return !this.current.devices[d].capabilities.every( (x) => { return  device.capabilities.indexOf(x) >= 0 } )
+                    }
+                },
+                // On load
+                load: function () {
+
+                    this.loading.status = 'Loading categories';
+
+>>>>>>> alpha
                     // if we are ready (I wonder what the correct way to do this is?)
                     if (!this.loading.devices &&  !this.loading.library) {
 
                         for (let i in this.library.categories) {
                             this.current.categories[i] = this.library.categories[i];
+<<<<<<< HEAD
                             this.current.categories[i].groups =   this.find(this.groups, {class: i});;
+=======
+                            this.current.categories[i].groups =   this.find(this.groups, {class: i});
+>>>>>>> alpha
                         }
                         this.loading.categories = false;
                     }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> alpha
                     this.loading.status = this.loading.categories && this.loading.devices && this.loading.library;
                 }
             },
@@ -315,6 +437,7 @@
                 Homey.api('GET', '/devices', async (err, devices) => {
                     if (err) return Homey.alert(err);
 
+<<<<<<< HEAD
                     let temp = {};
                     for (let d in devices) {
                         temp[devices[d].id] = devices[d];
@@ -322,6 +445,15 @@
                     this.devices = temp;
 
                     this.groups = await this.find(this.devices, {driverUri: 'homey:app:com.groups'});
+=======
+                    let structure = {};
+                    for (let d in devices) {
+                        structure[devices[d].id] = devices[d];
+                    }
+                    this.devices = structure;
+
+                    this.groups = await this.find(this.devices, {driverUri: this.constant.driverUri});
+>>>>>>> alpha
 
                     if (Object.keys(this.groups).length == 0) {
                         this.active.categories = false;
@@ -341,8 +473,11 @@
 
 
 </script>
+<<<<<<< HEAD
 <script src="data.js"></script>
 <script src="mock.js"></script>
+=======
+>>>>>>> alpha
 <script>
     if (typeof Homey === 'undefined') {
         onHomeyReady(MockHomey);
