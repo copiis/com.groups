@@ -48,7 +48,7 @@
                 }
             },
             mounted() {
-                this. $nextTick(function () {
+                this.$nextTick(function () {
                     $('#hy-overlay-loading').addClass('hide');
                 })
             },
@@ -67,6 +67,9 @@
 
     <i v-if='isLoading' class="loading fa fa-cog fa-spin"></i>
     <template v-cloak>
+
+
+
         <ul id="devices-list">
             <li class="device" v-for="(value, key) in capabilities">
                 <label :for="key" class="name">
