@@ -270,7 +270,7 @@
                             return !this.current.devices[d].capabilities.every( (x) => { return  device.capabilities.indexOf(x) >= 0 } )
                         }
 
-                        return false;
+                        return true;
                     }
                 },
                 // On load
@@ -318,6 +318,7 @@
 
                     this.groups = await this.find(this.devices, {driverUri: this.constant.driverUri});
 
+                    // if there are no groups - hide the categories.
                     if (Object.keys(this.groups).length == 0) {
                         this.active.categories = false;
                     }

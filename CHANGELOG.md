@@ -1,6 +1,8 @@
+**2.1.510**
+- Settings : Hide the current group from the list of devices. 
 
 **2.1.509**
-- Settings : Hide breadcrumbs if there are no groups. 
+- Settings : Hide breadcrumbs if there are no groups.
 
 **2.1.508**
 - Repo : Add ChangeLog
