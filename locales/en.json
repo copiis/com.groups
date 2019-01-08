@@ -483,5 +483,10 @@
       "brief": "on unless all devices are on or all off",
       "description": "Off when all devices are off or all devices are on"
     }
+  },
+  "device": {
+    "initEvents": {
+      "deviceNotReady": "Oops, it looks like this group contains a device which was not ready, please restart this app once are sure all devices with in the group are working."
+    }
   }
 }

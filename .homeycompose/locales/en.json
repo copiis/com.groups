@@ -8,5 +8,10 @@
     "Devices in group" : "Devices in group",
     "Select device group" : "Select device group",
     "Group" : "Group"
+  },
+  "device": {
+    "initEvents":{
+      "deviceNotReady" : "Oops, it looks like this group contains a device which was not ready, please restart this app once are sure all devices with in the group are working."
+    }
   }
 }

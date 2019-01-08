@@ -5,7 +5,7 @@
 
 **2.1.513**
 - Settings : Consolidate vue version
-- Settings : Add jquery 
+- Settings : Add jquery
 
 **2.1.512**
 - Settings : Set all scripts/styles to local, remote fontawesome.
@@ -60,7 +60,7 @@
 - Fix .gitattribute issue
 
 **2.0.206**
-- Update logo imag**
+- Update logo image**
 
 **2.0.205**
 - Fix type on 'speaker'

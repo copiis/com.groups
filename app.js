@@ -149,13 +149,27 @@ class Groups extends Homey.App {
         this.getApi().then((api) => {
 
             // When a new device is added to homey, clear the cache
-            api.devices.on('device.create', async (id) => {
+            api.devices.on('device.create', async (device) => {
+                console.log('device.create: ' + device.name);
                 this.api = false;
             });
 
+            // // When a new device is added to homey, clear the cache
+            // api.devices.on('device.update', async (device) => {
+            //
+            //     if (device.ready) {
+            //         console.log('device.update.ready: '  + device.name)
+            //     } else {
+            //         console.log('device.update: ' + device.name);
+            //     }
+            //
+            //     // this.api = false;
+            // });
+
             // when a device is deleted from homey, clear the cache.
             // @todo investigate removing all devices from settings of groups which have been deleted.
-            api.devices.on('device.delete', async (id) => {
+            api.devices.on('device.delete', async (device) => {
+                console.log('device.delete: ' + device.name);
                 this.api = false;
             });
         })
