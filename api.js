@@ -105,7 +105,7 @@ module.exports = [
     method : 'PUT',
     path   : '/settings/:driver',
     fn     : async (args) => {
-      let group = await Homey.ManagerDrivers.getDriver(args.params.driver).getDevice(args.body.settings.data);
+      let group = await Homey.ManagerDrivers.getDriver(args.params.driver).getDevice(args.body.data);
       let result = await group.setSettings(args.body.settings);
       await group.refresh();
       return result;

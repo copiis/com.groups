@@ -1,5 +1,8 @@
+**2.1.511**
+- Settings : Remove call to hack for #4.
+
 **2.1.510**
-- Settings : Hide the current group from the list of devices. 
+- Settings : Hide the current group from the list of devices.
 
 **2.1.509**
 - Settings : Hide breadcrumbs if there are no groups.
