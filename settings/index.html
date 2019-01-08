@@ -30,7 +30,7 @@
 </div>
 
 <main v-cloak>
-    <nav aria-label="breadcrumb" v-if="crumbs.categories || crumbs.groups || crumbs.devices">
+    <nav aria-label="breadcrumb" v-if="size(groups) && (crumbs.categories || crumbs.groups || crumbs.devices)">
         <ol class="breadcrumb">
             <li v-if="crumbs.categories.show" class="breadcrumb-item text-dark"  @click="show('categories')"><a class="text-dark" href="#">Categories</a></li>
             <li v-if="crumbs.groups.show" class="breadcrumb-item" @click="show('groups')"><a class="text-dark "href="#">{{ __('category.' + crumbs.groups.title + '.title') }}</a></li>

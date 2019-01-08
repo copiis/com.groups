@@ -1,3 +1,7 @@
+
+**2.1.509**
+- Settings : Hide breadcrumbs if there are no groups. 
+
 **2.1.508**
 - Repo : Add ChangeLog
 - Remove settings data hack, as fixed by Athom v2.0-rc12

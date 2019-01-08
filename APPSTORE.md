@@ -30,6 +30,7 @@ This app is based off of the original 'Device Groups' app by Swttt for Homey v1.
 - Update app image
 - Add Changelog
 - Add local css/js files
+- In app settings - Hide breadcrumbs if there are no groups
 
 
 **2.1.4**
