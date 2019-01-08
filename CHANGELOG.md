@@ -1,5 +1,11 @@
+**2.1.514**
+- Move all assets to correct folder locations
+- Clean up icon SVG file.
+- Pair : Conciliate script files.
+
 **2.1.513**
-- Settings : Set all scripts/styles to local, remote fontawesome.
+- Settings : Consolidate vue version
+- Settings : Add jquery 
 
 **2.1.512**
 - Settings : Set all scripts/styles to local, remote fontawesome.
