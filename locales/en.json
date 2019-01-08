@@ -310,15 +310,15 @@
     },
     "coffeemachine": {
       "title": "Coffee machine",
-      "description": "coffee machines."
+      "description": "coffeemakers or coffee machines are cooking appliances used to brew coffee."
     },
     "curtain": {
       "title": "Curtains",
-      "description": "curtains."
+      "description": "electronic curtains which will move the material sideways along a rail."
     },
     "doorbell": {
       "title": "Doorbell",
-      "description": "doorbells, usually together with the `button` capability."
+      "description": "doorbells, and device which announce when a button is pressed."
     },
     "fan": {
       "title": "Fan",
@@ -390,11 +390,11 @@
     },
     "vacuumcleaner": {
       "title": "Vacuum Cleaner",
-      "description": "vacuum cleaners."
+      "description": "automated devices which clean floors on demand."
     },
     "windowcoverings": {
       "title": "Window Coverings",
-      "description": "window coverings, when the `curtains`, `blinds` or `sunshade` device class doesn't apply."
+      "description": "window coverings, for when the `curtains`, `blinds` or `sunshade` device class doesn't apply."
     }
   },
   "method": {
