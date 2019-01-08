@@ -1,4 +1,6 @@
-
+body {
+    font-size: 80%;
+}
 
 /* Fixes default bootstrap a link */
 a:hover {

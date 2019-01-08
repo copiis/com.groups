@@ -1,3 +1,6 @@
+**2.1.512**
+- Settings : Set all scripts/styles to local, remote fontawesome.
+
 **2.1.511**
 - Settings : Remove call to hack for #4.
 
