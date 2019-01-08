@@ -1,4 +1,4 @@
-# Groups
+# groups
 _Formally Device Groups_
 
 With this app you can group devices with the same capabilities as one device. This means you an control multiple devices from the one place.
@@ -15,9 +15,9 @@ Please note that this app now only supports v2, while legacy code should continu
 | Branch | Version | Status | Notes|
 |---|---|---|---|
 |**Stable** |1.1.0|:white_check_mark:|Not compatible with v2|
-|**Beta** |1.1.0|:white_check_mark:|v2.0 Pending Athom Approval|
-|**Alpha** |2.0.201|:ballot_box_with_check:|Working, changing.|
-|**Omega** |2.0.203|:grey_question:|Currently updated daily.|
+|**Beta** |2.0.208|:white_check_mark:|Pending Athom bug fixes|
+|**Alpha** |2.1.507|:ballot_box_with_check:|Working, feature complete.|
+|**Omega** |2.1.507|:grey_question:|Currently updated daily.|
 |**Master** |n/a|:heavy_multiplication_x:|Here there be dragons.|
 
 

@@ -24,46 +24,67 @@ This app is based off of the original 'Device Groups' app by Swttt for Homey v1.
 
 ##### 2.1
 
-- 2.1.5 : Add Breadcrumb to settings, WIP
-- 2.1.4 : Set Settings back to devices
-- 2.1.3 : Get methods and devices.
-- 2.1.2 : Convert settings to full webAPI implementation.
-- 2.1.1 : Settings UX and concept
-- 2.1.0 : Update settings to use new i18n subsystem.
+**2.1.5**
+- Add Breadcrumb to settings, WIP
+- Update app Icon
+- Update app image
+- Add Changelog
+- Add local css/js files
+
+
+**2.1.4**
+- Set Settings back to devices
+
+**2.1.3**
+- Get methods and devices.
+
+**2.1.2**
+- Convert settings to full webAPI implementation.
+
+**2.1.1**
+- Settings UX concept
+
+**2.1.0**
+- Update settings to use new i18n subsystem.
 
 ##### 2.0
 
-- 2.1.2 : Convert settings to full webAPI implementation.
-- 2.1.1 : Settings concept
-- 2.1.0 : Settings UX
-- 2.0.2 : Beta Release
-- 2.0.1 : Disabled changing a devices settings.
-- 2.0.1 : Added support for choosing an icon.
-- 2.0.1 : Standardised the classes and inheritance.
-- 2.0.1 : Updated code to use the new makeCapabilityInstance
-- 2.0.1 : Keeps track created/deleted devices refreshes device cache
-- 2.0.1 : Updated code base to Homey v2 Spec
-- 2.0.1 : Reliability, Stability and Performance
-- 2.0.0 : Feedback on device status
-- 2.0.0 : Added Ability to group read only capabilities.
-- 2.0.0 : Allow device status to be calculated from grouped devices
-- 2.0.0 : Device Classes (Categories) & Capabilities will now display correct name rather than tag.
-- 2.0.0 : Device Classes (Categories) & Capabilities now support en/nl languages.
-- 2.0.0 : Addition of all new categories
-- 2.0.0 : Addition of all new capabilities
-- 2.0.0 : Groups will now refresh and update their devices immediately when changed in the settings, rather then waiting for  restart.
-- 2.0.0 : Added class and capabilities to the device settings page, with in devices, Read Only.
-- 2.0.0 : Change calculated method from the settings
-- 2.0.0 : Added the ability to store your notes against a device group.
-- 2.0.0 : Added i18n support to the device settings page labels, currently support en only.
+**2.0.2**
+- Beta Release
+
+**2.0.1**
+- Disabled changing a devices settings.
+- Added support for choosing an icon.
+- Standardised the classes and inheritance.
+- Updated code to use the new makeCapabilityInstance
+- Keeps track created/deleted devices refreshes device cache
+- Updated code base to Homey v2 Spec
+- Reliability, Stability and Performance
+
+**2.0.0**
+- Feedback on device status
+- Added Ability to group read only capabilities.
+- Allow device status to be calculated from grouped devices
+- Device Classes (Categories) & Capabilities will now display correct name rather than tag.
+- Device Classes (Categories) & Capabilities now support en/nl languages.
+- Addition of all new categories
+- Addition of all new capabilities
+- Groups will now refresh and update their devices immediately when changed in the settings, rather then waiting for  restart.
+- Added class and capabilities to the device settings page, with in devices, Read Only.
+- Change calculated method from the settings
+- Added the ability to store your notes against a device group.
+- Added i18n support to the device settings page labels, currently support en only.
+
 
 ##### 1.1
 
-- 1.1.0 : Change grouped devices via settings
+**1.1.0**
+- Change grouped devices via settings
 
 ##### 1.0
 
-- 1.0.0 : Ability to group settable devices
+**1.0.0**
+- Ability to group settable devices
 
 ---
 
