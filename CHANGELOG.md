@@ -1,5 +1,6 @@
 **2.1.508**
 - Repo : Add ChangeLog
+- Remove settings data hack, as fixed by Athom v2.0-rc12
 
 **2.1.507**
 - Settings : Change settings to use devicegroups appID

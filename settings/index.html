@@ -201,7 +201,8 @@
             components: {},
             data: {
                 constant: {
-                    driverUri : 'homey:app:com.swttt.devicegroups'
+                    driverUri : 'homey:app:com.groups'
+                    // driverUri : 'homey:app:com.swttt.devicegroups'
                 },
                 active : {                              // Which section is active
                     categories: true,
@@ -243,7 +244,7 @@
                         console.log(result);
                     });
                 },
-                // On chaning which section is showing.
+                // On changing which section is showing.
                 show: function (type, filter) {
                     this.active = {
                         categories: false,
@@ -263,7 +264,13 @@
 
                     // Return the value of the FIRST item, which should be the ONLY item.
                     for (let d in this.current.devices) {
-                        return !this.current.devices[d].capabilities.every( (x) => { return  device.capabilities.indexOf(x) >= 0 } )
+
+                        // remove the current device from the list of displayed devices. :: Fixes #14 (stop infinite loop on capabilities).
+                        if (this.current.devices[d].id !== device.id) {
+                            return !this.current.devices[d].capabilities.every( (x) => { return  device.capabilities.indexOf(x) >= 0 } )
+                        }
+
+                        return false;
                     }
                 },
                 // On load
