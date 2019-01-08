@@ -1,3 +1,6 @@
+**2.1.513**
+- Settings : Set all scripts/styles to local, remote fontawesome.
+
 **2.1.512**
 - Settings : Set all scripts/styles to local, remote fontawesome.
 
