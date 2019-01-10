@@ -8,6 +8,7 @@
 <script>
 
   Homey.setTitle('Select devices to group');
+  Homey.showLoadingOverlay();
   Homey.emit('devices.initialised', null, function (err, result) {
     console.log(result);
     if (err) {
@@ -20,7 +21,6 @@
     new Vue({
       el: '#all-devices',
       data: {
-        isLoading: false,
         selectedDevices: [],
         devices: {},
         pairingDevice: {}
@@ -28,6 +28,7 @@
       mounted() {
         this.devices = allDevices;
         this.pairingDevice = pairingDevice;
+        Homey.hideLoadingOverlay();
       },
       methods: {},
       watch: {
@@ -140,7 +141,6 @@
 </style>
 
 <div id="all-devices">
-  <i v-if='isLoading' class="loading fa fa-cog fa-spin"></i>
   <template v-cloak>
     <div v-if="filteredDevices.length > 0" style="text-align:right;font-size:0.9em">
       <small>{{ filteredDevices.length }} Devices</small>
