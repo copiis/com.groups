@@ -21,10 +21,9 @@ class Groups extends Homey.App {
         // Prime the API into memory, set its events.
         this.cache();
 
-        this.getCategory('light');
-
         // Initialise the devices objects.
         this.devices = {};
+
         this.log('</onInit>');
     }
 
@@ -154,22 +153,10 @@ class Groups extends Homey.App {
                 this.api = false;
             });
 
-            // // When a new device is added to homey, clear the cache
-            // api.devices.on('device.update', async (device) => {
-            //
-            //     if (device.ready) {
-            //         console.log('device.update.ready: '  + device.name)
-            //     } else {
-            //         console.log('device.update: ' + device.name);
-            //     }
-            //
-            //     // this.api = false;
-            // });
-
             // when a device is deleted from homey, clear the cache.
             // @todo investigate removing all devices from settings of groups which have been deleted.
             api.devices.on('device.delete', async (device) => {
-                console.log('device.delete: ' + device.name);
+                console.log('device.delete: ' + device);
                 this.api = false;
             });
         })

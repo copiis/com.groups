@@ -3,17 +3,12 @@
         display: none;
     }
 
-    .device {
-        display:flex;
-        align-items:center;
-        justify-content: flex-start
-    }
-
+    /** Fix up the alignment of the checkbox **/
     .device .checkbox {
-        display:flex;
-        align-items:center;
-        justify-content:center;
-    }s
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
 </style>
 
@@ -21,7 +16,11 @@
 
 <script>
 
+    $('#hy-overlay-loading').children('.fas').attr('class', 'fas fa-circle-notch fa2x fa-spin')
+
+
     Homey.setTitle('Select the capabilities');
+    Homey.showLoadingOverlay();
     Homey.emit('capabilities.initialised', null, function (err, result) {
         if (err) {
             console.log(err);
@@ -30,14 +29,13 @@
         new Vue({
             el: '#app',
             data: {
-                isLoading: false,
                 capabilities: result,
                 i18n: Homey.getLanguage(function (err, result) {
                     return (err) ? 'en' : result;
                 }),
                 selectedCapabilities: []
             },
-            methods : {
+            methods: {
                 getTitle(value, i18n) {
                     // Future proofing for new languages
                     if (value.title.hasOwnProperty(i18n)) {
@@ -49,13 +47,16 @@
             },
             mounted() {
                 this.$nextTick(function () {
-                    $('#hy-overlay-loading').addClass('hide');
+                    Homey.hideLoadingOverlay();
                 })
             },
-            watch   : {
-                'selectedCapabilities' : function (val) {
-                    Homey.emit('capabilities.changed', {'capabilities' : val}, function (err, result) {
-                        if(err){console.log(err); return;}
+            watch: {
+                'selectedCapabilities': function (val) {
+                    Homey.emit('capabilities.changed', {'capabilities': val}, function (err, result) {
+                        if (err) {
+                            console.log(err);
+                            return;
+                        }
                     });
                 }
             }
@@ -64,7 +65,6 @@
 </script>
 
 <div id="app">
-    <i v-if='isLoading' class="loading fa fa-cog fa-spin"></i>
     <template v-cloak>
         <ul id="devices-list">
             <li class="device" v-for="(value, key) in capabilities">

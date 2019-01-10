@@ -1,3 +1,10 @@
+**2.1.601**
+- Tag for release
+
+**2.1.600**
+- Add Polling timeouts which will query all devices checking to see if they are available.(#19)
+- Update pairing to use standard icon/overlay. (#3)
+
 **2.1.514**
 - Move all assets to correct folder locations
 - Clean up icon SVG file.

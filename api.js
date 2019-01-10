@@ -107,6 +107,8 @@ module.exports = [
     fn     : async (args) => {
       let group = await Homey.ManagerDrivers.getDriver(args.params.driver).getDevice(args.body.data);
       let result = await group.setSettings(args.body.settings);
+
+      console.log('calling refresh');
       await group.refresh();
       return result;
       // let api =  await Homey.app.getApi();

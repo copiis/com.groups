@@ -1,7 +1,8 @@
 <script>
 
-    Homey.setTitle('Adding device to Homey...');
-
+    Homey.setTitle('Grouping your devices...');
+    Homey.showLoadingOverlay();
+    $('#hy-overlay-loading-message').html('Adding your new group, this will only take a couple of seconds.');
     Homey.emit('group.initialised', null, function (error, group) {
         if (error) {
             Homey.alert( error )
@@ -20,4 +21,3 @@
         })
     });
 </script>
-<i class="loading fa fa-cog fa-spin"></i>

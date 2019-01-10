@@ -6,7 +6,7 @@
 <script>
 
   Homey.setTitle('Choose your icon');
-
+  Homey.showLoadingOverlay();
   Homey.emit('icons.initialised', null, function (err, result) {
 
 	var allIcons = result;
@@ -14,12 +14,14 @@
 	new Vue({
 	  el      : '#all-icons',
 	  data    : {
-		isLoading : false,
 		icons: result,
 		i18n      : Homey.getLanguage(function (err, result) {
 		  return (err) ? 'en' : result;
 		}),
 	  },
+      mounted() {
+        Homey.hideLoadingOverlay();
+      },
 	  methods : {
 		addClass(deviceclass) {
 		  Homey.emit('icons.changed', {'icon': deviceclass}, function (err, result) {
@@ -34,7 +36,6 @@
 </script>
 
 <div id="all-icons">
-  <i v-if='isLoading' class="loading fa fa-cog fa-spin"></i>
   <template v-cloak>
     <ul id="icons-list" style="display:flex;flex-wrap:wrap;justify-content: center;">
       <li v-for="(value, key) in icons" v-on:click="addClass(value)" class="device" style="align-items:center;justify-content:center;height: 100%;display: flex; margin: 2.5px;">
