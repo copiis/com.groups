@@ -5,14 +5,14 @@
     $('#hy-overlay-loading-message').html('Adding your new group, this will only take a couple of seconds.');
     Homey.emit('group.initialised', null, function (error, group) {
         if (error) {
-            Homey.alert( error )
-            console.log( error );
+            Homey.alert(error)
+            console.log(error);
             return;
         }
         Homey.addDevice(group, (error, result) => {
             if (error) {
-                Homey.alert( error )
-                console.log( error );
+                Homey.alert(error)
+                console.log(error);
                 return;
             }
             Homey.emit('group.finalised', null, function (error, result) {

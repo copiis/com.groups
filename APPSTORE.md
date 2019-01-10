@@ -22,7 +22,9 @@ This app is based off of the original 'Device Groups' app by Swttt for Homey v1.
 ### Changelog
 
 
-##### 2.1
+**2.1.6**
+- Now polls grouped devices to ensure they are running/ready
+- Consistent loader icon between pair/settings.
 
 **2.1.5**
 - Add Breadcrumb to settings, WIP
@@ -31,7 +33,6 @@ This app is based off of the original 'Device Groups' app by Swttt for Homey v1.
 - Add Changelog
 - Add local css/js files
 - In app settings - Hide breadcrumbs if there are no groups
-
 
 **2.1.4**
 - Set Settings back to devices
@@ -47,8 +48,6 @@ This app is based off of the original 'Device Groups' app by Swttt for Homey v1.
 
 **2.1.0**
 - Update settings to use new i18n subsystem.
-
-##### 2.0
 
 **2.0.2**
 - Beta Release
@@ -76,13 +75,8 @@ This app is based off of the original 'Device Groups' app by Swttt for Homey v1.
 - Added the ability to store your notes against a device group.
 - Added i18n support to the device settings page labels, currently support en only.
 
-
-##### 1.1
-
 **1.1.0**
 - Change grouped devices via settings
-
-##### 1.0
 
 **1.0.0**
 - Ability to group settable devices
