@@ -99,6 +99,7 @@
                                     url: ''
                                 }
                             }
+
                             result.push(device)
                         }
                         return result
@@ -130,7 +131,7 @@
                     <span class="name" tabindex="-1">{{device.name}}</span>
                 </label>
                 <label :for="device.id" class="checkbox" class="checkbox">
-                    <input :id="device.id" :value="device" name="device" type="checkbox" tabindex="2" v-model="selectedDevices">
+                    <input :id="device.id" :value="device"  name="device" type="checkbox" tabindex="2" v-model="selectedDevices">
                 </label>
             </li>
         </ul>

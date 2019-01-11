@@ -1,6 +1,9 @@
+**2.1.702**
+- Rebuild app.json
+
 **2.1.701**
 - Update the webAPI package
-
+- Set NL app name
 
 **2.1.609**
 - Fix for i18n Default Name
