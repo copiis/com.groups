@@ -1,5 +1,6 @@
 **2.1.603**
 - remove custom styles from pair templates
+- debug empty capability
 
 **2.1.601**
 - Tag for release
