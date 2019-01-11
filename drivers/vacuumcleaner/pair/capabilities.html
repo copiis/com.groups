@@ -19,7 +19,9 @@
 
     // Overwrite the default loading overlay
     $('#hy-overlay-loading').children('.fas').attr('class', 'fas fa-circle-notch fa2x fa-spin')
+
     $('#hy-overlay-loading-message').html( Homey.__("pair.capabilities.loading") );
+
 
 
     Homey.setTitle( Homey.__("pair.capabilities.title") );
@@ -40,7 +42,7 @@
             mounted() {
 
                 this.$nextTick(function () {
-                    $('#hy-nav-next').attr('class', 'hy-button');
+                    $('#hy-nav-next').attr('class', 'hy-button hide');
                     Homey.hideLoadingOverlay();
                 })
             },
@@ -56,7 +58,7 @@
                         if (Object.getOwnPropertyNames(result.settings.capabilities).length > 0) {
                             $('#hy-nav-next').attr('class', 'hy-button visible');
                         } else {
-                            $('#hy-nav-next').attr('class', 'hy-button');
+                            $('#hy-nav-next').attr('class', 'hy-button hide');
                         }
                     });
                 }
