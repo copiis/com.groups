@@ -1,9 +1,10 @@
 <script>
 
+    Homey.showLoadingOverlay();
     Homey.setTitle( Homey.__("pair.devices.title") );
+
     $('#hy-overlay-loading-message').html( Homey.__("pair.devices.loading") );
 
-    Homey.showLoadingOverlay();
     Homey.emit('group.initialised', null, function (error, group) {
         if (error) {
             Homey.alert(error)

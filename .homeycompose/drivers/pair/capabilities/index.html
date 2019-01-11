@@ -16,15 +16,12 @@
 
 <script>
     Homey.showLoadingOverlay();
+    Homey.setTitle( Homey.__("pair.capabilities.title") );
 
     // Overwrite the default loading overlay
     $('#hy-overlay-loading').children('.fas').attr('class', 'fas fa-circle-notch fa2x fa-spin')
-
     $('#hy-overlay-loading-message').html( Homey.__("pair.capabilities.loading") );
 
-
-
-    Homey.setTitle( Homey.__("pair.capabilities.title") );
     Homey.emit('capabilities.initialised', null, function (err, result) {
         if (err) {
             console.log(err);

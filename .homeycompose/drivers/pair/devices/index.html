@@ -23,10 +23,10 @@
 </style>
 <script>
     Homey.showLoadingOverlay();
+    Homey.setTitle( Homey.__("pair.devices.title") );
 
     $('#hy-overlay-loading-message').html( Homey.__("pair.devices.loading") );
 
-    Homey.setTitle( Homey.__("pair.devices.title") );
     Homey.emit('devices.initialised', null, function (err, result) {
         if (err) {
             console.log(err);
