@@ -5,7 +5,11 @@
   },
   "devices" : {
     "title" : "Select devices to group",
-    "loading" : "Gathering all of your devices with these capabilities"
+    "loading" : "Gathering all of your devices with these capabilities",
+    "empty" : {
+      "title" : "Sorry no devices found",
+      "description" : "We were unable to find any devices with those particular capabilities, please press 'previous' to go back."
+    }
   },
   "icons" : {
     "title" : "Choose your icon",

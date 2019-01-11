@@ -7,7 +7,8 @@
     "Capabilities" : "Capabilities",
     "Devices in group" : "Devices in group",
     "Select device group" : "Select device group",
-    "Group" : "Group"
+    "Group" : "Group",
+    "Devices" : "Devices"
   },
   "device": {
     "initEvents":{

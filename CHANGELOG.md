@@ -1,4 +1,7 @@
 **2.1.606**
+- Better empty device message.
+
+**2.1.606**
 - Hide next button if no capabilities are selected
 - Hide next button if no devices are selected
 
