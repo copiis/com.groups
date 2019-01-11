@@ -56,7 +56,7 @@
 <div id="all-icons">
     <template v-cloak>
         <ul id="icons-list" style="display:flex;flex-wrap:wrap;justify-content: center;">
-            <li v-for="(value, key) in icons" v-on:click="addClass(value)" class="device icon-tile">
+            <li v-for="(value, key) in icons" v-on:click="addClass(value)" class="device tile">
                 <div class="content">
                     <div class="icon-wrap">
                         <div class="icon bg " v-bind:style="{WebkitMaskImage: 'url(' + key + ')'}"></div>

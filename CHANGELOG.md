@@ -1,3 +1,6 @@
+**2.1.603**
+- remove custom styles from pair templates
+
 **2.1.601**
 - Tag for release
 
