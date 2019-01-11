@@ -1,3 +1,6 @@
+**2.1.605**
+- add pair capbiltiy text to i18n.
+
 **2.1.604**
 - add pair text to i18n.
 

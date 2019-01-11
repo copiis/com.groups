@@ -52,7 +52,7 @@
 
                         console.log('$$$$$$$$$$$$$$$$$$$$$$$');
                         console.log(result.settings.capabilities);
-                        console.log(result.settings.capabilities.length);
+                        console.log(Object.getOwnPropertyNames(result.settings.capabilities).length);
                         console.log('$$$$$$$$$$$$$$$$$$$$$$$');
                     });
                 }
@@ -67,7 +67,7 @@
             <li class="device" v-for="(value, key) in capabilities">
                 <label :for="key" class="name">
                     <div class="overlay"></div>
-                    <span class="name" tabindex="-1">{{ __('capability.' + value + '.title') }}</span>
+                    <span class="name" tabindex="-1">{{ __('capability.' + key + '.title') }}</span>
                 </label>
                 <label :for="key" class="checkbox">
                     <input :id="key" :value="key" name="device" type="checkbox" tabindex="2" v-model="selectedCapabilities">
