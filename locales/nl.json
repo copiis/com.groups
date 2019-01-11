@@ -2,67 +2,67 @@
   "category": {
     "amplifier": {
       "title": "Versterker",
-      "description": "audio amplifier devices."
+      "description": "apparaat voor audioversterking."
     },
     "blinds": {
       "title": "Jaloezieën & Lamellen",
-      "description": "blinds, both horizontal and vertical."
+      "description": "blinderingen, zowel horizontaal als verticaal"
     },
     "button": {
       "title": "Knop",
-      "description": "buttons, and other items which do not have a state."
+      "description": "knoppen en andere items die geen status hebben."
     },
     "coffeemachine": {
       "title": "Koffiemachine",
-      "description": "coffeemakers or coffee machines are cooking appliances used to brew coffee."
+      "description": "koffiemachines zijn kooktoestellen voor het zetten van koffie."
     },
     "curtain": {
       "title": "Gordijnen",
-      "description": "electronic curtains which will move the material sideways along a rail."
+      "description": "elektrische gordijnen, deze bewegen het gordijn over een rails."
     },
     "doorbell": {
       "title": "Deurbel",
-      "description": "doorbells, and device which announce when a button is pressed."
+      "description": "deurbellen, en apparaten welke aankondigen dat er op een knop is gedrukt."
     },
     "fan": {
       "title": "Ventilator",
-      "description": "fans that cool your home."
+      "description": "ventilator welke je huis koelt."
     },
     "garagedoor": {
       "title": "Garagedeur",
-      "description": "garage doors as well as other automatic doors and gates."
+      "description": "garagedeuren en andere automatische deur en poort openers."
     },
     "heater": {
-      "title": "Heater",
-      "description": "heaters and other devices which warm your home."
+      "title": "Verwarmer",
+      "description": "Verwarmers en andere apparaten welke je huis verwarmen."
     },
     "homealarm": {
       "title": "Huisbeveiliging",
-      "description": "home alarm systems."
+      "description": "beveiliging systeem voor je woning."
     },
     "homeenergymonitor": {
       "title": "Energiemonitor",
-      "description": "Devices that monitor a house's energy usage."
+      "description": "Apparaat die je energie verbruik bijhoud."
     },
     "kettle": {
       "title": "Waterkoker",
-      "description": "Kettles and other devices that can heat water."
+      "description": "waterkokers en andere apparaten die water verwarmen."
     },
     "light": {
       "title": "Lamp",
-      "description": "An illuminating agent or source, lights, globes, lamps, etc."
+      "description": "een verlichtingsmiddel of bron."
     },
     "lock": {
       "title": "Slot",
-      "description": "devices with locks."
+      "description": "apparaat met of voor een slot."
     },
     "other": {
       "title": "Overig",
-      "description": "devices that do not fit any other device class."
+      "description": "apparaten die niet in een andere klasse passen."
     },
     "relay": {
       "title": "Relais",
-      "description": "relays, which are connected to another device."
+      "description": "relais welke zijn verbonden met een ander apparaat ."
     },
     "remote": {
       "title": "Afstandsbediening",
@@ -483,24 +483,47 @@
     "Devices in group": "Devices in group",
     "Select device group": "Select device group",
     "Group": "Group",
-    "Sorry": "Sorry you have not created any groups yet, please create a group and come back to edit it."
+    "Sorry": "Sorry you have not created any groups yet, please create a group and come back to edit it.",
+    "about": "Over",
+    "group": "Groep",
+    "groups": "Groepen",
+    "group name": "Groepsnaam",
+    "capability": "Optie",
+    "capabilities": "Opties",
+    "category": "Categorie",
+    "categories": "Categorieën",
+    "device": "Apparaat",
+    "devices": "Apparaten",
+    "icon": "Icoon",
+    "icons": "iconen",
+    "other": "Anders",
+    "unavailable": "Niet beschikbaar",
+    "offline": "offline",
+    "sorry": "Sorry je hebt nog geen groepen gecreëerd, maak eerst een groep aan en kom daarna terug om deze aan te passen."
   },
   "pair": {
     "capabilities": {
-      "title": "Select the capabilities of the group",
-      "loading": "loading"
+      "title": "Selecteer de mogelijkheden van de groep",
+      "loading": "laden"
     },
     "devices": {
-      "title": "Select devices to group",
-      "loading": "Gathering all of your devices with these capabilities"
+      "title": "Selecteer de apparaten voor deze groep",
+      "loading": "Ik verzamel al de apparaten met deze mogelijkheden",
+      "empty": {
+        "title": "Sorry geen apparaten gevonden",
+        "description": "We kunnen geen apparaten vinden met deze mogelijkheden, druk op ‘vorige’ om terug te gaan."
+      }
     },
     "icons": {
-      "title": "Choose your icon",
-      "loading": "Loading possible icons"
+      "title": "Kies je icoon",
+      "loading": "mogelijke iconen worden geladen"
     },
     "group": {
-      "title": "Grouping your devices..",
-      "loading": "Adding your new group, this will only take a couple of seconds."
+      "title": "Er word een groep gecreëerd met jou apparaten..",
+      "loading": "Het toevoegen van deze nieuwe groep duurt een paar seconden."
     }
+  },
+  "settings": {
+    "empty": "Sorry je hebt nog geen groepen gecreëerd, maak eerst een groep aan en kom daarna terug om deze aan te passen."
   }
 }

@@ -1,102 +1,102 @@
 {
-    "amplifier" : {
-        "title" : "Versterker",
-        "description" : "audio amplifier devices."
+    "amplifier": {
+        "title": "Versterker",
+        "description": "apparaat voor audioversterking."
     },
-    "blinds" : {
-        "title" : "Jaloezieën & Lamellen",
-        "description" : "blinds, both horizontal and vertical."
+    "blinds": {
+        "title": "Jaloezieën & Lamellen",
+        "description": "blinderingen, zowel horizontaal als verticaal"
     },
-    "button" : {
-        "title" : "Knop",
-        "description" : "buttons, and other items which do not have a state."
+    "button": {
+        "title": "Knop",
+        "description": "knoppen en andere items die geen status hebben."
     },
-    "coffeemachine" : {
-        "title" : "Koffiemachine",
-        "description" : "coffeemakers or coffee machines are cooking appliances used to brew coffee."
+    "coffeemachine": {
+        "title": "Koffiemachine",
+        "description": "koffiemachines zijn kooktoestellen voor het zetten van koffie."
     },
-    "curtain" : {
-        "title" : "Gordijnen",
-        "description" : "electronic curtains which will move the material sideways along a rail."
+    "curtain": {
+        "title": "Gordijnen",
+        "description": "elektrische gordijnen, deze bewegen het gordijn over een rails."
     },
-    "doorbell" : {
-        "title" : "Deurbel",
-        "description" : "doorbells, and device which announce when a button is pressed."
+    "doorbell": {
+        "title": "Deurbel",
+        "description": "deurbellen, en apparaten welke aankondigen dat er op een knop is gedrukt."
     },
-    "fan" : {
-        "title" : "Ventilator",
-        "description" : "fans that cool your home."
+    "fan": {
+        "title": "Ventilator",
+        "description": "ventilator welke je huis koelt."
     },
-    "garagedoor" : {
-        "title" : "Garagedeur",
-        "description": "garage doors as well as other automatic doors and gates."
+    "garagedoor": {
+        "title": "Garagedeur",
+        "description": "garagedeuren en andere automatische deur en poort openers."
     },
-    "heater" : {
-        "title" : "Heater",
-        "description": "heaters and other devices which warm your home."
+    "heater": {
+        "title": "Verwarmer",
+        "description": "Verwarmers en andere apparaten welke je huis verwarmen."
     },
-    "homealarm" : {
-        "title" : "Huisbeveiliging",
-        "description": "home alarm systems."
+    "homealarm": {
+        "title": "Huisbeveiliging",
+        "description": "beveiliging systeem voor je woning."
     },
-    "homeenergymonitor" : {
-        "title" : "Energiemonitor",
-        "description": "Devices that monitor a house's energy usage."
+    "homeenergymonitor": {
+        "title": "Energiemonitor",
+        "description": "Apparaat die je energie verbruik bijhoud."
     },
-    "kettle" : {
-        "title" : "Waterkoker",
-        "description": "Kettles and other devices that can heat water."
+    "kettle": {
+        "title": "Waterkoker",
+        "description": "waterkokers en andere apparaten die water verwarmen."
     },
-    "light" : {
-        "title" : "Lamp",
-        "description": "An illuminating agent or source, lights, globes, lamps, etc."
+    "light": {
+        "title": "Lamp",
+        "description": "een verlichtingsmiddel of bron."
     },
-    "lock" : {
-        "title" : "Slot",
-        "description": "devices with locks."
+    "lock": {
+        "title": "Slot",
+        "description": "apparaat met of voor een slot."
     },
-    "other" : {
-        "title" : "Overig",
-        "description": "devices that do not fit any other device class."
+    "other": {
+        "title": "Overig",
+        "description": "apparaten die niet in een andere klasse passen."
     },
-    "relay" : {
-        "title" : "Relais",
-        "description": "relays, which are connected to another device."
+    "relay": {
+        "title": "Relais",
+        "description": "relais welke zijn verbonden met een ander apparaat ."
     },
-    "remote" : {
-        "title" : "Afstandsbediening",
+    "remote": {
+        "title": "Afstandsbediening",
         "description": "TV, Sunblind, Keyfob, etc. remote controls."
     },
-    "sensor" : {
-        "title" : "Sensor",
+    "sensor": {
+        "title": "Sensor",
         "description": "sensors, e.g. a contact or motion sensor. As well as alarms!"
     },
-    "socket" : {
-        "title" : "Schakeldoos",
+    "socket": {
+        "title": "Schakeldoos",
         "description": "wall plugs and sockets."
     },
-    "speaker" : {
-        "title" : "Speaker",
+    "speaker": {
+        "title": "Speaker",
         "description": "devices that can play audio, such as music."
     },
-    "sunshade" : {
-        "title" : "Zonnescherm",
+    "sunshade": {
+        "title": "Zonnescherm",
         "description": "sunshades (window coverings against the sun)."
     },
-    "thermostat" : {
-        "title" : "Thermostaat",
+    "thermostat": {
+        "title": "Thermostaat",
         "description": "thermostats, either for the entire home or radiator-mounted."
     },
-    "tv" : {
-        "title" : "TV",
+    "tv": {
+        "title": "TV",
         "description": "TV/televisions."
     },
-    "vacuumcleaner" : {
-        "title" : "Stofzuiger",
+    "vacuumcleaner": {
+        "title": "Stofzuiger",
         "description": "automated devices which clean floors on demand."
     },
-    "windowcoverings" : {
-        "title" : "Raambekleding",
+    "windowcoverings": {
+        "title": "Raambekleding",
         "description": "window coverings, for when the `curtains`, `blinds` or `sunshade` device class doesn't apply."
     }
 }

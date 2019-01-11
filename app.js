@@ -15,9 +15,6 @@ class Groups extends Homey.App {
         // Set our library reference
         this.library = new Librarian();
 
-        // Force i18n to en or nl, as we are accessing the i18n directly,
-        this.i18n = (Homey.ManagerI18n.getLanguage() === 'nl') ? 'nl' : 'en';
-
         // Prime the API into memory, set its events.
         this.cache();
 

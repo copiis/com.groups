@@ -19,14 +19,18 @@
         margin: 1em;
     }
 
+    .device span.name {
+        padding-left: 1em;
+    }
+
 
 </style>
 <script>
     Homey.showLoadingOverlay();
+    Homey.setTitle( Homey.__("pair.devices.title") );
 
     $('#hy-overlay-loading-message').html( Homey.__("pair.devices.loading") );
 
-    Homey.setTitle( Homey.__("pair.devices.title") );
     Homey.emit('devices.initialised', null, function (err, result) {
         if (err) {
             console.log(err);
@@ -93,8 +97,12 @@
                         if (includeIt) {
                             if (!!device.iconObj && device.hasOwnProperty('iconObj') && device.iconObj.hasOwnProperty('url')) {
 
+                            } else if (!device.ready ) {
+                                device.iconObj = {
+                                    url: '../../../assets/icons/unavailable.svg'
+                                }
                             } else {
-                                console.log(device.name + 'has no icon');
+                                console.log(device.name + ' has no icon');
                                 device.iconObj = {
                                     url: ''
                                 }
@@ -117,7 +125,7 @@
 <div id="all-devices">
     <template v-cloak>
         <div v-if="filteredDevices.length > 0" style="text-align:right;font-size:0.9em">
-            <small>{{ filteredDevices.length }} {{ __('_.Devices') }}</small>
+            <small>{{ filteredDevices.length }} {{ __('_.devices') | capitalize }}</small>
         </div>
         <div class="message" v-else>
             <h3 class="message-title">{{ __('pair.devices.empty.title') }}</h3>
@@ -128,7 +136,7 @@
                 <label :for="device.id" class="name">
                     <div class="overlay"></div>
                     <div class="icon" v-if="device.iconObj !== null" v-bind:style="{maskImage: 'url(' + device.iconObj.url + ')'}"></div>
-                    <span class="name" tabindex="-1">{{device.name}}</span>
+                    <span class="name" tabindex="-1"><span v-if="!device.ready">[{{ __('_.offline')  }}] </span>{{device.name}}</span>
                 </label>
                 <label :for="device.id" class="checkbox" class="checkbox">
                     <input :id="device.id" :value="device"  name="device" type="checkbox" tabindex="2" v-model="selectedDevices">

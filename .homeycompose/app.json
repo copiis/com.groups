@@ -1,12 +1,12 @@
 {
-    "id": "com.swttt.devicegroups",
+    "id": "com.groups",
     "sdk": 2,
     "permissions": [
         "homey:manager:api"
     ],
     "name": {
-        "en": "< group >",
-        "nl": " < groep >"
+        "en": "< omega >",
+        "nl": " < omega >"
     },
     "description": {
         "en": "Makes it possible to group devices allowing control and reporting of all devices within a group.",
@@ -27,7 +27,7 @@
             "virtueel"
         ]
     },
-    "version": "2.1.702",
+    "version": "2.1.703",
     "compatibility": ">=2.0",
     "author": {
         "name": "Jamie Peake",

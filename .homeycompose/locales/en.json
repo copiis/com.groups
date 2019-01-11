@@ -1,18 +1,19 @@
 {
   "_" : {
-    "Device Groups Editor" : "Device Groups Editor",
-    "Edit your device groups" : "Edit your device groups",
-    "Device Group Name" : "Device Group Name",
-    "Device Class" : "Device Class",
-    "Capabilities" : "Capabilities",
-    "Devices in group" : "Devices in group",
-    "Select device group" : "Select device group",
-    "Group" : "Group",
-    "Devices" : "Devices"
-  },
-  "device": {
-    "initEvents":{
-      "deviceNotReady" : "Oops, it looks like this group contains a device which was not ready, please restart this app once are sure all devices with in the group are working."
-    }
+    "about" : "about",
+    "group" : "group",
+    "groups": "groups",
+    "group name": "group name",
+    "capability" : "capability",
+    "capabilities" : "capabilities",
+    "category": "category",
+    "categories": "categories",
+    "device": "device",
+    "devices": "devices",
+    "icon" : "icon",
+    "icons": "icons",
+    "other": "other",
+    "unavailable": "not available",
+    "offline": "offline"
   }
 }

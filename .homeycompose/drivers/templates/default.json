@@ -41,14 +41,16 @@
         {
             "type": "group",
             "label": {
-                "en": "About"
+                "en": "About",
+                "nl": "Over"
             },
             "children": [
                 {
                     "id": "labelClass",
                     "type": "label",
                     "label": {
-                        "en": "Category"
+                        "en": "Category",
+                        "nl": "Categorie"
                     },
                     "value": "Unknown"
                 },
@@ -56,7 +58,8 @@
                     "id": "labelCapabilities",
                     "type": "label",
                     "label": {
-                        "en": "Capabilities"
+                        "en": "Capabilities",
+                        "nl": "Opties"
                     },
                     "value": "Unknown"
                 },
@@ -64,11 +67,13 @@
                     "id": "labelDevices",
                     "type": "label",
                     "label": {
-                        "en": "Devices"
+                        "en": "Devices",
+                        "nl": "Apparaten"
                     },
                     "value": "Unknown",
                     "hint": {
-                        "en": "To change which devices are with in a group, please go to the Homey settings page and click on the Device Groups Settings"
+                        "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> group",
+                        "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep"
                     }
                 }
             ]
@@ -76,18 +81,21 @@
         {
             "type": "group",
             "label": {
-                "en": "Other"
+                "en": "Other",
+                "nl": "Anders"
             },
             "children": [
                 {
                     "id": "notes",
                     "type": "textarea",
                     "label": {
-                        "en": "Your Notes"
+                        "en": "Your Notes",
+                        "nl": "Notities"
                     },
                     "value": "",
                     "hint": {
-                        "en": "Enter any thoughts or notes you may have regarding this device group."
+                        "en": "Enter any thoughts or notes you may have regarding this group.",
+                        "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep."
                     }
                 }
             ]

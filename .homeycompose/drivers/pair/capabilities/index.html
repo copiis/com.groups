@@ -18,6 +18,12 @@
     Homey.showLoadingOverlay();
     Homey.setTitle( Homey.__("pair.capabilities.title") );
 
+    Vue.filter('capitalize', function (value) {
+        if (!value) return ''
+        value = value.toString()
+        return value.charAt(0).toUpperCase() + value.slice(1)
+    })
+
     // Overwrite the default loading overlay
     $('#hy-overlay-loading').children('.fas').attr('class', 'fas fa-circle-notch fa2x fa-spin')
     $('#hy-overlay-loading-message').html( Homey.__("pair.capabilities.loading") );
@@ -33,9 +39,13 @@
                 capabilities: result,
                 selectedCapabilities: []
             },
-            methods: {
-
+            filters: {
+                capital: function (value) {
+                    return value.charAt(0).toUpperCase() + value.slice(1);
+                }
             },
+            methods: {},
+            computed: {},
             mounted() {
 
                 this.$nextTick(function () {

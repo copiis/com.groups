@@ -26,10 +26,11 @@
 </style>
 <script>
 
+    Homey.showLoadingOverlay();
     Homey.setTitle( Homey.__("pair.icons.title") );
+
     $('#hy-overlay-loading-message').html( Homey.__("pair.icons.loading") );
 
-    Homey.showLoadingOverlay();
     Homey.emit('icons.initialised', null, function (err, result) {
 
         var allIcons = result;

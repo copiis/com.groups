@@ -1,13 +1,20 @@
 {
   "_" : {
-    "Group Editor" : "Device Groups Editor",
-    "Edit your groups" : "Edit your groups",
-    "Group Name" : "Group Name",
-    "Device Class" : "Device Class",
-    "Capabilities" : "Capabilities",
-    "Devices in group" : "Devices in group",
-    "Select device group" : "Select device group",
-    "Group" : "Group",
-    "Sorry" : "Sorry you have not created any groups yet, please create a group and come back to edit it."
+    "about" : "Over",
+    "group" : "Groep",
+    "groups": "Groepen",
+    "group name": "Groepsnaam",
+    "capability" : "Optie",
+    "capabilities" : "Opties",
+    "category": "Categorie",
+    "categories": "Categorieën",
+    "device": "Apparaat",
+    "devices": "Apparaten",
+    "icon" : "Icoon",
+    "icons": "iconen",
+    "other": "Anders",
+    "unavailable": "Niet beschikbaar",
+    "offline": "offline",
+    "sorry" : "Sorry je hebt nog geen groepen gecreëerd, maak eerst een groep aan en kom daarna terug om deze aan te passen."
   }
 }

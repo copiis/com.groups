@@ -31,7 +31,7 @@
     <main v-cloak>
         <nav aria-label="breadcrumb" v-if="size(groups) && (crumbs.categories || crumbs.groups || crumbs.devices)">
             <ol class="breadcrumb">
-                <li v-if="crumbs.categories.show" class="breadcrumb-item text-dark"  @click="show('categories')"><a class="text-dark" href="#">Categories</a></li>
+                <li v-if="crumbs.categories.show" class="breadcrumb-item text-dark"  @click="show('categories')"><a class="text-dark" href="#">{{ __('_.categories')  | capitalize}}</a></li>
                 <li v-if="crumbs.groups.show" class="breadcrumb-item" @click="show('groups')"><a class="text-dark "href="#">{{ __('category.' + crumbs.groups.title + '.title') }}</a></li>
             </ol>
         </nav>
@@ -44,7 +44,7 @@
         </div>
 
         <section v-if="!size(groups) && !active.categories">
-            <p v-cloak class="text-center">Sorry you have not created any groups yet, please create a group and come back to edit it.</p>
+            <p v-cloak class="text-center">{{ __('settings.empty') }}</p>
         </section>
 
         <section id="categories" v-cloak v-if="active.categories">
@@ -195,6 +195,12 @@
                 }
             }
         });
+
+        Vue.filter('capitalize', function (value) {
+            if (!value) return ''
+            value = value.toString()
+            return value.charAt(0).toUpperCase() + value.slice(1)
+        })
 
         const app = new Vue({
             el: 'main',

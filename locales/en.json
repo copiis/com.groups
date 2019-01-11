@@ -8,7 +8,23 @@
     "Devices in group": "Devices in group",
     "Select device group": "Select device group",
     "Group": "Group",
-    "Devices": "Devices"
+    "Devices": "Devices",
+    "about": "about",
+    "group": "group",
+    "groups": "groups",
+    "group name": "group name",
+    "capability": "capability",
+    "capabilities": "capabilities",
+    "category": "category",
+    "categories": "categories",
+    "device": "device",
+    "devices": "devices",
+    "icon": "icon",
+    "icons": "icons",
+    "other": "other",
+    "unavailable": "not available",
+    "offline": "offline",
+    "sorry": "Sorry je hebt nog geen groepen gecreëerd, maak eerst een groep aan en kom daarna terug om deze aan te passen."
   },
   "capability": {
     "onoff": {
@@ -511,5 +527,8 @@
       "title": "Grouping your devices..",
       "loading": "Adding your new group, this will only take a couple of seconds."
     }
+  },
+  "settings": {
+    "sorry": "Sorry you have not created any groups yet, please create a group and come back to edit it."
   }
 }
