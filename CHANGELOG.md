@@ -1,5 +1,9 @@
+**2.1.606**
+- Hide next button if no capabilities are selected
+- Hide next button if no devices are selected
+
 **2.1.605**
-- add pair capbiltiy text to i18n.
+- add pair capability text to i18n.
 
 **2.1.604**
 - add pair text to i18n.

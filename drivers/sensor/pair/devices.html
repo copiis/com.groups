@@ -18,6 +18,7 @@
     Homey.showLoadingOverlay();
 
     $('#hy-overlay-loading-message').html( Homey.__("pair.devices.loading") );
+    $('#hy-nav-next').attr('class', 'hy-button');
 
     Homey.setTitle( Homey.__("pair.devices.title") );
     Homey.emit('devices.initialised', null, function (err, result) {
@@ -49,6 +50,13 @@
                         if (err) {
                             console.log(err);
                             return;
+                        }
+
+                        // Ensure that they have selected at least one capability before letting them hit next.
+                        if (Object.getOwnPropertyNames(result.settings.devices).length > 0) {
+                            $('#hy-nav-next').attr('class', 'hy-button visible')
+                        } else {
+                            $('#hy-nav-next').attr('class', 'hy-button')
                         }
                     });
                 }
