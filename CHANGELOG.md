@@ -1,3 +1,6 @@
+**2.1.609**
+- Fix for i18n Default Name
+
 **2.1.608**
 - i18n Default Name
 

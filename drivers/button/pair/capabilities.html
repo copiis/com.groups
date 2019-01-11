@@ -22,9 +22,6 @@
     $('#hy-overlay-loading-message').html( Homey.__("pair.capabilities.loading") );
 
 
-    $('#hy-nav-next').attr('style', 'background-color: lime;');
-
-
     Homey.setTitle( Homey.__("pair.capabilities.title") );
     Homey.emit('capabilities.initialised', null, function (err, result) {
         if (err) {
