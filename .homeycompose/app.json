@@ -5,8 +5,8 @@
         "homey:manager:api"
     ],
     "name": {
-        "en": "< omega >",
-        "nl": " < omega >"
+        "en": "< group >",
+        "nl": " < groep >"
     },
     "description": {
         "en": "Makes it possible to group devices allowing control and reporting of all devices within a group.",
