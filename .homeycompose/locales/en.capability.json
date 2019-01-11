@@ -16,7 +16,7 @@
         "description" : "The colour intensity"
     },
     "light_temperature": {
-        "title" : "Colour Temperature!",
+        "title" : "Color Temperature",
         "description" : "The white light temperature warm to cold as a decimal"
     },
     "light_mode": {

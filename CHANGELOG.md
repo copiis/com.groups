@@ -1,4 +1,7 @@
-**2.1.606**
+**2.1.608**
+- i18n Default Name
+
+**2.1.607**
 - Better empty device message.
 
 **2.1.606**

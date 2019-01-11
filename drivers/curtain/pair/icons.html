@@ -3,6 +3,12 @@
         display: none;
     }
 
+
+    #icons-list {
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: center;
+    }
     .device.tile {
         display: flex;
         height: 100%;
@@ -32,9 +38,6 @@
             el: '#all-icons',
             data: {
                 icons: result,
-                i18n: Homey.getLanguage(function (err, result) {
-                    return (err) ? 'en' : result;
-                }),
             },
             mounted() {
                 Homey.hideLoadingOverlay();
@@ -57,7 +60,7 @@
 
 <div id="all-icons">
     <template v-cloak>
-        <ul id="icons-list" style="display:flex;flex-wrap:wrap;justify-content: center;">
+        <ul id="icons-list">
             <li v-for="(value, key) in icons" v-on:click="addClass(value)" class="device tile">
                 <div class="content">
                     <div class="icon-wrap">

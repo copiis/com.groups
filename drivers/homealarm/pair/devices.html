@@ -13,12 +13,18 @@
         align-items: center;
         justify-content: center;
     }
+
+    .message .message-title {
+        text-align: center;
+        margin: 1em;
+    }
+
+
 </style>
 <script>
     Homey.showLoadingOverlay();
 
     $('#hy-overlay-loading-message').html( Homey.__("pair.devices.loading") );
-    $('#hy-nav-next').attr('class', 'hy-button');
 
     Homey.setTitle( Homey.__("pair.devices.title") );
     Homey.emit('devices.initialised', null, function (err, result) {
@@ -40,6 +46,7 @@
                 this.devices = allDevices;
                 this.pairingDevice = pairingDevice;
                 Homey.hideLoadingOverlay();
+                $('#hy-nav-next').attr('class', 'hy-button');
             },
             methods: {},
             watch: {
@@ -54,9 +61,9 @@
 
                         // Ensure that they have selected at least one capability before letting them hit next.
                         if (Object.getOwnPropertyNames(result.settings.devices).length > 0) {
-                            $('#hy-nav-next').attr('class', 'hy-button visible')
+                            $('#hy-nav-next').attr('class', 'hy-button visible');
                         } else {
-                            $('#hy-nav-next').attr('class', 'hy-button')
+                            $('#hy-nav-next').attr('class', 'hy-button');
                         }
                     });
                 }
@@ -109,18 +116,18 @@
 <div id="all-devices">
     <template v-cloak>
         <div v-if="filteredDevices.length > 0" style="text-align:right;font-size:0.9em">
-            <small>{{ filteredDevices.length }} {{ __('__.devices') }}</small>
+            <small>{{ filteredDevices.length }} {{ __('_.Devices') }}</small>
         </div>
-        <div v-else>
-            <h3>{{ __('pair.devices.empty.title') }}</h3>
-            <p>{{ __('pair.devices.empty.description') }}</p>
+        <div class="message" v-else>
+            <h3 class="message-title">{{ __('pair.devices.empty.title') }}</h3>
+            <p class="message-description">{{ __('pair.devices.empty.description') }}</p>
         </div>
         <ul id="devices-list">
             <li v-if="filteredDevices.length > 0" class="device" v-for="device in filteredDevices">
                 <label :for="device.id" class="name">
                     <div class="overlay"></div>
                     <div class="icon" v-if="device.iconObj !== null" v-bind:style="{maskImage: 'url(' + device.iconObj.url + ')'}"></div>
-                    <span class="name" tabindex="-1" style="height:24px;">{{device.name}}</span>
+                    <span class="name" tabindex="-1">{{device.name}}</span>
                 </label>
                 <label :for="device.id" class="checkbox" class="checkbox">
                     <input :id="device.id" :value="device" name="device" type="checkbox" tabindex="2" v-model="selectedDevices">
