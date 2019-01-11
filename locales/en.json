@@ -488,5 +488,23 @@
     "initEvents": {
       "deviceNotReady": "Oops, it looks like this group contains a device which was not ready, please restart this app once are sure all devices with in the group are working."
     }
+  },
+  "pair": {
+    "capabilities": {
+      "title": "Select the capabilities of the group",
+      "loading": "loading"
+    },
+    "devices": {
+      "title": "Select devices to group",
+      "loading": "Gathering all of your devices with these capabilities"
+    },
+    "icons": {
+      "title": "Choose your icon",
+      "loading": "Loading possible icons"
+    },
+    "group": {
+      "title": "Grouping your devices..",
+      "loading": "Adding your new group, this will only take a couple of seconds."
+    }
   }
 }

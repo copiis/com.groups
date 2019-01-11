@@ -1,8 +1,9 @@
 <script>
 
-    Homey.setTitle('Grouping your devices...');
+    Homey.setTitle( Homey.__("pair.devices.title") );
+    $('#hy-overlay-loading-message').html( Homey.__("pair.group.loading") );
+
     Homey.showLoadingOverlay();
-    $('#hy-overlay-loading-message').html('Adding your new group, this will only take a couple of seconds.');
     Homey.emit('group.initialised', null, function (error, group) {
         if (error) {
             Homey.alert(error)

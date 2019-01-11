@@ -15,12 +15,14 @@
 <script src='../../../assets/scripts/vue-2.5.21.min.js'></script>
 
 <script>
-
-    $('#hy-overlay-loading').children('.fas').attr('class', 'fas fa-circle-notch fa2x fa-spin')
-
-
-    Homey.setTitle('Select the capabilities');
     Homey.showLoadingOverlay();
+
+
+    // Overwrite the default loading overlay
+    $('#hy-overlay-loading').children('.fas').attr('class', 'fas fa-circle-notch fa2x fa-spin')
+    $('#hy-overlay-loading-message').html( Homey.__("pair.capabilities.loading") );
+
+    Homey.setTitle( Homey.__("pair.capabilities.title") );
     Homey.emit('capabilities.initialised', null, function (err, result) {
         if (err) {
             console.log(err);
@@ -30,20 +32,10 @@
             el: '#app',
             data: {
                 capabilities: result,
-                i18n: Homey.getLanguage(function (err, result) {
-                    return (err) ? 'en' : result;
-                }),
                 selectedCapabilities: []
             },
             methods: {
-                getTitle(value, i18n) {
-                    // Future proofing for new languages
-                    if (value.title.hasOwnProperty(i18n)) {
-                        return value.title[i18n];
-                    } else {
-                        return value.title.en;
-                    }
-                }
+
             },
             mounted() {
                 this.$nextTick(function () {
@@ -59,8 +51,8 @@
                         }
 
                         console.log('$$$$$$$$$$$$$$$$$$$$$$$');
-                        console.log(this.group.settings.capabilities);
-                        console.log(this.group.settings.capabilities.length);
+                        console.log(result.settings.capabilities);
+                        console.log(result.settings.capabilities.length);
                         console.log('$$$$$$$$$$$$$$$$$$$$$$$');
                     });
                 }
@@ -75,7 +67,7 @@
             <li class="device" v-for="(value, key) in capabilities">
                 <label :for="key" class="name">
                     <div class="overlay"></div>
-                    <span class="name" tabindex="-1">{{getTitle(value, i18n)}}</span>
+                    <span class="name" tabindex="-1">{{ __('capability.' + value + '.title') }}</span>
                 </label>
                 <label :for="key" class="checkbox">
                     <input :id="key" :value="key" name="device" type="checkbox" tabindex="2" v-model="selectedCapabilities">

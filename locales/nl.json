@@ -484,5 +484,23 @@
     "Select device group": "Select device group",
     "Group": "Group",
     "Sorry": "Sorry you have not created any groups yet, please create a group and come back to edit it."
+  },
+  "pair": {
+    "capabilities": {
+      "title": "Select the capabilities of the group",
+      "loading": "loading"
+    },
+    "devices": {
+      "title": "Select devices to group",
+      "loading": "Gathering all of your devices with these capabilities"
+    },
+    "icons": {
+      "title": "Choose your icon",
+      "loading": "Loading possible icons"
+    },
+    "group": {
+      "title": "Grouping your devices..",
+      "loading": "Adding your new group, this will only take a couple of seconds."
+    }
   }
 }

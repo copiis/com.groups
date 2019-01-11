@@ -1,3 +1,6 @@
+**2.1.604**
+- add pair text to i18n.
+
 **2.1.603**
 - remove custom styles from pair templates
 - debug empty capability

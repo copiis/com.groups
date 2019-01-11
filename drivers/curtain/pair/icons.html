@@ -20,7 +20,9 @@
 </style>
 <script>
 
-    Homey.setTitle('Choose your icon');
+    Homey.setTitle( Homey.__("pair.icons.title") );
+    $('#hy-overlay-loading-message').html( Homey.__("pair.icons.loading") );
+
     Homey.showLoadingOverlay();
     Homey.emit('icons.initialised', null, function (err, result) {
 
