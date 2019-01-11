@@ -3,17 +3,12 @@
         display: none;
     }
 
-    .device {
-        display:flex;
-        align-items:center;
-        justify-content: flex-start
-    }
-
+    /** Fix up the alignment of the checkbox **/
     .device .checkbox {
-        display:flex;
-        align-items:center;
-        justify-content:center;
-    }s
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
 </style>
 
@@ -40,7 +35,7 @@
                 }),
                 selectedCapabilities: []
             },
-            methods : {
+            methods: {
                 getTitle(value, i18n) {
                     // Future proofing for new languages
                     if (value.title.hasOwnProperty(i18n)) {
@@ -55,10 +50,13 @@
                     Homey.hideLoadingOverlay();
                 })
             },
-            watch   : {
-                'selectedCapabilities' : function (val) {
-                    Homey.emit('capabilities.changed', {'capabilities' : val}, function (err, result) {
-                        if(err){console.log(err); return;}
+            watch: {
+                'selectedCapabilities': function (val) {
+                    Homey.emit('capabilities.changed', {'capabilities': val}, function (err, result) {
+                        if (err) {
+                            console.log(err);
+                            return;
+                        }
                     });
                 }
             }
