@@ -66,39 +66,39 @@
     },
     "remote": {
       "title": "Afstandsbediening",
-      "description": "TV, Sunblind, Keyfob, etc. remote controls."
+      "description": "TV, jaloezieën, sleutelhanger of elk type afstandsbediening."
     },
     "sensor": {
       "title": "Sensor",
-      "description": "sensors, e.g. a contact or motion sensor. As well as alarms!"
+      "description": "contact, beweging, vuur, CO of elk type sensor. Evenals alarmen!"
     },
     "socket": {
       "title": "Schakeldoos",
-      "description": "wall plugs and sockets."
+      "description": "muurpluggen en stopcontacten.\n"
     },
     "speaker": {
       "title": "Speaker",
-      "description": "devices that can play audio, such as music."
+      "description": "apparaten die audio kunnen afspelen, zoals muziek."
     },
     "sunshade": {
       "title": "Zonnescherm",
-      "description": "sunshades (window coverings against the sun)."
+      "description": "parasols (raambedekking tegen de zon)."
     },
     "thermostat": {
       "title": "Thermostaat",
-      "description": "thermostats, either for the entire home or radiator-mounted."
+      "description": "thermostaten, voor het hele huis of op een radiator."
     },
     "tv": {
       "title": "TV",
-      "description": "TV/televisions."
+      "description": "TV/televisies."
     },
     "vacuumcleaner": {
       "title": "Stofzuiger",
-      "description": "automated devices which clean floors on demand."
+      "description": "geautomatiseerde apparaten die vloeren op verzoek reinigen."
     },
     "windowcoverings": {
       "title": "Raambekleding",
-      "description": "window coverings, for when the `curtains`, `blinds` or `sunshade` device class doesn't apply."
+      "description": "raambekleding, voor het geval de klassen 'gordijnen', 'jaloezieën' of 'jaloezieën' niet van toepassing zijn."
     }
   },
   "method": {

@@ -379,11 +379,11 @@
     },
     "remote": {
       "title": "Remote",
-      "description": "TV, Sunblind, Keyfob, etc. remote controls."
+      "description": "TV, blinds, remote control, etc. All\ntypes of remote controls. \""
     },
     "sensor": {
       "title": "Sensor",
-      "description": "sensors, e.g. a contact or motion sensor. As well as alarms!"
+      "description": "contact, motion, fire, CO  or any type of sensor. As well as alarms!"
     },
     "socket": {
       "title": "Wall Plug",
