@@ -1,3 +1,6 @@
+**2.1.704**
+- Complete category translations
+
 **2.1.703**
 - Implement nl language
 
