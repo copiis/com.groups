@@ -3,10 +3,10 @@
 
 With this app you can group devices with the same capabilities as one device.
 
-1. After installing, to add a new Group, click  + (add) upon the devices tab select "Group".
+1. After installing, to add a new Group, click  + (add) upon the devices tab select "< group >".
 2. Now select the group device's class. (e.g. Light).
 3. You will now see all the capabilities supported by this class. Now chose the ones you need. (e.g. Turned on" and "Dim level", "Temperature" ).
-4. On this page you will find all devices that have the capabilties you selected, simply select the devices you want to group.
+4. On this page you will find all devices that have the capabilities you selected, simply select the devices you want to group.
 5. On this final page you change change the icon of the device if you would like, or select next to use the default.
 6. Now you have one device to control all the grouped devices.
 
@@ -21,6 +21,11 @@ This app is based off of the original 'Device Groups' app by Swttt for Homey v1.
 
 ### Changelog
 
+**2.1.7**
+- NL transactions, pairing fixes.
+- Code consolidation and clean up
+- Remove superfluous information from library
+-
 
 **2.1.6**
 - Now polls grouped devices to ensure they are running/ready

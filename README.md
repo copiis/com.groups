@@ -22,7 +22,8 @@ This app is based off of the original 'Device Groups' app by Swttt for Homey v1.
 ### Changelog
 
 ##### 2.1
-
+- 2.1.700 : i18n and code clean up / comment. 
+- 2.1.600 : Pool Devices to ensure they exists & ready
 - 2.1.500 : Add settings Breadcrumbs
 - 2.1.400 : Save Settings back to devices
 - 2.1.300 : Set methods and pull values up.

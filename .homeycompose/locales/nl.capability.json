@@ -1,10 +1,10 @@
 {
     "onoff": {
-        "title" : "Turned on",
+        "title" : "Aangezet",
         "description" : "Whether a device is on or off."
     },
     "dim": {
-        "title" : "Dim level",
+        "title" : "Dim niveau",
         "description" : "Dims level of a device as a percentage of its full value"
     },
     "light_hue": {
@@ -12,175 +12,175 @@
         "description" : "The colour of the light"
     },
     "light_saturation": {
-        "title" : "Color Saturation",
+        "title" : "Kleurverzadiging",
         "description" : "The colour intensity"
     },
     "light_temperature": {
-        "title" : "Color Temperature",
+        "title" : "Kleurtemperatuur",
         "description" : "The white light temperature warm to cold as a decimal"
     },
     "light_mode": {
-        "title" : "Light mode",
-        "description" : "Switch between Color or Temperature mode"
+        "title" : "Lamp modus",
+        "description" : "Schakel tussen Kleur of Temperatuur modus"
     },
     "vacuumcleaner_state": {
         "title" : "Vacuum cleaner state",
         "description" : "The state of a a vacuum cleaner, either it is cleaning, spot cleaning, docked, charging or stopped"
     },
     "thermostat_mode": {
-        "title" : "Thermostat mode",
-        "description" : "Mode of the thermostat, either it is set to auto, heat, cool or off."
+        "title" : "Thermostaat modus",
+        "description" : "Modus van de thermostaat"
     },
     "target_temperature": {
-        "title" : "Target temperature",
+        "title" : "Ingestelde temperatuur",
         "description" : "Set the temperature which a device should target"
     },
     "measure_temperature": {
-        "title" : "Temperature",
-        "description" : "Temperature in celsius (°c)"
+        "title" : "Temperatuur",
+        "description" : "Temperatuur in graden Celsius (°c)"
     },
     "measure_co": {
         "title" : "Carbon monoxide",
-        "description" : "CO in Parts-per-million (ppm)"
+        "description" : "CO deeltjes per miljoen (ppm)"
     },
     "measure_co2": {
         "title" : "Carbon dioxide",
-        "description" : "CO₂ in Parts-per-million (ppm)"
+        "description" : "CO₂ deeltjes per miljoen (ppm)"
     },
     "measure_pm25": {
         "title" : "PM2.5",
-        "description" : "Atmospheric Particulate Matter (μg/m3)"
+        "description" : "Deeltjesvormige luchtverontreiniging (μg/m3)"
     },
     "measure_humidity": {
-        "title" : "Humidity",
-        "description" : "Humidity in percentage (%)"
+        "title" : "Luchtvochtigheid",
+        "description" : "Relatieve luchtvochtigheid (%)"
     },
     "measure_pressure": {
-        "title" : "Pressure",
-        "description" : "Pressure in millibar (mbar)"
+        "title" : "Druk",
+        "description" : "Druk in millibar (mbar)"
     },
     "measure_noise": {
-        "title" : "Noise",
-        "description" : "Noise in Decibel (db)"
+        "title" : "Geluid",
+        "description" : "Geluid in Decibel (db)"
     },
     "measure_rain": {
-        "title" : "Rain",
-        "description" : "Rain in millimeter (mm)"
+        "title" : "Regen",
+        "description" : "Regen in millimeter (mm)"
     },
     "measure_wind_strength": {
-        "title" : "Wind Strength",
-        "description" : "Wind Strength in Kilometer per hour (km/h)"
+        "title" : "Windsnelheid",
+        "description" : "Windsnelheid in Kilometer per uur (km/u)"
     },
     "measure_wind_angle": {
-        "title" : "Wind Angle",
-        "description" : "Wind Angle in Degrees (°)"
+        "title" : "Windrichting",
+        "description" : "Windrichting in Graden (°)"
     },
     "measure_gust_strength": {
-        "title" : "Gust Strength",
-        "description" : "Gust Strength n Kilometer per hour (km/h)"
+        "title" : "Windstoot kracht",
+        "description" : "Windstoot snelheid in Kilometer per uur (km/u)"
     },
     "measure_gust_angle": {
-        "title" : "Gust Angle",
-        "description" : "Gust Angle in Degrees (°)"
+        "title" : "Windstoot richting",
+        "description" : "Windstoot richting in Graden (°)"
     },
     "measure_battery": {
-        "title" : "Battery",
-        "description" : "Battery charge in percentage (%)"
+        "title" : "Accuniveau",
+        "description" : "Accuniveau in procenten (%)"
     },
     "measure_power": {
-        "title" : "Power",
-        "description" : "Power in Watt (W)"
+        "title" : "Vermogen",
+        "description" : "Vermogen in Watt (W)"
     },
     "measure_voltage": {
         "title" : "Voltage",
-        "description" : "Electric voltage in Volts (V)"
+        "description" : "Voltage (V)"
     },
     "measure_current": {
-        "title" : "Current",
-        "description" : "Electric current in Amps (A)"
+        "title" : "Stroom",
+        "description" : "Elektrische stroom (A)"
     },
     "measure_luminance": {
-        "title" : "Luminance",
-        "description" : "Luminance in Lux (lx)"
+        "title" : "Helderheid",
+        "description" : "Helderheid in Lux (lx)"
     },
     "measure_ultraviolet": {
         "title" : "Ultraviolet",
         "description" : "Ultraviolet in UV index (UVI)"
     },
     "measure_water": {
-        "title" : "Water",
-        "description" : "Water flow in Liters per minute (L/min)"
+        "title" : "Waterdoorstroming",
+        "description" : "Waterdoorstroming in Liters per minuut (L/min)"
     },
     "alarm_generic": {
-        "title" : "Generic Alarm",
-        "description" : "Generic Alarm"
+        "title" : "Algemeen Alarm",
+        "description" : "Algemeen alarm"
     },
     "alarm_motion": {
-        "title" : "Motion Alarm",
-        "description" : "Alarms when motion is detected"
+        "title" : "Bewegingsalarm",
+        "description" : "Gedetecteerde beweging"
     },
     "alarm_contact": {
         "title" : "Contact Alarm",
-        "description" : "Alarms when a Contact sensor is severed, e.g. when window or door is opened"
+        "description" : "Contact sensor, bijvoorbeeld voor ramen"
     },
     "alarm_co": {
         "title" : "CO Alarm",
-        "description" :  "Alarms when dangerous CO values have been detected"
+        "description" :  "Gaat af bij gevaarlijke concentraties CO"
     },
     "alarm_co2": {
         "title" : "CO₂ Alarm",
-        "description" :  "Alarms when dangerous CO₂ values have been detected"
+        "description" :  "Gaat af bij gevaarlijke concentraties CO₂"
     },
     "alarm_pm25": {
         "title" : "PM2.5 Alarm",
-        "description" : "Alarms when PM2.5 values exceeds threshold"
+        "description" : "Gaat af wanneer de PM2.5 waarde overschreden wordt"
     },
     "alarm_tamper": {
-        "title" : "Tamper Alarm",
-        "description" : "Alarms when tampering has been detected"
+        "title" : "Sabotagealarm",
+        "description" : "Gaat af als sabotage gedetecteerd wordt"
     },
     "alarm_smoke": {
-        "title" : "Smoke Alarm",
-        "description" : "Alarms when smoke has been detected"
+        "title" : "Rookmelder",
+        "description" : "Gaat af als er rook gedetecteerd wordt"
     },
     "alarm_fire": {
-        "title" : "Fire Alarm",
-        "description" : "Alarms when fire has been detected"
+        "title" : "Brandalarm",
+        "description" : "Gaat af als er brand gedetecteerd wordt"
     },
     "alarm_heat": {
-        "title" : "Heat Alarm",
-        "description" : "Alarms when extreme heat has been detected"
+        "title" : "Hittealarm",
+        "description" : "Gaat af als er extreme hitte gedetecteerd wordt"
     },
     "alarm_water": {
-        "title" : "Water Alarm",
-        "description" : "Alarms when water has been detected"
+        "title" : "Hittealarm",
+        "description" : "Gaat af als er water gedetecteerd wordt"
     },
     "alarm_battery": {
-        "title" : "Battery Alarm",
-        "description" : "Alarms when there is a battery warning, generally low battery"
+        "title" : "Batterij alarm",
+        "description" : "Geeft een batterijwaarschuwing"
     },
     "alarm_night": {
-        "title" : "Night Alarm",
-        "description" : "Alarms when it is night time"
+        "title" : "Nacht Alarm",
+        "description" : "Nacht Alarm"
     },
     "meter_power": {
-        "title": "Power Meter",
-        "description":"Power usage in kilowatt hour (kWh)"
+        "title": "Energiemeter",
+        "description":"Stroomverbuik in KiloWattUur (kWh)"
     },
     "meter_water": {
-        "title": "Water Meter",
-        "description": "Water usage in Cubic Meter (m³)"
+        "title": "Watermeter",
+        "description": "Water gebruik in Kubieke Meter (m³)"
     },
     "meter_gas": {
-        "title": "Gas Meter",
-        "description": "Gas usage in Cubic Meter (m³)"
+        "title": "Gasmeter",
+        "description": "Gas gebruik in Kubieke Meter (m³)"
     },
     "meter_rain": {
-        "title": "Rain Meter",
-        "description": "Rain in Cubic Meter (m³)"
+        "title": "Regenmeter",
+        "description": "Regen in Kubieke Meter (m³)"
     },
     "homealarm_state": {
-        "title": "Home Alarm state",
+        "title": "HThuisalarm status",
         "description": "Switch between armed, disarmed and partially armed"
     },
     "volume_set": {
@@ -188,31 +188,31 @@
         "description": "Set volume to"
     },
     "volume_up": {
-        "title": "Volume up",
+        "title": "Volume omhoog",
         "description": "Turn the volume up"
     },
     "volume_down": {
-        "title": "Volume down",
+        "title": "Volume omlaag",
         "description": "Turn the volume down"
     },
     "volume_mute": {
-        "title": "Volume muted",
+        "title": "Gedempt volume",
         "description": "Mute the volume"
     },
     "channel_up": {
-        "title": "Channel up",
+        "title": "Kanaal omhoog",
         "description": "Change the channel up one"
     },
     "channel_down": {
-        "title": "Channel down",
+        "title": "Kanaal omlaag",
         "description": "Change the channel down one"
     },
     "locked": {
-        "title" : "Locked",
-        "description" : "True when the lock is locked"
+        "title" : "Op slot",
+        "description" : "Geeft aan wanneer iets op slot is"
     },
     "lock_mode": {
-        "title" : "Lock mode",
+        "title" : "Slot modus",
         "description" : "Switch between Always locked, always unlocked and locked until unlocked modes"
     },
     "windowcoverings_state": {
@@ -220,67 +220,67 @@
         "description" :"Whether a window cover is up, down or idle"
     },
     "windowcoverings_tilt_up": {
-        "title" : "Window Coverings Tilt Up",
+        "title" : "Raambekleding kantelen omhoog",
         "description" : "Tilt Window Coverings Up"
     },
     "windowcoverings_tilt_down": {
-        "title" : "Window Coverings Tilt Down",
+        "title" : "Raambekleding kantelen naar beneden",
         "description" : "Tilt Window Coverings Down"
     },
     "windowcoverings_tilt_set": {
-        "title" : "Window Coverings Tilt Set",
+        "title" : "Kantelafdekking raambekleding",
         "description" : "Set the tilt value of the window covering"
     },
     "windowcoverings_closed": {
-        "title" : "Window Coverings Closed",
+        "title" : "Raambekleding gesloten",
         "description" : "Close the window coverings"
     },
     "windowcoverings_set": {
-        "title" : "Window Coverings Set",
+        "title" : "Raambekleding set",
         "description" : "Set the position of window coverings. 0% is closed, 100% is open"
     },
     "button": {
-        "title" : "Button",
+        "title" : "Knop",
         "description" : "A push button"
     },
     "speaker_playing": {
-        "title" : "Speaker Playing",
+        "title" : "Luidspreker spelen",
         "description" : "What the speaker is currently playing."
     },
     "speaker_next": {
-        "title" : "Speaker Next",
+        "title" : "Luidspreker Volgende",
         "description" :  "Go to next item."
     },
     "speaker_prev": {
-        "title" : "Speaker Previous",
+        "title" : "Luidspreker Vorige",
         "description" : "Go to previous item."
     },
     "speaker_shuffle": {
-        "title" : "Speaker Shuffle",
+        "title" : "Luidspreker shuffle",
         "description" : "Shuffle speaker playback."
     },
     "speaker_repeat": {
-        "title" : "Speaker Repeat",
+        "title" : "Luidspreker herhalen",
         "description" : "Set the repeat type, none, track or playlist."
     },
     "speaker_artist": {
-        "title" : "Speaker Artist",
+        "title" : "Luidspreker kunstenaar",
         "description" : "Which artist the speaker is currently playing."
     },
     "speaker_album": {
-        "title" : "Speaker Album",
+        "title" : "Luidsprekersalbum",
         "description" : "Which album the speaker is currently playing."
     },
     "speaker_track": {
-        "title" : "Speaker Track",
+        "title" : "Luidsprekerspoor",
         "description" : "Which track the speaker is currently playing."
     },
     "speaker_duration": {
-        "title" : "Speaker Duration",
+        "title" : "Luidspreker duur",
         "description" : "Which duration of the current item."
     },
     "speaker_position": {
-        "title" : "Speaker Position",
+        "title" : "Luidspreker positie",
         "description" : "The speaker's current position"
     }
 }

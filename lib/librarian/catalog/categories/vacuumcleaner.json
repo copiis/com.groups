@@ -1,13 +1,5 @@
 {
   "id" : "vacuumcleaner",
-  "title": {
-    "en": "Vacuum Cleaner",
-    "nl": "Stofzuiger"
-  },
-  "description": {
-    "en": "Use this device class for vacuum cleaners.",
-    "nl": "N/A"
-  },
   "icons" : [
     "vacuumcleaner/standard"
   ],

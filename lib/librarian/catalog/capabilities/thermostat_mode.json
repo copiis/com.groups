@@ -1,13 +1,6 @@
 {
+  "id": "",
   "type": "enum",
-  "title": {
-    "en": "Thermostat mode",
-    "nl": "Thermostaat modus"
-  },
-  "description": {
-    "en": "Mode of the thermostat",
-    "nl": "Modus van de thermostaat"
-  },
   "values": [
     {
       "id": "auto",

@@ -1,12 +1,5 @@
 {
-  "title": {
-    "en": "Album",
-    "nl": "Album"
-  },
-  "description": {
-    "en": "Current album.",
-    "nl": "N/A"
-  },
+  "id": "",
   "type": "string",
   "getable": true,
   "setable": false,

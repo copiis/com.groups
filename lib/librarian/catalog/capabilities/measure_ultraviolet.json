@@ -1,13 +1,6 @@
 {
+  "id": "",
   "type": "number",
-  "title": {
-    "en": "Ultraviolet",
-    "nl": "Ultraviolet"
-  },
-  "description": {
-    "en": "Ultraviolet in UV index (UVI)",
-    "nl": "N/A"
-  },
   "units": {
     "en": "UVI"
   },

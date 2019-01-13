@@ -1,13 +1,5 @@
 {
   "id" : "socket",
-  "title": {
-    "en": "Wall Plug",
-    "nl": "Schakeldoos"
-  },
-  "description": {
-    "en": "Use this device class for wall plugs and sockets.",
-    "nl": "N/A"
-  },
   "virtualTitle": {
     "en": "What's plugged in?",
     "nl": "Wat is er ingeplugd?"

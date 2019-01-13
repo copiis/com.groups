@@ -1,13 +1,6 @@
 {
+  "id": "",
   "type": "number",
-  "title": {
-    "en": "Noise",
-    "nl": "Geluid"
-  },
-  "description": {
-    "en": "Noise in Decibel (db)",
-    "nl": "Geluid in Decibel (db)"
-  },
   "units": {
     "en": "dB"
   },

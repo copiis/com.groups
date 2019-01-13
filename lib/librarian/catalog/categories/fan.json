@@ -1,13 +1,5 @@
 {
   "id" : "fan",
-  "title": {
-    "en": "Fan",
-    "nl": "Ventilator"
-  },
-  "description": {
-    "en": "Use this device class for fans that cool your home.",
-    "nl": "N/A"
-  },
   "icons" : [
     "fan/standard",
     "fan/standard/exhaust",

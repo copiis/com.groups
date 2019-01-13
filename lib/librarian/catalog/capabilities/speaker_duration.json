@@ -1,13 +1,6 @@
 {
+  "id": "",
   "type": "number",
-  "title": {
-    "en": "Duration",
-    "nl": "Lengte"
-  },
-  "description": {
-    "en": "Current duration.",
-    "nl": "N/A"
-  },
   "getable": true,
   "setable": false,
   "method" : false,

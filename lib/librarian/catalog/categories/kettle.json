@@ -1,13 +1,5 @@
 {
   "id" : "kettle",
-  "title": {
-    "en": "Kettle",
-    "nl": "Waterkoker"
-  },
-  "description": {
-    "en": "Use this device class for kettle devices, that can heat water.",
-    "nl": "N/A"
-  },
   "icons" : [
     "kettle/standard"
   ],

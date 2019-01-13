@@ -1,13 +1,5 @@
 {
   "id" : "speaker",
-  "title": {
-    "en": "Speaker",
-    "nl": "Speaker"
-  },
-  "description": {
-    "en": "Use this device class for devices that can play audio, such as music.",
-    "nl": "N/A"
-  },
   "icons" : [
     "speaker/standard"
   ],

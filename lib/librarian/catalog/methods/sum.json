@@ -1,12 +1,4 @@
 {
-  "title": {
-    "en": "Total Value",
-    "nl": "Totale waarde"
-  },
-  "description": {
-    "en": "The sum of all the grouped device values",
-    "nl": "N/A"
-  },
-  "value": "sum",
+  "id": "sum",
   "function": "sum"
 }

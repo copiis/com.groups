@@ -1,13 +1,6 @@
 {
+  "id": "",
   "type": "boolean",
-  "title": {
-    "en": "Turned on",
-    "nl": "Aangezet"
-  },
-  "description": {
-    "en": "Whether a device is on or off.",
-    "nl": "N/A"
-  },
   "getable": true,
   "setable": true,
   "method" : "any",

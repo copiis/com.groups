@@ -1,13 +1,5 @@
 {
   "id" : "coffeemachine",
-  "title": {
-    "en": "Coffee machine",
-    "nl": "Koffiemachine"
-  },
-  "description": {
-    "en": "Use this device class for coffee machines.",
-    "nl": "N/A"
-  },
   "icons" : [
     "coffeemachine/standard"
   ],

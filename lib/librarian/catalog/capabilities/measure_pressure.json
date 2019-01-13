@@ -1,13 +1,6 @@
 {
+  "id": "",
   "type": "number",
-  "title": {
-    "en": "Pressure",
-    "nl": "Druk"
-  },
-  "description": {
-    "en": "Pressure in millibar (mbar)",
-    "nl": "Druk in millibar (mbar)"
-  },
   "units": {
     "en": "mbar"
   },

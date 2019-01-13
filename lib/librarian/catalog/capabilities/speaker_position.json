@@ -1,13 +1,6 @@
 {
+  "id": "",
   "type": "number",
-  "title": {
-    "en": "Position",
-    "nl": "Positie"
-  },
-  "description": {
-    "en": "Current position",
-    "nl": "N/A"
-  },
   "getable": true,
   "setable": false,
   "method" : false,

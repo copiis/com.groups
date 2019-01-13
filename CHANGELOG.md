@@ -1,4 +1,9 @@
 **2.1.704**
+- Comment code
+- Remove superfluous method/category titles and descriptions.
+- Code consolidation and clean up
+
+**2.1.704**
 - Complete category translations
 
 **2.1.703**

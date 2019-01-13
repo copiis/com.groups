@@ -1,13 +1,5 @@
 {
   "id" : "light",
-  "title": {
-    "en": "Light",
-    "nl": "Lamp"
-  },
-  "description": {
-    "en": "Use this device class for lights",
-    "nl": "N/A"
-  },
   "capabilities" : [
     "onoff",
     "dim",

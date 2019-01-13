@@ -1,13 +1,6 @@
 {
+  "id": "",
   "type": "boolean",
-  "title": {
-    "en": "Motion Alarm",
-    "nl": "Bewegingsalarm"
-  },
-  "description": {
-    "en": "Detected motion",
-    "nl": "Gedetecteerde beweging"
-  },
   "getable": true,
   "setable": false,
   "method" : "any",

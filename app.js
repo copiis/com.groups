@@ -24,6 +24,7 @@ class Groups extends Homey.App {
         this.log('</onInit>');
     }
 
+
     /**
      * IF the API hasn't been set, get it otherwise just returned cached API for current homey.
      *
@@ -37,6 +38,7 @@ class Groups extends Homey.App {
         return this.api;
     }
 
+
     /**
      * Gets all API devices from the Homey
      *
@@ -49,6 +51,7 @@ class Groups extends Homey.App {
         const api = await this.getApi();
         return await api.devices.getDevices();
     }
+
 
     /**
      * Gets an API device from the APP, cache it
@@ -67,70 +70,6 @@ class Groups extends Homey.App {
         return this.devices[id];
     }
 
-    async getGroups() {
-        //return Homey.ManagerDrivers.getDriver('light').getDevices();
-    }
-    async getNewGroups() {
-
-        let devices = await this.getDevices();
-        this.groups = {};
-        for (let d in devices) {
-            if (devices[d].driverUri == 'homey:app:com.groups') {
-                this.groups[devices[d].id] = devices[d];
-            }
-        }
-
-        return this.groups;
-    }
-
-    async getCategory(id) {
-        let groups = await Homey.ManagerDrivers.getDriver(id).getDevices();
-        if (groups instanceof Error) {this.log(Error); throw groups;}
-        return groups;
-    }
-
-    async getGroup(id) {
-        let device = await Homey.ManagerDrivers.getDriver(id).getDevice({id});
-        if (device instanceof Error) {this.log(Error); throw device;}
-        return device;
-    }
-
-    async setDevicesForGroup(id, devices) {
-        let group = await this.getGroup(id);
-
-        // Find all devices that should be grouped.
-        let allDevices = await this.getDevices();
-
-        // Looks like vue (upon settings) is sending a padded array with undefined items
-        // Checks that the devices sent exist in allDevices, filters out any that do not.
-        let groupedDevices = Object.values(allDevices).filter(d => devices.includes(d.id));
-
-        let ids = [];
-        for (let i in groupedDevices) {
-            ids.push(groupedDevices[i].id);
-        }
-
-        group.settings.devices = ids;
-
-        // Update the group settings.
-        let result = await group.setSettings(group.settings);
-        await group.refresh();
-
-        return result;
-    }
-
-    async setMethodForCapabilityOfGroup(id, capabilities) {
-
-        let group = await this.getGroup(id);
-
-        group.settings.capabilities = capabilities;
-
-        // Update the group settings.
-        let result = await group.setSettings(group.settings);
-        await group.refresh();
-        return result;
-    }
-    
 
     /**
      * Primes the cache - then set watchers of when to clear it.

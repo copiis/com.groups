@@ -1,13 +1,5 @@
 {
   "id" : "thermostat",
-  "title": {
-    "en": "Thermostat",
-    "nl": "Thermostaat"
-  },
-  "description": {
-    "en": "Use this device class for thermostats, either for the entire home or radiator-mounted.",
-    "nl": "N/A"
-  },
   "icons" : [
     "thermostat/standard"
   ],

@@ -1,12 +1,4 @@
 {
-  "title": {
-    "en": "On if All",
-    "nl": "On if All"
-  },
-  "description": {
-    "en": "On if all devices are on. otherwise off",
-    "nl": "N/A"
-  },
-  "value": "all",
+  "id": "all",
   "function": "min"
 }

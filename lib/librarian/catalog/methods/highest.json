@@ -1,12 +1,4 @@
 {
-  "title": {
-    "en": "Highest Value",
-    "nl": "høyeste verdi"
-  },
-  "description": {
-    "en": "The highest value of the all the grouped device",
-    "nl": "N/A"
-  },
-  "value": "highest",
+  "id": "highest",
   "function": "max"
 }

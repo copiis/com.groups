@@ -1,12 +1,4 @@
 {
-  "title": {
-    "en": "Median Average",
-    "nl": "Mediaan"
-  },
-  "description": {
-    "en": "The value of the device in the middle",
-    "nl": "N/A"
-  },
-  "value": "median",
+  "id": "median",
   "function": "median"
 }
