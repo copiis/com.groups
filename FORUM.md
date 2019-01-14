@@ -14,11 +14,11 @@ Please note that this app now only supports v2, while legacy code should continu
 
 | Branch | Version | Status | Notes|
 |---|---|---|---|
-|**Stable** |1.1.0|:white_check_mark:|Not compatible with v2|
-|**Beta** |2.1.704|:white_check_mark:|Awaiting approval to 2.1.706|
-|**Alpha** |2.1.706|:ballot_box_with_check:|Release candidate|
-|**Omega** |2.1.703|:grey_question:|Refactor code|
-|**Master** |n/a|:heavy_multiplication_x:|Here there be dragons.|
+|**Stable** |2.1.707|:white_check_mark:||
+|**Beta** |2.1.707|:white_check_mark:||
+|**Alpha** |2.1.707|:white_check_mark:||
+|**Omega** |2.1.707|:white_check_mark:||
+|**Master** |n/a|:heavy_multiplication_x:||
 
 
 ## Notes
