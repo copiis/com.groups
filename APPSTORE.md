@@ -25,7 +25,8 @@ This app is based off of the original 'Device Groups' app by Swttt for Homey v1.
 - NL transactions, pairing fixes.
 - Code consolidation and clean up
 - Remove superfluous information from library
--
+- Fixes (#26)
+
 
 **2.1.6**
 - Now polls grouped devices to ensure they are running/ready

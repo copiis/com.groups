@@ -10,7 +10,7 @@ const Librarian = require('./lib/librarian');
 class Groups extends Homey.App {
 
     onInit() {
-        this.log('<onInit>');
+        this.log('<'+this.constructor.name+'onInit>');
 
         // Set our library reference
         this.library = new Librarian();
@@ -101,6 +101,3 @@ class Groups extends Homey.App {
 }
 
 module.exports = Groups;
-
-
-

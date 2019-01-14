@@ -13,7 +13,7 @@ class LightDriver extends Group.Driver {
     }
 
     onPair( socket ) {
-        console.log('LightDriver onPair');
+        console.log('<LightDriver:onPair>');
         super.onPair(socket);
 
     }
