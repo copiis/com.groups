@@ -33,6 +33,7 @@ This app is based off of the original 'Device Groups' app by Swttt for Homey v1.
 - Fixes (#26)
 - Remove debug logging, clean up other logging.
 - Update Documentation
+- Remove relay device/driver
 
 **2.1.6**
 - Now polls grouped devices to ensure they are running/ready
@@ -45,6 +46,7 @@ This app is based off of the original 'Device Groups' app by Swttt for Homey v1.
 - Add Changelog
 - Add local css/js files
 - In app settings - Hide breadcrumbs if there are no groups
+
 
 **2.1.4**
 - Set Settings back to devices

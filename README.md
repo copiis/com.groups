@@ -35,6 +35,7 @@ This app is based off of the original 'Device Groups' app by Swttt for Homey v1.
     - Fixes (#26)
     - Remove debug logging, clean up other logging.
     - Update read me
+    - Remove relay device/driver
 
 - 2.1.6
     - Add Polling timeouts which will query all devices checking to see if they are available.(#19)

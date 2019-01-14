@@ -1,3 +1,6 @@
+**2.1.707**
+- Remove relay device/driver
+
 **2.1.706**
 - Update readme.
 
