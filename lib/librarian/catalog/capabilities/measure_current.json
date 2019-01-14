@@ -1,13 +1,6 @@
 {
+  "id": "",
   "type": "number",
-  "title": {
-    "en": "Current",
-    "nl": "Stroom"
-  },
-  "description": {
-    "en": "Electric current (A)",
-    "nl": "Elektrische stroom (A)"
-  },
   "units": {
     "en": "A"
   },

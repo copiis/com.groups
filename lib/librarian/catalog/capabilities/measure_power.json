@@ -1,13 +1,6 @@
 {
+  "id": "",
   "type": "number",
-  "title": {
-    "en": "Power",
-    "nl": "Energie"
-  },
-  "description": {
-    "en": "Power in Watt (W)",
-    "nl": "Vermogen in Watt (W)"
-  },
   "units": {
     "en": "W"
   },

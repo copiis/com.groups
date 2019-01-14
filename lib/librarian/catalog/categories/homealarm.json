@@ -1,12 +1,5 @@
 {
-  "title": {
-    "en": "Home Security",
-    "nl": "Huisbeveiliging"
-  },
-  "description": {
-    "en": "Use this device class for home alarm systems.",
-    "nl": "N/A"
-  },
+  "id" : "homealarm",
   "icons" : [
     "homealarm/standard",
     "homealarm/standard/simple",

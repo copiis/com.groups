@@ -1,13 +1,6 @@
 {
+  "id": "",
   "type": "number",
-  "title": {
-    "en": "Voltage",
-    "nl": "Voltage"
-  },
-  "description": {
-    "en": "Voltage (V)",
-    "nl": "Voltage (V)"
-  },
   "units": {
     "en": "V"
   },

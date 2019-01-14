@@ -1,13 +1,6 @@
 {
+  "id": "",
   "type": "boolean",
-  "title": {
-    "en": "Night Alarm",
-    "nl": "Nacht Alarm"
-  },
-  "description": {
-    "en": "True when it is night",
-    "nl": "Gaat af als het nacht is"
-  },
   "getable": true,
   "setable": false,
   "method" : "any",

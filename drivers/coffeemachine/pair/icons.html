@@ -1,49 +1,74 @@
 <style>
-  [v-cloak] {
-    display: none;
-  }
+    [v-cloak] {
+        display: none;
+    }
+
+
+    #icons-list {
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+    .device.tile {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 2.5px;
+    }
+
+    .device.tile .icon.bg {
+        width: 5em;
+        height: 5em;
+    }
+
+
 </style>
 <script>
 
-  Homey.setTitle('Choose your icon');
+    Homey.showLoadingOverlay();
+    Homey.setTitle( Homey.__("pair.icons.title") );
 
-  Homey.emit('icons.initialised', null, function (err, result) {
+    $('#hy-overlay-loading-message').html( Homey.__("pair.icons.loading") );
 
-	var allIcons = result;
+    Homey.emit('icons.initialised', null, function (err, result) {
 
-	new Vue({
-	  el      : '#all-icons',
-	  data    : {
-		isLoading : false,
-		icons: result,
-		i18n      : Homey.getLanguage(function (err, result) {
-		  return (err) ? 'en' : result;
-		}),
-	  },
-	  methods : {
-		addClass(deviceclass) {
-		  Homey.emit('icons.changed', {'icon': deviceclass}, function (err, result) {
-			if(err){console.log(err); return;}
-			Homey.nextView();
-		  });
-		}
-	  }
-	});
-  });
+        var allIcons = result;
+
+        new Vue({
+            el: '#all-icons',
+            data: {
+                icons: result,
+            },
+            mounted() {
+                Homey.hideLoadingOverlay();
+            },
+            methods: {
+                addClass(deviceclass) {
+                    Homey.emit('icons.changed', {'icon': deviceclass}, function (err, result) {
+                        if (err) {
+                            console.log(err);
+                            return;
+                        }
+                        Homey.nextView();
+                    });
+                }
+            }
+        });
+    });
 
 </script>
 
 <div id="all-icons">
-  <i v-if='isLoading' class="loading fa fa-cog fa-spin"></i>
-  <template v-cloak>
-    <ul id="icons-list" style="display:flex;flex-wrap:wrap;justify-content: center;">
-      <li v-for="(value, key) in icons" v-on:click="addClass(value)" class="device" style="align-items:center;justify-content:center;height: 100%;display: flex; margin: 2.5px;">
-        <div class="content">
-          <div class="icon-wrap">
-            <div class="icon bg " v-bind:style="{WebkitMaskImage: 'url(' + key + ')'}" style="width:5em;height:5em;"></div>
-          </div>
-        </div>
-      </li>
-    </ul>
-  </template>
+    <template v-cloak>
+        <ul id="icons-list">
+            <li v-for="(value, key) in icons" v-on:click="addClass(value)" class="device tile">
+                <div class="content">
+                    <div class="icon-wrap">
+                        <div class="icon bg " v-bind:style="{WebkitMaskImage: 'url(' + key + ')'}"></div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </template>
 </div>

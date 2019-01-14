@@ -1,12 +1,5 @@
 {
-  "title": {
-    "en": "TV",
-    "nl": "TV"
-  },
-  "description": {
-    "en": "Use this device class for TVs.",
-    "nl": "N/A"
-  },
+
   "icons" : [
     "tv/standard"
   ],

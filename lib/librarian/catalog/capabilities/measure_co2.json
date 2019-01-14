@@ -1,13 +1,6 @@
 {
+  "id": "",
   "type": "number",
-  "title": {
-    "en": "CO2",
-    "nl": "CO2"
-  },
-  "description": {
-    "en": "CO2 in Parts-per-million (ppm)",
-    "nl": "CO2 deeltjes per miljoen (ppm)"
-  },
   "units": {
     "en": "ppm"
   },

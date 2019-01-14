@@ -1,0 +1,22 @@
+{
+  "capabilities": {
+    "title": "Selecteer de mogelijkheden van de groep",
+    "loading": "laden"
+  },
+  "devices": {
+    "title": "Selecteer de apparaten voor deze groep",
+    "loading": "Ik verzamel al de apparaten met deze mogelijkheden",
+    "empty": {
+      "title": "Sorry geen apparaten gevonden",
+      "description": "We kunnen geen apparaten vinden met deze mogelijkheden, druk op ‘vorige’ om terug te gaan."
+    }
+  },
+  "icons": {
+    "title": "Kies je icoon",
+    "loading": "mogelijke iconen worden geladen"
+  },
+  "group": {
+    "title": "Er word een groep gecreëerd met jou apparaten..",
+    "loading": "Het toevoegen van deze nieuwe groep duurt een paar seconden."
+  }
+}

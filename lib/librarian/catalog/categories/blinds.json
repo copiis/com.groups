@@ -1,12 +1,5 @@
 {
-  "title": {
-    "en": "Blinds",
-    "nl": "Jaloezieën & Lamellen"
-  },
-  "description": {
-    "en": "Use this device class for blinds, both horizontal and vertical.",
-    "nl":  "N/A"
-  },
+  "id" : "blinds",
   "icons" : [
     "blinds/standard"
   ],

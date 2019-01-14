@@ -1,12 +1,6 @@
 {
+  "id": "",
   "type": "enum",
-  "title": {
-    "en": "Repeat"
-  },
-  "description": {
-      "en": "Set the repeat type, none, track or playlist.",
-      "nl": "N/A"
-  },
   "values": [
 	{
 		"id": "none",

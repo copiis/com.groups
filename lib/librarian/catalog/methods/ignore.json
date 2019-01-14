@@ -1,12 +1,4 @@
 {
-  "title": {
-      "en": "Ignore Devices",
-      "nl": "Ignore Devices"
-  },
-  "description": {
-    "en": "Don't update, only use values set by the card",
-    "nl": "N/A"
-  },
-  "value": "ignore",
+  "id": "ignore",
   "function": "ignore"
 }

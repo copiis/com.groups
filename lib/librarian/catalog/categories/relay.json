@@ -1,12 +1,5 @@
 {
-  "title": {
-    "en": "Relay",
-    "nl": "Relais"
-  },
-  "description": {
-    "en": "Use this device class for relays, which are connected to another device.",
-    "nl": "N/A"
-  },
+  "id" : "relay",
   "virtualTitle": {
     "en": "What's connected?",
     "nl": "Wat is er verbonden?"

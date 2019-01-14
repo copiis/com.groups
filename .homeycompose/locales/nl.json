@@ -1,0 +1,20 @@
+{
+  "_" : {
+    "about" : "Over",
+    "group" : "Groep",
+    "groups": "Groepen",
+    "group name": "Groepsnaam",
+    "capability" : "Optie",
+    "capabilities" : "Opties",
+    "category": "Categorie",
+    "categories": "Categorieën",
+    "device": "Apparaat",
+    "devices": "Apparaten",
+    "icon" : "Icoon",
+    "icons": "iconen",
+    "other": "Anders",
+    "unavailable": "Niet beschikbaar",
+    "offline": "offline",
+    "sorry" : "Sorry je hebt nog geen groepen gecreëerd, maak eerst een groep aan en kom daarna terug om deze aan te passen."
+  }
+}

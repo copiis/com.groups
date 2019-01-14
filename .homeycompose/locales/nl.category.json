@@ -1,0 +1,102 @@
+{
+    "amplifier": {
+        "title": "Versterker",
+        "description": "apparaat voor audioversterking."
+    },
+    "blinds": {
+        "title": "Jaloezieën & Lamellen",
+        "description": "blinderingen, zowel horizontaal als verticaal"
+    },
+    "button": {
+        "title": "Knop",
+        "description": "knoppen en andere items die geen status hebben."
+    },
+    "coffeemachine": {
+        "title": "Koffiemachine",
+        "description": "koffiemachines zijn kooktoestellen voor het zetten van koffie."
+    },
+    "curtain": {
+        "title": "Gordijnen",
+        "description": "elektrische gordijnen, deze bewegen het gordijn over een rails."
+    },
+    "doorbell": {
+        "title": "Deurbel",
+        "description": "deurbellen, en apparaten welke aankondigen dat er op een knop is gedrukt."
+    },
+    "fan": {
+        "title": "Ventilator",
+        "description": "ventilator welke je huis koelt."
+    },
+    "garagedoor": {
+        "title": "Garagedeur",
+        "description": "garagedeuren en andere automatische deur en poort openers."
+    },
+    "heater": {
+        "title": "Verwarmer",
+        "description": "Verwarmers en andere apparaten welke je huis verwarmen."
+    },
+    "homealarm": {
+        "title": "Huisbeveiliging",
+        "description": "beveiliging systeem voor je woning."
+    },
+    "homeenergymonitor": {
+        "title": "Energiemonitor",
+        "description": "Apparaat die je energie verbruik bijhoud."
+    },
+    "kettle": {
+        "title": "Waterkoker",
+        "description": "waterkokers en andere apparaten die water verwarmen."
+    },
+    "light": {
+        "title": "Lamp",
+        "description": "een verlichtingsmiddel of bron."
+    },
+    "lock": {
+        "title": "Slot",
+        "description": "apparaat met of voor een slot."
+    },
+    "other": {
+        "title": "Overig",
+        "description": "apparaten die niet in een andere klasse passen."
+    },
+    "relay": {
+        "title": "Relais",
+        "description": "relais welke zijn verbonden met een ander apparaat ."
+    },
+    "remote": {
+        "title": "Afstandsbediening",
+        "description": "TV, jaloezieën, sleutelhanger of elk type afstandsbediening."
+    },
+    "sensor": {
+        "title": "Sensor",
+        "description": "contact, beweging, vuur, CO of elk type sensor. Evenals alarmen!"
+    },
+    "socket": {
+        "title": "Schakeldoos",
+        "description": "muurpluggen en stopcontacten.\n"
+    },
+    "speaker": {
+        "title": "Speaker",
+        "description": "apparaten die audio kunnen afspelen, zoals muziek."
+    },
+    "sunshade": {
+        "title": "Zonnescherm",
+        "description": "parasols (raambedekking tegen de zon)."
+    },
+    "thermostat": {
+        "title": "Thermostaat",
+        "description": "thermostaten, voor het hele huis of op een radiator."
+    },
+    "tv": {
+        "title": "TV",
+        "description": "TV/televisies."
+    },
+    "vacuumcleaner": {
+        "title": "Stofzuiger",
+        "description": "geautomatiseerde apparaten die vloeren op verzoek reinigen."
+    },
+    "windowcoverings": {
+        "title": "Raambekleding",
+        "description": "raambekleding, voor het geval de klassen 'gordijnen', 'jaloezieën' of 'jaloezieën' niet van toepassing zijn."
+    }
+}

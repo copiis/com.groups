@@ -1,13 +1,6 @@
 {
+  "id": "",
   "type": "number",
-  "title": {
-    "en": "Luminance",
-    "nl": "Helderheid"
-  },
-  "description": {
-    "en": "Luminance in Lux (lx)",
-    "nl": "Helderheid in Lux (lx)"
-  },
   "units": {
     "en": "lx"
   },

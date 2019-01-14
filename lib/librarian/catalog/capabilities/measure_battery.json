@@ -1,13 +1,6 @@
 {
+  "id": "",
   "type": "number",
-  "title": {
-    "en": "Battery",
-    "nl": "Accuniveau"
-  },
-  "description": {
-    "en": "Battery charge in percentage (%)",
-    "nl": "Accuniveau in procenten (%)"
-  },
   "units": {
     "en": "%"
   },

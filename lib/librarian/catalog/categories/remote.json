@@ -1,12 +1,5 @@
 {
-  "title": {
-    "en": "Remote",
-    "nl": "Afstandsbediening"
-  },
-  "description": {
-    "en": "Use this device class for (TV/Sunblind/Keyfob etc.) remotes.",
-    "nl": "N/A"
-  },
+  "id" : "remote",
   "icons" : [
     "remote/standard"
   ],

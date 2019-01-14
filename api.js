@@ -2,51 +2,6 @@ const Homey = require('homey');
 
 module.exports = [
   {
-    // Get all groups.
-    method : 'GET',
-    path   : '/group',
-    fn     : async (args) => {
-      let groups = await Homey.app.getGroups();
-      return groups.map(group => ({
-        id    : group.getData().id,
-        name  : group.getName(),
-        class : group.getClass(),
-      }));
-    }
-  },
-  {
-    // Get a specific group.
-    method : 'GET',
-    path   : '/group/:id',
-    fn     : async (args) => {
-      let group = await Homey.app.getGroup(args.params.id);
-      return {
-        id           : args.params.id,
-        name         : group.getName(),
-        class        : group.getClass(),
-        capabilities : group.getCapabilities(),
-        data         : group.getData(),
-        settings     : group.getSettings(),
-      };
-    }
-  },
-  {
-    // Update the devices in a  group.
-    method : 'PUT',
-    path   : '/group/:id',
-    fn     : async (args) => {
-      await Homey.app.setDevicesForGroup(args.params.id, args.body);
-    }
-  },
-  {
-    // Update the group capability methods.
-    method : 'PUT',
-    path   : '/group/:id/capabilities',
-    fn     : async (args) => {
-      await Homey.app.setMethodForCapabilityOfGroup(args.params.id, args.body);
-    }
-  },
-  {
     // Get a list of all devices.
     method : 'GET',
     path   : '/devices',
@@ -56,10 +11,25 @@ module.exports = [
     }
   },
   {
+    // Get the library helper
     method : 'GET',
     path   : '/library',
     fn     : async (args) => {
       return await Homey.app.library.getJSON();
     }
   },
+  {
+    // We cant save the settings using  await api.devices.setDeviceSettings({id: args.params.id, settings: args.body});
+    // As the SDK doesnt have this scope to the webAPI.
+    method : 'PUT',
+    path   : '/settings/:driver',
+    fn     : async (args) => {
+      let group = await Homey.ManagerDrivers.getDriver(args.params.driver).getDevice(args.body.data);
+      let result = await group.setSettings(args.body.settings);
+
+      console.log('calling refresh');
+      await group.refresh();
+      return result;
+    }
+  }
 ]

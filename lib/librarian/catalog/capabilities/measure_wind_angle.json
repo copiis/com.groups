@@ -1,13 +1,6 @@
 {
+  "id": "",
   "type": "number",
-  "title": {
-    "en": "Wind Angle",
-    "nl": "Windrichting"
-  },
-  "description": {
-    "en": "Wind Angle in Degrees (°)",
-    "nl": "Windrichting in Graden (°)"
-  },
   "units": {
     "en": "°"
   },

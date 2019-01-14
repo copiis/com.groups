@@ -1,13 +1,6 @@
 {
+  "id": "",
   "type": "number",
-  "title": {
-    "en": "Temperature",
-    "nl": "Temperatuur"
-  },
-  "description": {
-    "en": "Temperature in celsius",
-    "nl": "Description Translate Required"
-  },
   "units": {
     "en": "°C"
   },

@@ -1,12 +1,5 @@
 {
-  "title": {
-    "en": "Curtains",
-    "nl": "Gordijnen"
-  },
-  "description": {
-    "en": "Use this device class for curtains.",
-    "nl": "N/A"
-  },
+  "id" : "curtain",
   "icons" : [
     "curtain/standard"
   ],

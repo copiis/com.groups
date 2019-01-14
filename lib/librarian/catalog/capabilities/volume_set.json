@@ -1,13 +1,6 @@
 {
-  "title": {
-    "en": "Set volume",
-    "nl": "Set volume"
-  },
+  "id": "",
   "type": "number",
-  "description": {
-    "en": "Volume",
-    "nl": "Volume"
-  },
   "min": 0,
   "max": 1,
   "decimals": 2,

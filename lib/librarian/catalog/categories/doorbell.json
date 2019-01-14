@@ -1,12 +1,5 @@
 {
-  "title": {
-    "en": "Doorbell",
-    "nl": "Deurbel"
-  },
-  "description": {
-    "en": "Use this device class for doorbells, usually together with the `button` capability.",
-    "nl": "N/A"
-  },
+  "id" : "doorbell",
   "icons" : [
     "doorbell/standard"
   ],

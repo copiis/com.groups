@@ -1,13 +1,6 @@
 {
+  "id": "",
   "type": "string",
-  "title": {
-    "en": "Track",
-    "nl": "Track"
-  },
-  "description": {
-    "en": "Current Track.",
-    "nl": "N/A"
-  },
   "getable": true,
   "setable": false,
   "method" : false,

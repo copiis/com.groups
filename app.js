@@ -10,20 +10,25 @@ const Librarian = require('./lib/librarian');
 class Groups extends Homey.App {
 
     onInit() {
-        this.log('Device groups is running...');
+        this.log('<'+this.constructor.name+'>');
 
         // Set our library reference
         this.library = new Librarian();
-
-        // Force i18n to en or nl, as we are accessing the i18n directly,
-        this.i18n = (Homey.ManagerI18n.getLanguage() === 'nl') ? 'nl' : 'en';
 
         // Prime the API into memory, set its events.
         this.cache();
 
         // Initialise the devices objects.
         this.devices = {};
+
     }
+
+
+    trace(message) {
+        var trace = new Error().stack, caller = stack.split('\n')[2].trim();
+        this.log('<' + caller + '>' + message);
+    }
+
 
     /**
      * IF the API hasn't been set, get it otherwise just returned cached API for current homey.
@@ -38,6 +43,7 @@ class Groups extends Homey.App {
         return this.api;
     }
 
+
     /**
      * Gets all API devices from the Homey
      *
@@ -50,6 +56,7 @@ class Groups extends Homey.App {
         const api = await this.getApi();
         return await api.devices.getDevices();
     }
+
 
     /**
      * Gets an API device from the APP, cache it
@@ -68,57 +75,12 @@ class Groups extends Homey.App {
         return this.devices[id];
     }
 
-    async getGroups() {
-        //return Homey.ManagerDrivers.getDriver('light').getDevices();
-    }
-
-    async getGroup(id) {
-        let device = await Homey.ManagerDrivers.getDriver('light').getDevice({id});
-        if (device instanceof Error) throw device;
-        return device;
-    }
-
-    async setDevicesForGroup(id, devices) {
-        let group = await this.getGroup(id);
-
-        // Find all devices that should be grouped.
-        let allDevices = await this.getDevices();
-
-        // Looks like vue (upon settings) is sending a padded array with undefined items
-        // Checks that the devices sent exist in allDevices, filters out any that do not.
-        let groupedDevices = Object.values(allDevices).filter(d => devices.includes(d.id));
-
-        let ids = [];
-        for (let i in groupedDevices) {
-            ids.push(groupedDevices[i].id);
-        }
-
-        group.settings.devices = ids;
-
-        // Update the group settings.
-        let result = await group.setSettings(group.settings);
-        await group.refresh();
-
-        return result;
-    }
-
-    async setMethodForCapabilityOfGroup(id, capabilities) {
-
-        let group = await this.getGroup(id);
-
-        group.settings.capabilities = capabilities;
-
-        // Update the group settings.
-        let result = await group.setSettings(group.settings);
-        await group.refresh();
-        return result;
-    }
 
     /**
      * Primes the cache - then set watchers of when to clear it.
      *
      * When ever a device is added/deleted from Home, ensure that the cache is cleared
-     * so we can then add thw new devices to a group, or stop old device from being added.
+     * so we can then add the new devices to a group, or stop old device from being added.
      *
      * Will also reset the cache when we add a new group (as it is a device).
      */
@@ -127,13 +89,15 @@ class Groups extends Homey.App {
         this.getApi().then((api) => {
 
             // When a new device is added to homey, clear the cache
-            api.devices.on('device.create', async (id) => {
+            api.devices.on('device.create', async (device) => {
+                console.log('device.create: ' + device.name);
                 this.api = false;
             });
 
             // when a device is deleted from homey, clear the cache.
             // @todo investigate removing all devices from settings of groups which have been deleted.
-            api.devices.on('device.delete', async (id) => {
+            api.devices.on('device.delete', async (device) => {
+                console.log('device.delete: ' + device);
                 this.api = false;
             });
         })
@@ -142,6 +106,3 @@ class Groups extends Homey.App {
 }
 
 module.exports = Groups;
-
-
-

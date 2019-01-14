@@ -1,13 +1,6 @@
 {
+  "id": "",
   "type": "number",
-  "title": {
-    "en": "Target temperature",
-    "nl": "Ingestelde temperatuur"
-  },
-  "description": {
-    "en": "Set the temperature which a device should target",
-    "nl": "N/A"
-  },
   "units": {
     "en": "°C"
   },

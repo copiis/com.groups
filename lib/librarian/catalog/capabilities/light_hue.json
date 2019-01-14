@@ -1,13 +1,6 @@
 {
+  "id": "",
   "type": "number",
-  "title": {
-    "en": "Hue",
-    "nl": "Hue"
-  },
-  "description": {
-    "en": "The colour of the light",
-    "nl": "N/A"
-  },
   "min": 0,
   "max": 1,
   "decimals": 2,
