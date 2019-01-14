@@ -15,9 +15,9 @@ Please note that this app now only supports v2, while legacy code should continu
 | Branch | Version | Status | Notes|
 |---|---|---|---|
 |**Stable** |1.1.0|:white_check_mark:|Not compatible with v2|
-|**Beta** |2.0.210|:white_check_mark:|Initial v2 support|
-|**Alpha** |2.1.601|:ballot_box_with_check:|Bug Fixes.|
-|**Omega** |2.1.601|:grey_question:|Poll devices to ensure they are ready|
+|**Beta** |2.1.704|:white_check_mark:|Awaiting approval to 2.1.706|
+|**Alpha** |2.1.706|:ballot_box_with_check:|Release candidate|
+|**Omega** |2.1.703|:grey_question:|Refactor code|
 |**Master** |n/a|:heavy_multiplication_x:|Here there be dragons.|
 
 
@@ -31,7 +31,7 @@ When changing from v1.10 to the beta, you will have to re-create your groups.
 1. After installing, to add a new Group, click  + (add) upon the devices tab select "Group".
 2. Now select the group device's class. (e.g. Light).
 3. You will now see all the capabilities supported by this class. Now chose the ones you need. (e.g. Turned on" and "Dim level", "Temperature" ).
-4. On this page you will find all devices that have the capabilties you selected, simply select the devices you want to group.
+4. On this page you will find all devices that have the capabilities you selected, simply select the devices you want to group.
 5. On this final page you change change the icon of the device if you would like, or select next to use the default.
 6. Now you have one device to control all the grouped devices.
 
@@ -66,7 +66,7 @@ Your group cards will now give feedback if something changes with in the group, 
 
 _eg. In a grouped set of Hue lights, if you change the colour of the lights to red with in the Hue app, your device group card will now show as red._
 
-### :negative_squared_cross_mark: Choose how information is display method
+### :white_check_mark: Choose how information is display method
 
 You can now choose how each groups capability will be reported back to you.
 
@@ -74,15 +74,13 @@ _eg. Set the grouped temperature sensors to show the average temperature, but th
 _eg. Show the total amount of power used for all grouped lights, but median average dim levels_
 _eg. Only set the light card on if all lights are on, but turn on the grouped motion sensors if any detect motion._
 
-<ins>Currently available for testing upon the alpha branch.</ins>
-
 ### :white_check_mark: See more information, quicker.
 You can now click on a group's settings to see which devices, which capabilities have been included and which method is being used to display the results. As always you can still change the values from the app settings, along with which method is being used.
 
-### :negative_squared_cross_mark: Choose your language.
+### :white_check_mark: Choose your language.
 Added (technical) support for NL, please note - I don't speak Dutch, and adding translations is a work in progress.
 
-<ins>In-Progress thanks to @Jaxc .</ins>
+In-Progress thanks to @Jaxc .
 
 ### Other
 
@@ -91,8 +89,6 @@ Lots of other small fixes, and features
 Otherwise everything else is as advertised in the post, hit me up on Slack (@jamie) if you have any questions or issues.
 
 Finally if you could let me know what does work, as well as what doesn’t, it would be really helpful as I am unable to test some devices myself.
-
-
 
 ## Bugs
 

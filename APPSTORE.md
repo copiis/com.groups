@@ -5,15 +5,20 @@ With this app you can group devices with the same capabilities as one device.
 
 1. After installing, to add a new Group, click  + (add) upon the devices tab select "< group >".
 2. Now select the group device's class. (e.g. Light).
-3. You will now see all the capabilities supported by this class. Now chose the ones you need. (e.g. Turned on" and "Dim level", "Temperature" ).
-4. On this page you will find all devices that have the capabilities you selected, simply select the devices you want to group.
-5. On this final page you change change the icon of the device if you would like, or select next to use the default.
+3. You will now see all the capabilities supported by this class. Chose the ones you need. (e.g. Turned on" and "Dim level", "Temperature" ).
+4. Displayed upon the next page are all devices that have *all* the capabilities you selected, simply select the devices you want to group.
+5. On the final page you change change the icon of the device if you would like, or select next to use the default <group> icon.
 6. Now you have one device to control all the grouped devices.
 
-### Group Settings
+### Settings
 
-There are two sets of settings associated with device groups, first the settings are available from the group, which offers overview information only.
-The second more important method is currently unavailable due to a bug in the Homey v2 core.
+There are two sets of settings associated with device groups, first the settings are available from the group, which offers overview information only.The second more important method can be accessed from the application settings, [More -> Settings -> <group>]
+
+From with in the settings you can not only update which devices are in which groups, but you also have much more control on how the group will report information back to you.
+
+For example, should a group which consists of contact sensors trigger when one contact sensor alarms or when all of them do? Or perhaps you would like a group of temperature sensors to show the minimum value rather then the average.
+
+Open up the settings, click upon the group category (eg. sensor or light) all the groups of that type will show. Click upon the group you would like to edit.
 
 ### Contributions
 
@@ -27,6 +32,7 @@ This app is based off of the original 'Device Groups' app by Swttt for Homey v1.
 - Remove superfluous information from library
 - Fixes (#26)
 - Remove debug logging, clean up other logging.
+- Update Documentation
 
 **2.1.6**
 - Now polls grouped devices to ensure they are running/ready
@@ -56,7 +62,7 @@ This app is based off of the original 'Device Groups' app by Swttt for Homey v1.
 - Update settings to use new i18n subsystem.
 
 **2.0.2**
-- Beta Release
+- Tag Beta Release
 
 **2.0.1**
 - Disabled changing a devices settings.

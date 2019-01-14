@@ -1,4 +1,7 @@
-**2.1.704**
+**2.1.706**
+- Update readme.
+
+**2.1.705**
 - Comment code
 - Remove superfluous method/category titles and descriptions.
 - Code consolidation and clean up
