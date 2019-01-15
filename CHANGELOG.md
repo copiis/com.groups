@@ -1,4 +1,7 @@
 **2.1.707**
+- New large/small appstore image
+
+**2.1.707**
 - Remove relay device/driver
 
 **2.1.706**
