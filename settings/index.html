@@ -91,7 +91,7 @@
                     </div>
                     <div class="row align-items-center">
                         <div class="col mt-4">
-                            <span v-for="device in group.settings.devices" class="list-span"><span v-if="devices[device]">{{ devices[device].name }}</span><span v-else>[DELETED]</span></span>
+                            <span v-for="device in group.settings.devices" class="list-span"><span v-if="devices[device]">{{ devices[device].name }}</span><span v-else>{{ __('settings.deleted') }}</span></span>
                         </div>
                     </div>
                     <div class="row align-items-center" v-if="group.settings.notes.length">
