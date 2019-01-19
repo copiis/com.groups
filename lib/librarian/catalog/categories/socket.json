@@ -18,13 +18,7 @@
     "socket/standard/k",
     "socket/standard/f_button",
     "socket/standard/i_button",
-    "socket/standard/k_button",
-    "light/standard",
-    "fan/standard",
-    "heater/standard",
-    "coffeemachine/standard",
-    "kettle/standard",
-    "tv/standard"
+    "socket/standard/k_button"
   ],
   "capabilities" : [
     "onoff",

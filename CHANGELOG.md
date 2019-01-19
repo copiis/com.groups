@@ -1,3 +1,6 @@
+**2.1.800**
+- QuickFix for #30a
+
 **2.1.707**
 - Remove relay device/driver
 

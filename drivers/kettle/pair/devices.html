@@ -50,7 +50,7 @@
                 this.devices = allDevices;
                 this.pairingDevice = pairingDevice;
                 Homey.hideLoadingOverlay();
-                $('#hy-nav-next').attr('class', 'hy-button');
+                // $('#hy-nav-next').attr('class', 'hy-button');
             },
             methods: {},
             watch: {
@@ -67,7 +67,7 @@
                         if (Object.getOwnPropertyNames(result.settings.devices).length > 0) {
                             $('#hy-nav-next').attr('class', 'hy-button visible');
                         } else {
-                            $('#hy-nav-next').attr('class', 'hy-button');
+                            // $('#hy-nav-next').attr('class', 'hy-button');
                         }
                     });
                 }

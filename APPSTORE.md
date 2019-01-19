@@ -26,6 +26,10 @@ This app is based off of the original 'Device Groups' app by Swttt for Homey v1.
 
 ### Changelog
 
+**2.1.8**
+- Check if a device exists prior displaying it in the settings.
+
+
 **2.1.7**
 - NL transactions, pairing fixes.
 - Code consolidation and clean up
