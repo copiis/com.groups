@@ -91,7 +91,7 @@
                     </div>
                     <div class="row align-items-center">
                         <div class="col mt-4">
-                            <span v-for="device in group.settings.devices" class="list-span"><span>{{ devices[device].name }}</span></span>
+                            <span v-for="device in group.settings.devices" class="list-span"><span v-if="devices[device]">{{ devices[device].name }}</span><span v-else>[DELETED]</span></span>
                         </div>
                     </div>
                     <div class="row align-items-center" v-if="group.settings.notes.length">
@@ -131,11 +131,9 @@
                             </select>
                         </div>
                     </div>
-
                 </div>
 
                 <div class="list-group rounded-0">
-
                     <label v-for="d in devices" :key="d.id" class="list-group-item list-group-item-action rounded-0"  v-if="!disabled(d)">
                         <div class="row align-items-center">
                             <div class="col-2" style="align-self: normal;">
@@ -150,7 +148,6 @@
                             </div>
                         </div>
                     </label>
-
                 </div>
 
             </div>
@@ -247,7 +244,7 @@
                 change: async function (device) {
                     Homey.api('PUT', '/settings/' + device.driverId, device, async (err, result) => {
                         if (err) return Homey.alert(err);
-                        console.log(result);
+                        console.log('250' + result);
                     });
                 },
                 // On changing which section is showing.
