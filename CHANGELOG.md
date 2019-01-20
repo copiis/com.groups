@@ -1,9 +1,13 @@
-**2.1.800**
+**2.2.100**
 - QuickFix for #30, show deleted items as deleted
 - Added i18n for deleted.
 - On device deleted remove cached item
 - Check if device deleted in polling
 - Update i18n (en) settings.sorry -> settings.empty
+- show deleted devices with in the settings, allow them to be removed
+- Don't update capability of deleted devices
+- Stop polling deleted devices.
+- Add deleted/offline icons/not ices with in settings.
 
 **2.1.707**
 - Remove relay device/driver

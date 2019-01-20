@@ -26,8 +26,16 @@ This app is based off of the original 'Device Groups' app by Swttt for Homey v1.
 
 ### Changelog
 
-**2.1.8**
+
+
+**2.2.0**
 - Check if a device exists prior displaying it in the settings.
+- Don't update capability of deleted devices
+- Remove deleted devices from cache
+- Stop polling deleted devices.
+- Show deleted devices with in the settings, so they can be removed
+- Add deleted/offline icons/notices with in settings.
+- Device data version now received from app manifest
 
 
 **2.1.7**

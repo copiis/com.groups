@@ -26,6 +26,20 @@ This app is based off of the original 'Device Groups' app by Swttt for Homey v1.
 
 ### Changelog
 
+##### 2.2
+
+- 2.2.1
+    - QuickFix for #30, show deleted items as deleted
+    - Added i18n for deleted.
+    - On device deleted remove cached item
+    - Check if device deleted in polling
+    - Update i18n (en) settings.sorry -> settings.empty
+    - show deleted devices with in the settings, allow them to be removed
+    - Don't update capability of deleted devices
+    - Stop polling deleted devices.
+    - Add deleted/offline icons/not ices with in settings.
+
+
 ##### 2.1
 
 - 2.1.7
