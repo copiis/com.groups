@@ -1,5 +1,9 @@
 **2.1.800**
-- QuickFix for #30a
+- QuickFix for #30, show deleted items as deleted
+- Added i18n for deleted.
+- On device deleted remove cached item
+- Check if device deleted in polling
+- Update i18n (en) settings.sorry -> settings.empty
 
 **2.1.707**
 - Remove relay device/driver

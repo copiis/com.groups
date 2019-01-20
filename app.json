@@ -27,7 +27,7 @@
       "virtueel"
     ]
   },
-  "version": "2.1.707",
+  "version": "2.2.100",
   "compatibility": ">=2.0",
   "author": {
     "name": "Jamie Peake",
@@ -130,6 +130,19 @@
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> group",
                 "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep"
+              }
+            },
+            {
+              "id": "labelVersion",
+              "type": "label",
+              "label": {
+                "en": "Version",
+                "nl": "versie"
+              },
+              "value": "2.0",
+              "hint": {
+                "en": "The version of the device internal driver, generally the version it was added as.",
+                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd."
               }
             }
           ]
@@ -237,6 +250,19 @@
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> group",
                 "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep"
               }
+            },
+            {
+              "id": "labelVersion",
+              "type": "label",
+              "label": {
+                "en": "Version",
+                "nl": "versie"
+              },
+              "value": "2.0",
+              "hint": {
+                "en": "The version of the device internal driver, generally the version it was added as.",
+                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd."
+              }
             }
           ]
         },
@@ -342,6 +368,19 @@
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> group",
                 "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep"
+              }
+            },
+            {
+              "id": "labelVersion",
+              "type": "label",
+              "label": {
+                "en": "Version",
+                "nl": "versie"
+              },
+              "value": "2.0",
+              "hint": {
+                "en": "The version of the device internal driver, generally the version it was added as.",
+                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd."
               }
             }
           ]
@@ -449,6 +488,19 @@
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> group",
                 "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep"
               }
+            },
+            {
+              "id": "labelVersion",
+              "type": "label",
+              "label": {
+                "en": "Version",
+                "nl": "versie"
+              },
+              "value": "2.0",
+              "hint": {
+                "en": "The version of the device internal driver, generally the version it was added as.",
+                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd."
+              }
             }
           ]
         },
@@ -554,6 +606,19 @@
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> group",
                 "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep"
+              }
+            },
+            {
+              "id": "labelVersion",
+              "type": "label",
+              "label": {
+                "en": "Version",
+                "nl": "versie"
+              },
+              "value": "2.0",
+              "hint": {
+                "en": "The version of the device internal driver, generally the version it was added as.",
+                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd."
               }
             }
           ]
@@ -661,6 +726,19 @@
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> group",
                 "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep"
               }
+            },
+            {
+              "id": "labelVersion",
+              "type": "label",
+              "label": {
+                "en": "Version",
+                "nl": "versie"
+              },
+              "value": "2.0",
+              "hint": {
+                "en": "The version of the device internal driver, generally the version it was added as.",
+                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd."
+              }
             }
           ]
         },
@@ -766,6 +844,19 @@
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> group",
                 "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep"
+              }
+            },
+            {
+              "id": "labelVersion",
+              "type": "label",
+              "label": {
+                "en": "Version",
+                "nl": "versie"
+              },
+              "value": "2.0",
+              "hint": {
+                "en": "The version of the device internal driver, generally the version it was added as.",
+                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd."
               }
             }
           ]
@@ -873,6 +964,19 @@
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> group",
                 "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep"
               }
+            },
+            {
+              "id": "labelVersion",
+              "type": "label",
+              "label": {
+                "en": "Version",
+                "nl": "versie"
+              },
+              "value": "2.0",
+              "hint": {
+                "en": "The version of the device internal driver, generally the version it was added as.",
+                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd."
+              }
             }
           ]
         },
@@ -978,6 +1082,19 @@
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> group",
                 "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep"
+              }
+            },
+            {
+              "id": "labelVersion",
+              "type": "label",
+              "label": {
+                "en": "Version",
+                "nl": "versie"
+              },
+              "value": "2.0",
+              "hint": {
+                "en": "The version of the device internal driver, generally the version it was added as.",
+                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd."
               }
             }
           ]
@@ -1085,6 +1202,19 @@
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> group",
                 "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep"
               }
+            },
+            {
+              "id": "labelVersion",
+              "type": "label",
+              "label": {
+                "en": "Version",
+                "nl": "versie"
+              },
+              "value": "2.0",
+              "hint": {
+                "en": "The version of the device internal driver, generally the version it was added as.",
+                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd."
+              }
             }
           ]
         },
@@ -1190,6 +1320,19 @@
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> group",
                 "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep"
+              }
+            },
+            {
+              "id": "labelVersion",
+              "type": "label",
+              "label": {
+                "en": "Version",
+                "nl": "versie"
+              },
+              "value": "2.0",
+              "hint": {
+                "en": "The version of the device internal driver, generally the version it was added as.",
+                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd."
               }
             }
           ]
@@ -1297,6 +1440,19 @@
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> group",
                 "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep"
               }
+            },
+            {
+              "id": "labelVersion",
+              "type": "label",
+              "label": {
+                "en": "Version",
+                "nl": "versie"
+              },
+              "value": "2.0",
+              "hint": {
+                "en": "The version of the device internal driver, generally the version it was added as.",
+                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd."
+              }
             }
           ]
         },
@@ -1402,6 +1558,19 @@
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> group",
                 "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep"
+              }
+            },
+            {
+              "id": "labelVersion",
+              "type": "label",
+              "label": {
+                "en": "Version",
+                "nl": "versie"
+              },
+              "value": "2.0",
+              "hint": {
+                "en": "The version of the device internal driver, generally the version it was added as.",
+                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd."
               }
             }
           ]
@@ -1509,6 +1678,19 @@
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> group",
                 "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep"
               }
+            },
+            {
+              "id": "labelVersion",
+              "type": "label",
+              "label": {
+                "en": "Version",
+                "nl": "versie"
+              },
+              "value": "2.0",
+              "hint": {
+                "en": "The version of the device internal driver, generally the version it was added as.",
+                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd."
+              }
             }
           ]
         },
@@ -1614,6 +1796,19 @@
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> group",
                 "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep"
+              }
+            },
+            {
+              "id": "labelVersion",
+              "type": "label",
+              "label": {
+                "en": "Version",
+                "nl": "versie"
+              },
+              "value": "2.0",
+              "hint": {
+                "en": "The version of the device internal driver, generally the version it was added as.",
+                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd."
               }
             }
           ]
@@ -1721,6 +1916,19 @@
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> group",
                 "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep"
               }
+            },
+            {
+              "id": "labelVersion",
+              "type": "label",
+              "label": {
+                "en": "Version",
+                "nl": "versie"
+              },
+              "value": "2.0",
+              "hint": {
+                "en": "The version of the device internal driver, generally the version it was added as.",
+                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd."
+              }
             }
           ]
         },
@@ -1826,6 +2034,19 @@
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> group",
                 "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep"
+              }
+            },
+            {
+              "id": "labelVersion",
+              "type": "label",
+              "label": {
+                "en": "Version",
+                "nl": "versie"
+              },
+              "value": "2.0",
+              "hint": {
+                "en": "The version of the device internal driver, generally the version it was added as.",
+                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd."
               }
             }
           ]
@@ -1933,6 +2154,19 @@
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> group",
                 "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep"
               }
+            },
+            {
+              "id": "labelVersion",
+              "type": "label",
+              "label": {
+                "en": "Version",
+                "nl": "versie"
+              },
+              "value": "2.0",
+              "hint": {
+                "en": "The version of the device internal driver, generally the version it was added as.",
+                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd."
+              }
             }
           ]
         },
@@ -2038,6 +2272,19 @@
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> group",
                 "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep"
+              }
+            },
+            {
+              "id": "labelVersion",
+              "type": "label",
+              "label": {
+                "en": "Version",
+                "nl": "versie"
+              },
+              "value": "2.0",
+              "hint": {
+                "en": "The version of the device internal driver, generally the version it was added as.",
+                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd."
               }
             }
           ]
@@ -2145,6 +2392,19 @@
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> group",
                 "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep"
               }
+            },
+            {
+              "id": "labelVersion",
+              "type": "label",
+              "label": {
+                "en": "Version",
+                "nl": "versie"
+              },
+              "value": "2.0",
+              "hint": {
+                "en": "The version of the device internal driver, generally the version it was added as.",
+                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd."
+              }
             }
           ]
         },
@@ -2250,6 +2510,19 @@
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> group",
                 "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep"
+              }
+            },
+            {
+              "id": "labelVersion",
+              "type": "label",
+              "label": {
+                "en": "Version",
+                "nl": "versie"
+              },
+              "value": "2.0",
+              "hint": {
+                "en": "The version of the device internal driver, generally the version it was added as.",
+                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd."
               }
             }
           ]
