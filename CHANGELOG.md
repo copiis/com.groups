@@ -1,3 +1,6 @@
+**2.2.101**
+- Fix to device class label on create incorrectly being device.name
+
 **2.2.100**
 - QuickFix for #30, show deleted items as deleted
 - Added i18n for deleted.
