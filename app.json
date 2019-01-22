@@ -5,8 +5,8 @@
     "homey:manager:api"
   ],
   "name": {
-    "en": "< omega >",
-    "nl": " < omega >"
+    "en": "< group >",
+    "nl": " < group >"
   },
   "description": {
     "en": "Makes it possible to group devices allowing control and reporting of all devices within a group.",
@@ -27,7 +27,7 @@
       "virtueel"
     ]
   },
-  "version": "2.2.101",
+  "version": "2.2.102",
   "compatibility": ">=2.0",
   "author": {
     "name": "Jamie Peake",
@@ -50,8 +50,8 @@
     ]
   },
   "images": {
-    "large": "./assets/images/omega-large.png",
-    "small": "./assets/images/omega-small.png"
+    "large": "./assets/images/alpha-large.png",
+    "small": "./assets/images/alpha-small.png"
   },
   "homeyCommunityTopicId": 3168,
   "bugs": {
