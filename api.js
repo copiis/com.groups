@@ -27,7 +27,7 @@ module.exports = [
       let group = await Homey.ManagerDrivers.getDriver(args.params.driver).getDevice(args.body.data);
       let result = await group.setSettings(args.body.settings);
 
-      console.log('calling refresh');
+      console.log('<api put /settings/:driver[' + args.params.driver + ']  calling refresh (' + args.body.name  + ')');
       await group.refresh();
       return result;
     }

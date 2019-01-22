@@ -1,5 +1,8 @@
 **2.2.101**
 - Fix to device class label on create incorrectly being device.name
+- Update WebAPI
+- Fixes for deleted items
+- Even tracking when a device is deleted
 
 **2.2.100**
 - QuickFix for #30, show deleted items as deleted
