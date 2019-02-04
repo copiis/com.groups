@@ -1,3 +1,6 @@
+**2.2.201**
+- Add alarm category
+
 **2.2.103**
 - Use html entities with in appstore.md
 - Re-introduce image, kibbling 10% more visible. 

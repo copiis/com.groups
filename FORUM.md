@@ -23,8 +23,8 @@ Please note that this app now only supports v2, while legacy code should continu
 |---|---|---|---|
 |**Stable** |2.2.102 |:white_check_mark:|Stable|
 |**Beta** |2.2.103|:white_check_mark:|Fixes deleted devices|
-|**Alpha** |2.2.103|:white_check_mark:|Fixes deleted devices|
-|**Omega** |2.2.105|:white_check_mark:|New alarms/all groups|
+|**Alpha** |2.2.201|:white_check_mark:|Adds alarm category|
+|**Omega** |2.2.205|:white_check_mark:|New alarms/all groups|
 |**Master** |n/a|:heavy_multiplication_x:||
 
 
