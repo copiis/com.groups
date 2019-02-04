@@ -57,6 +57,13 @@
   "bugs": {
     "url": "https://github.com/hive/com.groups/issues"
   },
+  "contributing": {
+    "donate": {
+      "paypal": {
+        "username": "peakej"
+      }
+    }
+  },
   "drivers": [
     {
       "capabilities": [],

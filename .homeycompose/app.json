@@ -56,5 +56,12 @@
     "homeyCommunityTopicId": 3168,
     "bugs": {
         "url": "https://github.com/hive/com.groups/issues"
+    },
+    "contributing": {
+        "donate": {
+            "paypal": {
+                "username": "peakej"
+            }
+        }
     }
 }
