@@ -5,6 +5,13 @@ With this app you can group devices with the same capabilities as one device. Th
 
 ---
 
+## [Donate](https://PayPal.Me/peakej)
+
+[Help me buy a homey to create this and other apps on.](https://PayPal.Me/peakej)
+
+
+---
+
 Please note that this app now only supports v2, while legacy code should continue to work, new installations are not possible nor supported.
 
 ## Versions
@@ -14,10 +21,10 @@ Please note that this app now only supports v2, while legacy code should continu
 
 | Branch | Version | Status | Notes|
 |---|---|---|---|
-|**Stable** |2.1.707|:white_check_mark:||
-|**Beta** |2.1.707|:white_check_mark:||
-|**Alpha** |2.1.707|:white_check_mark:||
-|**Omega** |2.1.707|:white_check_mark:||
+|**Stable** |2.2.102 |:white_check_mark:|Stable|
+|**Beta** |2.2.103|:white_check_mark:|Fixes deleted devices|
+|**Alpha** |2.2.103|:white_check_mark:|Fixes deleted devices|
+|**Omega** |2.2.105|:white_check_mark:|New alarms/all groups|
 |**Master** |n/a|:heavy_multiplication_x:||
 
 
