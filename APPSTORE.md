@@ -27,6 +27,16 @@ This app is based off of the original 'Device Groups' app by Swttt for Homey v1.
 ### Changelog
 
 
+**2.2.2**
+- Add alarm category
+
+**2.2.1**
+- Fix to device class label on create incorrectly being device.name
+- Update WebAPI
+- Fixes for deleted items
+- Event tracking when a device is deleted
+- Use html entities with in appstore.md
+- Re-introduce image, kibbling 10% more visible.
 
 **2.2.0**
 - Check if a device exists prior displaying it in the settings.
