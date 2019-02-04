@@ -3,16 +3,16 @@
 
 With this app you can group devices with the same capabilities as one device.
 
-1. After installing, to add a new Group, click  + (add) upon the devices tab select " < group >".
+1. After installing, to add a new Group, click  + (add) upon the devices tab select " &lt; group &gt;".
 2. Now select the group device's class. (e.g. Light).
 3. You will now see all the capabilities supported by this class. Chose the ones you need. (e.g. Turned on" and "Dim level", "Temperature" ).
 4. Displayed upon the next page are all devices that have *all* the capabilities you selected, simply select the devices you want to group.
-5. On the final page you change change the icon of the device if you would like, or select next to use the default <group> icon.
+5. On the final page you change change the icon of the device if you would like, or select next to use the default &lt; group &gt; icon.
 6. Now you have one device to control all the grouped devices.
 
 ### Settings
 
-There are two sets of settings associated with device groups, first the settings are available from the group, which offers overview information only.The second more important method can be accessed from the application settings, [More -> Settings -> <group>]
+There are two sets of settings associated with device groups, first the settings are available from the group, which offers overview information only.The second more important method can be accessed from the application settings, [More -> Settings -> &lt; group &gt;]
 
 From with in the settings you can not only update which devices are in which groups, but you also have much more control on how the group will report information back to you.
 
@@ -25,6 +25,20 @@ Open up the settings, click upon the group category (eg. sensor or light) all th
 This app is based off of the original 'Device Groups' app by Swttt for Homey v1.
 
 ### Changelog
+
+##### 2.2
+
+- 2.2.1
+    - QuickFix for #30, show deleted items as deleted
+    - Added i18n for deleted.
+    - On device deleted remove cached item
+    - Check if device deleted in polling
+    - Update i18n (en) settings.sorry -> settings.empty
+    - show deleted devices with in the settings, allow them to be removed
+    - Don't update capability of deleted devices
+    - Stop polling deleted devices.
+    - Add deleted/offline icons/not ices with in settings.
+
 
 ##### 2.1
 

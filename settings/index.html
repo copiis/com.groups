@@ -78,7 +78,7 @@
                     <div class="row align-items-center">
 
                         <div class="col-3">
-                            <img :src="group.iconObj.url" class="img-fluid">
+                            <img v-if="group.iconObj" :src="group.iconObj.url" class="img-fluid">
                         </div>
 
                         <div class="col-6">
@@ -131,18 +131,38 @@
                             </select>
                         </div>
                     </div>
-
                 </div>
 
                 <div class="list-group rounded-0">
 
+
+                    <label v-for="x in  device.settings.devices"  v-if="!devices[x]" :key="x" class="list-group-item list-group-item-action rounded-0">
+                        <div class="row align-items-center">
+                            <div class="col-2" style="align-self: normal;">
+                                <img src="../assets/icons/deleted.svg" class="img-fluid" style="max-height: 24px;max-width: 24px">
+                            </div>
+                            <div class="col-8">{{ __('settings.deleted') }}</div>
+                            <div class="col-2">
+                                <div class="custom-control custom-checkbox float-right">
+                                    <input type="checkbox" :id="x"  :value="x" class="custom-control-input" v-model="device.settings.devices"  @change="change(device)">
+                                    <span class="custom-control-label" :for="x"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </label>
+
                     <label v-for="d in devices" :key="d.id" class="list-group-item list-group-item-action rounded-0"  v-if="!disabled(d)">
                         <div class="row align-items-center">
                             <div class="col-2" style="align-self: normal;">
-                                <img v-if="d.iconObj && d.iconObj" :src="d.iconObj.url" class="img-fluid" style="max-height: 24px;max-width: 24px">
+                                <template v-if="d.ready">
+                                    <img v-if="d.iconObj && d.iconObj" :src="d.iconObj.url" class="img-fluid" style="max-height: 24px;max-width: 24px">
+                                </template>
+                                <template v-else>
+                                    <img src="../assets/icons/unavailable.svg" class="img-fluid" style="max-height: 24px;max-width: 24px">
+                                </template>
                             </div>
-                            <div class="col-6">{{ d.name }}</div>
-                            <div class="col-4">
+                            <div class="col-8"><span v-if="!d.ready">[{{ __('_.offline')  }}] </span> {{ d.name }}</div>
+                            <div class="col-2">
                                 <div class="custom-control custom-checkbox float-right">
                                     <input type="checkbox" :id="d.id"  :value="d.id" class="custom-control-input" v-model="device.settings.devices" :disabled="disabled(d)"  @change="change(device)">
                                     <span class="custom-control-label" :for="d.id"></span>
@@ -150,7 +170,6 @@
                             </div>
                         </div>
                     </label>
-
                 </div>
 
             </div>
@@ -247,7 +266,6 @@
                 change: async function (device) {
                     Homey.api('PUT', '/settings/' + device.driverId, device, async (err, result) => {
                         if (err) return Homey.alert(err);
-                        console.log(result);
                     });
                 },
                 // On changing which section is showing.
@@ -321,7 +339,6 @@
                         structure[devices[d].id] = devices[d];
                     }
                     this.devices = structure;
-
                     this.groups = await this.find(this.devices, {driverUri: this.constant.driverUri});
 
                     // if there are no groups - hide the categories.

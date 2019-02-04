@@ -1,4 +1,8 @@
 {
+    "alarm" : {
+        "title" : "Alarm",
+        "description" : "Apparaten met een alarm, bijv. Sensoren, contact, vuur, rook, koolmonoxide, enz"
+    },
     "amplifier": {
         "title": "Versterker",
         "description": "apparaat voor audioversterking."

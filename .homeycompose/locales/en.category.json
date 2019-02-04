@@ -1,4 +1,8 @@
 {
+    "alarm" : {
+        "title" : "Alarm",
+        "description" : "Devices which contain an alarm, eg. sensors, contact, fire, smoke, CO, etc."
+    },
     "amplifier" : {
         "title" : "Amplifier",
         "description" : "audio amplifier devices."

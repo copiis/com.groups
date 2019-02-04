@@ -412,6 +412,10 @@
     "windowcoverings": {
       "title": "Window Coverings",
       "description": "window coverings, for when the `curtains`, `blinds` or `sunshade` device class doesn't apply."
+    },
+    "alarm": {
+      "title": "Alarm",
+      "description": "Devices which contain an alarm, eg. sensors, contact, fire, smoke, CO, etc."
     }
   },
   "method": {
@@ -530,6 +534,7 @@
   },
   "settings": {
     "sorry": "Sorry you have not created any groups yet, please create a group and come back to edit it.",
-    "deleted": "[DELETED]"
+    "deleted": "[DELETED]",
+    "empty": "Sorry you have not created any groups yet, please create a group and come back to edit it."
   }
 }

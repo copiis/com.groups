@@ -99,6 +99,10 @@
     "windowcoverings": {
       "title": "Raambekleding",
       "description": "raambekleding, voor het geval de klassen 'gordijnen', 'jaloezieën' of 'jaloezieën' niet van toepassing zijn."
+    },
+    "alarm": {
+      "title": "Alarm",
+      "description": "Apparaten met een alarm, bijv. Sensoren, contact, vuur, rook, koolmonoxide, enz"
     }
   },
   "method": {

@@ -95,9 +95,9 @@ class Groups extends Homey.App {
             });
 
             // when a device is deleted from homey, clear the cache.
-            // @todo investigate removing all devices from settings of groups which have been deleted.
             api.devices.on('device.delete', async (device) => {
-                console.log('device.delete: ' + device);
+                console.log('device.delete: ' + device.id);
+                this.devices[device.id] = false;
                 this.api = false;
             });
         })

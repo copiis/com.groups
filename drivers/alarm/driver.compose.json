@@ -1,0 +1,12 @@
+{
+    "id": "Alarm",
+    "class": "sensor",
+    "capabilities": [],
+    "name": {
+        "en": "Alarm",
+        "nl": "Alarm"
+    },
+    "$extends": [
+        "default"
+    ]
+}

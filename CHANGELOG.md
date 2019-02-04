@@ -1,5 +1,26 @@
-**2.1.800**
-- QuickFix for #30a
+**2.2.103**
+- Use html entities with in appstore.md
+- Re-introduce image, kibbling 10% more visible. 
+
+**2.2.102**
+- Deploy
+
+**2.2.101**
+- Fix to device class label on create incorrectly being device.name
+- Update WebAPI
+- Fixes for deleted items
+- Even tracking when a device is deleted
+
+**2.2.100**
+- QuickFix for #30, show deleted items as deleted
+- Added i18n for deleted.
+- On device deleted remove cached item
+- Check if device deleted in polling
+- Update i18n (en) settings.sorry -> settings.empty
+- show deleted devices with in the settings, allow them to be removed
+- Don't update capability of deleted devices
+- Stop polling deleted devices.
+- Add deleted/offline icons/not ices with in settings.
 
 **2.1.707**
 - New large/small appstore image
