@@ -1,6 +1,7 @@
 {
   "id" : "alarm",
   "icons" : [
+    "alarm/standard",
     "sensor/standard"
   ],
   "capabilities": [
@@ -16,10 +17,7 @@
     "alarm_pm25",
     "alarm_water",
     "alarm_battery",
-    "alarm_night",
-    "meter_power",
-    "meter_water",
-    "meter_gas"
+    "alarm_night"
   ]
 }
 
