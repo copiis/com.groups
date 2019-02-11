@@ -1,3 +1,8 @@
+**2.2.202**
+- Add alarm icon
+- Add door/window icons to repo
+- remote meters from alarm category. 
+
 **2.2.201**
 - Add alarm category
 
