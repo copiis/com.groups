@@ -62,7 +62,6 @@
             setTimeout(() => {
                return callback(null, api[method][endpoint]);
                // return callback(null, [{}]);
-
             }, 1500);
         }
     };
