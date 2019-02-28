@@ -3,7 +3,8 @@
     "class": "amplifier",
     "name": {
         "en": "Amplifier",
-        "nl" : "Versterker"
+        "nl" : "Versterker",
+        "de" : "Verstärker"
     },
     "$extends": [
         "default"

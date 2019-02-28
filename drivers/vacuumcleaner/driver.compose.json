@@ -4,7 +4,8 @@
     "capabilities": [],
     "name": {
         "en": "Vacuum Cleaner",
-        "nl": "Stofzuiger"
+        "nl": "Stofzuiger",
+        "de" : "Staubsauger"
     },
     "$extends": [
         "default"

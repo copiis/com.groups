@@ -1,3 +1,8 @@
+**2.2.300**
+- Introduce German Language
+- Add other class
+- Add additional 'other' icons. 
+
 **2.2.202**
 - Add alarm icon
 - Add door/window icons to repo

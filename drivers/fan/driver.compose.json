@@ -4,7 +4,8 @@
     "capabilities": [],
     "name": {
         "en": "Fan",
-        "nl": "Ventilator"
+        "nl": "Ventilator",
+        "de" : "Ventilator"
     },
     "$extends": [
         "default"

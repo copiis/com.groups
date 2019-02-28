@@ -4,7 +4,8 @@
     "capabilities": [],
     "name": {
         "en": "Sunshade",
-        "nl": "Zonnescherm"
+        "nl": "Zonnescherm",
+        "de" : "Sonnenschirm"
     },
     "$extends": [
         "default"

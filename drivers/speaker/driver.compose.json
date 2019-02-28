@@ -4,7 +4,8 @@
     "capabilities": [],
     "name": {
         "en": "Speaker",
-        "nl": "Speaker"
+        "nl": "Speaker",
+        "de" : "Lautsprecher"
     },
     "$extends": [
         "default"

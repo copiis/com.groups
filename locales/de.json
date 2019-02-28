@@ -407,5 +407,118 @@
     "other": "other",
     "unavailable": "not available",
     "offline": "offline"
+  },
+  "method": {
+    "all": {
+      "title": "On if all on",
+      "brief": "on if all devices are on",
+      "description": "On if all devices are on. otherwise off"
+    },
+    "always": {
+      "title": "Always On",
+      "brief": "always on",
+      "description": "Always returns to on"
+    },
+    "any": {
+      "title": "On if any on",
+      "brief": "on if any devices are on",
+      "description": "On if any devices are on"
+    },
+    "highest": {
+      "title": "Highest Value",
+      "brief": "the highest value",
+      "description": "The highest value of the all the grouped device"
+    },
+    "ignore": {
+      "title": "Ignore Devices",
+      "brief": "the last value set in the app",
+      "description": "Don't update, only use values set by the card"
+    },
+    "lowest": {
+      "title": "Lowest Value",
+      "brief": "the lowest value",
+      "description": "The lowest value of the all the grouped device"
+    },
+    "max": {
+      "title": "Maximum value",
+      "brief": "the highest value",
+      "description": "The value of the device with the largest value"
+    },
+    "mean": {
+      "title": "Mean Average",
+      "brief": "the average value (mean)",
+      "description": "The average your are used to (sum/count)"
+    },
+    "median": {
+      "title": "Median Average",
+      "brief": "the middle value (median)",
+      "description": "The value of the device in the middle"
+    },
+    "min": {
+      "title": "Minimum Value",
+      "brief": "the lowest value",
+      "description": "The value of the device with the smallest value"
+    },
+    "mode": {
+      "title": "Mode Average",
+      "brief": "the most common value",
+      "description": "The value which the most devices has"
+    },
+    "most": {
+      "title": "Most Devices",
+      "brief": "most common value",
+      "description": "On if at least half devices are on"
+    },
+    "never": {
+      "title": "Never On",
+      "brief": "never on",
+      "description": "Never on, always returns to off"
+    },
+    "none": {
+      "title": "On unless all on",
+      "brief": "on unless all devices  on",
+      "description": "Off if all devices are on, otherwise on"
+    },
+    "sum": {
+      "title": "Total Value",
+      "brief": "the sum of all devices",
+      "description": "The sum of all the grouped device values"
+    },
+    "nor": {
+      "title": "On if None on",
+      "brief": "on if none no devices are on",
+      "description": "On if all devices are off, otherwise off"
+    },
+    "xor": {
+      "title": "On unless all on or off",
+      "brief": "on unless all devices are on or all off",
+      "description": "Off when all devices are off or all devices are on"
+    }
+  },
+  "pair": {
+    "capabilities": {
+      "title": "Select the capabilities of the group",
+      "loading": "loading"
+    },
+    "devices": {
+      "title": "Select devices to group",
+      "loading": "Gathering all of your devices with these capabilities",
+      "empty": {
+        "title": "Sorry no devices found",
+        "description": "We were unable to find any devices with those particular capabilities, please press 'previous' to go back."
+      }
+    },
+    "icons": {
+      "title": "Choose your icon",
+      "loading": "Loading possible icons"
+    },
+    "group": {
+      "title": "Grouping your devices..",
+      "loading": "Adding your new group, this will only take a couple of seconds."
+    }
+  },
+  "settings": {
+    "empty": "Sorry you have not created any groups yet, please create a group and come back to edit it.",
+    "deleted": "[DELETED]"
   }
 }

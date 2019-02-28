@@ -1,0 +1,25 @@
+<script>
+
+    Homey.showLoadingOverlay();
+    Homey.setTitle( Homey.__("pair.group.title") );
+
+    $('#hy-overlay-loading-message').html( Homey.__("pair.group.loading") );
+
+    Homey.emit('group.initialised', null, function (error, group) {
+        if (error) {
+            Homey.alert(error)
+            console.log(error);
+            return;
+        }
+        Homey.addDevice(group, (error, result) => {
+            if (error) {
+                Homey.alert(error)
+                console.log(error);
+                return;
+            }
+            Homey.emit('group.finalised', null, function (error, result) {
+                Homey.done();
+            });
+        })
+    });
+</script>

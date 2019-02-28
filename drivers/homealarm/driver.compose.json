@@ -3,7 +3,8 @@
     "class": "homealarm",
     "name": {
         "en": "Home Security",
-        "nl": "Huisbeveiliging"
+        "nl": "Huisbeveiliging",
+        "de" : "Heim-Sicherheit"
     },
     "$extends": [
         "default"

@@ -4,7 +4,8 @@
     "capabilities": [],
     "name": {
         "en": "TV",
-        "nl": "TV"
+        "nl": "TV",
+        "de" : "TV"
     },
     "$extends": [
         "default"

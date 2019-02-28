@@ -4,7 +4,8 @@
     "capabilities": [],
     "name": {
         "en": "Wall Plug",
-        "nl": "Schakeldoos"
+        "nl": "Schakeldoos",
+        "de" : "Steckdose"
     },
     "$extends": [
         "default"
