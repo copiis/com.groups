@@ -1,4 +1,4 @@
-**2.2.300**
+**2.3.100**
 - Introduce German Language
 - Add other class
 - Add additional 'other' icons. 
