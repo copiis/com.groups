@@ -1,0 +1,106 @@
+{
+    "alarm" : {
+        "title" : "Alarm",
+        "description" : "Devices which contain an alarm, eg. sensors, contact, fire, smoke, CO, etc."
+    },
+    "amplifier" : {
+        "title" : "Amplifier",
+        "description" : "audio amplifier devices."
+    },
+    "blinds" : {
+        "title" : "Blinds",
+        "description" : "blinds, both horizontal and vertical."
+    },
+    "button" : {
+        "title" : "Button",
+        "description" : "buttons, and other items which do not have a state."
+    },
+    "coffeemachine" : {
+        "title" : "Coffee machine",
+        "description" : "coffeemakers or coffee machines are cooking appliances used to brew coffee."
+    },
+    "curtain" : {
+        "title" : "Curtains",
+        "description" : "electronic curtains which will move the material sideways along a rail."
+    },
+    "doorbell" : {
+        "title" : "Doorbell",
+        "description" : "doorbells, and device which announce when a button is pressed."
+    },
+    "fan" : {
+        "title" : "Fan",
+        "description" : "fans that cool your home."
+    },
+    "garagedoor" : {
+        "title" : "Garage door",
+        "description": "garage doors as well as other automatic doors and gates."
+    },
+    "heater" : {
+        "title" : "Heater",
+        "description": "heaters and other devices which warm your home."
+    },
+    "homealarm" : {
+        "title" : "Home Security",
+        "description": "home alarm systems."
+    },
+    "homeenergymonitor" : {
+        "title" : "Home Energy Monitor",
+        "description": "Devices that monitor a house's energy usage."
+    },
+    "kettle" : {
+        "title" : "Kettle",
+        "description": "Kettles and other devices that can heat water."
+    },
+    "light" : {
+        "title" : "Light",
+        "description": "an illuminating agent or source, lights, globes, lamps, etc."
+    },
+    "lock" : {
+        "title" : "Lock",
+        "description": "devices with locks."
+    },
+    "other" : {
+        "title" : "Other",
+        "description": "devices that do not fit any other device class."
+    },
+    "relay" : {
+        "title" : "Relay",
+        "description": "relays, which are connected to another device."
+    },
+    "remote" : {
+        "title" : "Remote",
+        "description": "TV, blinds, remote control, etc. All\ntypes of remote controls. \""
+    },
+    "sensor" : {
+        "title" : "Sensor",
+        "description": "contact, motion, fire, CO  or any type of sensor. As well as alarms!"
+    },
+    "socket" : {
+        "title" : "Wall Plug",
+        "description": "wall plugs and sockets."
+    },
+    "speaker" : {
+        "title" : "Speaker",
+        "description": "devices that can play audio, such as music."
+    },
+    "sunshade" : {
+        "title" : "Sunshade",
+        "description": "sunshades (window coverings against the sun)."
+    },
+    "thermostat" : {
+        "title" : "Thermostat",
+        "description": "thermostats, either for the entire home or radiator-mounted."
+    },
+    "tv" : {
+        "title" : "TV",
+        "description": "TV/televisions."
+    },
+    "vacuumcleaner" : {
+        "title" : "Vacuum Cleaner",
+        "description": "automated devices which clean floors on demand."
+    },
+    "windowcoverings" : {
+        "title" : "Window Coverings",
+        "description": "window coverings, for when the `curtains`, `blinds` or `sunshade` device class doesn't apply."
+    }
+}
