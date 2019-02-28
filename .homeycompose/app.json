@@ -47,6 +47,18 @@
                 "name": "Bas Jansen",
                 "email": "bas@balotti.com"
             }
+        ],
+        "contributors": [
+            {
+                "name": "Johannes Aloijsius",
+                "email": "Johannesaloijsius@gmail.com",
+                "languages": [ "nl" ]
+            },
+            {
+                "name": "Philipp Schnittger",
+                "email": "p.schnittger@gmx.net",
+                "languages": [ "de" ]
+            }
         ]
     },
     "images": {

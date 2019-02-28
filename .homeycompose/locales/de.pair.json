@@ -8,7 +8,6 @@
     "loading" : "Sammeln aller Geräte mit diesen Funktionen",
     "empty" : {
       "title" : "Tut mir leid, keine Geräte gefunden",
-      "description" : "We were unable to find any devices with those particular capabilities, please press 'previous' to go back."
       "description" : "Wir konnten keine Geräte mit diesen besonderen Fähigkeiten finden. Bitte drücke 'zurück', um zurück zu gelangen."
     }
   },
@@ -18,7 +17,6 @@
   },
   "group" : {
     "title" : "Gruppiere Geräte..",
-    "loading" : "Adding your new group, this will only take a couple of seconds."
     "loading" : "Füge neue Gruppe hinzu, das nimmt nur ein paar Sekunden in Anspruch."
   }
 }

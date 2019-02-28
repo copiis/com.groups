@@ -47,6 +47,22 @@
         "name": "Bas Jansen",
         "email": "bas@balotti.com"
       }
+    ],
+    "contributors": [
+      {
+        "name": "Johannes Aloijsius",
+        "email": "Johannesaloijsius@gmail.com",
+        "languages": [
+          "nl"
+        ]
+      },
+      {
+        "name": "Philipp Schnittger",
+        "email": "p.schnittger@gmx.net",
+        "languages": [
+          "de"
+        ]
+      }
     ]
   },
   "images": {
@@ -65,125 +81,6 @@
     }
   },
   "drivers": [
-    {
-      "capabilities": [],
-      "icon": "/drivers/~advanced/assets/icon.svg",
-      "images": {
-        "large": "/drivers/~advanced/assets/images/large.png",
-        "small": "/drivers/~advanced/assets/images/small.png"
-      },
-      "pair": [
-        {
-          "id": "capabilities",
-          "navigation": {
-            "next": "devices"
-          }
-        },
-        {
-          "id": "devices",
-          "navigation": {
-            "next": "icons",
-            "prev": "capabilities"
-          }
-        },
-        {
-          "id": "icons",
-          "navigation": {
-            "next": "group",
-            "prev": "devices"
-          }
-        },
-        {
-          "id": "group",
-          "navigation": {
-            "prev": "icons"
-          }
-        }
-      ],
-      "settings": [
-        {
-          "type": "group",
-          "label": {
-            "en": "About",
-            "nl": "Over"
-          },
-          "children": [
-            {
-              "id": "labelClass",
-              "type": "label",
-              "label": {
-                "en": "Category",
-                "nl": "Categorie"
-              },
-              "value": "Unknown"
-            },
-            {
-              "id": "labelCapabilities",
-              "type": "label",
-              "label": {
-                "en": "Capabilities",
-                "nl": "Opties"
-              },
-              "value": "Unknown"
-            },
-            {
-              "id": "labelDevices",
-              "type": "label",
-              "label": {
-                "en": "Devices",
-                "nl": "Apparaten"
-              },
-              "value": "Unknown",
-              "hint": {
-                "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> group",
-                "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep"
-              }
-            },
-            {
-              "id": "labelVersion",
-              "type": "label",
-              "label": {
-                "en": "Version",
-                "nl": "versie"
-              },
-              "value": "2.0",
-              "hint": {
-                "en": "The version of the device internal driver, generally the version it was added as.",
-                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd."
-              }
-            }
-          ]
-        },
-        {
-          "type": "group",
-          "label": {
-            "en": "Other",
-            "nl": "Anders"
-          },
-          "children": [
-            {
-              "id": "notes",
-              "type": "textarea",
-              "label": {
-                "en": "Your Notes",
-                "nl": "Notities"
-              },
-              "value": "",
-              "hint": {
-                "en": "Enter any thoughts or notes you may have regarding this group.",
-                "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep."
-              }
-            }
-          ]
-        }
-      ],
-      "id": "~advanced",
-      "class": "other",
-      "name": {
-        "en": "Advanced",
-        "nl": "Alarm"
-      }
-    },
     {
       "capabilities": [],
       "icon": "/drivers/alarm/assets/icon.svg",
@@ -224,7 +121,8 @@
           "type": "group",
           "label": {
             "en": "About",
-            "nl": "Over"
+            "nl": "Over",
+            "de": "Über"
           },
           "children": [
             {
@@ -232,7 +130,8 @@
               "type": "label",
               "label": {
                 "en": "Category",
-                "nl": "Categorie"
+                "nl": "Categorie",
+                "de": "Kategorie"
               },
               "value": "Unknown"
             },
@@ -241,7 +140,8 @@
               "type": "label",
               "label": {
                 "en": "Capabilities",
-                "nl": "Opties"
+                "nl": "Opties",
+                "de": "Fähigkeiten"
               },
               "value": "Unknown"
             },
@@ -250,12 +150,14 @@
               "type": "label",
               "label": {
                 "en": "Devices",
-                "nl": "Apparaten"
+                "nl": "Apparaten",
+                "de": "Geräte"
               },
               "value": "Unknown",
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> group",
-                "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep"
+                "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep",
+                "de": "Um zu Ändern, welche Geräte in welche Gruppe sein sollen, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
               }
             },
             {
@@ -263,12 +165,14 @@
               "type": "label",
               "label": {
                 "en": "Version",
-                "nl": "versie"
+                "nl": "versie",
+                "de": "Version"
               },
               "value": "2.0",
               "hint": {
                 "en": "The version of the device internal driver, generally the version it was added as.",
-                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd."
+                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd.",
+                "de": "Die Version des interne Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes genutzt wurde."
               }
             }
           ]
@@ -277,7 +181,8 @@
           "type": "group",
           "label": {
             "en": "Other",
-            "nl": "Anders"
+            "nl": "Anders",
+            "de": "Andere"
           },
           "children": [
             {
@@ -285,12 +190,14 @@
               "type": "textarea",
               "label": {
                 "en": "Your Notes",
-                "nl": "Notities"
+                "nl": "Notities",
+                "de": "Notizen"
               },
               "value": "",
               "hint": {
                 "en": "Enter any thoughts or notes you may have regarding this group.",
-                "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep."
+                "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep.",
+                "de": "Notiere alle Gedanken oder Einfälle, die dir zu dieser Gruppe einfallen"
               }
             }
           ]
@@ -343,7 +250,8 @@
           "type": "group",
           "label": {
             "en": "About",
-            "nl": "Over"
+            "nl": "Over",
+            "de": "Über"
           },
           "children": [
             {
@@ -351,7 +259,8 @@
               "type": "label",
               "label": {
                 "en": "Category",
-                "nl": "Categorie"
+                "nl": "Categorie",
+                "de": "Kategorie"
               },
               "value": "Unknown"
             },
@@ -360,7 +269,8 @@
               "type": "label",
               "label": {
                 "en": "Capabilities",
-                "nl": "Opties"
+                "nl": "Opties",
+                "de": "Fähigkeiten"
               },
               "value": "Unknown"
             },
@@ -369,12 +279,14 @@
               "type": "label",
               "label": {
                 "en": "Devices",
-                "nl": "Apparaten"
+                "nl": "Apparaten",
+                "de": "Geräte"
               },
               "value": "Unknown",
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> group",
-                "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep"
+                "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep",
+                "de": "Um zu Ändern, welche Geräte in welche Gruppe sein sollen, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
               }
             },
             {
@@ -382,12 +294,14 @@
               "type": "label",
               "label": {
                 "en": "Version",
-                "nl": "versie"
+                "nl": "versie",
+                "de": "Version"
               },
               "value": "2.0",
               "hint": {
                 "en": "The version of the device internal driver, generally the version it was added as.",
-                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd."
+                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd.",
+                "de": "Die Version des interne Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes genutzt wurde."
               }
             }
           ]
@@ -396,7 +310,8 @@
           "type": "group",
           "label": {
             "en": "Other",
-            "nl": "Anders"
+            "nl": "Anders",
+            "de": "Andere"
           },
           "children": [
             {
@@ -404,12 +319,14 @@
               "type": "textarea",
               "label": {
                 "en": "Your Notes",
-                "nl": "Notities"
+                "nl": "Notities",
+                "de": "Notizen"
               },
               "value": "",
               "hint": {
                 "en": "Enter any thoughts or notes you may have regarding this group.",
-                "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep."
+                "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep.",
+                "de": "Notiere alle Gedanken oder Einfälle, die dir zu dieser Gruppe einfallen"
               }
             }
           ]
@@ -463,7 +380,8 @@
           "type": "group",
           "label": {
             "en": "About",
-            "nl": "Over"
+            "nl": "Over",
+            "de": "Über"
           },
           "children": [
             {
@@ -471,7 +389,8 @@
               "type": "label",
               "label": {
                 "en": "Category",
-                "nl": "Categorie"
+                "nl": "Categorie",
+                "de": "Kategorie"
               },
               "value": "Unknown"
             },
@@ -480,7 +399,8 @@
               "type": "label",
               "label": {
                 "en": "Capabilities",
-                "nl": "Opties"
+                "nl": "Opties",
+                "de": "Fähigkeiten"
               },
               "value": "Unknown"
             },
@@ -489,12 +409,14 @@
               "type": "label",
               "label": {
                 "en": "Devices",
-                "nl": "Apparaten"
+                "nl": "Apparaten",
+                "de": "Geräte"
               },
               "value": "Unknown",
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> group",
-                "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep"
+                "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep",
+                "de": "Um zu Ändern, welche Geräte in welche Gruppe sein sollen, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
               }
             },
             {
@@ -502,12 +424,14 @@
               "type": "label",
               "label": {
                 "en": "Version",
-                "nl": "versie"
+                "nl": "versie",
+                "de": "Version"
               },
               "value": "2.0",
               "hint": {
                 "en": "The version of the device internal driver, generally the version it was added as.",
-                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd."
+                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd.",
+                "de": "Die Version des interne Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes genutzt wurde."
               }
             }
           ]
@@ -516,7 +440,8 @@
           "type": "group",
           "label": {
             "en": "Other",
-            "nl": "Anders"
+            "nl": "Anders",
+            "de": "Andere"
           },
           "children": [
             {
@@ -524,12 +449,14 @@
               "type": "textarea",
               "label": {
                 "en": "Your Notes",
-                "nl": "Notities"
+                "nl": "Notities",
+                "de": "Notizen"
               },
               "value": "",
               "hint": {
                 "en": "Enter any thoughts or notes you may have regarding this group.",
-                "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep."
+                "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep.",
+                "de": "Notiere alle Gedanken oder Einfälle, die dir zu dieser Gruppe einfallen"
               }
             }
           ]
@@ -583,7 +510,8 @@
           "type": "group",
           "label": {
             "en": "About",
-            "nl": "Over"
+            "nl": "Over",
+            "de": "Über"
           },
           "children": [
             {
@@ -591,7 +519,8 @@
               "type": "label",
               "label": {
                 "en": "Category",
-                "nl": "Categorie"
+                "nl": "Categorie",
+                "de": "Kategorie"
               },
               "value": "Unknown"
             },
@@ -600,7 +529,8 @@
               "type": "label",
               "label": {
                 "en": "Capabilities",
-                "nl": "Opties"
+                "nl": "Opties",
+                "de": "Fähigkeiten"
               },
               "value": "Unknown"
             },
@@ -609,12 +539,14 @@
               "type": "label",
               "label": {
                 "en": "Devices",
-                "nl": "Apparaten"
+                "nl": "Apparaten",
+                "de": "Geräte"
               },
               "value": "Unknown",
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> group",
-                "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep"
+                "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep",
+                "de": "Um zu Ändern, welche Geräte in welche Gruppe sein sollen, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
               }
             },
             {
@@ -622,12 +554,14 @@
               "type": "label",
               "label": {
                 "en": "Version",
-                "nl": "versie"
+                "nl": "versie",
+                "de": "Version"
               },
               "value": "2.0",
               "hint": {
                 "en": "The version of the device internal driver, generally the version it was added as.",
-                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd."
+                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd.",
+                "de": "Die Version des interne Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes genutzt wurde."
               }
             }
           ]
@@ -636,7 +570,8 @@
           "type": "group",
           "label": {
             "en": "Other",
-            "nl": "Anders"
+            "nl": "Anders",
+            "de": "Andere"
           },
           "children": [
             {
@@ -644,12 +579,14 @@
               "type": "textarea",
               "label": {
                 "en": "Your Notes",
-                "nl": "Notities"
+                "nl": "Notities",
+                "de": "Notizen"
               },
               "value": "",
               "hint": {
                 "en": "Enter any thoughts or notes you may have regarding this group.",
-                "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep."
+                "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep.",
+                "de": "Notiere alle Gedanken oder Einfälle, die dir zu dieser Gruppe einfallen"
               }
             }
           ]
@@ -703,7 +640,8 @@
           "type": "group",
           "label": {
             "en": "About",
-            "nl": "Over"
+            "nl": "Over",
+            "de": "Über"
           },
           "children": [
             {
@@ -711,7 +649,8 @@
               "type": "label",
               "label": {
                 "en": "Category",
-                "nl": "Categorie"
+                "nl": "Categorie",
+                "de": "Kategorie"
               },
               "value": "Unknown"
             },
@@ -720,7 +659,8 @@
               "type": "label",
               "label": {
                 "en": "Capabilities",
-                "nl": "Opties"
+                "nl": "Opties",
+                "de": "Fähigkeiten"
               },
               "value": "Unknown"
             },
@@ -729,12 +669,14 @@
               "type": "label",
               "label": {
                 "en": "Devices",
-                "nl": "Apparaten"
+                "nl": "Apparaten",
+                "de": "Geräte"
               },
               "value": "Unknown",
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> group",
-                "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep"
+                "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep",
+                "de": "Um zu Ändern, welche Geräte in welche Gruppe sein sollen, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
               }
             },
             {
@@ -742,12 +684,14 @@
               "type": "label",
               "label": {
                 "en": "Version",
-                "nl": "versie"
+                "nl": "versie",
+                "de": "Version"
               },
               "value": "2.0",
               "hint": {
                 "en": "The version of the device internal driver, generally the version it was added as.",
-                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd."
+                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd.",
+                "de": "Die Version des interne Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes genutzt wurde."
               }
             }
           ]
@@ -756,7 +700,8 @@
           "type": "group",
           "label": {
             "en": "Other",
-            "nl": "Anders"
+            "nl": "Anders",
+            "de": "Andere"
           },
           "children": [
             {
@@ -764,12 +709,14 @@
               "type": "textarea",
               "label": {
                 "en": "Your Notes",
-                "nl": "Notities"
+                "nl": "Notities",
+                "de": "Notizen"
               },
               "value": "",
               "hint": {
                 "en": "Enter any thoughts or notes you may have regarding this group.",
-                "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep."
+                "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep.",
+                "de": "Notiere alle Gedanken oder Einfälle, die dir zu dieser Gruppe einfallen"
               }
             }
           ]
@@ -823,7 +770,8 @@
           "type": "group",
           "label": {
             "en": "About",
-            "nl": "Over"
+            "nl": "Over",
+            "de": "Über"
           },
           "children": [
             {
@@ -831,7 +779,8 @@
               "type": "label",
               "label": {
                 "en": "Category",
-                "nl": "Categorie"
+                "nl": "Categorie",
+                "de": "Kategorie"
               },
               "value": "Unknown"
             },
@@ -840,7 +789,8 @@
               "type": "label",
               "label": {
                 "en": "Capabilities",
-                "nl": "Opties"
+                "nl": "Opties",
+                "de": "Fähigkeiten"
               },
               "value": "Unknown"
             },
@@ -849,12 +799,14 @@
               "type": "label",
               "label": {
                 "en": "Devices",
-                "nl": "Apparaten"
+                "nl": "Apparaten",
+                "de": "Geräte"
               },
               "value": "Unknown",
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> group",
-                "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep"
+                "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep",
+                "de": "Um zu Ändern, welche Geräte in welche Gruppe sein sollen, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
               }
             },
             {
@@ -862,12 +814,14 @@
               "type": "label",
               "label": {
                 "en": "Version",
-                "nl": "versie"
+                "nl": "versie",
+                "de": "Version"
               },
               "value": "2.0",
               "hint": {
                 "en": "The version of the device internal driver, generally the version it was added as.",
-                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd."
+                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd.",
+                "de": "Die Version des interne Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes genutzt wurde."
               }
             }
           ]
@@ -876,7 +830,8 @@
           "type": "group",
           "label": {
             "en": "Other",
-            "nl": "Anders"
+            "nl": "Anders",
+            "de": "Andere"
           },
           "children": [
             {
@@ -884,12 +839,14 @@
               "type": "textarea",
               "label": {
                 "en": "Your Notes",
-                "nl": "Notities"
+                "nl": "Notities",
+                "de": "Notizen"
               },
               "value": "",
               "hint": {
                 "en": "Enter any thoughts or notes you may have regarding this group.",
-                "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep."
+                "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep.",
+                "de": "Notiere alle Gedanken oder Einfälle, die dir zu dieser Gruppe einfallen"
               }
             }
           ]
@@ -943,7 +900,8 @@
           "type": "group",
           "label": {
             "en": "About",
-            "nl": "Over"
+            "nl": "Over",
+            "de": "Über"
           },
           "children": [
             {
@@ -951,7 +909,8 @@
               "type": "label",
               "label": {
                 "en": "Category",
-                "nl": "Categorie"
+                "nl": "Categorie",
+                "de": "Kategorie"
               },
               "value": "Unknown"
             },
@@ -960,7 +919,8 @@
               "type": "label",
               "label": {
                 "en": "Capabilities",
-                "nl": "Opties"
+                "nl": "Opties",
+                "de": "Fähigkeiten"
               },
               "value": "Unknown"
             },
@@ -969,12 +929,14 @@
               "type": "label",
               "label": {
                 "en": "Devices",
-                "nl": "Apparaten"
+                "nl": "Apparaten",
+                "de": "Geräte"
               },
               "value": "Unknown",
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> group",
-                "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep"
+                "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep",
+                "de": "Um zu Ändern, welche Geräte in welche Gruppe sein sollen, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
               }
             },
             {
@@ -982,12 +944,14 @@
               "type": "label",
               "label": {
                 "en": "Version",
-                "nl": "versie"
+                "nl": "versie",
+                "de": "Version"
               },
               "value": "2.0",
               "hint": {
                 "en": "The version of the device internal driver, generally the version it was added as.",
-                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd."
+                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd.",
+                "de": "Die Version des interne Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes genutzt wurde."
               }
             }
           ]
@@ -996,7 +960,8 @@
           "type": "group",
           "label": {
             "en": "Other",
-            "nl": "Anders"
+            "nl": "Anders",
+            "de": "Andere"
           },
           "children": [
             {
@@ -1004,12 +969,14 @@
               "type": "textarea",
               "label": {
                 "en": "Your Notes",
-                "nl": "Notities"
+                "nl": "Notities",
+                "de": "Notizen"
               },
               "value": "",
               "hint": {
                 "en": "Enter any thoughts or notes you may have regarding this group.",
-                "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep."
+                "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep.",
+                "de": "Notiere alle Gedanken oder Einfälle, die dir zu dieser Gruppe einfallen"
               }
             }
           ]
@@ -1063,7 +1030,8 @@
           "type": "group",
           "label": {
             "en": "About",
-            "nl": "Over"
+            "nl": "Over",
+            "de": "Über"
           },
           "children": [
             {
@@ -1071,7 +1039,8 @@
               "type": "label",
               "label": {
                 "en": "Category",
-                "nl": "Categorie"
+                "nl": "Categorie",
+                "de": "Kategorie"
               },
               "value": "Unknown"
             },
@@ -1080,7 +1049,8 @@
               "type": "label",
               "label": {
                 "en": "Capabilities",
-                "nl": "Opties"
+                "nl": "Opties",
+                "de": "Fähigkeiten"
               },
               "value": "Unknown"
             },
@@ -1089,12 +1059,14 @@
               "type": "label",
               "label": {
                 "en": "Devices",
-                "nl": "Apparaten"
+                "nl": "Apparaten",
+                "de": "Geräte"
               },
               "value": "Unknown",
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> group",
-                "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep"
+                "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep",
+                "de": "Um zu Ändern, welche Geräte in welche Gruppe sein sollen, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
               }
             },
             {
@@ -1102,12 +1074,14 @@
               "type": "label",
               "label": {
                 "en": "Version",
-                "nl": "versie"
+                "nl": "versie",
+                "de": "Version"
               },
               "value": "2.0",
               "hint": {
                 "en": "The version of the device internal driver, generally the version it was added as.",
-                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd."
+                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd.",
+                "de": "Die Version des interne Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes genutzt wurde."
               }
             }
           ]
@@ -1116,7 +1090,8 @@
           "type": "group",
           "label": {
             "en": "Other",
-            "nl": "Anders"
+            "nl": "Anders",
+            "de": "Andere"
           },
           "children": [
             {
@@ -1124,12 +1099,14 @@
               "type": "textarea",
               "label": {
                 "en": "Your Notes",
-                "nl": "Notities"
+                "nl": "Notities",
+                "de": "Notizen"
               },
               "value": "",
               "hint": {
                 "en": "Enter any thoughts or notes you may have regarding this group.",
-                "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep."
+                "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep.",
+                "de": "Notiere alle Gedanken oder Einfälle, die dir zu dieser Gruppe einfallen"
               }
             }
           ]
@@ -1183,7 +1160,8 @@
           "type": "group",
           "label": {
             "en": "About",
-            "nl": "Over"
+            "nl": "Over",
+            "de": "Über"
           },
           "children": [
             {
@@ -1191,7 +1169,8 @@
               "type": "label",
               "label": {
                 "en": "Category",
-                "nl": "Categorie"
+                "nl": "Categorie",
+                "de": "Kategorie"
               },
               "value": "Unknown"
             },
@@ -1200,7 +1179,8 @@
               "type": "label",
               "label": {
                 "en": "Capabilities",
-                "nl": "Opties"
+                "nl": "Opties",
+                "de": "Fähigkeiten"
               },
               "value": "Unknown"
             },
@@ -1209,12 +1189,14 @@
               "type": "label",
               "label": {
                 "en": "Devices",
-                "nl": "Apparaten"
+                "nl": "Apparaten",
+                "de": "Geräte"
               },
               "value": "Unknown",
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> group",
-                "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep"
+                "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep",
+                "de": "Um zu Ändern, welche Geräte in welche Gruppe sein sollen, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
               }
             },
             {
@@ -1222,12 +1204,14 @@
               "type": "label",
               "label": {
                 "en": "Version",
-                "nl": "versie"
+                "nl": "versie",
+                "de": "Version"
               },
               "value": "2.0",
               "hint": {
                 "en": "The version of the device internal driver, generally the version it was added as.",
-                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd."
+                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd.",
+                "de": "Die Version des interne Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes genutzt wurde."
               }
             }
           ]
@@ -1236,7 +1220,8 @@
           "type": "group",
           "label": {
             "en": "Other",
-            "nl": "Anders"
+            "nl": "Anders",
+            "de": "Andere"
           },
           "children": [
             {
@@ -1244,12 +1229,14 @@
               "type": "textarea",
               "label": {
                 "en": "Your Notes",
-                "nl": "Notities"
+                "nl": "Notities",
+                "de": "Notizen"
               },
               "value": "",
               "hint": {
                 "en": "Enter any thoughts or notes you may have regarding this group.",
-                "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep."
+                "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep.",
+                "de": "Notiere alle Gedanken oder Einfälle, die dir zu dieser Gruppe einfallen"
               }
             }
           ]
@@ -1303,7 +1290,8 @@
           "type": "group",
           "label": {
             "en": "About",
-            "nl": "Over"
+            "nl": "Over",
+            "de": "Über"
           },
           "children": [
             {
@@ -1311,7 +1299,8 @@
               "type": "label",
               "label": {
                 "en": "Category",
-                "nl": "Categorie"
+                "nl": "Categorie",
+                "de": "Kategorie"
               },
               "value": "Unknown"
             },
@@ -1320,7 +1309,8 @@
               "type": "label",
               "label": {
                 "en": "Capabilities",
-                "nl": "Opties"
+                "nl": "Opties",
+                "de": "Fähigkeiten"
               },
               "value": "Unknown"
             },
@@ -1329,12 +1319,14 @@
               "type": "label",
               "label": {
                 "en": "Devices",
-                "nl": "Apparaten"
+                "nl": "Apparaten",
+                "de": "Geräte"
               },
               "value": "Unknown",
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> group",
-                "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep"
+                "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep",
+                "de": "Um zu Ändern, welche Geräte in welche Gruppe sein sollen, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
               }
             },
             {
@@ -1342,12 +1334,14 @@
               "type": "label",
               "label": {
                 "en": "Version",
-                "nl": "versie"
+                "nl": "versie",
+                "de": "Version"
               },
               "value": "2.0",
               "hint": {
                 "en": "The version of the device internal driver, generally the version it was added as.",
-                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd."
+                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd.",
+                "de": "Die Version des interne Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes genutzt wurde."
               }
             }
           ]
@@ -1356,7 +1350,8 @@
           "type": "group",
           "label": {
             "en": "Other",
-            "nl": "Anders"
+            "nl": "Anders",
+            "de": "Andere"
           },
           "children": [
             {
@@ -1364,12 +1359,14 @@
               "type": "textarea",
               "label": {
                 "en": "Your Notes",
-                "nl": "Notities"
+                "nl": "Notities",
+                "de": "Notizen"
               },
               "value": "",
               "hint": {
                 "en": "Enter any thoughts or notes you may have regarding this group.",
-                "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep."
+                "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep.",
+                "de": "Notiere alle Gedanken oder Einfälle, die dir zu dieser Gruppe einfallen"
               }
             }
           ]
@@ -1423,7 +1420,8 @@
           "type": "group",
           "label": {
             "en": "About",
-            "nl": "Over"
+            "nl": "Over",
+            "de": "Über"
           },
           "children": [
             {
@@ -1431,7 +1429,8 @@
               "type": "label",
               "label": {
                 "en": "Category",
-                "nl": "Categorie"
+                "nl": "Categorie",
+                "de": "Kategorie"
               },
               "value": "Unknown"
             },
@@ -1440,7 +1439,8 @@
               "type": "label",
               "label": {
                 "en": "Capabilities",
-                "nl": "Opties"
+                "nl": "Opties",
+                "de": "Fähigkeiten"
               },
               "value": "Unknown"
             },
@@ -1449,12 +1449,14 @@
               "type": "label",
               "label": {
                 "en": "Devices",
-                "nl": "Apparaten"
+                "nl": "Apparaten",
+                "de": "Geräte"
               },
               "value": "Unknown",
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> group",
-                "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep"
+                "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep",
+                "de": "Um zu Ändern, welche Geräte in welche Gruppe sein sollen, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
               }
             },
             {
@@ -1462,12 +1464,14 @@
               "type": "label",
               "label": {
                 "en": "Version",
-                "nl": "versie"
+                "nl": "versie",
+                "de": "Version"
               },
               "value": "2.0",
               "hint": {
                 "en": "The version of the device internal driver, generally the version it was added as.",
-                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd."
+                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd.",
+                "de": "Die Version des interne Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes genutzt wurde."
               }
             }
           ]
@@ -1476,7 +1480,8 @@
           "type": "group",
           "label": {
             "en": "Other",
-            "nl": "Anders"
+            "nl": "Anders",
+            "de": "Andere"
           },
           "children": [
             {
@@ -1484,12 +1489,14 @@
               "type": "textarea",
               "label": {
                 "en": "Your Notes",
-                "nl": "Notities"
+                "nl": "Notities",
+                "de": "Notizen"
               },
               "value": "",
               "hint": {
                 "en": "Enter any thoughts or notes you may have regarding this group.",
-                "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep."
+                "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep.",
+                "de": "Notiere alle Gedanken oder Einfälle, die dir zu dieser Gruppe einfallen"
               }
             }
           ]
@@ -1543,7 +1550,8 @@
           "type": "group",
           "label": {
             "en": "About",
-            "nl": "Over"
+            "nl": "Over",
+            "de": "Über"
           },
           "children": [
             {
@@ -1551,7 +1559,8 @@
               "type": "label",
               "label": {
                 "en": "Category",
-                "nl": "Categorie"
+                "nl": "Categorie",
+                "de": "Kategorie"
               },
               "value": "Unknown"
             },
@@ -1560,7 +1569,8 @@
               "type": "label",
               "label": {
                 "en": "Capabilities",
-                "nl": "Opties"
+                "nl": "Opties",
+                "de": "Fähigkeiten"
               },
               "value": "Unknown"
             },
@@ -1569,12 +1579,14 @@
               "type": "label",
               "label": {
                 "en": "Devices",
-                "nl": "Apparaten"
+                "nl": "Apparaten",
+                "de": "Geräte"
               },
               "value": "Unknown",
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> group",
-                "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep"
+                "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep",
+                "de": "Um zu Ändern, welche Geräte in welche Gruppe sein sollen, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
               }
             },
             {
@@ -1582,12 +1594,14 @@
               "type": "label",
               "label": {
                 "en": "Version",
-                "nl": "versie"
+                "nl": "versie",
+                "de": "Version"
               },
               "value": "2.0",
               "hint": {
                 "en": "The version of the device internal driver, generally the version it was added as.",
-                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd."
+                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd.",
+                "de": "Die Version des interne Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes genutzt wurde."
               }
             }
           ]
@@ -1596,7 +1610,8 @@
           "type": "group",
           "label": {
             "en": "Other",
-            "nl": "Anders"
+            "nl": "Anders",
+            "de": "Andere"
           },
           "children": [
             {
@@ -1604,12 +1619,14 @@
               "type": "textarea",
               "label": {
                 "en": "Your Notes",
-                "nl": "Notities"
+                "nl": "Notities",
+                "de": "Notizen"
               },
               "value": "",
               "hint": {
                 "en": "Enter any thoughts or notes you may have regarding this group.",
-                "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep."
+                "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep.",
+                "de": "Notiere alle Gedanken oder Einfälle, die dir zu dieser Gruppe einfallen"
               }
             }
           ]
@@ -1663,7 +1680,8 @@
           "type": "group",
           "label": {
             "en": "About",
-            "nl": "Over"
+            "nl": "Over",
+            "de": "Über"
           },
           "children": [
             {
@@ -1671,7 +1689,8 @@
               "type": "label",
               "label": {
                 "en": "Category",
-                "nl": "Categorie"
+                "nl": "Categorie",
+                "de": "Kategorie"
               },
               "value": "Unknown"
             },
@@ -1680,7 +1699,8 @@
               "type": "label",
               "label": {
                 "en": "Capabilities",
-                "nl": "Opties"
+                "nl": "Opties",
+                "de": "Fähigkeiten"
               },
               "value": "Unknown"
             },
@@ -1689,12 +1709,14 @@
               "type": "label",
               "label": {
                 "en": "Devices",
-                "nl": "Apparaten"
+                "nl": "Apparaten",
+                "de": "Geräte"
               },
               "value": "Unknown",
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> group",
-                "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep"
+                "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep",
+                "de": "Um zu Ändern, welche Geräte in welche Gruppe sein sollen, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
               }
             },
             {
@@ -1702,12 +1724,14 @@
               "type": "label",
               "label": {
                 "en": "Version",
-                "nl": "versie"
+                "nl": "versie",
+                "de": "Version"
               },
               "value": "2.0",
               "hint": {
                 "en": "The version of the device internal driver, generally the version it was added as.",
-                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd."
+                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd.",
+                "de": "Die Version des interne Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes genutzt wurde."
               }
             }
           ]
@@ -1716,7 +1740,8 @@
           "type": "group",
           "label": {
             "en": "Other",
-            "nl": "Anders"
+            "nl": "Anders",
+            "de": "Andere"
           },
           "children": [
             {
@@ -1724,12 +1749,14 @@
               "type": "textarea",
               "label": {
                 "en": "Your Notes",
-                "nl": "Notities"
+                "nl": "Notities",
+                "de": "Notizen"
               },
               "value": "",
               "hint": {
                 "en": "Enter any thoughts or notes you may have regarding this group.",
-                "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep."
+                "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep.",
+                "de": "Notiere alle Gedanken oder Einfälle, die dir zu dieser Gruppe einfallen"
               }
             }
           ]
@@ -1741,6 +1768,135 @@
         "en": "Lock",
         "nl": "Slot",
         "de": "Schloss"
+      }
+    },
+    {
+      "capabilities": [],
+      "icon": "/drivers/other/assets/icon.svg",
+      "images": {
+        "large": "/drivers/other/assets/images/large.png",
+        "small": "/drivers/other/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "capabilities",
+          "navigation": {
+            "next": "devices"
+          }
+        },
+        {
+          "id": "devices",
+          "navigation": {
+            "next": "icons",
+            "prev": "capabilities"
+          }
+        },
+        {
+          "id": "icons",
+          "navigation": {
+            "next": "group",
+            "prev": "devices"
+          }
+        },
+        {
+          "id": "group",
+          "navigation": {
+            "prev": "icons"
+          }
+        }
+      ],
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "About",
+            "nl": "Over",
+            "de": "Über"
+          },
+          "children": [
+            {
+              "id": "labelClass",
+              "type": "label",
+              "label": {
+                "en": "Category",
+                "nl": "Categorie",
+                "de": "Kategorie"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelCapabilities",
+              "type": "label",
+              "label": {
+                "en": "Capabilities",
+                "nl": "Opties",
+                "de": "Fähigkeiten"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "labelDevices",
+              "type": "label",
+              "label": {
+                "en": "Devices",
+                "nl": "Apparaten",
+                "de": "Geräte"
+              },
+              "value": "Unknown",
+              "hint": {
+                "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> group",
+                "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep",
+                "de": "Um zu Ändern, welche Geräte in welche Gruppe sein sollen, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
+              }
+            },
+            {
+              "id": "labelVersion",
+              "type": "label",
+              "label": {
+                "en": "Version",
+                "nl": "versie",
+                "de": "Version"
+              },
+              "value": "2.0",
+              "hint": {
+                "en": "The version of the device internal driver, generally the version it was added as.",
+                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd.",
+                "de": "Die Version des interne Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes genutzt wurde."
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Other",
+            "nl": "Anders",
+            "de": "Andere"
+          },
+          "children": [
+            {
+              "id": "notes",
+              "type": "textarea",
+              "label": {
+                "en": "Your Notes",
+                "nl": "Notities",
+                "de": "Notizen"
+              },
+              "value": "",
+              "hint": {
+                "en": "Enter any thoughts or notes you may have regarding this group.",
+                "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep.",
+                "de": "Notiere alle Gedanken oder Einfälle, die dir zu dieser Gruppe einfallen"
+              }
+            }
+          ]
+        }
+      ],
+      "id": "other",
+      "class": "other",
+      "name": {
+        "en": "Other (Advanced)",
+        "nl": "Alarm"
       }
     },
     {
@@ -1783,7 +1939,8 @@
           "type": "group",
           "label": {
             "en": "About",
-            "nl": "Over"
+            "nl": "Over",
+            "de": "Über"
           },
           "children": [
             {
@@ -1791,7 +1948,8 @@
               "type": "label",
               "label": {
                 "en": "Category",
-                "nl": "Categorie"
+                "nl": "Categorie",
+                "de": "Kategorie"
               },
               "value": "Unknown"
             },
@@ -1800,7 +1958,8 @@
               "type": "label",
               "label": {
                 "en": "Capabilities",
-                "nl": "Opties"
+                "nl": "Opties",
+                "de": "Fähigkeiten"
               },
               "value": "Unknown"
             },
@@ -1809,12 +1968,14 @@
               "type": "label",
               "label": {
                 "en": "Devices",
-                "nl": "Apparaten"
+                "nl": "Apparaten",
+                "de": "Geräte"
               },
               "value": "Unknown",
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> group",
-                "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep"
+                "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep",
+                "de": "Um zu Ändern, welche Geräte in welche Gruppe sein sollen, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
               }
             },
             {
@@ -1822,12 +1983,14 @@
               "type": "label",
               "label": {
                 "en": "Version",
-                "nl": "versie"
+                "nl": "versie",
+                "de": "Version"
               },
               "value": "2.0",
               "hint": {
                 "en": "The version of the device internal driver, generally the version it was added as.",
-                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd."
+                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd.",
+                "de": "Die Version des interne Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes genutzt wurde."
               }
             }
           ]
@@ -1836,7 +1999,8 @@
           "type": "group",
           "label": {
             "en": "Other",
-            "nl": "Anders"
+            "nl": "Anders",
+            "de": "Andere"
           },
           "children": [
             {
@@ -1844,12 +2008,14 @@
               "type": "textarea",
               "label": {
                 "en": "Your Notes",
-                "nl": "Notities"
+                "nl": "Notities",
+                "de": "Notizen"
               },
               "value": "",
               "hint": {
                 "en": "Enter any thoughts or notes you may have regarding this group.",
-                "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep."
+                "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep.",
+                "de": "Notiere alle Gedanken oder Einfälle, die dir zu dieser Gruppe einfallen"
               }
             }
           ]
@@ -1903,7 +2069,8 @@
           "type": "group",
           "label": {
             "en": "About",
-            "nl": "Over"
+            "nl": "Over",
+            "de": "Über"
           },
           "children": [
             {
@@ -1911,7 +2078,8 @@
               "type": "label",
               "label": {
                 "en": "Category",
-                "nl": "Categorie"
+                "nl": "Categorie",
+                "de": "Kategorie"
               },
               "value": "Unknown"
             },
@@ -1920,7 +2088,8 @@
               "type": "label",
               "label": {
                 "en": "Capabilities",
-                "nl": "Opties"
+                "nl": "Opties",
+                "de": "Fähigkeiten"
               },
               "value": "Unknown"
             },
@@ -1929,12 +2098,14 @@
               "type": "label",
               "label": {
                 "en": "Devices",
-                "nl": "Apparaten"
+                "nl": "Apparaten",
+                "de": "Geräte"
               },
               "value": "Unknown",
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> group",
-                "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep"
+                "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep",
+                "de": "Um zu Ändern, welche Geräte in welche Gruppe sein sollen, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
               }
             },
             {
@@ -1942,12 +2113,14 @@
               "type": "label",
               "label": {
                 "en": "Version",
-                "nl": "versie"
+                "nl": "versie",
+                "de": "Version"
               },
               "value": "2.0",
               "hint": {
                 "en": "The version of the device internal driver, generally the version it was added as.",
-                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd."
+                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd.",
+                "de": "Die Version des interne Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes genutzt wurde."
               }
             }
           ]
@@ -1956,7 +2129,8 @@
           "type": "group",
           "label": {
             "en": "Other",
-            "nl": "Anders"
+            "nl": "Anders",
+            "de": "Andere"
           },
           "children": [
             {
@@ -1964,12 +2138,14 @@
               "type": "textarea",
               "label": {
                 "en": "Your Notes",
-                "nl": "Notities"
+                "nl": "Notities",
+                "de": "Notizen"
               },
               "value": "",
               "hint": {
                 "en": "Enter any thoughts or notes you may have regarding this group.",
-                "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep."
+                "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep.",
+                "de": "Notiere alle Gedanken oder Einfälle, die dir zu dieser Gruppe einfallen"
               }
             }
           ]
@@ -2023,7 +2199,8 @@
           "type": "group",
           "label": {
             "en": "About",
-            "nl": "Over"
+            "nl": "Over",
+            "de": "Über"
           },
           "children": [
             {
@@ -2031,7 +2208,8 @@
               "type": "label",
               "label": {
                 "en": "Category",
-                "nl": "Categorie"
+                "nl": "Categorie",
+                "de": "Kategorie"
               },
               "value": "Unknown"
             },
@@ -2040,7 +2218,8 @@
               "type": "label",
               "label": {
                 "en": "Capabilities",
-                "nl": "Opties"
+                "nl": "Opties",
+                "de": "Fähigkeiten"
               },
               "value": "Unknown"
             },
@@ -2049,12 +2228,14 @@
               "type": "label",
               "label": {
                 "en": "Devices",
-                "nl": "Apparaten"
+                "nl": "Apparaten",
+                "de": "Geräte"
               },
               "value": "Unknown",
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> group",
-                "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep"
+                "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep",
+                "de": "Um zu Ändern, welche Geräte in welche Gruppe sein sollen, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
               }
             },
             {
@@ -2062,12 +2243,14 @@
               "type": "label",
               "label": {
                 "en": "Version",
-                "nl": "versie"
+                "nl": "versie",
+                "de": "Version"
               },
               "value": "2.0",
               "hint": {
                 "en": "The version of the device internal driver, generally the version it was added as.",
-                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd."
+                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd.",
+                "de": "Die Version des interne Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes genutzt wurde."
               }
             }
           ]
@@ -2076,7 +2259,8 @@
           "type": "group",
           "label": {
             "en": "Other",
-            "nl": "Anders"
+            "nl": "Anders",
+            "de": "Andere"
           },
           "children": [
             {
@@ -2084,12 +2268,14 @@
               "type": "textarea",
               "label": {
                 "en": "Your Notes",
-                "nl": "Notities"
+                "nl": "Notities",
+                "de": "Notizen"
               },
               "value": "",
               "hint": {
                 "en": "Enter any thoughts or notes you may have regarding this group.",
-                "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep."
+                "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep.",
+                "de": "Notiere alle Gedanken oder Einfälle, die dir zu dieser Gruppe einfallen"
               }
             }
           ]
@@ -2143,7 +2329,8 @@
           "type": "group",
           "label": {
             "en": "About",
-            "nl": "Over"
+            "nl": "Over",
+            "de": "Über"
           },
           "children": [
             {
@@ -2151,7 +2338,8 @@
               "type": "label",
               "label": {
                 "en": "Category",
-                "nl": "Categorie"
+                "nl": "Categorie",
+                "de": "Kategorie"
               },
               "value": "Unknown"
             },
@@ -2160,7 +2348,8 @@
               "type": "label",
               "label": {
                 "en": "Capabilities",
-                "nl": "Opties"
+                "nl": "Opties",
+                "de": "Fähigkeiten"
               },
               "value": "Unknown"
             },
@@ -2169,12 +2358,14 @@
               "type": "label",
               "label": {
                 "en": "Devices",
-                "nl": "Apparaten"
+                "nl": "Apparaten",
+                "de": "Geräte"
               },
               "value": "Unknown",
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> group",
-                "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep"
+                "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep",
+                "de": "Um zu Ändern, welche Geräte in welche Gruppe sein sollen, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
               }
             },
             {
@@ -2182,12 +2373,14 @@
               "type": "label",
               "label": {
                 "en": "Version",
-                "nl": "versie"
+                "nl": "versie",
+                "de": "Version"
               },
               "value": "2.0",
               "hint": {
                 "en": "The version of the device internal driver, generally the version it was added as.",
-                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd."
+                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd.",
+                "de": "Die Version des interne Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes genutzt wurde."
               }
             }
           ]
@@ -2196,7 +2389,8 @@
           "type": "group",
           "label": {
             "en": "Other",
-            "nl": "Anders"
+            "nl": "Anders",
+            "de": "Andere"
           },
           "children": [
             {
@@ -2204,12 +2398,14 @@
               "type": "textarea",
               "label": {
                 "en": "Your Notes",
-                "nl": "Notities"
+                "nl": "Notities",
+                "de": "Notizen"
               },
               "value": "",
               "hint": {
                 "en": "Enter any thoughts or notes you may have regarding this group.",
-                "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep."
+                "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep.",
+                "de": "Notiere alle Gedanken oder Einfälle, die dir zu dieser Gruppe einfallen"
               }
             }
           ]
@@ -2263,7 +2459,8 @@
           "type": "group",
           "label": {
             "en": "About",
-            "nl": "Over"
+            "nl": "Over",
+            "de": "Über"
           },
           "children": [
             {
@@ -2271,7 +2468,8 @@
               "type": "label",
               "label": {
                 "en": "Category",
-                "nl": "Categorie"
+                "nl": "Categorie",
+                "de": "Kategorie"
               },
               "value": "Unknown"
             },
@@ -2280,7 +2478,8 @@
               "type": "label",
               "label": {
                 "en": "Capabilities",
-                "nl": "Opties"
+                "nl": "Opties",
+                "de": "Fähigkeiten"
               },
               "value": "Unknown"
             },
@@ -2289,12 +2488,14 @@
               "type": "label",
               "label": {
                 "en": "Devices",
-                "nl": "Apparaten"
+                "nl": "Apparaten",
+                "de": "Geräte"
               },
               "value": "Unknown",
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> group",
-                "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep"
+                "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep",
+                "de": "Um zu Ändern, welche Geräte in welche Gruppe sein sollen, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
               }
             },
             {
@@ -2302,12 +2503,14 @@
               "type": "label",
               "label": {
                 "en": "Version",
-                "nl": "versie"
+                "nl": "versie",
+                "de": "Version"
               },
               "value": "2.0",
               "hint": {
                 "en": "The version of the device internal driver, generally the version it was added as.",
-                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd."
+                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd.",
+                "de": "Die Version des interne Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes genutzt wurde."
               }
             }
           ]
@@ -2316,7 +2519,8 @@
           "type": "group",
           "label": {
             "en": "Other",
-            "nl": "Anders"
+            "nl": "Anders",
+            "de": "Andere"
           },
           "children": [
             {
@@ -2324,12 +2528,14 @@
               "type": "textarea",
               "label": {
                 "en": "Your Notes",
-                "nl": "Notities"
+                "nl": "Notities",
+                "de": "Notizen"
               },
               "value": "",
               "hint": {
                 "en": "Enter any thoughts or notes you may have regarding this group.",
-                "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep."
+                "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep.",
+                "de": "Notiere alle Gedanken oder Einfälle, die dir zu dieser Gruppe einfallen"
               }
             }
           ]
@@ -2383,7 +2589,8 @@
           "type": "group",
           "label": {
             "en": "About",
-            "nl": "Over"
+            "nl": "Over",
+            "de": "Über"
           },
           "children": [
             {
@@ -2391,7 +2598,8 @@
               "type": "label",
               "label": {
                 "en": "Category",
-                "nl": "Categorie"
+                "nl": "Categorie",
+                "de": "Kategorie"
               },
               "value": "Unknown"
             },
@@ -2400,7 +2608,8 @@
               "type": "label",
               "label": {
                 "en": "Capabilities",
-                "nl": "Opties"
+                "nl": "Opties",
+                "de": "Fähigkeiten"
               },
               "value": "Unknown"
             },
@@ -2409,12 +2618,14 @@
               "type": "label",
               "label": {
                 "en": "Devices",
-                "nl": "Apparaten"
+                "nl": "Apparaten",
+                "de": "Geräte"
               },
               "value": "Unknown",
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> group",
-                "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep"
+                "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep",
+                "de": "Um zu Ändern, welche Geräte in welche Gruppe sein sollen, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
               }
             },
             {
@@ -2422,12 +2633,14 @@
               "type": "label",
               "label": {
                 "en": "Version",
-                "nl": "versie"
+                "nl": "versie",
+                "de": "Version"
               },
               "value": "2.0",
               "hint": {
                 "en": "The version of the device internal driver, generally the version it was added as.",
-                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd."
+                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd.",
+                "de": "Die Version des interne Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes genutzt wurde."
               }
             }
           ]
@@ -2436,7 +2649,8 @@
           "type": "group",
           "label": {
             "en": "Other",
-            "nl": "Anders"
+            "nl": "Anders",
+            "de": "Andere"
           },
           "children": [
             {
@@ -2444,12 +2658,14 @@
               "type": "textarea",
               "label": {
                 "en": "Your Notes",
-                "nl": "Notities"
+                "nl": "Notities",
+                "de": "Notizen"
               },
               "value": "",
               "hint": {
                 "en": "Enter any thoughts or notes you may have regarding this group.",
-                "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep."
+                "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep.",
+                "de": "Notiere alle Gedanken oder Einfälle, die dir zu dieser Gruppe einfallen"
               }
             }
           ]
@@ -2503,7 +2719,8 @@
           "type": "group",
           "label": {
             "en": "About",
-            "nl": "Over"
+            "nl": "Over",
+            "de": "Über"
           },
           "children": [
             {
@@ -2511,7 +2728,8 @@
               "type": "label",
               "label": {
                 "en": "Category",
-                "nl": "Categorie"
+                "nl": "Categorie",
+                "de": "Kategorie"
               },
               "value": "Unknown"
             },
@@ -2520,7 +2738,8 @@
               "type": "label",
               "label": {
                 "en": "Capabilities",
-                "nl": "Opties"
+                "nl": "Opties",
+                "de": "Fähigkeiten"
               },
               "value": "Unknown"
             },
@@ -2529,12 +2748,14 @@
               "type": "label",
               "label": {
                 "en": "Devices",
-                "nl": "Apparaten"
+                "nl": "Apparaten",
+                "de": "Geräte"
               },
               "value": "Unknown",
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> group",
-                "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep"
+                "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep",
+                "de": "Um zu Ändern, welche Geräte in welche Gruppe sein sollen, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
               }
             },
             {
@@ -2542,12 +2763,14 @@
               "type": "label",
               "label": {
                 "en": "Version",
-                "nl": "versie"
+                "nl": "versie",
+                "de": "Version"
               },
               "value": "2.0",
               "hint": {
                 "en": "The version of the device internal driver, generally the version it was added as.",
-                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd."
+                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd.",
+                "de": "Die Version des interne Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes genutzt wurde."
               }
             }
           ]
@@ -2556,7 +2779,8 @@
           "type": "group",
           "label": {
             "en": "Other",
-            "nl": "Anders"
+            "nl": "Anders",
+            "de": "Andere"
           },
           "children": [
             {
@@ -2564,12 +2788,14 @@
               "type": "textarea",
               "label": {
                 "en": "Your Notes",
-                "nl": "Notities"
+                "nl": "Notities",
+                "de": "Notizen"
               },
               "value": "",
               "hint": {
                 "en": "Enter any thoughts or notes you may have regarding this group.",
-                "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep."
+                "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep.",
+                "de": "Notiere alle Gedanken oder Einfälle, die dir zu dieser Gruppe einfallen"
               }
             }
           ]
@@ -2623,7 +2849,8 @@
           "type": "group",
           "label": {
             "en": "About",
-            "nl": "Over"
+            "nl": "Over",
+            "de": "Über"
           },
           "children": [
             {
@@ -2631,7 +2858,8 @@
               "type": "label",
               "label": {
                 "en": "Category",
-                "nl": "Categorie"
+                "nl": "Categorie",
+                "de": "Kategorie"
               },
               "value": "Unknown"
             },
@@ -2640,7 +2868,8 @@
               "type": "label",
               "label": {
                 "en": "Capabilities",
-                "nl": "Opties"
+                "nl": "Opties",
+                "de": "Fähigkeiten"
               },
               "value": "Unknown"
             },
@@ -2649,12 +2878,14 @@
               "type": "label",
               "label": {
                 "en": "Devices",
-                "nl": "Apparaten"
+                "nl": "Apparaten",
+                "de": "Geräte"
               },
               "value": "Unknown",
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> group",
-                "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep"
+                "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep",
+                "de": "Um zu Ändern, welche Geräte in welche Gruppe sein sollen, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
               }
             },
             {
@@ -2662,12 +2893,14 @@
               "type": "label",
               "label": {
                 "en": "Version",
-                "nl": "versie"
+                "nl": "versie",
+                "de": "Version"
               },
               "value": "2.0",
               "hint": {
                 "en": "The version of the device internal driver, generally the version it was added as.",
-                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd."
+                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd.",
+                "de": "Die Version des interne Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes genutzt wurde."
               }
             }
           ]
@@ -2676,7 +2909,8 @@
           "type": "group",
           "label": {
             "en": "Other",
-            "nl": "Anders"
+            "nl": "Anders",
+            "de": "Andere"
           },
           "children": [
             {
@@ -2684,12 +2918,14 @@
               "type": "textarea",
               "label": {
                 "en": "Your Notes",
-                "nl": "Notities"
+                "nl": "Notities",
+                "de": "Notizen"
               },
               "value": "",
               "hint": {
                 "en": "Enter any thoughts or notes you may have regarding this group.",
-                "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep."
+                "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep.",
+                "de": "Notiere alle Gedanken oder Einfälle, die dir zu dieser Gruppe einfallen"
               }
             }
           ]
@@ -2743,7 +2979,8 @@
           "type": "group",
           "label": {
             "en": "About",
-            "nl": "Over"
+            "nl": "Over",
+            "de": "Über"
           },
           "children": [
             {
@@ -2751,7 +2988,8 @@
               "type": "label",
               "label": {
                 "en": "Category",
-                "nl": "Categorie"
+                "nl": "Categorie",
+                "de": "Kategorie"
               },
               "value": "Unknown"
             },
@@ -2760,7 +2998,8 @@
               "type": "label",
               "label": {
                 "en": "Capabilities",
-                "nl": "Opties"
+                "nl": "Opties",
+                "de": "Fähigkeiten"
               },
               "value": "Unknown"
             },
@@ -2769,12 +3008,14 @@
               "type": "label",
               "label": {
                 "en": "Devices",
-                "nl": "Apparaten"
+                "nl": "Apparaten",
+                "de": "Geräte"
               },
               "value": "Unknown",
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> group",
-                "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep"
+                "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> groep",
+                "de": "Um zu Ändern, welche Geräte in welche Gruppe sein sollen, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
               }
             },
             {
@@ -2782,12 +3023,14 @@
               "type": "label",
               "label": {
                 "en": "Version",
-                "nl": "versie"
+                "nl": "versie",
+                "de": "Version"
               },
               "value": "2.0",
               "hint": {
                 "en": "The version of the device internal driver, generally the version it was added as.",
-                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd."
+                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd.",
+                "de": "Die Version des interne Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes genutzt wurde."
               }
             }
           ]
@@ -2796,7 +3039,8 @@
           "type": "group",
           "label": {
             "en": "Other",
-            "nl": "Anders"
+            "nl": "Anders",
+            "de": "Andere"
           },
           "children": [
             {
@@ -2804,12 +3048,14 @@
               "type": "textarea",
               "label": {
                 "en": "Your Notes",
-                "nl": "Notities"
+                "nl": "Notities",
+                "de": "Notizen"
               },
               "value": "",
               "hint": {
                 "en": "Enter any thoughts or notes you may have regarding this group.",
-                "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep."
+                "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep.",
+                "de": "Notiere alle Gedanken oder Einfälle, die dir zu dieser Gruppe einfallen"
               }
             }
           ]

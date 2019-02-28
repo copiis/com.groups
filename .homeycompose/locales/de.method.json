@@ -65,7 +65,7 @@
         "description": "nie an, immer ausgeschaltet"
     },
     "none": {
-        "title": "Ein, sofern nicht alles an ist,
+        "title": "Ein, sofern nicht alles an ist",
         "brief": "Ein, sofern nicht alles eingeschaltet ist",
         "description": "Aus wenn alle an sind, ansonsten angeschaltet"
     },
