@@ -27,7 +27,7 @@
       "virtueel"
     ]
   },
-  "version": "2.3.100",
+  "version": "2.3.101",
   "compatibility": ">=2.0",
   "author": {
     "name": "Jamie Peake",
@@ -48,20 +48,12 @@
         "email": "bas@balotti.com"
       }
     ],
-    "contributors": [
+    "translators": [
       {
-        "name": "Johannes Aloijsius",
-        "email": "Johannesaloijsius@gmail.com",
-        "languages": [
-          "nl"
-        ]
+        "name": "Johannes Aloijsius"
       },
       {
-        "name": "Philipp Schnittger",
-        "email": "p.schnittger@gmx.net",
-        "languages": [
-          "de"
-        ]
+        "name": "Philipp Schnittger"
       }
     ]
   },
