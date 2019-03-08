@@ -1,7 +1,7 @@
 {
     "alarm" : {
         "title" : "Alarm",
-        "description" : "Devices which contain an alarm, eg. sensors, contact, fire, smoke, CO, etc."
+        "description" : "Geräte die Alarm auslösen können. Zum Besipiel Sensoren, Kontakt, Feuer, Rauch, CO etc."
     },
     "amplifier" : {
         "title" : "Verstärker",
@@ -17,27 +17,27 @@
     },
     "coffeemachine" : {
         "title" : "Kaffemaschine",
-        "description" : "coffeemakers or coffee machines are cooking appliances used to brew coffee."
+        "description" : "Kaffeemaschinen werden zum Brühen von Kaffee benutzt."
     },
     "curtain" : {
         "title" : "Vorhänge",
-        "description" : "electronic curtains which will move the material sideways along a rail."
+        "description" : "elektrisch gesteuerte Vorhänge werden auf- und zugezogen."
     },
     "doorbell" : {
         "title" : "Türklingel",
-        "description" : "doorbells, and device which announce when a button is pressed."
+        "description" : "eine Türklingel meldet einen besucher an der Tür"
     },
     "fan" : {
         "title" : "Ventilator",
-        "description" : "Ventilatoren, die dein Heim kühlen."
+        "description" : "Ventilatoren kühlen dein Heim."
     },
     "garagedoor" : {
         "title" : "Garagentor",
-        "description": "garage doors as well as other automatic doors and gates."
+        "description": "gesteuerte Garagentore sowie auch automatisch geateuerte Türen"
     },
     "heater" : {
         "title" : "Heizung",
-        "description": "heaters and other devices which warm your home."
+        "description": "Heizungen und andere Geräte, die dein Heim wärmen."
     },
     "homealarm" : {
         "title" : "Heim-Sicherheit",
@@ -45,19 +45,19 @@
     },
     "homeenergymonitor" : {
         "title" : "Home Energy Monitor",
-        "description": "Devices that monitor a house's energy usage."
+        "description": "Geräte zur Überwachung des Energieverbrauchs in deinem Haus-"
     },
     "kettle" : {
         "title" : "Wasserkocher",
-        "description": "Kettles and other devices that can heat water."
+        "description": "Geräte zu erhitzen von Wasser."
     },
     "light" : {
         "title" : "Lampe",
-        "description": "an illuminating agent or source, lights, globes, lamps, etc."
+        "description": "Geräte zum Beleuchten deiner Umgebung (Lampen, Lichter etc.)"
     },
     "lock" : {
         "title" : "Schloss",
-        "description": "devices with locks."
+        "description": "Geräte zum Abschließen von Türen o.ä."
     },
     "other" : {
         "title" : "Andere",
@@ -69,22 +69,22 @@
     },
     "remote" : {
         "title" : "Fernbedienung",
-        "description": "TV, blinds, remote control, etc. All\ntypes of remote controls. \""
+         "description": "Alle Arten von Fernbedienungen für z.B. Tv, AV.Receiver, Voränge etc."
     },
     "sensor" : {
         "title" : "Sensor",
-        "description": "contact, motion, fire, CO  or any type of sensor. As well as alarms!"
+        "description": "kontakt, Bewegung, Feuer, CO oder jeder andere Sensor. Auch Alarmsensoren!"
     },
     "socket" : {
         "title" : "Steckdose",
-        "description": "wall plugs and sockets."
+        "description": "alle Arten von Steckdosen."
     },
     "speaker" : {
         "title" : "Lautsprecher",
-        "description": "devices that can play audio, such as music."
+        "description": "Geräte die Musik abspielen können."
     },
     "sunshade" : {
-        "title" : "Sonnenschirm",
+        "title" : "FensterJalousien",
         "description": "Jalousien (Fenster-Abdeckungen gegen die Sonne)."
     },
     "thermostat" : {
@@ -97,7 +97,7 @@
     },
     "vacuumcleaner" : {
         "title" : "Staubsauger",
-        "description": "automated devices which clean floors on demand."
+        "description": "Staubsaugroboter zum automatischen Säubern des Hauses bzw. der Wohnung"
     },
     "windowcoverings" : {
         "title" : "Fenster-Abdeckungen",
