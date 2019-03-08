@@ -1,22 +1,24 @@
 {
   "capabilities" : {
-    "title" : "Select the capabilities of the group",
+    "title" : "Wähle die Fähigkeiten der Gruppe",
     "loading" : "loading"
   },
   "devices" : {
-    "title" : "Select devices to group",
-    "loading" : "Gathering all of your devices with these capabilities",
+    "title" : "Wähle die Geräte der Gruppe",
+    "loading" : "Sammeln aller Geräte mit diesen Funktionen",
     "empty" : {
-      "title" : "Sorry no devices found",
+      "title" : "Tut mir leid, keine Geräte gefunden",
       "description" : "We were unable to find any devices with those particular capabilities, please press 'previous' to go back."
+      "description" : "Wir konnten keine Geräte mit diesen besonderen Fähigkeiten finden. Bitte drücke 'zurück', um zurück zu gelangen."
     }
   },
   "icons" : {
-    "title" : "Choose your icon",
-    "loading" : "Loading possible icons"
+    "title" : "Wähle dein Icon",
+    "loading" : "Lade mögliche Icons"
   },
   "group" : {
-    "title" : "Grouping your devices..",
+    "title" : "Gruppiere Geräte..",
     "loading" : "Adding your new group, this will only take a couple of seconds."
+    "loading" : "Füge neue Gruppe hinzu, das nimmt nur ein paar Sekunden in Anspruch."
   }
 }

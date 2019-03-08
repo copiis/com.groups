@@ -1,19 +1,19 @@
 {
   "_" : {
-    "about" : "about",
-    "group" : "group",
-    "groups": "groups",
-    "group name": "group name",
-    "capability" : "capability",
-    "capabilities" : "capabilities",
-    "category": "category",
-    "categories": "categories",
-    "device": "device",
-    "devices": "devices",
-    "icon" : "icon",
-    "icons": "icons",
-    "other": "other",
-    "unavailable": "not available",
+    "about" : "über",
+    "group" : "Gruppe",
+    "groups": "Gruppen",
+    "group name": "Gruppenname",
+    "capability" : "Fähigkeit",
+    "capabilities" : "Fähigkeiten",
+    "category": "Kategorie",
+    "categories": "Kategorien",
+    "device": "Gerät",
+    "devices": "Geräte",
+    "icon" : "Icon",
+    "icons": "Icons",
+    "other": "Andere",
+    "unavailable": "nicht verfügbar",
     "offline": "offline"
   }
 }
