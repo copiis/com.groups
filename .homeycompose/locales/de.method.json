@@ -1,87 +1,87 @@
 {
     "all": {
-        "title": "On if all on",
-        "brief": "on if all devices are on",
-        "description": "On if all devices are on. otherwise off"
+        "title": "An wenn Alle an",
+        "brief": "an wenn alle Geräte an geschaltet",
+        "description": "An wenn alle Geräte an geschaltet sind. Sonst aus!"
     },
     "always": {
-        "title": "Always On",
-        "brief": "always on",
-        "description": "Always returns to on"
+        "title": "Immer an",
+        "brief": "immer an",
+        "description": "Immer an geschaltet"
     },
     "any": {
-        "title": "On if any on",
-        "brief": "on if any devices are on",
-        "description": "On if any devices are on"
+        "title": "An wenn ein Gerät an",
+        "brief": "an wenn irgendein Gerät an ist",
+        "description": "an wenn irgendein Gerät angeschaltet ist"
     },
     "highest": {
-        "title": "Highest Value",
-        "brief": "the highest value",
-        "description": "The highest value of the all the grouped device"
+        "title": "höchster Wert",
+        "brief": "der höchste Wert",
+        "description": "Der höchste Wert aller in der Gruppe befindlichen Geräte."
     },
     "ignore": {
-        "title": "Ignore Devices",
-        "brief": "the last value set in the app",
-        "description": "Don't update, only use values set by the card"
+        "title": "Ignoriere Geräte",
+        "brief": "der letzte gesetzte Wert in der App",
+        "description": "Nicht updaten, nur Werte der Karte nutzen"
     },
     "lowest": {
-        "title": "Lowest Value",
-        "brief": "the lowest value",
-        "description": "The lowest value of the all the grouped device"
+        "title": "niedrigster Wert",
+        "brief": "der niedrigste Wert",
+        "description": "Der niedrigste Wert aller in der Gruppe befindlichen Geräte."
     },
     "max": {
-        "title": "Maximum value",
-        "brief": "the highest value",
-        "description": "The value of the device with the largest value"
+        "title": "Maximaler Wert",
+        "brief": "der maximalste Wert",
+        "description": "Der wert des Gerätes mit dem maximalsten Wert"
     },
     "mean": {
-        "title": "Mean Average",
-        "brief": "the average value (mean)",
-        "description": "The average your are used to (sum/count)"
+        "title": "Gemittelter Durchschnitt",
+        "brief": "durchschnittlicher Wert",
+        "description": "Durchschnitt zum Berechen (zählen, summieren)"
     },
     "median": {
-        "title": "Median Average",
-        "brief": "the middle value (median)",
-        "description": "The value of the device in the middle"
+        "title": "Mittelwert",
+        "brief": "der Mittelwert",
+        "description": "Der Mittelwert der Geräte"
     },
     "min": {
-        "title": "Minimum Value",
-        "brief": "the lowest value",
-        "description": "The value of the device with the smallest value"
+        "title": "Mindestwert",
+        "brief": "der Mindestwert der Geräte",
+        "description": "Der Wert der Geräte mit dem kleinsten Wert"
     },
     "mode": {
-        "title": "Mode Average",
-        "brief": "the most common value",
-        "description": "The value which the most devices has"
+        "title": "Durchschnitts-Mode",
+        "brief": "der am gebräuchlichsten Wert",
+        "description": "Der Wert, den die meißten Geräte nutzen"
     },
     "most": {
-        "title": "Most Devices",
-        "brief": "most common value",
-        "description": "On if at least half devices are on"
+        "title": "Meißten Geräte",
+        "brief": "häufigster Wert",
+        "description": "An wenn mindestens die Hälfte der Geräte an ist"
     },
     "never": {
-        "title": "Never On",
-        "brief": "never on",
-        "description": "Never on, always returns to off"
+        "title": "Nie an",
+        "brief": "nie an",
+        "description": "nie an, immer ausgeschaltet"
     },
     "none": {
-        "title": "On unless all on",
-        "brief": "on unless all devices  on",
-        "description": "Off if all devices are on, otherwise on"
+        "title": "Ein, sofern nicht alles an ist,
+        "brief": "Ein, sofern nicht alles eingeschaltet ist",
+        "description": "Aus wenn alle an sind, ansonsten angeschaltet"
     },
     "sum": {
-        "title": "Total Value",
-        "brief": "the sum of all devices",
-        "description": "The sum of all the grouped device values"
+        "title": "Gesamtwert",
+        "brief": "die Summe aller Geräte",
+        "description": "Summe aller in der Gruppe befindlichen Geräte"
     },
     "nor": {
-        "title": "On if None on",
-        "brief": "on if none no devices are on",
-        "description": "On if all devices are off, otherwise off"
+        "title": "Ein wenn Keine an",
+        "brief": "eingeschaltet, wenn kein Gerät an ist",
+        "description": "An wenn kein Gerät angeschaltet ist, andererseits aus"
     },
     "xor": {
-        "title": "On unless all on or off",
-        "brief": "on unless all devices are on or all off",
-        "description": "Off when all devices are off or all devices are on"
+        "title": "Ein, sofern nicht alle ein- oder ausgeschaltet",
+        "brief": "Ein, sofern nicht alle ein- oder ausgeschaltet",
+        "description": "Aus wenn alle Geräte aus sind oder an sind"
     }
 }
