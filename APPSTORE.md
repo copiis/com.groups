@@ -29,7 +29,7 @@ This app is based off of the original 'Device Groups' app by Swttt for Homey v1.
 
 **2.3.1**
 - Added German locale
-- Attempt to 'speed up' groups. 
+- Attempt to 'speed up' groups, with out breaking anything.
 - Added 'All'/'other' group
 - Added additional icons, door/window/switch
 
