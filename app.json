@@ -28,7 +28,7 @@
     ]
   },
   "version": "2.3.101",
-  "compatibility": ">=2.0",
+  "compatibility": ">2.0.4",
   "author": {
     "name": "Jamie Peake",
     "email": "jamie.peake@gmail.com"
