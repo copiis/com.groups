@@ -10,7 +10,8 @@
     },
     "description": {
         "en": "Makes it possible to group devices allowing control and reporting of all devices within a group.",
-        "nl": "Maakt het mogelijk om apparaten te groeperen en te schakelen."
+        "nl": "Maakt het mogelijk om apparaten te groeperen en te schakelen.",
+        "de": "Macht die Gruppierung von Geräten möglich, erlaubt es einer Gruppe von Geräten ihren Status zu reporten und gleichzeitig eingestellt zu werden"
     },
     "category": "tools",
     "brandColor": "#000000",
@@ -25,6 +26,12 @@
             "apparaat",
             "groep",
             "virtueel"
+        ],
+        "de": [
+            "gerät",
+            "gruppe",
+            "gruppen",
+            "virtuell"
         ]
     },
     "version": "2.3.102",
@@ -50,10 +57,10 @@
         ],
         "translators": [
             {
-                "name": "Johannes Aloijsius"
+                "name": "🇳🇱Johannes Aloijsius"
             },
             {
-                "name": "Philipp Schnittger"
+                "name": "🇩🇪Philipp Schnittger"
             }
         ]
     },

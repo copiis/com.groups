@@ -1,7 +1,12 @@
+**2.3.102**
+- Move Other Icons
+- Move Alarm to its own category
+
 **2.3.100**
 - Introduce German Language
 - Add other class
 - Add additional 'other' icons. 
+- Speed enhancement
 
 **2.2.202**
 - Add alarm icon

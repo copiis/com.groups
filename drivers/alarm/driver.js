@@ -5,7 +5,7 @@ const Group = require('/lib/group');
 class AlarmDriver extends Group.Driver {
 
     onInit() {
-        this.class = 'sensor';
+        this.class = 'alarm';
         super.onInit();
     }
 
