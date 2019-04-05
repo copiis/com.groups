@@ -1,3 +1,7 @@
+**2.3.201**
+- Update athom-api@2.1.179
+
+
 **2.3.200**
 - Attempt to fix issue #40, remove sanity check before updating capabilities. 
 
