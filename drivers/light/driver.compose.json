@@ -4,7 +4,8 @@
     "capabilities": [],
     "name": {
         "en": "Light",
-        "nl": "Lamp"
+        "nl": "Lamp",
+        "de" : "Lampe"
     },
     "$extends": [
         "default"

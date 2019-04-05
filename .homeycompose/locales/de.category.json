@@ -1,0 +1,106 @@
+{
+    "alarm" : {
+        "title" : "Alarm",
+        "description" : "Geräte die Alarm auslösen können. Zum Besipiel Sensoren, Kontakt, Feuer, Rauch, CO etc."
+    },
+    "amplifier" : {
+        "title" : "Verstärker",
+        "description" : "Audio-Verstärker-Geräte."
+    },
+    "blinds" : {
+        "title" : "Rolladen",
+        "description" : "Rolladen, sowohl horizontal als auch vertikal."
+    },
+    "button" : {
+        "title" : "Taste",
+        "description" : "Tasten und andere Elemente, die keinen Zustand haben."
+    },
+    "coffeemachine" : {
+        "title" : "Kaffemaschine",
+        "description" : "Kaffeemaschinen werden zum Brühen von Kaffee benutzt."
+    },
+    "curtain" : {
+        "title" : "Vorhänge",
+        "description" : "elektrisch gesteuerte Vorhänge werden auf- und zugezogen."
+    },
+    "doorbell" : {
+        "title" : "Türklingel",
+        "description" : "eine Türklingel meldet einen besucher an der Tür"
+    },
+    "fan" : {
+        "title" : "Ventilator",
+        "description" : "Ventilatoren kühlen dein Heim."
+    },
+    "garagedoor" : {
+        "title" : "Garagentor",
+        "description": "gesteuerte Garagentore sowie auch automatisch geateuerte Türen"
+    },
+    "heater" : {
+        "title" : "Heizung",
+        "description": "Heizungen und andere Geräte, die dein Heim wärmen."
+    },
+    "homealarm" : {
+        "title" : "Heim-Sicherheit",
+        "description": "Heim-Alarm-Systeme."
+    },
+    "homeenergymonitor" : {
+        "title" : "Home Energy Monitor",
+        "description": "Geräte zur Überwachung des Energieverbrauchs in deinem Haus-"
+    },
+    "kettle" : {
+        "title" : "Wasserkocher",
+        "description": "Geräte zu erhitzen von Wasser."
+    },
+    "light" : {
+        "title" : "Lampe",
+        "description": "Geräte zum Beleuchten deiner Umgebung (Lampen, Lichter etc.)"
+    },
+    "lock" : {
+        "title" : "Schloss",
+        "description": "Geräte zum Abschließen von Türen o.ä."
+    },
+    "other" : {
+        "title" : "Andere",
+        "description": "Geräte, die nicht in andere Geräteklassen passen."
+    },
+    "relay" : {
+        "title" : "Relais",
+        "description": "Relais, die mit anderen Geräten verbunden sind."
+    },
+    "remote" : {
+        "title" : "Fernbedienung",
+         "description": "Alle Arten von Fernbedienungen für z.B. Tv, AV.Receiver, Voränge etc."
+    },
+    "sensor" : {
+        "title" : "Sensor",
+        "description": "kontakt, Bewegung, Feuer, CO oder jeder andere Sensor. Auch Alarmsensoren!"
+    },
+    "socket" : {
+        "title" : "Steckdose",
+        "description": "alle Arten von Steckdosen."
+    },
+    "speaker" : {
+        "title" : "Lautsprecher",
+        "description": "Geräte die Musik abspielen können."
+    },
+    "sunshade" : {
+        "title" : "FensterJalousien",
+        "description": "Jalousien (Fenster-Abdeckungen gegen die Sonne)."
+    },
+    "thermostat" : {
+        "title" : "Thermostat",
+        "description": "Thermostate, entweder für das gesamte Heim oder pro Heizung"
+    },
+    "tv" : {
+        "title" : "TV",
+        "description": "TV/televisions."
+    },
+    "vacuumcleaner" : {
+        "title" : "Staubsauger",
+        "description": "Staubsaugroboter zum automatischen Säubern des Hauses bzw. der Wohnung"
+    },
+    "windowcoverings" : {
+        "title" : "Fenster-Abdeckungen",
+        "description": "Fenster-Abdeckungen, wenn 'Vorhänge'-, 'Rolladen'- oder 'Jalousien'-Geräteklassen nicht zutreffen."
+    }
+}

@@ -1,0 +1,22 @@
+{
+  "capabilities" : {
+    "title" : "Wähle die Fähigkeiten der Gruppe",
+    "loading" : "loading"
+  },
+  "devices" : {
+    "title" : "Wähle die Geräte der Gruppe",
+    "loading" : "Sammeln aller Geräte mit diesen Funktionen",
+    "empty" : {
+      "title" : "Tut mir leid, keine Geräte gefunden",
+      "description" : "Wir konnten keine Geräte mit diesen besonderen Fähigkeiten finden. Bitte drücke 'zurück', um zurück zu gelangen."
+    }
+  },
+  "icons" : {
+    "title" : "Wähle dein Icon",
+    "loading" : "Lade mögliche Icons"
+  },
+  "group" : {
+    "title" : "Gruppiere Geräte..",
+    "loading" : "Füge neue Gruppe hinzu, das nimmt nur ein paar Sekunden in Anspruch."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "_" : {
+    "about" : "über",
+    "group" : "Gruppe",
+    "groups": "Gruppen",
+    "group name": "Gruppenname",
+    "capability" : "Fähigkeit",
+    "capabilities" : "Fähigkeiten",
+    "category": "Kategorie",
+    "categories": "Kategorien",
+    "device": "Gerät",
+    "devices": "Geräte",
+    "icon" : "Icon",
+    "icons": "Icons",
+    "other": "Andere",
+    "unavailable": "nicht verfügbar",
+    "offline": "offline"
+  }
+}

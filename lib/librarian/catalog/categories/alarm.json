@@ -1,8 +1,5 @@
 {
   "id" : "alarm",
-  "icons" : [
-    "sensor/standard"
-  ],
   "capabilities": [
     "alarm_generic",
     "alarm_motion",
@@ -16,10 +13,19 @@
     "alarm_pm25",
     "alarm_water",
     "alarm_battery",
-    "alarm_night",
-    "meter_power",
-    "meter_water",
-    "meter_gas"
+    "alarm_night"
+  ],
+  "icons" : [
+    "alarm/standard",
+    "sensor/standard",
+    "../other/door/front",
+    "../other/door/glass",
+    "../other/door/internal",
+    "../other/door/internal-round",
+    "../other/door/internal-panel",
+    "../other/door/heimdall",
+    "../other/window/simple",
+    "../other/window/slide"
   ]
 }
 

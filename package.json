@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/hive/com.groups#readme",
   "dependencies": {
-    "athom-api": "^2.1.156"
+    "athom-api": "^2.1.175"
   }
 }

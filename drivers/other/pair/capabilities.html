@@ -1,0 +1,91 @@
+<style>
+    [v-cloak] {
+        display: none;
+    }
+
+    /** Fix up the alignment of the checkbox **/
+    .device .checkbox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+</style>
+
+<script src='../../../assets/scripts/vue-2.5.21.min.js'></script>
+
+<script>
+    Homey.showLoadingOverlay();
+    Homey.setTitle( Homey.__("pair.capabilities.title") );
+
+    Vue.filter('capitalize', function (value) {
+        if (!value) return ''
+        value = value.toString()
+        return value.charAt(0).toUpperCase() + value.slice(1)
+    })
+
+    // Overwrite the default loading overlay
+    $('#hy-overlay-loading').children('.fas').attr('class', 'fas fa-circle-notch fa2x fa-spin')
+    $('#hy-overlay-loading-message').html( Homey.__("pair.capabilities.loading") );
+
+    Homey.emit('capabilities.initialised', null, function (err, result) {
+        if (err) {
+            console.log(err);
+            return;
+        }
+        new Vue({
+            el: '#app',
+            data: {
+                capabilities: result,
+                selectedCapabilities: []
+            },
+            filters: {
+                capital: function (value) {
+                    return value.charAt(0).toUpperCase() + value.slice(1);
+                }
+            },
+            methods: {},
+            computed: {},
+            mounted() {
+
+                this.$nextTick(function () {
+                    $('#hy-nav-next').attr('class', 'hy-button hide');
+                    Homey.hideLoadingOverlay();
+                })
+            },
+            watch: {
+                'selectedCapabilities': function (val) {
+                    Homey.emit('capabilities.changed', {'capabilities': val}, function (err, result) {
+                        if (err) {
+                            console.log(err);
+                            return;
+                        }
+
+                        // Ensure that they have selected at least one capability before letting them hit next.
+                        if (Object.getOwnPropertyNames(result.settings.capabilities).length > 0) {
+                            $('#hy-nav-next').attr('class', 'hy-button visible');
+                        } else {
+                            $('#hy-nav-next').attr('class', 'hy-button hide');
+                        }
+                    });
+                }
+            }
+        });
+    });
+</script>
+
+<div id="app">
+    <template v-cloak>
+        <ul id="devices-list">
+            <li class="device" v-for="(value, key) in capabilities">
+                <label :for="key" class="name">
+                    <div class="overlay"></div>
+                    <span class="name" tabindex="-1">{{ __('capability.' + key + '.title') }}</span>
+                </label>
+                <label :for="key" class="checkbox">
+                    <input :id="key" :value="key" name="device" type="checkbox" tabindex="2" v-model="selectedCapabilities">
+                </label>
+            </li>
+        </ul>
+    </template>
+</div>

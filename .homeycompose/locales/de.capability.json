@@ -1,0 +1,286 @@
+{
+    "onoff": {
+        "title" : "Angeschaltet",
+        "description" : "Ob ein Gerät ein- oder ausgeschaltet ist."
+    },
+    "dim": {
+        "title" : "Dimm-Niveau",
+        "description" : "Dimmt das Gerät prozentual zu seinem vollen Ausgangswert"
+    },
+    "light_hue": {
+        "title" : "Farbton",
+        "description" : "Die Farbe des Lichts"
+    },
+    "light_saturation": {
+        "title" : "Farbsättigung",
+        "description" : "Die Farbintensität"
+    },
+    "light_temperature": {
+        "title" : "Farbtemperatur",
+        "description" : "weiße Lichttemperatur von warm zu kalt als Dezimalwert"
+    },
+    "light_mode": {
+        "title" : "Lichtmodus",
+        "description" : "Zwischen Farb- und Temperaturmodus wechseln"
+    },
+    "vacuumcleaner_state": {
+        "title" : "Staubsauger-Status",
+        "description" : "Status des Staubsaugers, ob er gerade säubert, Schmutz entdeckt hat, gestoppt hat oder am Aufladen ist."
+    },
+    "thermostat_mode": {
+        "title" : "Modus des Thermostates",
+        "description" : "Thermostatmodus, ob er auf Automatik läuft, gerade heizt oder kühlt, oder ausgeschaltet ist."
+    },
+    "target_temperature": {
+        "title" : "Ziel-Temperatur",
+        "description" : "Setze eine Zieltemperatur für ein Gerät, welche erreicht werden soll."
+    },
+    "measure_temperature": {
+        "title" : "Temperatur",
+        "description" : "Temperatur in Celsius (°c)"
+    },
+    "measure_co": {
+        "title" : "Kohlenmonoxid",
+        "description" : "CO in Anteile pro Million (ppm)"
+    },
+    "measure_co2": {
+        "title" : "Kohlendioxid",
+        "description" : "CO₂ in Anteile pro Million (ppm)"
+    },
+    "measure_pm25": {
+        "title" : "PM2.5",
+        "description" : "Atmosphärischer Feinstaub (μg/m3)"
+    },
+    "measure_humidity": {
+        "title" : "Luftfeuchtigkeit",
+        "description" : "Luftfeuchtigkeit in Prozent (%)"
+    },
+    "measure_pressure": {
+        "title" : "Druck",
+        "description" : "Druck in Millibar (mbar)"
+    },
+    "measure_noise": {
+        "title" : "Lärm",
+        "description" : "Lärm in Dezibel (dB)"
+    },
+    "measure_rain": {
+        "title" : "Niederschlag",
+        "description" : "Niederschlag in Millimeter (mm)"
+    },
+    "measure_wind_strength": {
+        "title" : "Windstärke",
+        "description" : "Windstärke in Kilometer pro Stunde (km/h)"
+    },
+    "measure_wind_angle": {
+        "title" : "Windrichtung",
+        "description" : "Windrichtung in Grad (°)"
+    },
+    "measure_gust_strength": {
+        "title" : "Böenstärke",
+        "description" : "Böenstärke in Kilometer pro Stunde (km/h)"
+    },
+    "measure_gust_angle": {
+        "title" : "Böenrichtung",
+        "description" : "Böenrichtung in Grad (°)"
+    },
+    "measure_battery": {
+        "title" : "Batterie",
+        "description" : "Batteriestand in Prozent (%)"
+    },
+    "measure_power": {
+        "title" : "Energie",
+        "description" : "Energie in Watt (W)"
+    },
+    "measure_voltage": {
+        "title" : "Spannung",
+        "description" : "Elektische Spannung in Volt (V)"
+    },
+    "measure_current": {
+        "title" : "Strom",
+        "description" : "Elektrischer Strom in Ampere (A)"
+    },
+    "measure_luminance": {
+        "title" : "Leuchtkraft",
+        "description" : "Leuchtkraft in Lux (lx)"
+    },
+    "measure_ultraviolet": {
+        "title" : "Ultraviolett",
+        "description" : "Ultraviolett in UV-Index (UVI)"
+    },
+    "measure_water": {
+        "title" : "Wasserfluss",
+        "description" : "Wasserfluss in Liter pro Minute (L/min)"
+    },
+    "alarm_generic": {
+        "title" : "Allgemeiner Alarm",
+        "description" : "Allgemeiner Alarm"
+    },
+    "alarm_motion": {
+        "title" : "Bewegungs-Alarm",
+        "description" : "Alarm wenn Bewegung erkannt"
+    },
+    "alarm_contact": {
+        "title" : "Kontakt-Alarm",
+        "description" : "Alarm wenn ein Tür-/Fenstersensor geöffnet ist"
+    },
+    "alarm_co": {
+        "title" : "CO-Alarm",
+        "description" :  "Alarm wenn gefährliche CO-Werte erkannt wurden"
+    },
+    "alarm_co2": {
+        "title" : "CO2-Alarm",
+        "description" :  "Alarm wenn gefährliche CO₂-Werte erkannt wurden"
+    },
+    "alarm_pm25": {
+        "title" : "PM2.5-Alarm",
+        "description" : "Alarm wenn PM2.5-Werte die Schwelle überschreiten"
+    },
+    "alarm_tamper": {
+        "title" : "Sabotage-Alarm",
+        "description" : "Alarme wenn Sabotage erkannt wurde"
+    },
+    "alarm_smoke": {
+        "title" : "Rauch-Alarm",
+        "description" : "Alarme wenn Rauch erkannt wurde"
+    },
+    "alarm_fire": {
+        "title" : "Feuer-Alarm",
+        "description" : "Alarm wenn Feuer erkannt wurde"
+    },
+    "alarm_heat": {
+        "title" : "Hitze-Alarm",
+        "description" : "Alarm wenn extreme Hitze erkannt wurde"
+    },
+    "alarm_water": {
+        "title" : "Wasser-Alarm",
+        "description" : "Alarm wenn Wasser erkannt wurde"
+    },
+    "alarm_battery": {
+        "title" : "Batterie-Alarm",
+        "description" : "Alarm wenn eine Batterie einen niedrigen Stand meldet"
+    },
+    "alarm_night": {
+        "title" : "Nacht-Alarm",
+        "description" : "Alarm wenn es Nacht ist"
+    },
+    "meter_power": {
+        "title": "Energiezähler",
+        "description":"Energieverbrauch in Kilowattstunde (kWh)"
+    },
+    "meter_water": {
+        "title": "Wasserzähler",
+        "description": "Wasserverbrauch in Kubikmeter (m³)"
+    },
+    "meter_gas": {
+        "title": "Gaszähler",
+        "description": "Gasverbrauch in Kubikmeter (m³)"
+    },
+    "meter_rain": {
+        "title": "Regenzähler",
+        "description": "Regen in Kubikmeter (m³)"
+    },
+    "homealarm_state": {
+        "title": "Heim-Alarm-Status",
+        "description": "Wechsel zwischen aktiviert, deaktiviert und teilweise aktiviert"
+    },
+    "volume_set": {
+        "title": "Lautstärke setzen",
+        "description": "Lautstärke setzen auf"
+    },
+    "volume_up": {
+        "title": "Lautstärke hoch",
+        "description": "Dreh die Lautstärke hoch"
+    },
+    "volume_down": {
+        "title": "Lautstärke runter",
+        "description": "Dreh die Lautstärke runter"
+    },
+    "volume_mute": {
+        "title": "Lautstärke stumm",
+        "description": "Lautstärke stummschalten"
+    },
+    "channel_up": {
+        "title": "Kanal hoch",
+        "description": "Einen Kanal hoch"
+    },
+    "channel_down": {
+        "title": "Kanal runter",
+        "description": "Einen Kanal runter"
+    },
+    "locked": {
+        "title" : "Verriegelt",
+        "description" : "'True' wenn das Schloss verriegelt ist"
+    },
+    "lock_mode": {
+        "title" : "Schloss-Modus",
+        "description" : "Wechsel zwischen 'immer geöffnet', 'immer geschlossen' und 'geschlossen bis geöffnet wird'"
+    },
+    "windowcoverings_state": {
+        "title" : "Status Fensterjalousien",
+        "description" :"Sind die Fensterjalousien geöffnet, geschlossen oder im Leerlauf"
+    },
+    "windowcoverings_tilt_up": {
+        "title" : "Jalousien nach oben gefahren",
+        "description" : "Jalousien sind ganz nach oben gefahren"
+    },
+    "windowcoverings_tilt_down": {
+        "title" : "Jalousien nach unten gefahren",
+        "description" : "Jalousien sind ganz nach unten gefahren"
+    },
+    "windowcoverings_tilt_set": {
+        "title" : "Jalousien einstellen",
+        "description" : "Position der Jalousien einstellen"
+    },
+    "windowcoverings_closed": {
+        "title" : "Jalousien geschlossen",
+        "description" : "Jalousien werden geschlossen"
+    },
+    "windowcoverings_set": {
+        "title" : "Jalousien prozentual einstellen",
+        "description" : "Die Position der Jalousien setzen. 0% ist geschlossen, 100% ist offen"
+    },
+    "button": {
+        "title" : "Taste",
+        "description" : "Ein Druckknopf"
+    },
+    "speaker_playing": {
+        "title" : "Lautsprecher spielt",
+        "description" : "Was der Lautsprecher gerade spielt."
+    },
+    "speaker_next": {
+        "title" : "Lautsprecher vor",
+        "description" :  "Zum nächsten Titel gehen."
+    },
+    "speaker_prev": {
+        "title" : "Lautsprecher zurück",
+        "description" : "Zum vorherigen Titel gehen."
+    },
+    "speaker_shuffle": {
+        "title" : "Lautsprecher Shuffle",
+        "description" : "zufälliges Abspielen der Titel"
+    },
+    "speaker_repeat": {
+        "title" : "Lautsprecher Repeat",
+        "description" : "Setze den Wiederholungsmodus: kein, pro Track oder pro Playlist"
+    },
+    "speaker_artist": {
+        "title" : "Lautsprecher Künstler",
+        "description" : "Welcher Künstler wird gerade gespielt."
+    },
+    "speaker_album": {
+        "title" : "Lautsprecher Album",
+        "description" : "Welches Album wird gerade gespielt."
+    },
+    "speaker_track": {
+        "title" : "Lautsprecher Track",
+        "description" : "Welcher Track wird gerade gespielt."
+    },
+    "speaker_duration": {
+        "title" : "Lautsprecher Zeit",
+        "description" : "vergangene Zeit des laufenden Tracks"
+    },
+    "speaker_position": {
+        "title" : "Lautsprecher Position",
+        "description" : "aktuelle Abspielposition des Lautsprechers"
+    }
+}

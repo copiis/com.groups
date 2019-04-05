@@ -21,10 +21,9 @@ Please note that this app now only supports v2, while legacy code should continu
 
 | Branch | Version | Status | Notes|
 |---|---|---|---|
-|**Stable** |2.2.102 |:white_check_mark:|Stable|
-|**Beta** |2.2.103|:white_check_mark:|Fixes deleted devices|
-|**Alpha** |2.2.201|:white_check_mark:|Adds alarm category|
-|**Omega** |2.2.205|:white_check_mark:|New alarms/all groups|
+|**Stable** |2.2.202 |:white_check_mark:|Stable|
+|**Beta** |2.2.202|:white_check_mark:|Fixes deleted devices|
+|**Alpha** |2.3.102|:white_check_mark:|New "other group" & German language|
 |**Master** |n/a|:heavy_multiplication_x:||
 
 
@@ -85,9 +84,16 @@ _eg. Only set the light card on if all lights are on, but turn on the grouped mo
 You can now click on a group's settings to see which devices, which capabilities have been included and which method is being used to display the results. As always you can still change the values from the app settings, along with which method is being used.
 
 ### :white_check_mark: Choose your language.
-Added (technical) support for NL, please note - I don't speak Dutch, and adding translations is a work in progress.
+Added support for English, Dutch and German, please note - I don't speak German or Dutch, if there are any issues please let me know. 
 
-In-Progress thanks to @Jaxc .
+@Jamie : English (EN) 🇦🇺
+@Jaxc : Dutch (NL) 🇳🇱
+@PhilS : German (DE) 🇩🇪
+
+### :white_check_mark: Make your own categories
+Added support for the 'other' category, this category is unique in that all capabilities and icons are displayed with in it - As this is not the standard category - how this will work with third parties (alexa/google) is currently unknown. 
+
+
 
 ### Other
 

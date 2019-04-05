@@ -27,6 +27,13 @@ This app is based off of the original 'Device Groups' app by Swttt for Homey v1.
 ### Changelog
 
 
+**2.3.1**
+- Added German locale
+- Attempt to 'speed up' groups, with out breaking anything.
+- Added 'All'/'other' group
+- Added additional icons, door/window/switch
+- This app now requires version 2.0.5-rc5 of Homey (German/translators)
+
 **2.2.2**
 - Add alarm category
 

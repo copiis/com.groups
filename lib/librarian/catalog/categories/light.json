@@ -17,6 +17,10 @@
     "light/standard/e",
     "light/standard/gu",
     "light/standard/par",
-    "button/standard/toggle"
+    "button/standard/toggle",
+    "../other/switch/zen/w1-gang",
+    "../other/switch/zen/w2-gang",
+    "../other/switch/zen/w3-gang",
+    "../other/switch/zen/w4-gang"
   ]
 }

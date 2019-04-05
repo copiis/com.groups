@@ -4,7 +4,8 @@
     "capabilities": [],
     "name": {
         "en": "Window Coverings",
-        "nl": "Raambekleding"
+        "nl": "Raambekleding",
+        "de" : "Fenster-Abdeckungen"
     },
     "$extends": [
         "default"

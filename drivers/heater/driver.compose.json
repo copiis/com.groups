@@ -3,7 +3,8 @@
     "class": "heater",
     "name": {
         "en": "Heater",
-        "nl": "Heater"
+        "nl": "Heater",
+        "de" : "Heizung"
     },
     "$extends": [
         "default"

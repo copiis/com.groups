@@ -4,7 +4,8 @@
     "capabilities": [],
     "name": {
         "en": "Blinds",
-        "nl" :  "Jaloezieën & Lamellen"
+        "nl" :  "Jaloezieën & Lamellen",
+        "de" : "Rolladen"
     },
     "$extends": [
         "default"

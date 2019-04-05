@@ -4,7 +4,8 @@
     "capabilities": [],
     "name": {
         "en": "Doorbell",
-        "nl": "Deurbel"
+        "nl": "Deurbel",
+        "de" : "Türklingel"
     },
     "$extends": [
         "default"

@@ -10,7 +10,8 @@
     },
     "description": {
         "en": "Makes it possible to group devices allowing control and reporting of all devices within a group.",
-        "nl": "Maakt het mogelijk om apparaten te groeperen en te schakelen."
+        "nl": "Maakt het mogelijk om apparaten te groeperen en te schakelen.",
+        "de": "Macht die Gruppierung von Geräten möglich, erlaubt es einer Gruppe von Geräten ihren Status zu reporten und gleichzeitig eingestellt zu werden"
     },
     "category": "tools",
     "brandColor": "#000000",
@@ -25,10 +26,16 @@
             "apparaat",
             "groep",
             "virtueel"
+        ],
+        "de": [
+            "gerät",
+            "gruppe",
+            "gruppen",
+            "virtuell"
         ]
     },
-    "version": "2.2.202",
-    "compatibility": ">=2.0",
+    "version": "2.3.200",
+    "compatibility": ">2.0.4",
     "author": {
         "name": "Jamie Peake",
         "email": "jamie.peake@gmail.com"
@@ -47,6 +54,14 @@
                 "name": "Bas Jansen",
                 "email": "bas@balotti.com"
             }
+        ],
+        "translators": [
+            {
+                "name": "🇳🇱Johannes Aloijsius"
+            },
+            {
+                "name": "🇩🇪Philipp Schnittger"
+            }
         ]
     },
     "images": {
@@ -56,5 +71,12 @@
     "homeyCommunityTopicId": 3168,
     "bugs": {
         "url": "https://github.com/hive/com.groups/issues"
+    },
+    "contributing": {
+        "donate": {
+            "paypal": {
+                "username": "peakej"
+            }
+        }
     }
 }

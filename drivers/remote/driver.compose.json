@@ -4,7 +4,8 @@
     "capabilities": [],
     "name": {
         "en": "Remote",
-        "nl": "Afstandsbediening"
+        "nl": "Afstandsbediening",
+        "de" : "Fernbedienung"
     },
     "$extends": [
         "default"

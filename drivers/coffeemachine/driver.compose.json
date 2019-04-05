@@ -4,7 +4,8 @@
     "capabilities": [],
     "name": {
         "en": "Coffee machine",
-        "nl": "Koffiemachine"
+        "nl": "Koffiemachine",
+        "de" : "Kaffemaschine"
     },
     "$extends": [
         "default"
