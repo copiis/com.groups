@@ -12,8 +12,8 @@
         "description" : "Rolladen, sowohl horizontal als auch vertikal."
     },
     "button" : {
-        "title" : "Taste",
-        "description" : "Tasten und andere Elemente, die keinen Zustand haben."
+        "title" : "Taster",
+        "description" : "Taster und andere Elemente, die keinen Zustand haben."
     },
     "coffeemachine" : {
         "title" : "Kaffemaschine",
