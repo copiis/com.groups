@@ -1,6 +1,6 @@
 {
     "alarm" : {
-        "title" : "Alarm",
+        "title" : "Sirene",
         "description" : "Geräte die Alarm auslösen können. Zum Besipiel Sensoren, Kontakt, Feuer, Rauch, CO etc."
     },
     "amplifier" : {
@@ -9,11 +9,11 @@
     },
     "blinds" : {
         "title" : "Rolladen",
-        "description" : "Rolladen, sowohl horizontal als auch vertikal."
+        "description" : "Rolläden, sowohl horizontal als auch vertikal."
     },
     "button" : {
-        "title" : "Taste",
-        "description" : "Tasten und andere Elemente, die keinen Zustand haben."
+        "title" : "Taster",
+        "description" : "Taster und andere Elemente, die keinen Zustand haben."
     },
     "coffeemachine" : {
         "title" : "Kaffemaschine",
@@ -49,11 +49,11 @@
     },
     "kettle" : {
         "title" : "Wasserkocher",
-        "description": "Geräte zu erhitzen von Wasser."
+        "description": "Geräte zum erhitzen von Wasser."
     },
     "light" : {
         "title" : "Lampe",
-        "description": "Geräte zum Beleuchten deiner Umgebung (Lampen, Lichter etc.)"
+        "description": "Geräte um deine Umgebung zu beleuchten (Lampen, Lichter etc.)"
     },
     "lock" : {
         "title" : "Schloss",
@@ -73,18 +73,18 @@
     },
     "sensor" : {
         "title" : "Sensor",
-        "description": "kontakt, Bewegung, Feuer, CO oder jeder andere Sensor. Auch Alarmsensoren!"
+        "description": "Kontakt, Bewegung, Feuer, CO oder jeder andere Sensor. Auch Alarmsensoren!"
     },
     "socket" : {
         "title" : "Steckdose",
-        "description": "alle Arten von Steckdosen."
+        "description": "Alle Arten von Steckdosen."
     },
     "speaker" : {
         "title" : "Lautsprecher",
         "description": "Geräte die Musik abspielen können."
     },
     "sunshade" : {
-        "title" : "FensterJalousien",
+        "title" : "Jalousie",
         "description": "Jalousien (Fenster-Abdeckungen gegen die Sonne)."
     },
     "thermostat" : {
@@ -93,14 +93,14 @@
     },
     "tv" : {
         "title" : "TV",
-        "description": "TV/televisions."
+        "description": "TV/Fernseher."
     },
     "vacuumcleaner" : {
         "title" : "Staubsauger",
         "description": "Staubsaugroboter zum automatischen Säubern des Hauses bzw. der Wohnung"
     },
     "windowcoverings" : {
-        "title" : "Fenster-Abdeckungen",
-        "description": "Fenster-Abdeckungen, wenn 'Vorhänge'-, 'Rolladen'- oder 'Jalousien'-Geräteklassen nicht zutreffen."
+        "title" : "Fensterabdeckungen",
+        "description": "Fensterabdeckungen, wenn 'Vorhänge'-, 'Rolladen'- oder 'Jalousien'-Geräteklassen nicht zutreffen."
     }
 }
