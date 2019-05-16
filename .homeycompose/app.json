@@ -34,7 +34,7 @@
             "virtuell"
         ]
     },
-    "version": "2.3.202",
+    "version": "2.4.100git diff lib ",
     "compatibility": ">2.0.4",
     "author": {
         "name": "Jamie Peake",

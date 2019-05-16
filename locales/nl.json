@@ -282,7 +282,7 @@
       "description": "Accuniveau in procenten (%)"
     },
     "measure_power": {
-      "title": "Vermogen",
+      "title": "Energie",
       "description": "Vermogen in Watt (W)"
     },
     "measure_voltage": {
