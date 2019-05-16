@@ -1,0 +1,22 @@
+{
+  "capabilities" : {
+    "title": "Välj gruppens förmågor",
+    "loading": "laddar"
+  },
+  "devices" : {
+    "title": "Välj enheter att gruppera",
+    "loading": "Samlar in alla enheter med dessa förmågor",
+    "empty": {
+      "title": "Ingen enhet funnen",
+      "description": "Hittade inga enheter med de angivna förmågorna, tryck 'föregående' för att gå tillbaka."
+    }
+  },
+  "icons" : {
+    "title": "Välj ikon",
+    "loading": "Läser in möjliga ikoner"
+  },
+  "group" : {
+    "title": "Grupperar dina enheter..",
+    "loading": "Lägger till din nya grupp, det tar ett par sekunder."
+  }
+}

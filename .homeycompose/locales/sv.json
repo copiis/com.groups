@@ -1,0 +1,19 @@
+{
+  "_" : {
+    "about": "om",
+    "group": "grupp",
+    "groups": "grupper",
+    "group name": "gruppnamn",
+    "capability": "kompetens",
+    "capabilities": "förmågor",
+    "category": "kategori",
+    "categories": "kategorier",
+    "device": "enhet",
+    "devices": "enheter",
+    "icon": "ikon",
+    "icons": "ikoner",
+    "other": "övrigt",
+    "unavailable": "inte tillgängligt",
+    "offline": "offline"
+  }
+}
