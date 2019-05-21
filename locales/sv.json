@@ -393,6 +393,10 @@
     "windowcoverings": {
       "title": "Window Coverings",
       "description": "window coverings, for when the `curtains`, `blinds` or `sunshade` device class doesn't apply."
+    },
+    "camera": {
+      "title": "Camera",
+      "description": "Coming Soon."
     }
   },
   "method": {

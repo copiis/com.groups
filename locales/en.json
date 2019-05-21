@@ -416,6 +416,10 @@
     "alarm": {
       "title": "Alarm",
       "description": "Devices which contain an alarm, eg. sensors, contact, fire, smoke, CO, etc."
+    },
+    "camera": {
+      "title": "Camera",
+      "description": "Coming Soon."
     }
   },
   "method": {

@@ -1,13 +1,13 @@
 {
   "capabilities" : {
     "title" : "Wähle die Fähigkeiten der Gruppe",
-    "loading" : "loading"
+    "loading" : "Lade"
   },
   "devices" : {
     "title" : "Wähle die Geräte der Gruppe",
     "loading" : "Sammeln aller Geräte mit diesen Funktionen",
     "empty" : {
-      "title" : "Tut mir leid, keine Geräte gefunden",
+      "title" : "Tut mir leid, keine Geräte gefunden.",
       "description" : "Wir konnten keine Geräte mit diesen besonderen Fähigkeiten finden. Bitte drücke 'zurück', um zurück zu gelangen."
     }
   },

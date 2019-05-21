@@ -15,6 +15,10 @@
         "title" : "Button",
         "description" : "buttons, and other items which do not have a state."
     },
+    "camera" : {
+        "title" : "Camera",
+        "description" : "Coming Soon."
+    },
     "coffeemachine" : {
         "title" : "Coffee machine",
         "description" : "coffeemakers or coffee machines are cooking appliances used to brew coffee."

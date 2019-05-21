@@ -9,23 +9,27 @@
     },
     "blinds" : {
         "title" : "Rolladen",
-        "description" : "Rolladen, sowohl horizontal als auch vertikal."
+        "description" : "Rolläden, sowohl horizontal als auch vertikal."
     },
     "button" : {
-        "title" : "Taste",
-        "description" : "Tasten und andere Elemente, die keinen Zustand haben."
+        "title" : "Taster",
+        "description" : "Taster und andere Elemente, die keinen Zustand haben."
+    },
+    "camera" : {
+        "title" : "Camera",
+        "description" : "Coming Soon."
     },
     "coffeemachine" : {
-        "title" : "Kaffemaschine",
+        "title" : "Kaffeemaschine",
         "description" : "Kaffeemaschinen werden zum Brühen von Kaffee benutzt."
     },
     "curtain" : {
-        "title" : "Vorhänge",
-        "description" : "elektrisch gesteuerte Vorhänge werden auf- und zugezogen."
+        "title" : "Vorhang",
+        "description" : "Elektrisch gesteuerte Vorhänge werden auf- und zugezogen."
     },
     "doorbell" : {
         "title" : "Türklingel",
-        "description" : "eine Türklingel meldet einen besucher an der Tür"
+        "description" : "Eine Türklingel meldet einen besucher an der Tür"
     },
     "fan" : {
         "title" : "Ventilator",
@@ -33,7 +37,7 @@
     },
     "garagedoor" : {
         "title" : "Garagentor",
-        "description": "gesteuerte Garagentore sowie auch automatisch geateuerte Türen"
+        "description": "Gesteuerte Garagentore sowie auch automatisch geateuerte Türen"
     },
     "heater" : {
         "title" : "Heizung",
@@ -45,7 +49,7 @@
     },
     "homeenergymonitor" : {
         "title" : "Home Energy Monitor",
-        "description": "Geräte zur Überwachung des Energieverbrauchs in deinem Haus-"
+        "description": "Geräte zur Überwachung des Energieverbrauchs in deinem Haus."
     },
     "kettle" : {
         "title" : "Wasserkocher",
@@ -53,7 +57,7 @@
     },
     "light" : {
         "title" : "Lampe",
-        "description": "Geräte zum Beleuchten deiner Umgebung (Lampen, Lichter etc.)"
+        "description": "Geräte um deine Umgebung zu beleuchten. (Lampen, Lichter etc.)"
     },
     "lock" : {
         "title" : "Schloss",
@@ -61,11 +65,11 @@
     },
     "other" : {
         "title" : "Andere",
-        "description": "Geräte, die nicht in andere Geräteklassen passen."
+        "description": "Geräte die nicht in andere Geräteklassen passen."
     },
     "relay" : {
         "title" : "Relais",
-        "description": "Relais, die mit anderen Geräten verbunden sind."
+        "description": "Relais die mit anderen Geräten verbunden sind."
     },
     "remote" : {
         "title" : "Fernbedienung",
@@ -73,11 +77,11 @@
     },
     "sensor" : {
         "title" : "Sensor",
-        "description": "kontakt, Bewegung, Feuer, CO oder jeder andere Sensor. Auch Alarmsensoren!"
+        "description": "Kontakt, Bewegung, Feuer, CO oder jeder andere Sensor. Auch Alarmsensoren!"
     },
     "socket" : {
         "title" : "Steckdose",
-        "description": "alle Arten von Steckdosen."
+        "description": "Alle Arten von Steckdosen."
     },
     "speaker" : {
         "title" : "Lautsprecher",
@@ -93,11 +97,11 @@
     },
     "tv" : {
         "title" : "TV",
-        "description": "TV/televisions."
+        "description": "TV/Fernseher.."
     },
     "vacuumcleaner" : {
         "title" : "Staubsauger",
-        "description": "Staubsaugroboter zum automatischen Säubern des Hauses bzw. der Wohnung"
+        "description": "Staubsaugroboter zum automatischen Säubern des Hauses bzw. der Wohnung."
     },
     "windowcoverings" : {
         "title" : "Fenster-Abdeckungen",

@@ -4,7 +4,7 @@
     "label": {
         "en": "Set a value",
         "nl": "Stel een waarde in",
-        "de": "Stellen Sie einen Wert ein"
+        "de": "Wert einstellen"
     },
     "children": [
         {
@@ -13,13 +13,13 @@
             "label": {
                 "en": "Delay",
                 "nl": "Vertraging",
-                "de": "Verzögern"
+                "de": "Verzögerung"
             },
             "value": "100",
             "hint": {
                 "en": "The delay in microseconds between sending a command to each device in the group.",
-                "nl": "De vertraging in microseconden tussen het verzenden van een opdracht naar elk apparaat in de groep.",
-                "de": "Die Verzögerung in Mikrosekunden zwischen dem Senden eines Befehls an jedes Gerät in der Gruppe."
+                "nl": "De vertraging,in microseconds, tussen het zenden van een opdracht naar elk apparaat in de groep.",
+                "de": "Zeitverzögerung in Mikrosekunden zwischen dem übermitteln an jedes Gerät in der Gruppe."
             }
         },
         {
@@ -34,7 +34,7 @@
             "hint": {
                 "en": "The number of microseconds after sending a change of a group to its devices before further changes can be sent.",
                 "nl": "Het aantal microseconden na het verzenden van een wijziging van een groep naar zijn apparaten voordat verdere wijzigingen kunnen worden verzonden",
-                "de": "Die Anzahl der Mikrosekunden nach dem Senden einer Änderung einer Gruppe an ihre Geräte, bevor weitere Änderungen gesendet werden können"
+                "de": "Pause in Mikrosekunden, nach senden eines Befehls zu einer Gruppe, die gewartet wird bevor weitere Änderungen gesendet werden."
             }
         }
     ]
