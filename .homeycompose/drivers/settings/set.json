@@ -19,7 +19,7 @@
             "hint": {
                 "en": "The delay in microseconds between sending a command to each device in the group.",
                 "nl": "De vertraging,in microseconds, tussen het zenden van een opdracht naar elk apparaat in de groep.",
-                "de": "Zeitverzögerung in Mikrosekunden zwischen dem übermitteln an jedes Gerät in der Gruppe."
+                "de": "Zeitverzögerung in Mikrosekunden zwischen dem Übermitteln an jedes Gerät in der Gruppe."
             }
         },
         {
@@ -28,7 +28,7 @@
             "label": {
                 "en": "Debounce",
                 "nl": "Ontdendering",
-                "de": "Entprellen"
+                "de": "Sendeverzögerung"
             },
             "value": "100",
             "hint": {
