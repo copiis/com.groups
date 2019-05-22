@@ -15,7 +15,7 @@
                 "nl": "Vertraging",
                 "de": "Verzögerung"
             },
-            "value": "100",
+            "value": "0",
             "hint": {
                 "en": "The delay in microseconds between sending a command to each device in the group.",
                 "nl": "De vertraging,in microseconds, tussen het zenden van een opdracht naar elk apparaat in de groep.",
@@ -30,7 +30,7 @@
                 "nl": "Ontdendering",
                 "de": "Sendeverzögerung"
             },
-            "value": "100",
+            "value": "0",
             "hint": {
                 "en": "The number of microseconds after sending a change of a group to its devices before further changes can be sent.",
                 "nl": "Het aantal microseconden na het verzenden van een wijziging van een groep naar zijn apparaten voordat verdere wijzigingen kunnen worden verzonden",
