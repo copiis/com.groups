@@ -1,3 +1,8 @@
+**2.4.201**
+- Retry when changes capability value fails
+- Update error logging
+- Add the ability to delay setting values inside a group
+
 **2.4.200**
 - Remove redundant 'states' variable,
 - Update initValues to loop through each capability and call same code as state change
