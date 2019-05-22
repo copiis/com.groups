@@ -1,3 +1,6 @@
+**2.4.202**
+- Update logging format [group]<action>message</action>
+
 **2.4.201**
 - Retry when changes capability value fails
 - Update error logging
