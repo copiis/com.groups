@@ -157,7 +157,7 @@
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> Group",
                 "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> Groep",
-                "de": "Um zu Ändern, welche Geräte in welche Gruppe sein sollen, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
+                "de": "Um Geräte in einer Gruppe zu ändern, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
               }
             },
             {
@@ -172,7 +172,7 @@
               "hint": {
                 "en": "The version of the device internal driver, generally the version it was added as.",
                 "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd.",
-                "de": "Die Version des interne Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes genutzt wurde."
+                "de": "Die Version des internen Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes vorhanden war."
               }
             }
           ]
@@ -288,7 +288,7 @@
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> Group",
                 "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> Groep",
-                "de": "Um zu Ändern, welche Geräte in welche Gruppe sein sollen, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
+                "de": "Um Geräte in einer Gruppe zu ändern, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
               }
             },
             {
@@ -303,7 +303,7 @@
               "hint": {
                 "en": "The version of the device internal driver, generally the version it was added as.",
                 "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd.",
-                "de": "Die Version des interne Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes genutzt wurde."
+                "de": "Die Version des internen Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes vorhanden war."
               }
             }
           ]
@@ -329,7 +329,7 @@
               "hint": {
                 "en": "The delay in microseconds between sending a command to each device in the group.",
                 "nl": "De vertraging,in microseconds, tussen het zenden van een opdracht naar elk apparaat in de groep.",
-                "de": "Zeitverzögerung in Mikrosekunden zwischen dem übermitteln an jedes Gerät in der Gruppe."
+                "de": "Zeitverzögerung in Mikrosekunden zwischen dem Übermitteln an jedes Gerät in der Gruppe."
               }
             },
             {
@@ -338,7 +338,7 @@
               "label": {
                 "en": "Debounce",
                 "nl": "Ontdendering",
-                "de": "Entprellen"
+                "de": "Sendeverzögerung"
               },
               "value": "100",
               "hint": {
@@ -461,7 +461,7 @@
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> Group",
                 "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> Groep",
-                "de": "Um zu Ändern, welche Geräte in welche Gruppe sein sollen, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
+                "de": "Um Geräte in einer Gruppe zu ändern, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
               }
             },
             {
@@ -476,7 +476,7 @@
               "hint": {
                 "en": "The version of the device internal driver, generally the version it was added as.",
                 "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd.",
-                "de": "Die Version des interne Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes genutzt wurde."
+                "de": "Die Version des internen Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes vorhanden war."
               }
             }
           ]
@@ -502,7 +502,7 @@
               "hint": {
                 "en": "The delay in microseconds between sending a command to each device in the group.",
                 "nl": "De vertraging,in microseconds, tussen het zenden van een opdracht naar elk apparaat in de groep.",
-                "de": "Zeitverzögerung in Mikrosekunden zwischen dem übermitteln an jedes Gerät in der Gruppe."
+                "de": "Zeitverzögerung in Mikrosekunden zwischen dem Übermitteln an jedes Gerät in der Gruppe."
               }
             },
             {
@@ -511,7 +511,7 @@
               "label": {
                 "en": "Debounce",
                 "nl": "Ontdendering",
-                "de": "Entprellen"
+                "de": "Sendeverzögerung"
               },
               "value": "100",
               "hint": {
@@ -634,7 +634,7 @@
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> Group",
                 "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> Groep",
-                "de": "Um zu Ändern, welche Geräte in welche Gruppe sein sollen, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
+                "de": "Um Geräte in einer Gruppe zu ändern, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
               }
             },
             {
@@ -649,7 +649,7 @@
               "hint": {
                 "en": "The version of the device internal driver, generally the version it was added as.",
                 "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd.",
-                "de": "Die Version des interne Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes genutzt wurde."
+                "de": "Die Version des internen Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes vorhanden war."
               }
             }
           ]
@@ -675,7 +675,7 @@
               "hint": {
                 "en": "The delay in microseconds between sending a command to each device in the group.",
                 "nl": "De vertraging,in microseconds, tussen het zenden van een opdracht naar elk apparaat in de groep.",
-                "de": "Zeitverzögerung in Mikrosekunden zwischen dem übermitteln an jedes Gerät in der Gruppe."
+                "de": "Zeitverzögerung in Mikrosekunden zwischen dem Übermitteln an jedes Gerät in der Gruppe."
               }
             },
             {
@@ -684,7 +684,7 @@
               "label": {
                 "en": "Debounce",
                 "nl": "Ontdendering",
-                "de": "Entprellen"
+                "de": "Sendeverzögerung"
               },
               "value": "100",
               "hint": {
@@ -807,7 +807,7 @@
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> Group",
                 "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> Groep",
-                "de": "Um zu Ändern, welche Geräte in welche Gruppe sein sollen, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
+                "de": "Um Geräte in einer Gruppe zu ändern, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
               }
             },
             {
@@ -822,7 +822,7 @@
               "hint": {
                 "en": "The version of the device internal driver, generally the version it was added as.",
                 "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd.",
-                "de": "Die Version des interne Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes genutzt wurde."
+                "de": "Die Version des internen Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes vorhanden war."
               }
             }
           ]
@@ -848,7 +848,7 @@
               "hint": {
                 "en": "The delay in microseconds between sending a command to each device in the group.",
                 "nl": "De vertraging,in microseconds, tussen het zenden van een opdracht naar elk apparaat in de groep.",
-                "de": "Zeitverzögerung in Mikrosekunden zwischen dem übermitteln an jedes Gerät in der Gruppe."
+                "de": "Zeitverzögerung in Mikrosekunden zwischen dem Übermitteln an jedes Gerät in der Gruppe."
               }
             },
             {
@@ -857,7 +857,7 @@
               "label": {
                 "en": "Debounce",
                 "nl": "Ontdendering",
-                "de": "Entprellen"
+                "de": "Sendeverzögerung"
               },
               "value": "100",
               "hint": {
@@ -980,7 +980,7 @@
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> Group",
                 "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> Groep",
-                "de": "Um zu Ändern, welche Geräte in welche Gruppe sein sollen, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
+                "de": "Um Geräte in einer Gruppe zu ändern, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
               }
             },
             {
@@ -995,7 +995,7 @@
               "hint": {
                 "en": "The version of the device internal driver, generally the version it was added as.",
                 "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd.",
-                "de": "Die Version des interne Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes genutzt wurde."
+                "de": "Die Version des internen Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes vorhanden war."
               }
             }
           ]
@@ -1021,7 +1021,7 @@
               "hint": {
                 "en": "The delay in microseconds between sending a command to each device in the group.",
                 "nl": "De vertraging,in microseconds, tussen het zenden van een opdracht naar elk apparaat in de groep.",
-                "de": "Zeitverzögerung in Mikrosekunden zwischen dem übermitteln an jedes Gerät in der Gruppe."
+                "de": "Zeitverzögerung in Mikrosekunden zwischen dem Übermitteln an jedes Gerät in der Gruppe."
               }
             },
             {
@@ -1030,7 +1030,7 @@
               "label": {
                 "en": "Debounce",
                 "nl": "Ontdendering",
-                "de": "Entprellen"
+                "de": "Sendeverzögerung"
               },
               "value": "100",
               "hint": {
@@ -1153,7 +1153,7 @@
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> Group",
                 "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> Groep",
-                "de": "Um zu Ändern, welche Geräte in welche Gruppe sein sollen, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
+                "de": "Um Geräte in einer Gruppe zu ändern, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
               }
             },
             {
@@ -1168,7 +1168,7 @@
               "hint": {
                 "en": "The version of the device internal driver, generally the version it was added as.",
                 "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd.",
-                "de": "Die Version des interne Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes genutzt wurde."
+                "de": "Die Version des internen Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes vorhanden war."
               }
             }
           ]
@@ -1194,7 +1194,7 @@
               "hint": {
                 "en": "The delay in microseconds between sending a command to each device in the group.",
                 "nl": "De vertraging,in microseconds, tussen het zenden van een opdracht naar elk apparaat in de groep.",
-                "de": "Zeitverzögerung in Mikrosekunden zwischen dem übermitteln an jedes Gerät in der Gruppe."
+                "de": "Zeitverzögerung in Mikrosekunden zwischen dem Übermitteln an jedes Gerät in der Gruppe."
               }
             },
             {
@@ -1203,7 +1203,7 @@
               "label": {
                 "en": "Debounce",
                 "nl": "Ontdendering",
-                "de": "Entprellen"
+                "de": "Sendeverzögerung"
               },
               "value": "100",
               "hint": {
@@ -1326,7 +1326,7 @@
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> Group",
                 "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> Groep",
-                "de": "Um zu Ändern, welche Geräte in welche Gruppe sein sollen, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
+                "de": "Um Geräte in einer Gruppe zu ändern, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
               }
             },
             {
@@ -1341,7 +1341,7 @@
               "hint": {
                 "en": "The version of the device internal driver, generally the version it was added as.",
                 "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd.",
-                "de": "Die Version des interne Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes genutzt wurde."
+                "de": "Die Version des internen Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes vorhanden war."
               }
             }
           ]
@@ -1367,7 +1367,7 @@
               "hint": {
                 "en": "The delay in microseconds between sending a command to each device in the group.",
                 "nl": "De vertraging,in microseconds, tussen het zenden van een opdracht naar elk apparaat in de groep.",
-                "de": "Zeitverzögerung in Mikrosekunden zwischen dem übermitteln an jedes Gerät in der Gruppe."
+                "de": "Zeitverzögerung in Mikrosekunden zwischen dem Übermitteln an jedes Gerät in der Gruppe."
               }
             },
             {
@@ -1376,7 +1376,7 @@
               "label": {
                 "en": "Debounce",
                 "nl": "Ontdendering",
-                "de": "Entprellen"
+                "de": "Sendeverzögerung"
               },
               "value": "100",
               "hint": {
@@ -1499,7 +1499,7 @@
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> Group",
                 "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> Groep",
-                "de": "Um zu Ändern, welche Geräte in welche Gruppe sein sollen, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
+                "de": "Um Geräte in einer Gruppe zu ändern, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
               }
             },
             {
@@ -1514,7 +1514,7 @@
               "hint": {
                 "en": "The version of the device internal driver, generally the version it was added as.",
                 "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd.",
-                "de": "Die Version des interne Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes genutzt wurde."
+                "de": "Die Version des internen Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes vorhanden war."
               }
             }
           ]
@@ -1540,7 +1540,7 @@
               "hint": {
                 "en": "The delay in microseconds between sending a command to each device in the group.",
                 "nl": "De vertraging,in microseconds, tussen het zenden van een opdracht naar elk apparaat in de groep.",
-                "de": "Zeitverzögerung in Mikrosekunden zwischen dem übermitteln an jedes Gerät in der Gruppe."
+                "de": "Zeitverzögerung in Mikrosekunden zwischen dem Übermitteln an jedes Gerät in der Gruppe."
               }
             },
             {
@@ -1549,7 +1549,7 @@
               "label": {
                 "en": "Debounce",
                 "nl": "Ontdendering",
-                "de": "Entprellen"
+                "de": "Sendeverzögerung"
               },
               "value": "100",
               "hint": {
@@ -1672,7 +1672,7 @@
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> Group",
                 "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> Groep",
-                "de": "Um zu Ändern, welche Geräte in welche Gruppe sein sollen, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
+                "de": "Um Geräte in einer Gruppe zu ändern, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
               }
             },
             {
@@ -1687,7 +1687,7 @@
               "hint": {
                 "en": "The version of the device internal driver, generally the version it was added as.",
                 "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd.",
-                "de": "Die Version des interne Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes genutzt wurde."
+                "de": "Die Version des internen Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes vorhanden war."
               }
             }
           ]
@@ -1713,7 +1713,7 @@
               "hint": {
                 "en": "The delay in microseconds between sending a command to each device in the group.",
                 "nl": "De vertraging,in microseconds, tussen het zenden van een opdracht naar elk apparaat in de groep.",
-                "de": "Zeitverzögerung in Mikrosekunden zwischen dem übermitteln an jedes Gerät in der Gruppe."
+                "de": "Zeitverzögerung in Mikrosekunden zwischen dem Übermitteln an jedes Gerät in der Gruppe."
               }
             },
             {
@@ -1722,7 +1722,7 @@
               "label": {
                 "en": "Debounce",
                 "nl": "Ontdendering",
-                "de": "Entprellen"
+                "de": "Sendeverzögerung"
               },
               "value": "100",
               "hint": {
@@ -1845,7 +1845,7 @@
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> Group",
                 "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> Groep",
-                "de": "Um zu Ändern, welche Geräte in welche Gruppe sein sollen, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
+                "de": "Um Geräte in einer Gruppe zu ändern, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
               }
             },
             {
@@ -1860,7 +1860,7 @@
               "hint": {
                 "en": "The version of the device internal driver, generally the version it was added as.",
                 "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd.",
-                "de": "Die Version des interne Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes genutzt wurde."
+                "de": "Die Version des internen Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes vorhanden war."
               }
             }
           ]
@@ -1886,7 +1886,7 @@
               "hint": {
                 "en": "The delay in microseconds between sending a command to each device in the group.",
                 "nl": "De vertraging,in microseconds, tussen het zenden van een opdracht naar elk apparaat in de groep.",
-                "de": "Zeitverzögerung in Mikrosekunden zwischen dem übermitteln an jedes Gerät in der Gruppe."
+                "de": "Zeitverzögerung in Mikrosekunden zwischen dem Übermitteln an jedes Gerät in der Gruppe."
               }
             },
             {
@@ -1895,7 +1895,7 @@
               "label": {
                 "en": "Debounce",
                 "nl": "Ontdendering",
-                "de": "Entprellen"
+                "de": "Sendeverzögerung"
               },
               "value": "100",
               "hint": {
@@ -2018,7 +2018,7 @@
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> Group",
                 "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> Groep",
-                "de": "Um zu Ändern, welche Geräte in welche Gruppe sein sollen, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
+                "de": "Um Geräte in einer Gruppe zu ändern, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
               }
             },
             {
@@ -2033,7 +2033,7 @@
               "hint": {
                 "en": "The version of the device internal driver, generally the version it was added as.",
                 "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd.",
-                "de": "Die Version des interne Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes genutzt wurde."
+                "de": "Die Version des internen Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes vorhanden war."
               }
             }
           ]
@@ -2059,7 +2059,7 @@
               "hint": {
                 "en": "The delay in microseconds between sending a command to each device in the group.",
                 "nl": "De vertraging,in microseconds, tussen het zenden van een opdracht naar elk apparaat in de groep.",
-                "de": "Zeitverzögerung in Mikrosekunden zwischen dem übermitteln an jedes Gerät in der Gruppe."
+                "de": "Zeitverzögerung in Mikrosekunden zwischen dem Übermitteln an jedes Gerät in der Gruppe."
               }
             },
             {
@@ -2068,7 +2068,7 @@
               "label": {
                 "en": "Debounce",
                 "nl": "Ontdendering",
-                "de": "Entprellen"
+                "de": "Sendeverzögerung"
               },
               "value": "100",
               "hint": {
@@ -2191,7 +2191,7 @@
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> Group",
                 "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> Groep",
-                "de": "Um zu Ändern, welche Geräte in welche Gruppe sein sollen, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
+                "de": "Um Geräte in einer Gruppe zu ändern, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
               }
             },
             {
@@ -2206,7 +2206,7 @@
               "hint": {
                 "en": "The version of the device internal driver, generally the version it was added as.",
                 "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd.",
-                "de": "Die Version des interne Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes genutzt wurde."
+                "de": "Die Version des internen Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes vorhanden war."
               }
             }
           ]
@@ -2232,7 +2232,7 @@
               "hint": {
                 "en": "The delay in microseconds between sending a command to each device in the group.",
                 "nl": "De vertraging,in microseconds, tussen het zenden van een opdracht naar elk apparaat in de groep.",
-                "de": "Zeitverzögerung in Mikrosekunden zwischen dem übermitteln an jedes Gerät in der Gruppe."
+                "de": "Zeitverzögerung in Mikrosekunden zwischen dem Übermitteln an jedes Gerät in der Gruppe."
               }
             },
             {
@@ -2241,7 +2241,7 @@
               "label": {
                 "en": "Debounce",
                 "nl": "Ontdendering",
-                "de": "Entprellen"
+                "de": "Sendeverzögerung"
               },
               "value": "100",
               "hint": {
@@ -2364,7 +2364,7 @@
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> Group",
                 "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> Groep",
-                "de": "Um zu Ändern, welche Geräte in welche Gruppe sein sollen, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
+                "de": "Um Geräte in einer Gruppe zu ändern, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
               }
             },
             {
@@ -2379,7 +2379,7 @@
               "hint": {
                 "en": "The version of the device internal driver, generally the version it was added as.",
                 "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd.",
-                "de": "Die Version des interne Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes genutzt wurde."
+                "de": "Die Version des internen Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes vorhanden war."
               }
             }
           ]
@@ -2405,7 +2405,7 @@
               "hint": {
                 "en": "The delay in microseconds between sending a command to each device in the group.",
                 "nl": "De vertraging,in microseconds, tussen het zenden van een opdracht naar elk apparaat in de groep.",
-                "de": "Zeitverzögerung in Mikrosekunden zwischen dem übermitteln an jedes Gerät in der Gruppe."
+                "de": "Zeitverzögerung in Mikrosekunden zwischen dem Übermitteln an jedes Gerät in der Gruppe."
               }
             },
             {
@@ -2414,7 +2414,7 @@
               "label": {
                 "en": "Debounce",
                 "nl": "Ontdendering",
-                "de": "Entprellen"
+                "de": "Sendeverzögerung"
               },
               "value": "100",
               "hint": {
@@ -2536,7 +2536,7 @@
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> Group",
                 "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> Groep",
-                "de": "Um zu Ändern, welche Geräte in welche Gruppe sein sollen, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
+                "de": "Um Geräte in einer Gruppe zu ändern, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
               }
             },
             {
@@ -2551,7 +2551,7 @@
               "hint": {
                 "en": "The version of the device internal driver, generally the version it was added as.",
                 "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd.",
-                "de": "Die Version des interne Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes genutzt wurde."
+                "de": "Die Version des internen Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes vorhanden war."
               }
             }
           ]
@@ -2577,7 +2577,7 @@
               "hint": {
                 "en": "The delay in microseconds between sending a command to each device in the group.",
                 "nl": "De vertraging,in microseconds, tussen het zenden van een opdracht naar elk apparaat in de groep.",
-                "de": "Zeitverzögerung in Mikrosekunden zwischen dem übermitteln an jedes Gerät in der Gruppe."
+                "de": "Zeitverzögerung in Mikrosekunden zwischen dem Übermitteln an jedes Gerät in der Gruppe."
               }
             },
             {
@@ -2586,7 +2586,7 @@
               "label": {
                 "en": "Debounce",
                 "nl": "Ontdendering",
-                "de": "Entprellen"
+                "de": "Sendeverzögerung"
               },
               "value": "100",
               "hint": {
@@ -2709,7 +2709,7 @@
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> Group",
                 "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> Groep",
-                "de": "Um zu Ändern, welche Geräte in welche Gruppe sein sollen, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
+                "de": "Um Geräte in einer Gruppe zu ändern, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
               }
             },
             {
@@ -2724,7 +2724,7 @@
               "hint": {
                 "en": "The version of the device internal driver, generally the version it was added as.",
                 "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd.",
-                "de": "Die Version des interne Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes genutzt wurde."
+                "de": "Die Version des internen Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes vorhanden war."
               }
             }
           ]
@@ -2750,7 +2750,7 @@
               "hint": {
                 "en": "The delay in microseconds between sending a command to each device in the group.",
                 "nl": "De vertraging,in microseconds, tussen het zenden van een opdracht naar elk apparaat in de groep.",
-                "de": "Zeitverzögerung in Mikrosekunden zwischen dem übermitteln an jedes Gerät in der Gruppe."
+                "de": "Zeitverzögerung in Mikrosekunden zwischen dem Übermitteln an jedes Gerät in der Gruppe."
               }
             },
             {
@@ -2759,7 +2759,7 @@
               "label": {
                 "en": "Debounce",
                 "nl": "Ontdendering",
-                "de": "Entprellen"
+                "de": "Sendeverzögerung"
               },
               "value": "100",
               "hint": {
@@ -2882,7 +2882,7 @@
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> Group",
                 "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> Groep",
-                "de": "Um zu Ändern, welche Geräte in welche Gruppe sein sollen, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
+                "de": "Um Geräte in einer Gruppe zu ändern, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
               }
             },
             {
@@ -2897,7 +2897,7 @@
               "hint": {
                 "en": "The version of the device internal driver, generally the version it was added as.",
                 "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd.",
-                "de": "Die Version des interne Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes genutzt wurde."
+                "de": "Die Version des internen Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes vorhanden war."
               }
             }
           ]
@@ -2923,7 +2923,7 @@
               "hint": {
                 "en": "The delay in microseconds between sending a command to each device in the group.",
                 "nl": "De vertraging,in microseconds, tussen het zenden van een opdracht naar elk apparaat in de groep.",
-                "de": "Zeitverzögerung in Mikrosekunden zwischen dem übermitteln an jedes Gerät in der Gruppe."
+                "de": "Zeitverzögerung in Mikrosekunden zwischen dem Übermitteln an jedes Gerät in der Gruppe."
               }
             },
             {
@@ -2932,7 +2932,7 @@
               "label": {
                 "en": "Debounce",
                 "nl": "Ontdendering",
-                "de": "Entprellen"
+                "de": "Sendeverzögerung"
               },
               "value": "100",
               "hint": {
@@ -3055,7 +3055,7 @@
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> Group",
                 "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> Groep",
-                "de": "Um zu Ändern, welche Geräte in welche Gruppe sein sollen, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
+                "de": "Um Geräte in einer Gruppe zu ändern, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
               }
             },
             {
@@ -3070,7 +3070,7 @@
               "hint": {
                 "en": "The version of the device internal driver, generally the version it was added as.",
                 "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd.",
-                "de": "Die Version des interne Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes genutzt wurde."
+                "de": "Die Version des internen Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes vorhanden war."
               }
             }
           ]
@@ -3096,7 +3096,7 @@
               "hint": {
                 "en": "The delay in microseconds between sending a command to each device in the group.",
                 "nl": "De vertraging,in microseconds, tussen het zenden van een opdracht naar elk apparaat in de groep.",
-                "de": "Zeitverzögerung in Mikrosekunden zwischen dem übermitteln an jedes Gerät in der Gruppe."
+                "de": "Zeitverzögerung in Mikrosekunden zwischen dem Übermitteln an jedes Gerät in der Gruppe."
               }
             },
             {
@@ -3105,7 +3105,7 @@
               "label": {
                 "en": "Debounce",
                 "nl": "Ontdendering",
-                "de": "Entprellen"
+                "de": "Sendeverzögerung"
               },
               "value": "100",
               "hint": {
@@ -3228,7 +3228,7 @@
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> Group",
                 "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> Groep",
-                "de": "Um zu Ändern, welche Geräte in welche Gruppe sein sollen, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
+                "de": "Um Geräte in einer Gruppe zu ändern, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
               }
             },
             {
@@ -3243,7 +3243,7 @@
               "hint": {
                 "en": "The version of the device internal driver, generally the version it was added as.",
                 "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd.",
-                "de": "Die Version des interne Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes genutzt wurde."
+                "de": "Die Version des internen Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes vorhanden war."
               }
             }
           ]
@@ -3269,7 +3269,7 @@
               "hint": {
                 "en": "The delay in microseconds between sending a command to each device in the group.",
                 "nl": "De vertraging,in microseconds, tussen het zenden van een opdracht naar elk apparaat in de groep.",
-                "de": "Zeitverzögerung in Mikrosekunden zwischen dem übermitteln an jedes Gerät in der Gruppe."
+                "de": "Zeitverzögerung in Mikrosekunden zwischen dem Übermitteln an jedes Gerät in der Gruppe."
               }
             },
             {
@@ -3278,7 +3278,7 @@
               "label": {
                 "en": "Debounce",
                 "nl": "Ontdendering",
-                "de": "Entprellen"
+                "de": "Sendeverzögerung"
               },
               "value": "100",
               "hint": {
@@ -3401,7 +3401,7 @@
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> Group",
                 "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> Groep",
-                "de": "Um zu Ändern, welche Geräte in welche Gruppe sein sollen, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
+                "de": "Um Geräte in einer Gruppe zu ändern, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
               }
             },
             {
@@ -3416,7 +3416,7 @@
               "hint": {
                 "en": "The version of the device internal driver, generally the version it was added as.",
                 "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd.",
-                "de": "Die Version des interne Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes genutzt wurde."
+                "de": "Die Version des internen Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes vorhanden war."
               }
             }
           ]
@@ -3442,7 +3442,7 @@
               "hint": {
                 "en": "The delay in microseconds between sending a command to each device in the group.",
                 "nl": "De vertraging,in microseconds, tussen het zenden van een opdracht naar elk apparaat in de groep.",
-                "de": "Zeitverzögerung in Mikrosekunden zwischen dem übermitteln an jedes Gerät in der Gruppe."
+                "de": "Zeitverzögerung in Mikrosekunden zwischen dem Übermitteln an jedes Gerät in der Gruppe."
               }
             },
             {
@@ -3451,7 +3451,7 @@
               "label": {
                 "en": "Debounce",
                 "nl": "Ontdendering",
-                "de": "Entprellen"
+                "de": "Sendeverzögerung"
               },
               "value": "100",
               "hint": {
@@ -3574,7 +3574,7 @@
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> Group",
                 "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> Groep",
-                "de": "Um zu Ändern, welche Geräte in welche Gruppe sein sollen, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
+                "de": "Um Geräte in einer Gruppe zu ändern, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
               }
             },
             {
@@ -3589,7 +3589,7 @@
               "hint": {
                 "en": "The version of the device internal driver, generally the version it was added as.",
                 "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd.",
-                "de": "Die Version des interne Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes genutzt wurde."
+                "de": "Die Version des internen Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes vorhanden war."
               }
             }
           ]
@@ -3615,7 +3615,7 @@
               "hint": {
                 "en": "The delay in microseconds between sending a command to each device in the group.",
                 "nl": "De vertraging,in microseconds, tussen het zenden van een opdracht naar elk apparaat in de groep.",
-                "de": "Zeitverzögerung in Mikrosekunden zwischen dem übermitteln an jedes Gerät in der Gruppe."
+                "de": "Zeitverzögerung in Mikrosekunden zwischen dem Übermitteln an jedes Gerät in der Gruppe."
               }
             },
             {
@@ -3624,7 +3624,7 @@
               "label": {
                 "en": "Debounce",
                 "nl": "Ontdendering",
-                "de": "Entprellen"
+                "de": "Sendeverzögerung"
               },
               "value": "100",
               "hint": {
@@ -3747,7 +3747,7 @@
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> Group",
                 "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> Groep",
-                "de": "Um zu Ändern, welche Geräte in welche Gruppe sein sollen, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
+                "de": "Um Geräte in einer Gruppe zu ändern, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
               }
             },
             {
@@ -3762,7 +3762,7 @@
               "hint": {
                 "en": "The version of the device internal driver, generally the version it was added as.",
                 "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd.",
-                "de": "Die Version des interne Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes genutzt wurde."
+                "de": "Die Version des internen Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes vorhanden war."
               }
             }
           ]
@@ -3788,7 +3788,7 @@
               "hint": {
                 "en": "The delay in microseconds between sending a command to each device in the group.",
                 "nl": "De vertraging,in microseconds, tussen het zenden van een opdracht naar elk apparaat in de groep.",
-                "de": "Zeitverzögerung in Mikrosekunden zwischen dem übermitteln an jedes Gerät in der Gruppe."
+                "de": "Zeitverzögerung in Mikrosekunden zwischen dem Übermitteln an jedes Gerät in der Gruppe."
               }
             },
             {
@@ -3797,7 +3797,7 @@
               "label": {
                 "en": "Debounce",
                 "nl": "Ontdendering",
-                "de": "Entprellen"
+                "de": "Sendeverzögerung"
               },
               "value": "100",
               "hint": {
@@ -3920,7 +3920,7 @@
               "hint": {
                 "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> Group",
                 "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> Groep",
-                "de": "Um zu Ändern, welche Geräte in welche Gruppe sein sollen, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
+                "de": "Um Geräte in einer Gruppe zu ändern, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
               }
             },
             {
@@ -3935,7 +3935,7 @@
               "hint": {
                 "en": "The version of the device internal driver, generally the version it was added as.",
                 "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd.",
-                "de": "Die Version des interne Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes genutzt wurde."
+                "de": "Die Version des internen Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes vorhanden war."
               }
             }
           ]
@@ -3961,7 +3961,7 @@
               "hint": {
                 "en": "The delay in microseconds between sending a command to each device in the group.",
                 "nl": "De vertraging,in microseconds, tussen het zenden van een opdracht naar elk apparaat in de groep.",
-                "de": "Zeitverzögerung in Mikrosekunden zwischen dem übermitteln an jedes Gerät in der Gruppe."
+                "de": "Zeitverzögerung in Mikrosekunden zwischen dem Übermitteln an jedes Gerät in der Gruppe."
               }
             },
             {
@@ -3970,7 +3970,7 @@
               "label": {
                 "en": "Debounce",
                 "nl": "Ontdendering",
-                "de": "Entprellen"
+                "de": "Sendeverzögerung"
               },
               "value": "100",
               "hint": {
