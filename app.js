@@ -69,11 +69,8 @@ class Groups extends Homey.App {
     async getDevice(id) {
         if (!this.devices[id]) {
 
-            this.log('*****API*****');
             let api = await this.getApi();
-            this.log('*****DEVICES*****');
             let devices = await api.devices;
-            this.log('*****get*****');
 
 	        this.devices[id] = await devices.getDevice({
 	            id: id
