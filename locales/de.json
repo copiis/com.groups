@@ -17,27 +17,27 @@
       "description": "Taster und andere Elemente, die keinen Zustand haben."
     },
     "coffeemachine": {
-      "title": "Kaffeemaschine",
+      "title": "Kaffeemaschinen",
       "description": "Kaffeemaschinen werden zum Brühen von Kaffee benutzt."
     },
     "curtain": {
-      "title": "Vorhang",
+      "title": "Vorhänge",
       "description": "Elektrisch gesteuerte Vorhänge werden auf- und zugezogen."
     },
     "doorbell": {
-      "title": "Türklingel",
-      "description": "Eine Türklingel meldet einen besucher an der Tür."
+      "title": "Türklingeln",
+      "description": "Eine Türklingel meldet einen Besucher an der Tür."
     },
     "fan": {
-      "title": "Ventilator",
+      "title": "Ventilatoren",
       "description": "Ventilatoren kühlen dein Heim."
     },
     "garagedoor": {
-      "title": "Garagentor",
+      "title": "Garagentore",
       "description": "Gesteuerte Garagentore sowie auch automatisch geateuerte Türen."
     },
     "heater": {
-      "title": "Heizung",
+      "title": "Heizungen",
       "description": "Heizungen und andere Geräte, die dein Heim wärmen."
     },
     "homealarm": {
@@ -45,7 +45,7 @@
       "description": "Heim-Alarm-Systeme."
     },
     "homeenergymonitor": {
-      "title": "Home Energy Monitor",
+      "title": "Energie Überwachung",
       "description": "Geräte zur Überwachung des Energieverbrauchs in deinem Haus."
     },
     "kettle": {
@@ -53,11 +53,11 @@
       "description": "Geräte zu erhitzen von Wasser."
     },
     "light": {
-      "title": "Lampe",
+      "title": "Lampen",
       "description": "Geräte um deine Umgebung zu beleuchten. (Lampen, Lichter etc.)"
     },
     "lock": {
-      "title": "Schloss",
+      "title": "Schlösser",
       "description": "Geräte zum Abschließen von Türen o.ä."
     },
     "other": {
@@ -69,15 +69,15 @@
       "description": "Relais die mit anderen Geräten verbunden sind."
     },
     "remote": {
-      "title": "Fernbedienung",
+      "title": "Fernbedienungen",
       "description": "Alle Arten von Fernbedienungen für z.B. Tv, AV.Receiver, Voränge etc."
     },
     "sensor": {
-      "title": "Sensor",
+      "title": "Sensoren",
       "description": "Kontakt, Bewegung, Feuer, CO oder jeder andere Sensor. Auch Alarmsensoren!"
     },
     "socket": {
-      "title": "Steckdose",
+      "title": "Steckdosen",
       "description": "Alle Arten von Steckdosen."
     },
     "speaker": {
@@ -85,11 +85,11 @@
       "description": "Geräte die Musik abspielen können."
     },
     "sunshade": {
-      "title": "Jalousie",
+      "title": "Jalousien",
       "description": "Jalousien (Fenster-Abdeckungen gegen die Sonne)."
     },
     "thermostat": {
-      "title": "Thermostat",
+      "title": "Thermostate",
       "description": "Thermostate, entweder für das gesamte Heim oder pro Heizung."
     },
     "tv": {
@@ -132,7 +132,7 @@
     },
     "vacuumcleaner_state": {
       "title": "Staubsauger-Status",
-      "description": "Status des Staubsaugers, ob er gerade säubert, Schmutz entdeckt hat, gestoppt hat oder auflädt."
+      "description": "Status des Staubsaugers, ob er gerade auflädt, säubert, gestoppt ist oder Schmutz entdeckt hat."
     },
     "thermostat_mode": {
       "title": "Modus des Thermostates",
@@ -152,7 +152,7 @@
     },
     "measure_co2": {
       "title": "Kohlendioxid",
-      "description": "CO₂ in Anteile pro Million (ppm)"
+      "description": "CO² in Anteile pro Million (ppm)"
     },
     "measure_pm25": {
       "title": "PM2.5",
@@ -236,7 +236,7 @@
     },
     "alarm_co2": {
       "title": "CO2-Alarm",
-      "description": "Alarm wenn gefährliche CO₂-Werte erkannt wurden."
+      "description": "Alarm wenn gefährliche CO²-Werte erkannt wurden."
     },
     "alarm_pm25": {
       "title": "PM2.5-Alarm",
@@ -292,7 +292,7 @@
     },
     "volume_set": {
       "title": "Lautstärke setzen",
-      "description": "Lautstärke setzen."
+      "description": "Setzt die Lautstärke."
     },
     "volume_up": {
       "title": "Lautstärke hoch",
@@ -304,7 +304,7 @@
     },
     "volume_mute": {
       "title": "Lautstärke stumm",
-      "description": "Lautstärke stummschalten."
+      "description": "Setzt die Lautstärke stumm."
     },
     "channel_up": {
       "title": "Kanal hoch",
@@ -324,7 +324,7 @@
     },
     "windowcoverings_state": {
       "title": "Status Fensterjalousien",
-      "description": "Sind die Fensterjalousien geöffnet, geschlossen oder im Leerlauf."
+      "description": "Sind die Fensterjalousien geöffnet, geschlossen oder dazwischen."
     },
     "windowcoverings_tilt_up": {
       "title": "Jalousien nach oben gefahren",
@@ -339,7 +339,7 @@
       "description": "Position der Jalousien einstellen."
     },
     "windowcoverings_closed": {
-      "title": "Jalousien geschlossen",
+      "title": "Jalousien schließen",
       "description": "Jalousien werden geschlossen."
     },
     "windowcoverings_set": {
@@ -352,22 +352,22 @@
     },
     "speaker_playing": {
       "title": "Lautsprecher spielt",
-      "description": "Was der Lautsprecher gerade spielt."
+      "description": "Lautsprecher spielt gerade."
     },
     "speaker_next": {
       "title": "Lautsprecher vor",
-      "description": "Zum nächsten Titel gehen."
+      "description": "Zum nächsten Titel springen."
     },
     "speaker_prev": {
       "title": "Lautsprecher zurück",
-      "description": "Zum vorherigen Titel gehen."
+      "description": "Zum vorherigen Titel springen."
     },
     "speaker_shuffle": {
-      "title": "Lautsprecher Shuffle",
+      "title": "Zufallswiedergabe",
       "description": "Zufälliges Abspielen der Titel"
     },
     "speaker_repeat": {
-      "title": "Lautsprecher Repeat",
+      "title": "Lautsprecher wiederholt",
       "description": "Setze den Wiederholungsmodus: kein, pro Track oder pro Playlist"
     },
     "speaker_artist": {
@@ -411,8 +411,8 @@
   "method": {
     "all": {
       "title": "An wenn Alle an",
-      "brief": "an wenn alle Geräte an geschaltet",
-      "description": "An wenn alle Geräte an geschaltet sind. Sonst aus!"
+      "brief": "an wenn alle Geräte eigeschaltet sind",
+      "description": "An wenn alle Geräte eingeschaltet sind. Sonst aus!"
     },
     "always": {
       "title": "Immer an",
@@ -421,8 +421,8 @@
     },
     "any": {
       "title": "An wenn ein Gerät an",
-      "brief": "an wenn irgendein Gerät an ist",
-      "description": "an wenn irgendein Gerät angeschaltet ist."
+      "brief": "an wenn irgendein Gerät eingeschaltet ist",
+      "description": "An wenn irgendein Gerät eingeschaltet ist."
     },
     "highest": {
       "title": "höchster Wert",
@@ -442,7 +442,7 @@
     "max": {
       "title": "Maximaler Wert",
       "brief": "der maximale Wert",
-      "description": "Der wert des Gerätes mit dem maximalsten Wert"
+      "description": "Der Wert des Gerätes mit dem höchsten Wert"
     },
     "mean": {
       "title": "Gemittelter Durchschnitt",
@@ -491,8 +491,8 @@
     },
     "xor": {
       "title": "Ein, sofern nicht alle ein- oder ausgeschaltet",
-      "brief": "Ein, sofern nicht alle ein- oder ausgeschaltet",
-      "description": "Aus wenn alle Geräte aus sind oder an sind"
+      "brief": "ein, sofern nicht alle Geräte ein- oder ausgeschaltet sind",
+      "description": "Aus wenn alle Geräte an oder aus sind"
     }
   },
   "pair": {
@@ -502,23 +502,23 @@
     },
     "devices": {
       "title": "Wähle die Geräte der Gruppe",
-      "loading": "Sammeln aller Geräte mit diesen Funktionen",
+      "loading": "Sammle alle Geräte mit diesen Fähigkeiten",
       "empty": {
         "title": "Tut mir leid, keine Geräte gefunden.",
-        "description": "Wir konnten keine Geräte mit diesen besonderen Fähigkeiten finden. Bitte drücke 'zurück', um zurück zu gelangen."
+        "description": "Wir konnten keine Geräte mit diesen besonderen Fähigkeiten finden. Bitte drücke 'Zurück', um zurück zu gelangen."
       }
     },
     "icons": {
-      "title": "Wähle dein Icon",
-      "loading": "Lade mögliche Icons"
+      "title": "Wähle dein Symbol",
+      "loading": "Lade mögliche Symbole"
     },
     "group": {
       "title": "Gruppiere Geräte..",
-      "loading": "Füge neue Gruppe hinzu, das nimmt nur ein paar Sekunden in Anspruch."
+      "loading": "Füge neue Gruppe hinzu, das nimmt ein paar Sekunden in Anspruch."
     }
   },
   "settings": {
-    "empty": "Tut mir leid, du hast noch keine Gruppe erstellt. Bitte erstelle erst eine Gruppe und komm dan zurück, um sie zu editieren.",
+    "empty": "Tut mir leid, du hast noch keine Gruppe erstellt. Bitte erstelle erst eine Gruppe und komm dann zurück, um sie zu editieren.",
     "deleted": "[gelöscht]"
   }
 }
