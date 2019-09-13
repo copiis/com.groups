@@ -7,12 +7,12 @@
     "always": {
         "title": "Immer an",
         "brief": "immer an",
-        "description": "Immer an geschaltet"
+        "description": "Immer an geschaltet."
     },
     "any": {
         "title": "An wenn ein Gerät an",
         "brief": "an wenn irgendein Gerät an ist",
-        "description": "an wenn irgendein Gerät angeschaltet ist"
+        "description": "an wenn irgendein Gerät angeschaltet ist."
     },
     "highest": {
         "title": "höchster Wert",
@@ -22,66 +22,66 @@
     "ignore": {
         "title": "Ignoriere Geräte",
         "brief": "der letzte gesetzte Wert in der App",
-        "description": "Nicht updaten, nur Werte der Karte nutzen"
+        "description": "Nicht updaten, nur Werte der Karte nutzen."
     },
     "lowest": {
-        "title": "niedrigster Wert",
+        "title": "Niedrigster Wert",
         "brief": "der niedrigste Wert",
         "description": "Der niedrigste Wert aller in der Gruppe befindlichen Geräte."
     },
     "max": {
         "title": "Maximaler Wert",
-        "brief": "der maximalste Wert",
-        "description": "Der wert des Gerätes mit dem maximalsten Wert"
+        "brief": "der maximale Wert",
+        "description": "Der wert des Gerätes mit dem maximalsten Wert."
     },
     "mean": {
         "title": "Gemittelter Durchschnitt",
         "brief": "durchschnittlicher Wert",
-        "description": "Durchschnitt zum Berechen (zählen, summieren)"
+        "description": "Durchschnitt zum Berechen (zählen, summieren)."
     },
     "median": {
         "title": "Mittelwert",
         "brief": "der Mittelwert",
-        "description": "Der Mittelwert der Geräte"
+        "description": "Der Mittelwert der Geräte."
     },
     "min": {
         "title": "Mindestwert",
         "brief": "der Mindestwert der Geräte",
-        "description": "Der Wert der Geräte mit dem kleinsten Wert"
+        "description": "Der Wert der Geräte mit dem kleinsten Wert."
     },
     "mode": {
         "title": "Durchschnitts-Mode",
         "brief": "der am gebräuchlichsten Wert",
-        "description": "Der Wert, den die meißten Geräte nutzen"
+        "description": "Der Wert, den die meißten Geräte nutzen."
     },
     "most": {
         "title": "Meißten Geräte",
         "brief": "häufigster Wert",
-        "description": "An wenn mindestens die Hälfte der Geräte an ist"
+        "description": "An wenn mindestens die Hälfte der Geräte an ist."
     },
     "never": {
         "title": "Nie an",
         "brief": "nie an",
-        "description": "nie an, immer ausgeschaltet"
+        "description": "Nie an, immer ausgeschaltet."
     },
     "none": {
         "title": "Ein, sofern nicht alles an ist",
         "brief": "Ein, sofern nicht alles eingeschaltet ist",
-        "description": "Aus wenn alle an sind, ansonsten angeschaltet"
+        "description": "Aus wenn alle an sind, ansonsten angeschaltet."
     },
     "sum": {
         "title": "Gesamtwert",
         "brief": "die Summe aller Geräte",
-        "description": "Summe aller in der Gruppe befindlichen Geräte"
+        "description": "Summe aller in der Gruppe befindlichen Geräte."
     },
     "nor": {
         "title": "Ein wenn Keine an",
         "brief": "eingeschaltet, wenn kein Gerät an ist",
-        "description": "An wenn kein Gerät angeschaltet ist, andererseits aus"
+        "description": "An wenn kein Gerät angeschaltet ist, andererseits aus."
     },
     "xor": {
         "title": "Ein, sofern nicht alle ein- oder ausgeschaltet",
         "brief": "Ein, sofern nicht alle ein- oder ausgeschaltet",
-        "description": "Aus wenn alle Geräte aus sind oder an sind"
+        "description": "Aus wenn alle Geräte aus sind oder an sind."
     }
 }

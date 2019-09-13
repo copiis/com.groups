@@ -1,0 +1,26 @@
+{
+    "id" : "other",
+    "type": "group",
+    "label": {
+        "en": "Other",
+        "nl": "Anders",
+        "de": "Andere"
+    },
+    "children": [
+        {
+            "id": "notes",
+            "type": "textarea",
+            "label": {
+                "en": "Your Notes",
+                "nl": "Notities",
+                "de": "Notizen"
+            },
+            "value": "",
+            "hint": {
+                "en": "Enter any thoughts or notes you may have regarding this group.",
+                "nl": "Voer hier alle gedachten of opmerkingen in die je hebt over deze groep.",
+                "de": "Notiere alle Gedanken oder Einfälle, die dir zu dieser Gruppe einfallen"
+            }
+        }
+    ]
+}

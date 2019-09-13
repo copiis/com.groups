@@ -1,0 +1,87 @@
+{
+    "all": {
+        "title": "På om alla är på",
+        "brief": "på om alla enheter är på",
+        "description": "På om alla enheter är på, annars av"
+    },
+    "always": {
+        "title": "Alltid På",
+        "brief": "alltid på",
+        "description": "Återgår alltid till på"
+    },
+    "any": {
+        "title": "På om någon är på",
+        "brief": "på om någon enhet är på",
+        "description": "På om någon enhet är på"
+    },
+    "highest": {
+        "title": "Hösta Värde",
+        "brief": "det högsta värdet",
+        "description": "Det hösta värdet på någon av alla grupperade enheter"
+    },
+    "ignore": {
+        "title": "Ignorera Enheter",
+        "brief": "det sista värdet som satts i appen",
+        "description": "Uppdatera inte, använd endast värden satta av kortet"
+    },
+    "lowest": {
+        "title": "Lägsta Värde",
+        "brief": "det lägsta värdet",
+        "description": "Det lägsta värdet på någon av alla grupperade enheter"
+    },
+    "max": {
+        "title": "Hösta Värde",
+        "brief": "det högsta värdet",
+        "description": "Värdet på enheten med det högsta värdet"
+    },
+    "mean": {
+        "title": "Medelvärdet",
+        "brief": "medelvärdet (medel)",
+        "description": "Summan av enheternas värden delat med antal enheter (medelvärde)"
+    },
+    "median": {
+        "title": "Medianvärde",
+        "brief": "medianvärdet (medianen)",
+        "description": "Värdet av enheten i mitten på en skala av enheters värden"
+    },
+    "min": {
+        "title": "Minsta värde",
+        "brief": "det lägsta värdet",
+        "description": "Värdet på enheten med det minsta värdet"
+    },
+    "mode": {
+        "title": "Genomsnittligt läge",
+        "brief": "det vanligaste värdet",
+        "description": "Värdet som flest enheter har"
+    },
+    "most": {
+        "title": "De flesta enheter",
+        "brief": "de vanligaste värdet",
+        "description": "På om minst hälften av enheterna är på"
+    },
+    "never": {
+        "title": "Aldrig på",
+        "brief": "aldrig på",
+        "description": "Aldrig på, återvänder alltid till av"
+    },
+    "none": {
+        "title": "På om inte alla är på",
+        "brief": "på om inte alla enheter är på",
+        "description": "Av om alla enheter är på, annars på"
+    },
+    "sum": {
+        "title": "Summerat värde",
+        "brief": "summan av alla enheter",
+        "description": "Summan av alla grupperade enheters värden"
+    },
+    "nor": {
+        "title": "På om inte någon är på",
+        "brief": "på om ingen enhet är på",
+        "description": "På om alla enheter är av, annars av"
+    },
+    "xor": {
+        "title": "På om inta alla är på eller av",
+        "brief": "på om inta alla enheter är på eller alla är av",
+        "description": "Av när alla enheter är av eller alla enheter är på"
+    }
+}

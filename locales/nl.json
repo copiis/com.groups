@@ -103,6 +103,10 @@
     "alarm": {
       "title": "Alarm",
       "description": "Apparaten met een alarm, bijv. Sensoren, contact, vuur, rook, koolmonoxide, enz"
+    },
+    "camera": {
+      "title": "Camera",
+      "description": "Coming Soon."
     }
   },
   "method": {
@@ -282,7 +286,7 @@
       "description": "Accuniveau in procenten (%)"
     },
     "measure_power": {
-      "title": "Vermogen",
+      "title": "Energie",
       "description": "Vermogen in Watt (W)"
     },
     "measure_voltage": {

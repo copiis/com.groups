@@ -1,6 +1,27 @@
+**2.4.202**
+- Update logging format [group]<action>message</action>
+
+**2.4.201**
+- Retry when changes capability value fails
+- Update error logging
+- Add the ability to delay setting values inside a group
+
+**2.4.200**
+- Remove redundant 'states' variable,
+- Update initValues to loop through each capability and call same code as state change
+- Add call to update a value when ever the device with in the group change status (go offline or come online)
+
+**2.4.101**
+- Fixes to DE language
+- SV updates 
+
+**2.4.100**
+- Lay ground work for allowing groups to be delayed
+- New settings structure separating out set/get/about in .homeycompose
+- New settings for setting a device capability value.
+
 **2.3.202**
 - Update athom-api@2.1.179
-
 
 **2.3.201**
 - Attempt to fix issue #40, remove sanity check before updating capabilities. 
@@ -248,11 +269,3 @@
 ##### 1.0
 
 - 1.0.0 : Ability to group settable devices
-
-
-
----
-
-For all questions, suggestions and support please visit :
-
-https://community.athom.com/t/groups-v1-0/3168/27

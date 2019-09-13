@@ -1,0 +1,61 @@
+{
+    "id" : "about",
+    "type": "group",
+    "label": {
+        "en": "About",
+        "nl": "Over",
+        "de": "Über"
+    },
+    "children": [
+        {
+            "id": "labelClass",
+            "type": "label",
+            "label": {
+                "en": "Category",
+                "nl": "Categorie",
+                "de": "Kategorie"
+            },
+            "value": "Unknown"
+        },
+        {
+            "id": "labelCapabilities",
+            "type": "label",
+            "label": {
+                "en": "Capabilities",
+                "nl": "Opties",
+                "de": "Fähigkeiten"
+            },
+            "value": "Unknown"
+        },
+        {
+            "id": "labelDevices",
+            "type": "label",
+            "label": {
+                "en": "Devices",
+                "nl": "Apparaten",
+                "de": "Geräte"
+            },
+            "value": "Unknown",
+            "hint": {
+                "en": "To change which devices are with in a group, please go to the Homey settings page and click on More -> Settings -> Group",
+                "nl": "Om te wijzigen welke apparaten in een groep zitten, ga naar de pagina Homey-instellingen en klik op Meer -> Instellingen -> Groep",
+                "de": "Um Geräte in einer Gruppe zu ändern, gehe bitte zur Einstellungsseite von Homey und klicke auf Mehr -> Einstellungen -> Gruppe"
+            }
+        },
+        {
+            "id": "labelVersion",
+            "type": "label",
+            "label": {
+                "en": "Version",
+                "nl": "versie",
+                "de": "Version"
+            },
+            "value": "2.0",
+            "hint": {
+                "en": "The version of the device internal driver, generally the version it was added as.",
+                "nl": "De versie van het interne stuurprogramma van het apparaat, meestal de versie waaraan het is toegevoegd.",
+                "de": "Die Version des internen Gerätetreibers, meißtens die Version, die bei Einbindung des Gerätes vorhanden war."
+            }
+        }
+    ]
+}

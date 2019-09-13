@@ -15,6 +15,10 @@
         "title": "Knop",
         "description": "knoppen en andere items die geen status hebben."
     },
+    "camera" : {
+        "title" : "Camera",
+        "description" : "Coming Soon."
+    },
     "coffeemachine": {
         "title": "Koffiemachine",
         "description": "koffiemachines zijn kooktoestellen voor het zetten van koffie."

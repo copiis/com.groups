@@ -6,6 +6,14 @@
         "en": "Alarm",
         "nl": "Alarm"
     },
+    "settings" : [
+        {
+            "$extends":  "about"
+        },
+        {
+            "$extends":  "other"
+        }
+    ],
     "$extends": [
         "default"
     ]

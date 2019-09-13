@@ -94,7 +94,7 @@
     },
     "tv": {
       "title": "TV",
-      "description": "TV/Fernseher."
+      "description": "TV/Fernseher.."
     },
     "vacuumcleaner": {
       "title": "Staubsauger",
@@ -103,6 +103,10 @@
     "windowcoverings": {
       "title": "Fenster-Abdeckungen",
       "description": "Fenster-Abdeckungen, wenn 'Vorhänge'-, 'Rolladen'- oder 'Jalousien'-Geräteklassen nicht zutreffen."
+    },
+    "camera": {
+      "title": "Camera",
+      "description": "Coming Soon."
     }
   },
   "capability": {
@@ -144,79 +148,79 @@
     },
     "measure_temperature": {
       "title": "Temperatur",
-      "description": "Temperatur in Celsius (°c)"
+      "description": "Temperatur in Celsius (°c)."
     },
     "measure_co": {
       "title": "Kohlenmonoxid",
-      "description": "CO in Anteile pro Million (ppm)"
+      "description": "CO in Anteile pro Million (ppm)."
     },
     "measure_co2": {
       "title": "Kohlendioxid",
-      "description": "CO² in Anteile pro Million (ppm)"
+      "description": "CO₂ in Anteile pro Million (ppm)."
     },
     "measure_pm25": {
       "title": "PM2.5",
-      "description": "Atmosphärischer Feinstaub (μg/m3)"
+      "description": "Atmosphärischer Feinstaub (μg/m3)."
     },
     "measure_humidity": {
       "title": "Luftfeuchtigkeit",
-      "description": "Luftfeuchtigkeit in Prozent (%)"
+      "description": "Luftfeuchtigkeit in Prozent (%)."
     },
     "measure_pressure": {
       "title": "Druck",
-      "description": "Druck in Millibar (mbar)"
+      "description": "Druck in Millibar (mbar)."
     },
     "measure_noise": {
       "title": "Lärm",
-      "description": "Lärm in Dezibel (dB)"
+      "description": "Lärm in Dezibel (dB)."
     },
     "measure_rain": {
       "title": "Niederschlag",
-      "description": "Niederschlag in Millimeter (mm)"
+      "description": "Niederschlag in Millimeter (mm)."
     },
     "measure_wind_strength": {
       "title": "Windstärke",
-      "description": "Windstärke in Kilometer pro Stunde (km/h)"
+      "description": "Windstärke in Kilometer pro Stunde (km/h)."
     },
     "measure_wind_angle": {
       "title": "Windrichtung",
-      "description": "Windrichtung in Grad (°)"
+      "description": "Windrichtung in Grad (°)."
     },
     "measure_gust_strength": {
       "title": "Böenstärke",
-      "description": "Böenstärke in Kilometer pro Stunde (km/h)"
+      "description": "Böenstärke in Kilometer pro Stunde (km/h)."
     },
     "measure_gust_angle": {
       "title": "Böenrichtung",
-      "description": "Böenrichtung in Grad (°)"
+      "description": "Böenrichtung in Grad (°)."
     },
     "measure_battery": {
       "title": "Batterie",
-      "description": "Batteriestand in Prozent (%)"
+      "description": "Batteriestand in Prozent (%)."
     },
     "measure_power": {
       "title": "Energie",
-      "description": "Energie in Watt (W)"
+      "description": "Energie in Watt (W)."
     },
     "measure_voltage": {
       "title": "Spannung",
-      "description": "Elektische Spannung in Volt (V)"
+      "description": "Elektische Spannung in Volt (V)."
     },
     "measure_current": {
       "title": "Strom",
-      "description": "Elektrischer Strom in Ampere (A)"
+      "description": "Elektrischer Strom in Ampere (A)."
     },
     "measure_luminance": {
       "title": "Leuchtkraft",
-      "description": "Leuchtkraft in Lux (lx)"
+      "description": "Leuchtkraft in Lux (lx)."
     },
     "measure_ultraviolet": {
       "title": "Ultraviolett",
-      "description": "Ultraviolett in UV-Index (UVI)"
+      "description": "Ultraviolett in UV-Index (UVI)."
     },
     "measure_water": {
       "title": "Wasserfluss",
-      "description": "Wasserfluss in Liter pro Minute (L/min)"
+      "description": "Wasserfluss in Liter pro Minute (L/min)."
     },
     "alarm_generic": {
       "title": "Allgemeiner Alarm",
@@ -272,19 +276,19 @@
     },
     "meter_power": {
       "title": "Energiezähler",
-      "description": "Energieverbrauch in Kilowattstunde (kWh)"
+      "description": "Energieverbrauch in Kilowattstunde (kWh)."
     },
     "meter_water": {
       "title": "Wasserzähler",
-      "description": "Wasserverbrauch in Kubikmeter (m³)"
+      "description": "Wasserverbrauch in Kubikmeter (m³)."
     },
     "meter_gas": {
       "title": "Gaszähler",
-      "description": "Gasverbrauch in Kubikmeter (m³)"
+      "description": "Gasverbrauch in Kubikmeter (m³)."
     },
     "meter_rain": {
       "title": "Regenzähler",
-      "description": "Regen in Kubikmeter (m³)"
+      "description": "Regen in Kubikmeter (m³)."
     },
     "homealarm_state": {
       "title": "Heim-Alarm-Status",
@@ -316,7 +320,7 @@
     },
     "locked": {
       "title": "Verriegelt",
-      "description": "'Wahr' wenn das Schloss verriegelt ist"
+      "description": "'Wahr' wenn das Schloss verriegelt ist."
     },
     "lock_mode": {
       "title": "Schloss-Modus",
@@ -347,7 +351,7 @@
       "description": "Die Position der Jalousien setzen. 0% ist geschlossen, 100% ist offen."
     },
     "button": {
-      "title": "Taster",
+      "title": "Taste",
       "description": "Ein Druckknopf."
     },
     "speaker_playing": {
@@ -384,11 +388,11 @@
     },
     "speaker_duration": {
       "title": "Lautsprecher Zeit",
-      "description": "Vergangene Zeit des laufenden Tracks"
+      "description": "Vergangene Zeit des laufenden Tracks."
     },
     "speaker_position": {
       "title": "Lautsprecher Position",
-      "description": "Aktuelle Abspielposition des Lautsprechers"
+      "description": "Aktuelle Abspielposition des Lautsprechers."
     }
   },
   "_": {
@@ -447,7 +451,7 @@
     "mean": {
       "title": "Gemittelter Durchschnitt",
       "brief": "durchschnittlicher Wert",
-      "description": "Durchschnitt zum Berechen (zählen, summieren)"
+      "description": "Durchschnitt zum Berechen (zählen, summieren)."
     },
     "median": {
       "title": "Mittelwert",
@@ -491,7 +495,7 @@
     },
     "xor": {
       "title": "Ein, sofern nicht alle ein- oder ausgeschaltet",
-      "brief": "ein, sofern nicht alle Geräte ein- oder ausgeschaltet sind",
+      "brief": "Ein, sofern nicht alle Geräte ein- oder ausgeschaltet sind",
       "description": "Aus wenn alle Geräte an oder aus sind"
     }
   },
